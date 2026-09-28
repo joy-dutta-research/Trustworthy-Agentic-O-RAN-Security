@@ -1,13 +1,18 @@
 """Catalog-only tests: no asset downloads, traffic or experiment execution."""
 import copy
+from contextlib import redirect_stdout
+import io
 import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from check_release_assets import validate
+import check_release_assets as assets
 
 
 class AssetCatalogTests(unittest.TestCase):
@@ -56,6 +61,28 @@ class AssetCatalogTests(unittest.TestCase):
         for entry in self.catalog["assets"]:
             entry.update(download_url="https://example.org/" + entry["filename"], publication_status="published")
         self.assertEqual(validate(self.catalog, self.manifest, True)["status"], "CATALOG_VALID")
+
+    def test_command_reads_relocated_manifest(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            evidence = root / "evidence"
+            evidence.mkdir()
+            (evidence / "RELEASE_ASSETS.json").write_text(json.dumps(self.catalog), encoding="utf-8")
+            manifest_path = root / assets.MANIFEST_NAME
+            self.assertEqual(manifest_path.parent, root / "release")
+            manifest_path.parent.mkdir()
+            manifest_path.write_text(json.dumps(self.manifest), encoding="utf-8")
+            guide = []
+            for entry in self.catalog["assets"]:
+                guide.extend(["## " + entry["regeneration"]["guide_anchor"], entry["filename"]])
+                sidecar = root / (entry["relative_path"] + ".sha256")
+                sidecar.parent.mkdir(parents=True, exist_ok=True)
+                sidecar.write_text(entry["sha256"] + "  " + entry["filename"] + "\n", encoding="ascii")
+            (root / self.catalog["guide_path"]).write_text("\n\n".join(guide), encoding="utf-8")
+            output = io.StringIO()
+            with patch.object(assets, "ROOT", root), patch.object(sys, "argv", ["check_release_assets.py"]), redirect_stdout(output):
+                self.assertEqual(assets.main(), 0)
+            self.assertEqual(json.loads(output.getvalue())["status"], "PREPARED_LINKS_PENDING")
 
 
 if __name__ == "__main__":

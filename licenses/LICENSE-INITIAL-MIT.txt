@@ -3,7 +3,7 @@ Historical notice for the initial GitHub repository template only
 The following licence accompanied the initial README and repository template
 at commit b2459f379ce4d4b82a67c347965d0f8390faabe4. It is retained for those
 initial materials. The experimental software added later is Apache-2.0;
-see LICENSE and LICENSES.md for the component-specific terms.
+see ../LICENSE and LICENSES.md for the component-specific terms.
 
 MIT License
 

@@ -12,6 +12,8 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
+from verify_repository import MANIFEST_NAME
+
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {
     "evidence/raw_archives/university_windows_final.zip",
@@ -85,7 +87,7 @@ def main() -> int:
     args = parser.parse_args()
     try:
         catalog = json.loads((ROOT / "evidence/RELEASE_ASSETS.json").read_text(encoding="utf-8-sig"))
-        manifest = json.loads((ROOT / "REPOSITORY_MANIFEST.json").read_text(encoding="utf-8-sig"))
+        manifest = json.loads((ROOT / MANIFEST_NAME).read_text(encoding="utf-8-sig"))
         result = validate(catalog, manifest, args.require_published)
         guide = (ROOT / catalog["guide_path"]).read_text(encoding="utf-8-sig")
         anchors = {re.sub(r"[^a-z0-9 -]", "", heading.lower()).replace(" ", "-")

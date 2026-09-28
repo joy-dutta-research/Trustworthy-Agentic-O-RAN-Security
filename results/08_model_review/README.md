@@ -17,7 +17,7 @@ The reference labels are constructed labels under the stated policy, not indepen
 
 ## Recompute without calling a model
 
-From the repository root, with Python 3.10 or later:
+From the repository root, use Python 3.11 or later, as recommended for the other repository helpers:
 
 ```text
 python tools/analyze_model_reviews.py --check

@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 
 from packet_recompute_core import audit_run, check
-from verify_repository import digest_file
+from verify_repository import MANIFEST_NAME, digest_file
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = {"first": "packet_primary.zip", "repeat": "packet_repeat.zip"}
@@ -36,7 +36,7 @@ def main() -> int:
     args = parser.parse_args()
     root = args.root.resolve()
     try:
-        manifest = json.loads((root / "REPOSITORY_MANIFEST.json").read_text(encoding="utf-8"))["files"]
+        manifest = json.loads((root / MANIFEST_NAME).read_text(encoding="utf-8"))["files"]
         expected = json.loads((root / "evidence/summaries/packet_recomputation.json").read_text(encoding="utf-8"))
         runs = {}
         for label, filename in ASSETS.items():

@@ -3,7 +3,7 @@
   "status": "HISTORICAL_INITIAL_ASSEMBLY_INVENTORY",
   "scope": "This preserved inventory records the initial local assembly, before publication-material omissions and the documentation-only licence-notice revision. Its archive names, sizes and hashes are historical, not the current download identities.",
   "current_release_catalogue": "evidence/RELEASE_ASSETS.json",
-  "current_repository_manifest": "REPOSITORY_MANIFEST.json",
+  "current_repository_manifest": "release/REPOSITORY_MANIFEST.json",
   "revision_records": [
     "evidence/source_snapshots/PUBLIC_SOURCE_OMISSIONS.json",
     "evidence/ARCHIVE_NOTICE_REVISION.json"

@@ -35,7 +35,7 @@ Download only the assets needed for the inspection you want to perform. Keep the
 
 We retain `university` and `workstation` in historical filenames and JSON identifiers to protect their recorded identities. They mean **Workstation 1** and **Workstation 2**, respectively. Both packet VMs ran on Workstation 2, not one VM on each workstation.
 
-The [catalogue](RELEASE_ASSETS.json) gives the exact byte count and SHA-256 for every asset. These values also occur in the root repository manifest. For example, after placing the files, use PowerShell to inspect their hashes without extracting or executing them:
+The [catalogue](RELEASE_ASSETS.json) gives the exact byte count and SHA-256 for every asset. These values also occur in [the repository manifest](../release/REPOSITORY_MANIFEST.json). For example, after placing the files, use PowerShell to inspect their hashes without extracting or executing them:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath 'evidence/raw_archives/university_windows_final.zip'

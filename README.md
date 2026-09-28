@@ -1,83 +1,98 @@
-# Trustworthy Agentic O-RAN Security: Reproducible Proof of Concept
+# Trustworthy Agentic O-RAN Security
 
-This repository contains the proof of concept for **“Trustworthy Agentic O-RAN Security: From Threat Detection to Safe Action, Governance, and Standardization.”** The paper is **under review**. This PoC is an integral part of its evaluation. We will add the accepted paper's citation and link when they become available.
+## From a proposed response to an accountable action
 
-We provide the code, prepared case inputs, results and reading guides needed to inspect and reproduce the study. Original third-party datasets are obtained from their creators using our acquisition guide. We intentionally exclude the manuscript text, publication figures and direct reproductions of paper tables while the paper is under review.
+An alert arrives. A security system proposes limiting a source's traffic. **Is that action allowed, is intervention justified, and did it actually help?** These are different questions. Our proof of concept makes the checks explicit and leaves an evidence trail that readers can inspect and reproduce.
 
-## What this proof of concept contributes
+This repository accompanies **“Trustworthy Agentic O-RAN Security: From Threat Detection to Safe Action, Governance, and Standardization,”** currently **under review**. The PoC is an integral part of the paper's evaluation. We will add the accepted-paper citation when available. Manuscript text, publication figures and direct copies of paper tables are intentionally excluded; code, numerical evidence and repository-specific explanations are provided here.
 
-We separate security reasoning from the authority to change a network. Our implementation makes that separation concrete and examines three questions:
+**New here?** Start with the [findings in plain language](results/00_overview/README.md), then explore the [connection to our framework](paper/README.md). To work with the evidence, choose a route below.
 
-1. **May this action be executed?** A deterministic Trust Boundary checks the proposed action against an explicit operator policy.
-2. **Does the observed situation justify intervention?** Fresh, target-linked evidence helps distinguish sustained service impairment from a short benign burst.
-3. **Did the action produce the intended benefit?** Outcome feedback checks what happened and requests restoration or operator review when benefit is not observed.
+## What do Stages 0–7 mean?
 
-Dataset-grounded policy tests, processing-cost measurements and an isolated packet experiment examine these complementary responsibilities. The result is a reproducible illustration of selected framework services, rather than an implementation of every proposed agent.
+They are **eight evaluation steps**, numbered from zero: our plan for checking the proof of concept. They are not O-RAN architecture layers and not eight actions that run whenever an alert arrives.
 
-## Read the repository in this order
-
-| Step | Read | What you will understand |
+| Stage and simple name | What we check and why it matters | Open the evidence |
 |---|---|---|
-| 1 | [Study overview](docs/01_study_overview.md) | The research questions, the framework connection and the completed scope |
-| 2 | [Results overview](results/00_overview/README.md) | The main findings and where each comes from |
-| 3 | [Stage-by-stage results](results/README.md) | The experiment sequence, numerical outputs and interpretation |
-| 4 | [Model-assisted review](results/08_model_review/README.md) | How the two supplied model reviews interpreted the original policy cases |
-| 5 | [Reproduction guide](docs/03_reproduce.md) | How to verify evidence, rebuild result tables or run a new experiment |
-| 6 | [Research directions](docs/05_research_directions.md) | How the observations guide the next development and evaluation steps |
+| **0. Fix the starting point** | Record the baseline, code, inputs and environment so every later result is traceable. | [Baseline and provenance](results/00_overview/README.md) |
+| **1. Check the rules** | Compare four methods on 777 constructed cases to test whether the Trust Boundary enforces the stated policy. | [Policy conformance](results/01_policy_validity/README.md) |
+| **2. Vary the cases** | Use NetsLab-5GORAN-IDD and 5G-NIDD context with seeded panels to examine behavior beyond one small case set. | [Dataset coverage](results/02_dataset_robustness/README.md) |
+| **3. Vary the assumptions** | Change declared operator limits to make their effect on decisions and proposed actions visible. | [Policy sensitivity](results/03_sensitivity/README.md) |
+| **4. Measure the cost** | Measure local processing overhead to understand the cost of action verification. | [Processing cost](results/04_processing_cost/README.md) |
+| **5. Increase the workload** | Increase stored state and incoming requests to examine scaling and the prototype's operating limits. | [Scaling and load](results/05_scaling_and_load/README.md) |
+| **6. Observe packet consequences** | Use isolated real packets to distinguish action permission, intervention necessity and measured benefit. | [Packet feedback](results/06_packet_feedback/README.md) |
+| **7. Repeat in fresh environments** | Repeat Windows tests on a second physical host and the packet protocol in a clean VM on the same packet host. | [Reproducibility](results/07_reproducibility/README.md) |
 
-For the connection to our framework, start with [the research-to-evidence map](paper/README.md). For code, start with [the two preserved implementations](code/README.md). For detailed measurements and the six optional large archives, start with [the asset guide](evidence/ASSET_GUIDE.md).
+The logic is straightforward: establish a traceable starting point, check the rules and their robustness, measure the cost, observe packet consequences, then repeat the protocol. The [study overview](docs/01_study_overview.md) explains how each step supports the framework. The model-assisted review is a supplementary check of policy interpretation, **not Stage 8**.
 
-## What is included
+## What would you like to do?
 
-- Completed initial PoC **Stages 0–7**, including the two-dataset Windows evaluation and its second-physical-host reproduction.
-- A 36-episode controlled packet study and the same protocol repeated in a separately installed clean VM on **Workstation 2**.
-- Readable result tables, machine-readable CSV/JSON exports, measurement definitions and interpretation notes.
-- The supplied answer-masked model-assisted consistency review of the original 120-case suite, kept separate from the expanded experiments.
-- Preserved scientific source versions, configurations, seeds, public-data acquisition guidance, raw-evidence assets and provenance records.
-- Read-only verification and analysis tools, plus explicit instructions for new measurements in an authorized isolated environment.
+| I want to... | Start here | What I need |
+|---|---|---|
+| Understand the findings and their meaning | [Results overview](results/00_overview/README.md), followed by [the ordered results](results/README.md) | A browser |
+| Check the downloaded repository without running experiments | [Quick start below](#quick-start-check-the-repository-without-running-an-experiment) | Git access and Python 3.11 or newer |
+| Recalculate the saved packet outcomes | [Packet reanalysis](docs/03_reproduce.md#2-reanalyse-the-saved-packet-observations) | Python and the two matching packet archives from [the asset guide](evidence/ASSET_GUIDE.md) |
+| Run a new Windows evaluation, including the two-dataset checks, Stages 0–5 | [Dataset acquisition](data/README.md), [workspace preparation](docs/03_reproduce.md#3-prepare-a-fresh-scientific-workspace), then [Windows execution](docs/03_reproduce.md#4-windows-stages-05) | Windows, Python 3.12, both verified dataset inputs and a quiet host |
+| Repeat the packet experiment and clean-VM check, Stages 6–7 | [Isolated packet execution](docs/03_reproduce.md#5-packet-stage-6-in-an-authorized-disposable-ubuntu-vm), then [clean-environment repetition](docs/03_reproduce.md#6-clean-environment-stage-7) | An explicitly authorized, disposable Ubuntu VM and the documented isolation controls |
+| Inspect what the two model reviewers returned | [Model-assisted policy review](model_review/README.md) | A browser; Python for the offline comparison, with no API key |
 
-## Start without running an experiment
+Reading results, recalculating saved measurements and collecting new measurements are separate activities. The [complete reproduction guide](docs/03_reproduce.md) explains each route and the checks to complete before proceeding.
 
-Python 3.11 or newer is sufficient for the repository's read-only analysis tools. No model API key is needed.
+## What the evidence adds
+
+We separate security reasoning from the authority to change a network. Three complementary safeguards connect the experiments to the framework:
+
+1. **Permission:** a deterministic **Trust Boundary** checks a proposed action against an explicit operator policy.
+2. **Corroboration:** fresh, target-linked observations help distinguish sustained service impairment from a short benign burst.
+3. **Benefit:** outcome feedback checks whether the action helped and requests restoration or operator review when benefit is not observed.
+
+For the traffic-limiting example, permission alone cannot tell us whether the alert reflects a genuine service problem. Likewise, an accepted command cannot establish that service improved. The [controlled packet results](results/06_packet_feedback/README.md) make these distinctions tangible, alongside [policy conformance](results/01_policy_validity/README.md) and [processing-cost measurements](results/04_processing_cost/README.md).
+
+These eight evaluation steps are complete for the **initial PoC**. They include the two-dataset checks, Windows measurements on two physical workstations, and a 36-episode packet protocol repeated in a separately installed clean VM. Both packet VMs ran on **Workstation 2**, so that repeat is not a second physical-host packet experiment. The larger confirmatory packet study remains future work.
+
+The additional **answer-masked model-assisted consistency review** concerns the original 120 policy cases. Both supplied reviewers agreed with the reference decisions on all 120 cases. Their [responses, explanations and traceability differences](results/08_model_review/README.md) support policy interpretability, not certification of a runtime LLM or real-network safety.
+
+## Quick start: check the repository without running an experiment
+
+Clone the repository, then run these commands from its root. Python 3.11 or newer is sufficient; the read-only helpers use the standard library.
 
 ```text
+git clone https://github.com/joy-dutta/Trustworthy-Agentic-O-RAN-Security.git
+cd Trustworthy-Agentic-O-RAN-Security
 python tools/verify_repository.py --without-raw-assets
 python tools/build_result_views.py --check
 python tools/analyze_model_reviews.py --check
 ```
 
-These commands check the source-only checkout and its compact result views. The first command explicitly excludes the six large raw-evidence assets; it does not verify files that are absent. None of these commands creates VMs, generates traffic, downloads datasets or contacts a model. See [the asset guide](evidence/ASSET_GUIDE.md) for the difference between downloading public datasets, regenerating measurements and obtaining our exact saved evidence. Once all matching assets are present, run `python tools/verify_repository.py --deep-assets` for the full archive check. See [the reproduction guide](docs/03_reproduce.md) before using the separate experiment commands.
+The repository is currently private, so cloning requires an authorized GitHub account until its visibility changes. These commands check the source-only checkout and reproduce the compact result views in memory. They do not create VMs, generate traffic, download datasets or contact a model. The first check explicitly reports any of the six large evidence archives that are absent; it does not verify missing files.
 
-The [verification record](VALIDATION.md) lists the completed checks and their boundaries.
+To inspect our exact saved measurements, obtain the required archives using [the asset guide](evidence/ASSET_GUIDE.md). All six are available in our [read-only evidence folder](https://drive.google.com/drive/folders/1vaiQhjLWn-viAMDSxuBOzmFYOnNER1jP?usp=sharing), with an [accompanying README](https://drive.google.com/file/d/1XG_CpFmeNoJiUm7IOpQz0bhVa_5L0-Hi/view?usp=drivesdk). Keep their recorded filenames and verify their hashes. With all matching assets present, `python tools/verify_repository.py --deep-assets` checks the archived members as well.
 
-## Where we ran the experiments
+**Dataset inputs and saved evidence are different.** Downloading the original datasets supports new runs; it cannot recreate our past timing or packet observations. Raw third-party datasets are obtained from their creators using [the data guide](data/README.md), not redistributed as original datasets here.
 
-We use **Workstation 1** and **Workstation 2** consistently in the reader-facing guides. Workstation 1 is a Dell Pro 14 Premium PA14250 with an Intel Core Ultra 7 268V and 32 GB RAM. Workstation 2 is an HP Omen 16 with an Intel Core i9-13900HX and 64 GB DDR5 RAM. Both ran the Windows experiments; the two isolated Ubuntu packet VMs ran on Workstation 2. These computations did not use GPU acceleration. [The environment record](docs/04_provenance_and_scope.md) gives the relevant specifications and maps these names to unchanged historical identifiers.
+## Find your way around
 
-## How to read the findings
-
-The strongest conclusion is that **policy permission, incident corroboration and measured effectiveness provide complementary safeguards**. Policy-conformance results describe agreement with the frozen reference policy. Packet results describe controlled episode outcomes. Performance results describe the stated local processing or scheduled-arrival boundary. Model review describes consistency with a supplied policy, not an LLM operating the network.
-
-Every result family explains its denominator, units, host/VM identity and interpretation. All tested conditions are retained. Observed operating limits guide the next engineering steps; capabilities not yet evaluated are clearly identified as future work. The larger confirmatory packet study remains outside the completed initial PoC.
-
-## Repository and evidence layout
-
-| Folder | Purpose |
+| Folder | What it contains |
 |---|---|
-| [paper/](paper/README.md) | Paper status and research-to-evidence map, without manuscript text or publication displays |
-| [docs/](docs/README.md) | Plain-language study, method, reproduction and development guides |
-| [results/](results/README.md) | Ordered final results with tables, CSV/JSON data and explanations |
-| [model_review/](model_review/README.md) | Review materials, supplied model responses and post-review comparison inputs |
-| [code/](code/README.md) | Browsable, separately identified Windows and packet-v7 implementations |
-| [data/](data/README.md) | Dataset sources, input identities and acquisition instructions |
-| [evidence/](evidence/README.md) | Source snapshots, summaries and documented raw-evidence archives |
-| [tools/](tools/README.md) | Verification, analysis and fresh-workspace preparation tools |
-| [tests/](tests/README.md) | Tests of this publication/reproduction layer |
+| [docs/](docs/README.md) | Study questions, methods, reproduction instructions, environments and research directions |
+| [results/](results/README.md) | Ordered findings, interpretation notes and numerical CSV/JSON exports |
+| [code/](code/README.md) | Separately identified, preserved Windows and packet implementations |
+| [data/](data/README.md) | Official dataset sources, exact input identities and acquisition instructions |
+| [evidence/](evidence/README.md) | Source snapshots, saved summaries, companion-archive links and provenance |
+| [model_review/](model_review/README.md) | Original reviewer inputs, supplied responses and post-review comparison materials |
+| [tools/](tools/README.md) | Read-only verification, reanalysis and fresh-workspace preparation helpers |
+| [tests/](tests/README.md) | Tests for this repository's reproduction and publication helpers |
+| [paper/](paper/README.md) | Paper status and the research-to-evidence map, without manuscript content |
+| [licenses/](licenses/README.md) | Software, documentation and third-party reuse terms and attribution |
+| [release/](release/README.md) | Verification records, integrity manifest, Git file selection and release checklist |
+| [.github/](.github/GUIDE.md) | Contribution and safety rules, plus the scope of automated software checks |
 
-Every authored folder includes a Markdown guide. Historical files inside preserved archives remain identifiable as historical evidence. Generated working directories and Git internals are not part of the reading path.
+Each authored folder has a Markdown guide explaining its purpose and next steps. Preserved historical instructions are provenance: use the current reproduction guide to select what to run.
 
-## Paper, citation and release
+## Environments, interpretation and responsible use
 
-We maintain the software at [Trustworthy-Agentic-O-RAN-Security](https://github.com/joy-dutta/Trustworthy-Agentic-O-RAN-Security) under Joy Dutta's GitHub account. The paper is under review, so the software citation does not stand in for an accepted-paper citation. See [paper status](paper/PAPER_STATUS.md), [citation metadata](CITATION.cff), [licensing](LICENSES.md), [safe use](SECURITY.md) and [the release checklist](RELEASE_CHECKLIST.md). Repository access and companion-asset access are separate; a working evidence link does not imply that the GitHub repository is publicly visible.
+**Workstation 1** is a Dell Pro 14 Premium PA14250 with an Intel Core Ultra 7 268V and 32 GB RAM. **Workstation 2** is an HP Omen 16 with an Intel Core i9-13900HX and 64 GB DDR5 RAM. Both ran the Windows evaluation; Workstation 2 hosted both isolated Ubuntu packet VMs. These computations did not use GPU acceleration. [Environment and provenance details](docs/04_provenance_and_scope.md) preserve versions and the mapping to historical identifiers.
 
-The six large raw-evidence archives are excluded from ordinary Git history and are available in our [read-only evidence folder](https://drive.google.com/drive/folders/1vaiQhjLWn-viAMDSxuBOzmFYOnNER1jP?usp=sharing). Start with its [README](https://drive.google.com/file/d/1XG_CpFmeNoJiUm7IOpQz0bhVa_5L0-Hi/view?usp=drivesdk), then use [the asset guide](evidence/ASSET_GUIDE.md) for individual links, destinations and checksum checks. Public dataset links support new runs, but they cannot replace our exact saved timing or packet observations. A source-only clone can read compact results and run software checks; reanalysis of every saved measurement additionally requires the matching evidence assets.
+Every result family states its units, denominator and host or VM identity. We retain all tested conditions, including operating limits that guide [future development](docs/05_research_directions.md). These experiments support selected verification, enforcement, feedback and audit responsibilities. They do not establish production O-RAN integration, detector accuracy or an evaluated runtime LLM. Integrity checks establish file identity; they do not by themselves demonstrate scientific improvement.
+
+The package is maintained by **Joy Dutta**. See [citation metadata](CITATION.cff), [licensing and attribution](licenses/README.md), [completed verification](release/VALIDATION.md), [safe use](.github/SECURITY.md) and [contribution guidance](.github/CONTRIBUTING.md). Execute packet experiments only in an explicitly authorized isolated laboratory. Repository visibility, evidence-download access and paper acceptance are separate statuses.

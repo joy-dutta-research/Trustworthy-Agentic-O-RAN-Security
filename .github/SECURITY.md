@@ -1,5 +1,7 @@
 # Safe use and reporting
 
+Start with the [reproduction guide](../docs/03_reproduce.md) for supported commands and use the safeguards below for any new experiment.
+
 ## Default: read and analyse
 
 Repository verification, result-view generation and saved-evidence analysis are local operations. They do not need a model API key, network credentials, a VM or administrator privileges.

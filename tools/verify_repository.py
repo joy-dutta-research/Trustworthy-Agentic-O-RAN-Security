@@ -17,7 +17,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 IGNORED_DIRS = {".git", "__pycache__", ".venv", "work", "validation_work", "dist"}
-MANIFEST_NAME = "REPOSITORY_MANIFEST.json"
+MANIFEST_NAME = "release/REPOSITORY_MANIFEST.json"
+GIT_FILE_LIST_NAME = "release/GIT_FILE_LIST.txt"
 ASSET_PREFIXES = ("evidence/raw_archives/", "evidence/history/")
 WINDOWS_RESERVED = {"con", "prn", "aux", "nul"} | {
     f"{prefix}{number}" for prefix in ("com", "lpt") for number in range(1, 10)
@@ -69,6 +70,8 @@ def repository_files(root: Path) -> dict[str, Path]:
             continue
         if path.is_symlink():
             raise ValueError(f"Repository symlink not permitted: {relative}")
+        # Exclude only this exact repository-relative path, not every file
+        # sharing its basename. A manifest cannot include its own digest.
         if path.is_file() and relative.as_posix() != MANIFEST_NAME:
             found[relative.as_posix()] = path
     return found
@@ -83,6 +86,35 @@ def folder_guidance(root: Path) -> list[str]:
         if not any(p.is_file() and p.suffix.lower() == ".md" for p in folder.iterdir()):
             missing.append(relative.as_posix())
     return missing
+
+
+def landing_page(root: Path) -> list[str]:
+    """Enforce this repository's single, unambiguous GitHub landing page.
+
+    The root README.md is the entry point. GitHub can prefer a .github README
+    over it, so immediate .github guidance uses GUIDE.md instead. Conservatively
+    reject every README or README.* alias in those two locations, except the
+    exact root README.md. Folder READMEs below them remain welcome.
+    """
+    errors = []
+    root_files = [path for path in root.iterdir() if path.is_file()]
+    if not any(path.name == "README.md" for path in root_files):
+        errors.append("Landing page: root README.md is required (exact filename)")
+    for folder in (root, root / ".github"):
+        if not folder.is_dir():
+            continue
+        for path in folder.iterdir():
+            name = path.name.casefold()
+            if not path.is_file() or not (name == "readme" or name.startswith("readme.")):
+                continue
+            if folder == root and path.name == "README.md":
+                continue
+            relative = path.relative_to(root).as_posix()
+            if folder == root:
+                errors.append("Landing page: competing root README is not permitted: " + relative)
+            else:
+                errors.append("Landing page: .github README can shadow the root README; use GUIDE.md: " + relative)
+    return errors
 
 
 def local_links(root: Path) -> list[str]:
@@ -164,6 +196,7 @@ def verify(root: Path, without_raw_assets: bool = False) -> dict:
             failures.append("Changed: " + name)
     failures += ["Unmanifested: " + name for name in sorted(set(actual) - set(expected))]
     failures += ["Folder lacks Markdown guidance: " + name for name in folder_guidance(root)]
+    failures += landing_page(root)
     failures += local_links(root)
     return {
         "status": "FAIL" if failures else ("PARTIAL_SOURCE_CHECK" if skipped else "PASS"),

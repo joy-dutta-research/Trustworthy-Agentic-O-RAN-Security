@@ -32,17 +32,17 @@ The completed checks and their limits are recorded in [VALIDATION.md](VALIDATION
 
 The repository's build/verification receipts record the checks actually performed. Unchecked author-review items are retained honestly; technical checks cannot certify institutional rights or substitute for final author review. They are not missing experimental results. The larger confirmatory study remains future work, not a release prerequisite for the completed initial PoC.
 
-Dataset source links are sufficient for acquiring the experimental inputs, but not for downloading our earlier measurements. The latter require the six companion assets. Our [asset guide](evidence/ASSET_GUIDE.md) also explains how to produce new observations when historical raw-evidence inspection is not needed.
+Dataset source links are sufficient for acquiring the experimental inputs, but not for downloading our earlier measurements. The latter require the six companion assets. Our [asset guide](../evidence/ASSET_GUIDE.md) also explains how to produce new observations when historical raw-evidence inspection is not needed.
 
 ## Preparing an approved Git index
 
-`GIT_FILE_LIST.txt` is the explicit list of source-repository files. It excludes the six large raw/history evidence ZIPs; those belong to matching companion release assets. Review this list and verify the complete local artifact before staging.
+`release/GIT_FILE_LIST.txt` is the explicit list of source-repository files. It excludes the six large raw/history evidence ZIPs; those belong to matching companion release assets. Review this list and verify the complete local artifact before staging. Run the commands below from the repository root, not from this folder.
 
 The browsable frozen source preserves its historical `.gitignore`. That file ignores three shipped acquisition-metadata/documentation files under `code/windows_frozen/data/raw/`. Ordinary `git add .` would silently omit them. Use the reviewed exact allowlist when preparing a fresh repository:
 
 ```text
 git init
-git add -f --pathspec-from-file=GIT_FILE_LIST.txt
+git add -f --pathspec-from-file=release/GIT_FILE_LIST.txt
 git diff --cached --stat
 ```
 

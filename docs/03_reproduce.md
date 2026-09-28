@@ -14,7 +14,7 @@ python tools/analyze_model_reviews.py --check
 
 After obtaining all matching raw-evidence assets, `python tools/verify_repository.py --deep-assets` streams their archive members through the recorded hashes. It needs no VM and changes no files, but reads several gigabytes of uncompressed evidence.
 
-The first command checks the source-only distributed files, documented folders and links, explicitly excluding the six large raw-evidence assets. The next two rebuild the compact result views in memory and compare them with the saved exports. These are integrity/transcription checks, not new scientific runs.
+The first command checks the distributed files, documented folders and links. It permits any of the six large evidence archives to be absent and lists each missing asset explicitly; archives already present are still checked. The next two commands rebuild the compact result views in memory and compare them with the saved exports. These are integrity/transcription checks, not new scientific runs.
 
 The [asset guide](../evidence/ASSET_GUIDE.md) describes all six excluded archives, their exact locations and reproduction routes. Public dataset downloads support new experiments, but do not replace our saved measurements. Obtain the matching evidence assets before reanalysing those saved measurements. Never interpret a source-only check as verification of absent measurements.
 
@@ -24,7 +24,7 @@ The [asset guide](../evidence/ASSET_GUIDE.md) describes all six excluded archive
 python tools/recompute_packet_evidence.py
 ```
 
-This reads the two packaged packet-evidence ZIPs and recomputes cohort delivery, goodput, received-only RTT and paired contrasts. It does not extract scripts or generate traffic. It prints a concise outcome; optional output must go to a new path outside the frozen evidence. Read [the metric definitions](02_methods_and_metrics.md) before comparing the results.
+This reads the two packaged packet-evidence ZIPs and recomputes cohort delivery, goodput, received-only RTT and paired contrasts. It does not extract scripts or generate traffic. It prints a concise outcome to the terminal. If you save that output, use a new file outside the frozen evidence. Read [the metric definitions](02_methods_and_metrics.md) before comparing the results.
 
 Windows request/arrival/completion files and the original analysis implementations are also retained in the raw assets and code snapshots. The saved result-view generator reads the supplied cross-host analysis: it does not claim to freshly recompute every request-level Windows statistic. The earlier evidence review recalculated 24 selected raw Windows cells. Preserve this distinction when describing verification.
 
@@ -47,7 +47,7 @@ To prepare Windows full regeneration with already acquired inputs, use a **new**
 python tools/prepare_workspace.py --kind windows --destination work/windows_full --netslab-db "PATH_TO_Lower_Layer_Data.db" --nidd-zip "PATH_TO_Combined.zip"
 ```
 
-Replace both `PATH_TO_...` values with your actual files. The helper verifies their exact scientific identities before copying. Original frozen acquisition metadata remains historical provenance; a new preparation receipt records the current import separately. See [data acquisition](../data/README.md). Raw third-party datasets are not redistributed with this draft.
+Replace both `PATH_TO_...` values with your actual files. The helper verifies their exact scientific identities before copying. Original frozen acquisition metadata remains historical provenance; a new preparation receipt records the current import separately. See [data acquisition](../data/README.md). Raw third-party datasets are not redistributed with this package.
 
 ## 4. Windows Stages 0–5
 
@@ -115,7 +115,7 @@ The Windows cross-host reproduction is the other Stage 7 component. Keep its hos
 
 ## 7. Model-assisted consistency review
 
-The supplied original outputs can be analysed offline without an API key. Follow [model_review/README.md](../model_review/README.md) to understand the blinding and the post-review mapping. If conducting a new review, use fresh independent conversations, record actual model/settings metadata and preserve original responses. Do not provide completed answers or the post-review mapping to a new blinded reviewer. A new review is a new result, not a replacement for the supplied one.
+The supplied original outputs can be analysed offline without an API key. Follow [model_review/README.md](../model_review/README.md) to understand the answer masking and the post-review mapping. If conducting a new review, use fresh independent conversations, record actual model/settings metadata and preserve original responses. Do not provide completed answers or the post-review mapping to a new answer-masked reviewer. A new review is a new result, not a replacement for the supplied one.
 
 ## Record and interpret a new reproduction
 
