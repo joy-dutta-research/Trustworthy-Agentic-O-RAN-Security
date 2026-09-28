@@ -154,6 +154,8 @@ Integrity checks establish file identity. Software tests and reproducible calcul
 
 Repository maintained by **Joy Dutta**.
 
+**Paper title:** Trustworthy Agentic O-RAN Security: From Threat Detection to Safe Action, Governance, and Standardization.
+
 **Authors of the accompanying paper**, in manuscript order:
 
 Hossien B. Eldeeb, Samara Mayhoub, Joy Dutta, Ali Ismail Awad, Ezedin Barka, and Hassnaa Moustafa.
