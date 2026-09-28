@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-09-24T18:04:51.497866+00:00",
+  "execution_status": "COMPLETE_INITIAL_POC_SCOPE",
+  "evidence_integrity": "PACKET_RAW_AUDIT_AND_WINDOWS_COMPACT_VALIDATION_PASSED",
+  "scientific_findings": "Descriptive pilot and reproducibility evidence; all outcomes retained, including negative findings.",
+  "orders": {
+    "0": "Fresh destination baseline complete; original university baseline preserved",
+    "1": "777 common validity cases regenerated and evaluated",
+    "2": "NetsLab and full 5G-NIDD census/panels regenerated; 120777 total constructed cases matched",
+    "3": "All 12 frozen sensitivity conditions complete",
+    "4": "Verified workload regeneration and fixed performance design executed",
+    "5": "All 1820 final performance cells complete; 84 instrumentation cells excluded",
+    "6": "36-episode exploratory packet PoC complete and raw-verified; broader confirmatory study deferred",
+    "7": "36-episode same-hardware clean-VM repeat and Windows cross-host compact comparison complete; not independent third-party or second-hardware packet validation"
+  },
+  "first_packet_verification": "[WORKSTATION_REPOSITORY]\\results\\local\\stage6_returns\\transport7_20260924T140451Z\\VERIFICATION.json",
+  "clean_repeat_verification": "[WORKSTATION_REPOSITORY]\\results\\local\\stage6_returns\\poc_repeat7_31133395\\VERIFICATION.json",
+  "windows_orchestration": "[WORKSTATION_REPOSITORY]\\results\\local\\workstation_runs\\orchestration_20260924T160216Z_136ad8d2\\FINAL.json",
+  "windows_comparison": "results/local/workstation_runs/comparison_20260924T160216Z_136ad8d2",
+  "all_attempts_preserved": true,
+  "privacy_review": "PENDING_OWNER_REVIEW",
+  "shareable_return_zip": "NOT_CREATED",
+  "full_confirmatory_study": "DEFERRED_NOT_COMPLETE"
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "population": "5G-NIDD census",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 733693,
+    "complete_audit_fields": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/census/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "5G-NIDD census",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 733693,
+    "complete_audit_fields": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/census/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "5G-NIDD census",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 733693,
+    "complete_audit_fields": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/census/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "5G-NIDD census",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 733693,
+    "complete_audit_fields": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 733693,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 733693,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 733693,
+      "numerator": 733693,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/census/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/conformance/overall/direct"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/conformance/overall/contract"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "5G-NIDD panels",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels/groups/false_alarm_probes/overall/trust_boundary"
+  }
+]

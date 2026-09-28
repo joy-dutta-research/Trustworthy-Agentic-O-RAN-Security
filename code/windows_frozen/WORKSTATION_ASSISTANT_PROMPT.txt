@@ -1,0 +1,126 @@
+Continue my trustworthy O-RAN action-gateway research on this workstation.
+The extracted oran-workstation-lab folder is the project. I intend to finish
+an entire fresh Orders 0-7 campaign here and return an auditable result ZIP to
+the original task, allowing comparison with completed university Orders 0-5.
+Do not rely on access to that conversation. Read the local handoff documents.
+
+FIRST: Read WORKSTATION_START_HERE.md, docs/WORKSTATION_CONTEXT.md,
+docs/WORKSTATION_FULL_CAMPAIGN.md, docs/WORKSTATION_STAGE6_FINALIZATION.md,
+docs/WORKSTATION_REPRODUCTION.md,
+docs/WORKSTATION_BEFORE_YOU_SLEEP.md, WORKSTATION_RETURN_SCHEMA.md and SECURITY.md.
+Inspect relevant source before
+execution. Verify the delivered ZIP checksum, then run the source-tree verifier
+using a trusted Python 3.11+ interpreter. Report package integrity and actual
+host/OS/virtualization/disk/tool capabilities. If local terminal/workspace tools
+are unavailable, tell me; an uploaded ZIP alone is not machine access.
+
+SCOPE: Orders 0-5 are completed historical evidence. Preserve the original
+policy and core implementation, frozen derived cases, all original reports,
+and the reference capsule. In particular, keep the known rollback_policy
+protected-service limitation unchanged. Do not choose samples, alter policy,
+or tune final settings to manufacture positive results. No model API is needed.
+I requested GPT-6 Astra with Ultra if actually available; record what was used,
+without claiming that the coding assistant is an evaluated experimental agent.
+
+SAFETY: I have administrative access, but do not treat this as blanket approval
+to change the host. Read-only inventory and project-local work are authorized.
+Ask before Windows feature/firmware changes, installation, reboot, privileged
+resource creation, or any connectivity change. Never disable security controls,
+expose RDP/SSH, bridge the lab to a real network, use host/production interfaces,
+run on real O-RAN equipment, or format an existing disk. Use only a NEW isolated
+Ubuntu VM and uniquely owned lab namespaces. I enter passwords privately.
+Windows host access does not imply guest console access. Pause for my console
+input when necessary; do not weaken isolation to gain convenience.
+
+AWAKE SETUP FIRST: Before long experiments, follow WORKSTATION_BEFORE_YOU_SLEEP.md.
+Inspect the host, ask for all currently known scoped setup/VM/run approvals
+together, and complete installation, any reboot, guest console credentials,
+offline deployment/collection and qualification/pilot steps while I am present.
+Prioritize the interactive work for Orders6-7; do not leave VM setup until after
+hours of Windows benchmarking. Freeze the final packet protocol and resolve its
+remaining author/budget choices before I leave. Prove an owner-free guest run
+AND collection path, or tell me precisely why unattended completion is not yet
+possible. Record UNATTENDED_READINESS.json honestly; admin access is not proof.
+Do not promise no further input if a new permission/safety issue appears. When
+ready, run authorized work serially; packet final/repeat may come first if ready,
+and Windows benchmarks must run with Ubuntu stopped. Final comparison closes
+only after its evidence exists. Ask me to review results before export/upload.
+
+ORDERS 0-5: Use Windows on this new workstation, NOT Ubuntu, so the primary
+comparison does not also change the OS/virtualization environment. Import the
+separate private dataset companion with workstation_data.py after verifying its
+checksum. It contains the exact extracted NetsLab database and 5G-NIDD Combined
+archive; do not download or transfer the 24 GB parent archive unnecessarily.
+Follow WORKSTATION_FULL_CAMPAIGN.md and workstation_campaign.py --plan, then
+explicit --execute. This creates a new baseline, verifies/regenerates NetsLab
+aggregate context, regenerates the validity/NetsLab cases, evaluates the complete
+5G-NIDD eligible census, regenerates all 20 panels, repeats the 12 sensitivity
+conditions and prepares workloads. Compare regenerated case and workload hashes
+against the supplied frozen inputs; preserve and investigate discrepancies.
+Run the declared instrumentation pilots and ALL 1,820 final Windows performance
+cells once using workstation_reproduce.py --execute --phase performance
+--quiet-host-confirmed. Its separate frozen-case replay is a recommended extra
+integrity check, optional when the full-campaign analysis verifies regeneration.
+Do not duplicate this several-hour performance campaign under a Stage7 label.
+If raw inputs are unavailable, distinguish the replay-only fallback from the
+requested full regeneration; do not claim full Orders0-5 completion.
+
+ORDER 6: Follow the Stage6 finalization guide. Extract the nested pilot ZIP to
+a fresh SIBLING guest-workspace outside the outer source tree. Use its existing
+safe Hyper-V, authenticated Ubuntu-media and offline transfer helpers, subject
+to my approvals. Keep all helper invocations anchored to that one child folder.
+Run integrity/tests, physical actuator/topology qualification, then the existing
+36-episode pilot. Retain all raw observations, failures and qualification logs.
+
+The supplied packet harness is pilot-only. After technical qualification,
+implement a SEPARATE VERSIONED final-study harness in a separate guest source
+copy, preserving original gateway/core/policy. This scoped development is
+authorized: workload-factor variation, actual study-bottleneck qualification,
+paired randomized method order, narrowly scoped wrong-target harmful-actuation
+fault plus independently measured rollback/recovery, bounded resource guards,
+and final analysis/export. Add tests for changes. Do not edit original
+integrity manifests to bless modified code. Build a new source release with
+its own checksum, source snapshot and fresh qualification. Keep development,
+pilot and final attempts separate.
+
+Before final measurement, write an immutable protocol with all workload cells,
+seed blocks, primary outcomes, comparisons, windows, uncertainty method,
+technical-invalidity/censoring rules and a FIXED replication/runtime budget
+informed by the technical pilot. Show me the scope, time/disk estimate and any
+scientific choices needing author approval. Do not repeatedly inspect final
+outcomes and stop when favorable. Negative or inconclusive results are valid.
+Use no_action, fixed_rule, current_gate and evidence_feedback on matched
+workloads; all share containment and TTL backstops. The controller must not see
+true scenario labels, fault flags, seeds as labels, or future schedules.
+
+ORDER 7: Close the clean-transfer and comparison checks. With Ubuntu stopped,
+verify the outer source tree and run its tests. Confirm that Orders0-5 produced
+fresh complete evidence for ALL 120,777 regenerated cases and 1,820 performance
+cells (84 pilots excluded). Record whether the optional separate replay was run.
+If already done, do not repeat that performance run. Never select favorable cells.
+Preserve failed attempts and pause on disagreements. Use a new transfer baseline;
+do not relabel it as the original Stage0. Do not pool timings across machines.
+The full campaign regenerates the raw-input census; the smaller replay-only
+fallback does not. Label the actual mode explicitly.
+Also perform a clean-source/clean-state repeat of the frozen final Stage6
+protocol, preferably in a separately created isolated VM after my approval.
+Call this same-hardware clean-environment reproducibility, not independent
+third-party or second-hardware packet validation. Keep the first run and repeat.
+
+RETURN: Follow WORKSTATION_RETURN_SCHEMA.md. Import every Stage6 attempt and
+versioned source/protocol into the outer results/local/stage6_runs or
+results/local/stage6_returns, retaining raw guest-return ZIPs. Keep Stage7
+session indexes, ALL s7_* and newly generated stage0_* result directories.
+Also retain ALL full_* partitions and results/local/full_campaign_runs sessions,
+including technical pilots, failures and regenerated inputs. Do not send raw
+third-party input archives back unnecessarily; their hashes identify the input.
+Produce an evidence-based STATUS.json, readable REPORT.md, cross-host comparison
+and limitations. Compare counts/source identities; report timings and overload
+separately per host. If unfinished, explicitly list missing work. Never infer
+success from a return ZIP or a zero-exit-code exporter.
+
+After I review logs for privacy, run the bounded return exporter with
+--reviewed-for-sharing, verify the output ZIP and give me it and its SHA-256.
+Do not upload, publish, commit, delete old results or include private credentials,
+VM disks, home folders, raw dataset archives or manuscript PDFs. Maintain concise
+progress updates and stop for my input only when genuinely needed.

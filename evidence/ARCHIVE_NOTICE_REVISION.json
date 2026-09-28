@@ -1,0 +1,110 @@
+{
+  "operation": "self_contained_notices_in_generated_root_readmes_only",
+  "experiments_rerun": false,
+  "source_notice_sha256": "adbf864c338f0b188d3a832c6bd5ae7a3bc7f7704a7304a959cb826793bce134",
+  "existing_software_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "status": "PASS",
+  "archives": [
+    {
+      "filename": "university_windows_final.zip",
+      "relative_path": "evidence/raw_archives/university_windows_final.zip",
+      "old_bytes": 668076956,
+      "old_sha256": "f31e621ab9202a188b8f223f554e45827916b0d5e7d0bdee6d319f01900c152e",
+      "new_bytes": 668122071,
+      "new_sha256": "5121d903f9e5fe31bfaba42360ea26bcb2d820e9dddad1465435d3e66a8ac2c2",
+      "modified_members": [
+        "README.md"
+      ],
+      "scientific_members_byte_identical": 11518,
+      "all_other_members_byte_identical": 13411,
+      "public_manifest_byte_identical": true,
+      "added_readme_count_unchanged": 1893,
+      "validation": "PASS"
+    },
+    {
+      "filename": "workstation_windows_final.zip",
+      "relative_path": "evidence/raw_archives/workstation_windows_final.zip",
+      "old_bytes": 667398951,
+      "old_sha256": "3fee6886bc302b61e0fa5875d77940ad1860ef7b6a522c4032b4e5b424448599",
+      "new_bytes": 667443976,
+      "new_sha256": "e10c66e9acb31b74a2401240caf8a4adca6c6b9e22953c9f4d68b77326fdb6a9",
+      "modified_members": [
+        "README.md"
+      ],
+      "scientific_members_byte_identical": 11497,
+      "all_other_members_byte_identical": 13386,
+      "public_manifest_byte_identical": true,
+      "added_readme_count_unchanged": 1889,
+      "validation": "PASS"
+    },
+    {
+      "filename": "packet_primary.zip",
+      "relative_path": "evidence/raw_archives/packet_primary.zip",
+      "old_bytes": 3875376,
+      "old_sha256": "76522a459422d922415ca574d58e9bc5258a6856ef7c489c8b025ef0564eaa36",
+      "new_bytes": 3883599,
+      "new_sha256": "f2b300ef848fd4640ad5888b914e401f32a692a0598ba3aa62b9c70a10b43452",
+      "modified_members": [
+        "README.md"
+      ],
+      "scientific_members_byte_identical": 563,
+      "all_other_members_byte_identical": 611,
+      "public_manifest_byte_identical": true,
+      "added_readme_count_unchanged": 48,
+      "validation": "PASS"
+    },
+    {
+      "filename": "packet_repeat.zip",
+      "relative_path": "evidence/raw_archives/packet_repeat.zip",
+      "old_bytes": 3785550,
+      "old_sha256": "9b178944c42fa68299b37f60be7d1cf4c7d02dc48080ed7e73b4d35844692ccb",
+      "new_bytes": 3793773,
+      "new_sha256": "cf845867514a07a03759b849b70ec1b578451ea345a26de33dad3519d0d78e02",
+      "modified_members": [
+        "README.md"
+      ],
+      "scientific_members_byte_identical": 560,
+      "all_other_members_byte_identical": 608,
+      "public_manifest_byte_identical": true,
+      "added_readme_count_unchanged": 48,
+      "validation": "PASS"
+    },
+    {
+      "filename": "campaign_provenance.zip",
+      "relative_path": "evidence/raw_archives/campaign_provenance.zip",
+      "old_bytes": 636572,
+      "old_sha256": "875694a62357249bcb1a76ab6c3d8d81c4f6d231e8c154cacb907b623f296a77",
+      "new_bytes": 644161,
+      "new_sha256": "52d08247c1a9d131f72cf9b3f61d5409f489dd96a5d577d0930857655864c3a1",
+      "modified_members": [
+        "README.md"
+      ],
+      "scientific_members_byte_identical": 111,
+      "all_other_members_byte_identical": 128,
+      "public_manifest_byte_identical": true,
+      "added_readme_count_unchanged": 17,
+      "validation": "PASS"
+    },
+    {
+      "filename": "packet_development_context.zip",
+      "relative_path": "evidence/history/packet_development_context.zip",
+      "old_bytes": 5821548,
+      "old_sha256": "8115b34e55213abece1d697525092daffd00cd93671cd5b9a1eddb20bd7c4934",
+      "new_bytes": 5830676,
+      "new_sha256": "37c7cf9c98bc8c9b02c434fe2fff3cf3fc6ec48a21cdc37664641aa37bdd1378",
+      "modified_members": [
+        "README.md"
+      ],
+      "scientific_members_byte_identical": 789,
+      "all_other_members_byte_identical": 882,
+      "public_manifest_byte_identical": true,
+      "added_readme_count_unchanged": 93,
+      "validation": "PASS"
+    }
+  ],
+  "scientific_members_byte_identical": 25038,
+  "all_other_members_byte_identical": 29026,
+  "old_total_bytes": 1349594953,
+  "new_total_bytes": 1349718256,
+  "original_archives_preserved_privately": true
+}

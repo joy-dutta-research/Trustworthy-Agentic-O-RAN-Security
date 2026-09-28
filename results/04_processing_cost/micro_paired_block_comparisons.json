@@ -1,0 +1,1922 @@
+[
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        52855.0,
+        54148.8125
+      ],
+      "draws": 2500,
+      "maximum": 57800.0,
+      "mean": 53467.5,
+      "minimum": 50500.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        63.264826388888885,
+        67.19032118055556
+      ],
+      "draws": 2500,
+      "maximum": 73.25,
+      "mean": 65.31284722222222,
+      "minimum": 55.0
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/0"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        97454.34999999998,
+        104046.49374999995
+      ],
+      "draws": 2500,
+      "maximum": 126604.99999999993,
+      "mean": 100392.49999999997,
+      "minimum": 91200.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        75.5576575424575,
+        88.42680913461534
+      ],
+      "draws": 2500,
+      "maximum": 106.5041666666666,
+      "mean": 82.21976731601728,
+      "minimum": 48.09761904761901
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/1"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        194413.0025000001,
+        217899.3062500001
+      ],
+      "draws": 2500,
+      "maximum": 267312.00000000023,
+      "mean": 205794.95000000013,
+      "minimum": 157511.00000000023
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        86.40923322195138,
+        111.35641951049502
+      ],
+      "draws": 2500,
+      "maximum": 151.66800000000003,
+      "mean": 98.98657332430642,
+      "minimum": 33.06468750000005
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/2"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        40235.0,
+        41565.0
+      ],
+      "draws": 2500,
+      "maximum": 45000.0,
+      "mean": 40857.5,
+      "minimum": 38500.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.973152462082237,
+        4.114590978429135
+      ],
+      "draws": 2500,
+      "maximum": 4.37984496124031,
+      "mean": 4.04274159237906,
+      "minimum": 3.7816901408450705
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/3"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        78433.88749999997,
+        85212.88124999998
+      ],
+      "draws": 2500,
+      "maximum": 106504.99999999993,
+      "mean": 81481.99999999997,
+      "minimum": 69204.99999999993
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        4.828458485218468,
+        5.415983119773162
+      ],
+      "draws": 2500,
+      "maximum": 6.2549723756905955,
+      "mean": 5.130786221880042,
+      "minimum": 3.276480263157892
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/4"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        154907.67750000008,
+        177778.64375000008
+      ],
+      "draws": 2500,
+      "maximum": 218611.0000000002,
+      "mean": 165722.90000000008,
+      "minimum": 127211.00000000023
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        4.6475475940676905,
+        5.715711545249161
+      ],
+      "draws": 2500,
+      "maximum": 8.820365722481169,
+      "mean": 5.128036143537583,
+      "minimum": 2.9588686033171387
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/5"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        62620.0,
+        63902.5
+      ],
+      "draws": 2500,
+      "maximum": 66700.0,
+      "mean": 63260.0,
+      "minimum": 59900.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        7.68815193531027,
+        7.892812606453273
+      ],
+      "draws": 2500,
+      "maximum": 8.25,
+      "mean": 7.792803323855603,
+      "minimum": 7.239583333333333
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/6"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        108913.11874999995,
+        117972.46874999994
+      ],
+      "draws": 2500,
+      "maximum": 150309.99999999985,
+      "mean": 112984.49999999993,
+      "minimum": 101404.99999999993
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        8.36543467303469,
+        9.615901175207838
+      ],
+      "draws": 2500,
+      "maximum": 12.387121212121201,
+      "mean": 8.995490137419305,
+      "minimum": 6.633611111111107
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/7"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        219890.75375000027,
+        240389.2675000002
+      ],
+      "draws": 2500,
+      "maximum": 298505.0000000001,
+      "mean": 229649.75000000023,
+      "minimum": 184801.00000000003
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        7.737978958884802,
+        8.911656547382197
+      ],
+      "draws": 2500,
+      "maximum": 10.320355555555563,
+      "mean": 8.355480798269408,
+      "minimum": 5.116692609637248
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/8"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        46394.875,
+        47708.8125
+      ],
+      "draws": 2500,
+      "maximum": 51400.0,
+      "mean": 47010.0,
+      "minimum": 44800.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.811626670981085,
+        2.8737535366143274
+      ],
+      "draws": 2500,
+      "maximum": 3.0979591836734692,
+      "mean": 2.8391769907852096,
+      "minimum": 2.753846153846154
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/9"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        85513.87499999997,
+        94764.52499999994
+      ],
+      "draws": 2500,
+      "maximum": 127709.99999999985,
+      "mean": 89647.99999999997,
+      "minimum": 77700.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.251675767608237,
+        3.5364648978152227
+      ],
+      "draws": 2500,
+      "maximum": 4.567318435754186,
+      "mean": 3.375765730461636,
+      "minimum": 2.942245370370369
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/10"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        164389.62875000018,
+        186280.27000000016
+      ],
+      "draws": 2500,
+      "maximum": 240693.99999999988,
+      "mean": 174917.10000000015,
+      "minimum": 127711.00000000023
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_netslab_20260923T111837Z_539052af",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.879368179731203,
+        3.1719700168627907
+      ],
+      "draws": 2500,
+      "maximum": 3.732103564617863,
+      "mean": 3.0198263723121745,
+      "minimum": 2.3879065824793213
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/11"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        45830.0,
+        46917.625
+      ],
+      "draws": 2500,
+      "maximum": 48700.0,
+      "mean": 46345.0,
+      "minimum": 44300.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        58.414268353174606,
+        61.40817460317461
+      ],
+      "draws": 2500,
+      "maximum": 67.42857142857143,
+      "mean": 59.84305555555555,
+      "minimum": 51.111111111111114
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/120"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        73504.95624999996,
+        79772.6999999999
+      ],
+      "draws": 2500,
+      "maximum": 93214.99999999978,
+      "mean": 76265.49999999991,
+      "minimum": 69300.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        67.17069552556812,
+        73.31196297348477
+      ],
+      "draws": 2500,
+      "maximum": 85.72727272727273,
+      "mean": 70.27361837121205,
+      "minimum": 48.003124999999955
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/121"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        166371.3800000002,
+        185876.8775000002
+      ],
+      "draws": 2500,
+      "maximum": 233504.0000000001,
+      "mean": 175143.6500000002,
+      "minimum": 147226.00000000058
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        83.82843073133004,
+        95.51489157498615
+      ],
+      "draws": 2500,
+      "maximum": 118.85785714285717,
+      "mean": 89.60644936738461,
+      "minimum": 63.75071428571431
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/122"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        34662.375,
+        35635.0
+      ],
+      "draws": 2500,
+      "maximum": 37600.0,
+      "mean": 35110.0,
+      "minimum": 33300.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.884977075796721,
+        3.963433267199165
+      ],
+      "draws": 2500,
+      "maximum": 4.159663865546219,
+      "mean": 3.9204128122945208,
+      "minimum": 3.8016528925619837
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/123"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        57640.47499999992,
+        63387.18749999992
+      ],
+      "draws": 2500,
+      "maximum": 77100.0,
+      "mean": 60170.49999999992,
+      "minimum": 52904.99999999993
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        4.368840033891629,
+        4.668121411181425
+      ],
+      "draws": 2500,
+      "maximum": 5.482558139534884,
+      "mean": 4.501507189945885,
+      "minimum": 3.9555865921787667
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/124"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        131227.23625000013,
+        150091.47250000012
+      ],
+      "draws": 2500,
+      "maximum": 195801.00000000003,
+      "mean": 139856.20000000013,
+      "minimum": 105823.00000000052
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        4.5059773013822175,
+        5.052439018066279
+      ],
+      "draws": 2500,
+      "maximum": 5.858223953551837,
+      "mean": 4.786367917349592,
+      "minimum": 3.455119133238994
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/125"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        54658.6875,
+        55745.0
+      ],
+      "draws": 2500,
+      "maximum": 57500.0,
+      "mean": 55207.5,
+      "minimum": 52900.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        7.057452680383902,
+        7.2673683145244405
+      ],
+      "draws": 2500,
+      "maximum": 7.588235294117647,
+      "mean": 7.169295529025069,
+      "minimum": 6.534653465346534
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/126"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        90385.78124999996,
+        96344.7874999999
+      ],
+      "draws": 2500,
+      "maximum": 112209.99999999985,
+      "mean": 93225.24999999991,
+      "minimum": 80700.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        7.887288732323126,
+        8.60923179434123
+      ],
+      "draws": 2500,
+      "maximum": 9.402049180327863,
+      "mean": 8.269544455330369,
+      "minimum": 5.569856459330136
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/127"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        203958.67750000017,
+        216281.92875000022
+      ],
+      "draws": 2500,
+      "maximum": 236112.0000000003,
+      "mean": 210474.10000000018,
+      "minimum": 171510.00000000023
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        7.721178738637425,
+        8.988876562313894
+      ],
+      "draws": 2500,
+      "maximum": 10.880133333333337,
+      "mean": 8.368841519399933,
+      "minimum": 4.694778831663854
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/128"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        39555.0,
+        40620.0
+      ],
+      "draws": 2500,
+      "maximum": 42200.0,
+      "mean": 40087.5,
+      "minimum": 37400.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.6408283687886667,
+        2.6880691500006484
+      ],
+      "draws": 2500,
+      "maximum": 2.773109243697479,
+      "mean": 2.665139722114157,
+      "minimum": 2.558333333333333
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/129"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        67985.91874999998,
+        73780.89374999992
+      ],
+      "draws": 2500,
+      "maximum": 86309.99999999985,
+      "mean": 70808.49999999996,
+      "minimum": 56800.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.909539177268966,
+        3.102264185239997
+      ],
+      "draws": 2500,
+      "maximum": 3.4342105263157783,
+      "mean": 3.008798678817466,
+      "minimum": 2.527487562189053
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/130"
+  },
+  {
+    "host": "university",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        145437.90375000014,
+        163060.99375000008
+      ],
+      "draws": 2500,
+      "maximum": 184610.00000000023,
+      "mean": 154563.25000000006,
+      "minimum": 109598.99999999999
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.671802980812268,
+        3.020342123229115
+      ],
+      "draws": 2500,
+      "maximum": 3.675555019305016,
+      "mean": 2.8455175894999023,
+      "minimum": 1.9864363760732981
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/existing_paired_block_bootstrap_comparisons/131"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        54447.375,
+        59653.8125
+      ],
+      "draws": 2500,
+      "maximum": 73400.0,
+      "mean": 56952.5,
+      "minimum": 47600.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        62.23293402777778,
+        67.50973958333334
+      ],
+      "draws": 2500,
+      "maximum": 82.55555555555556,
+      "mean": 64.67708333333334,
+      "minimum": 53.888888888888886
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/0"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        95541.01249999998,
+        105744.13749999997
+      ],
+      "draws": 2500,
+      "maximum": 135400.0,
+      "mean": 100246.49999999997,
+      "minimum": 83700.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        79.4612212839244,
+        85.55617424242425
+      ],
+      "draws": 2500,
+      "maximum": 105.15384615384616,
+      "mean": 82.21325445387944,
+      "minimum": 70.75
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/1"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        120841.16625000005,
+        136871.87375000003
+      ],
+      "draws": 2500,
+      "maximum": 183497.99999999997,
+      "mean": 128381.90000000005,
+      "minimum": 101308.00000000017
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        54.21111657547804,
+        61.51868643635037
+      ],
+      "draws": 2500,
+      "maximum": 71.4948136765253,
+      "mean": 58.00090303484302,
+      "minimum": 35.88581952117845
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/2"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        40554.75,
+        45175.125
+      ],
+      "draws": 2500,
+      "maximum": 58900.0,
+      "mean": 42682.5,
+      "minimum": 35000.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.710586229788539,
+        3.9559178366143244
+      ],
+      "draws": 2500,
+      "maximum": 4.824675324675325,
+      "mean": 3.8182102372328037,
+      "minimum": 3.4505208333333335
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/3"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        75063.50624999998,
+        83659.51874999997
+      ],
+      "draws": 2500,
+      "maximum": 113400.0,
+      "mean": 78956.49999999997,
+      "minimum": 66800.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        4.347776639934125,
+        4.74015251333276
+      ],
+      "draws": 2500,
+      "maximum": 5.866952789699571,
+      "mean": 4.542598180396689,
+      "minimum": 3.418825301204817
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/4"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        91441.67500000003,
+        104964.06625000002
+      ],
+      "draws": 2500,
+      "maximum": 152100.0,
+      "mean": 97531.10000000002,
+      "minimum": 79208.00000000017
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.762681591995993,
+        4.265977363158896
+      ],
+      "draws": 2500,
+      "maximum": 5.473397841239961,
+      "mean": 4.031469092462249,
+      "minimum": 2.5035638297872347
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/5"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        64399.875,
+        68636.3125
+      ],
+      "draws": 2500,
+      "maximum": 73300.0,
+      "mean": 66667.5,
+      "minimum": 56700.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        7.382627585242942,
+        7.6970786435185365
+      ],
+      "draws": 2500,
+      "maximum": 8.186274509803921,
+      "mean": 7.545422520714368,
+      "minimum": 6.715447154471545
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/6"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        106076.61874999997,
+        114425.89999999997
+      ],
+      "draws": 2500,
+      "maximum": 126100.0,
+      "mean": 110442.24999999997,
+      "minimum": 90000.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        8.196034355541501,
+        8.878649677177913
+      ],
+      "draws": 2500,
+      "maximum": 10.625954198473282,
+      "mean": 8.531170330626447,
+      "minimum": 6.498897329086025
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/7"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        130781.39625000006,
+        146115.08250000002
+      ],
+      "draws": 2500,
+      "maximum": 186398.99999999997,
+      "mean": 138181.7,
+      "minimum": 104001.00000000003
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        6.655238532635341,
+        7.633191160716096
+      ],
+      "draws": 2500,
+      "maximum": 10.461397898583817,
+      "mean": 7.126966112355473,
+      "minimum": 4.690546487660849
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/8"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        46897.375,
+        50265.0
+      ],
+      "draws": 2500,
+      "maximum": 54100.0,
+      "mean": 48677.5,
+      "minimum": 39900.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.678070817704948,
+        2.7756449757677752
+      ],
+      "draws": 2500,
+      "maximum": 2.898245614035088,
+      "mean": 2.729355739135701,
+      "minimum": 2.444776119402985
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/9"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        81215.85624999998,
+        88504.68124999997
+      ],
+      "draws": 2500,
+      "maximum": 102795.00000000007,
+      "mean": 84936.49999999997,
+      "minimum": 67804.99999999993
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.0214667111133924,
+        3.2288599866487377
+      ],
+      "draws": 2500,
+      "maximum": 3.8236505974454134,
+      "mean": 3.119205694670437,
+      "minimum": 2.6455179282868513
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/10"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        97710.59500000002,
+        112238.65625
+      ],
+      "draws": 2500,
+      "maximum": 156898.99999999997,
+      "mean": 104675.65000000001,
+      "minimum": 74501.00000000003
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "netslab",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_netslab_micro_20260924T161842Z_5a87e895",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.718411362419884,
+        3.077984198936866
+      ],
+      "draws": 2500,
+      "maximum": 4.18893924920225,
+      "mean": 2.8851814579442587,
+      "minimum": 2.3697033297407573
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/11"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        48865.0,
+        52507.625
+      ],
+      "draws": 2500,
+      "maximum": 60700.0,
+      "mean": 50690.0,
+      "minimum": 44200.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        56.31501609848485,
+        59.53831944444444
+      ],
+      "draws": 2500,
+      "maximum": 68.44444444444444,
+      "mean": 57.743345959595956,
+      "minimum": 53.2
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/120"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        68232.375,
+        75286.49999999999
+      ],
+      "draws": 2500,
+      "maximum": 88504.99999999993,
+      "mean": 71665.74999999999,
+      "minimum": 60300.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        62.12340032051281,
+        68.11161022727272
+      ],
+      "draws": 2500,
+      "maximum": 78.36818181818175,
+      "mean": 65.26333516483515,
+      "minimum": 48.86666666666667
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/121"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        85436.36625000004,
+        94467.14375000003
+      ],
+      "draws": 2500,
+      "maximum": 112115.00000000032,
+      "mean": 89657.15000000005,
+      "minimum": 75503.00000000006
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        44.43215621840342,
+        49.666288895052745
+      ],
+      "draws": 2500,
+      "maximum": 56.27944444444448,
+      "mean": 47.19221146701328,
+      "minimum": 30.689655172413794
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/122"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        36002.375,
+        39240.0
+      ],
+      "draws": 2500,
+      "maximum": 47200.0,
+      "mean": 37590.0,
+      "minimum": 31700.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.6033226392041753,
+        3.7699584787847824
+      ],
+      "draws": 2500,
+      "maximum": 4.277777777777778,
+      "mean": 3.682321663750519,
+      "minimum": 3.3834586466165413
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/123"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        52027.006250000006,
+        57661.38124999998
+      ],
+      "draws": 2500,
+      "maximum": 67604.99999999993,
+      "mean": 54765.499999999985,
+      "minimum": 44495.00000000007
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.9460484078037155,
+        4.143252169537717
+      ],
+      "draws": 2500,
+      "maximum": 4.619836956521735,
+      "mean": 4.040047563098814,
+      "minimum": 3.6477238916989148
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/124"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        63130.84125000003,
+        70128.01000000007
+      ],
+      "draws": 2500,
+      "maximum": 82516.00000000035,
+      "mean": 66421.40000000004,
+      "minimum": 54503.00000000006
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "evaluator_component",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        3.562204495483685,
+        3.7423326225258804
+      ],
+      "draws": 2500,
+      "maximum": 4.356680322452752,
+      "mean": 3.64083316132645,
+      "minimum": 3.422355555555558
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/125"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        57705.0,
+        62017.875
+      ],
+      "draws": 2500,
+      "maximum": 71400.0,
+      "mean": 59825.0,
+      "minimum": 51100.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        6.762558705161542,
+        7.027475098344334
+      ],
+      "draws": 2500,
+      "maximum": 7.568627450980392,
+      "mean": 6.893342148168804,
+      "minimum": 6.414414414414415
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/126"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        77523.50624999998,
+        88217.26249999998
+      ],
+      "draws": 2500,
+      "maximum": 117800.0,
+      "mean": 82551.24999999997,
+      "minimum": 67600.0
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        6.796035741891573,
+        7.487636643486102
+      ],
+      "draws": 2500,
+      "maximum": 9.725925925925926,
+      "mean": 7.122910803417286,
+      "minimum": 5.449474361724969
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/127"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        96101.40125000004,
+        117567.04125000004
+      ],
+      "draws": 2500,
+      "maximum": 207302.00000000006,
+      "mean": 105127.15000000005,
+      "minimum": 87303.00000000006
+    },
+    "baseline": "direct",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        5.7035104950176185,
+        6.959137115358515
+      ],
+      "draws": 2500,
+      "maximum": 12.145268817204304,
+      "mean": 6.232291490019672,
+      "minimum": 4.270489629197388
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/128"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        40692.25,
+        44255.0
+      ],
+      "draws": 2500,
+      "maximum": 54700.0,
+      "mean": 42402.5,
+      "minimum": 35750.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.5007672958204923,
+        2.581116918476955
+      ],
+      "draws": 2500,
+      "maximum": 2.8732876712328768,
+      "mean": 2.536456505622657,
+      "minimum": 2.437956204379562
+    },
+    "statistic": "p50_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/129"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        56628.39999999998,
+        65382.48125000001
+      ],
+      "draws": 2500,
+      "maximum": 88595.00000000007,
+      "mean": 60690.999999999985,
+      "minimum": 48800.0
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.646011857543666,
+        2.787894133144642
+      ],
+      "draws": 2500,
+      "maximum": 3.3068610857961267,
+      "mean": 2.7096753879654285,
+      "minimum": 2.4940097799510985
+    },
+    "statistic": "p95_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/130"
+  },
+  {
+    "host": "workstation",
+    "absolute_added_ns": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        69931.87125000004,
+        88281.87625000003
+      ],
+      "draws": 2500,
+      "maximum": 159202.00000000006,
+      "mean": 77656.95000000004,
+      "minimum": 59601.000000000015
+    },
+    "baseline": "contract_rbac",
+    "condition": {
+      "boundary": "matched_local_processing_with_buffered_event_logging",
+      "dataset": "5gnidd",
+      "large_input": null,
+      "mode": "micro",
+      "state_path": null,
+      "state_size": null
+    },
+    "interpretation": "mean paired process-block difference of percentiles; not percentile of per-request added time",
+    "run": "s7_628046dc_final_5gnidd_micro_20260924T171153Z_27048b53",
+    "slowdown_ratio": {
+      "analysis_seed": 9000,
+      "blocks": 20,
+      "ci95": [
+        2.5005013262758786,
+        2.723788876964472
+      ],
+      "draws": 2500,
+      "maximum": 3.3868365817091464,
+      "mean": 2.6019073480688086,
+      "minimum": 2.228835924291781
+    },
+    "statistic": "p99_ns",
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/existing_paired_block_bootstrap_comparisons/131"
+  }
+]

@@ -1,0 +1,13 @@
+condition,cases,expected_decision_changed_from_primary,expected_reasons_changed_from_primary,proposal_changed_from_primary,source
+sensitivity:netslab:original,20000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original
+sensitivity:netslab:reduction60,20000,326,1216,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60
+sensitivity:netslab:reduction90,20000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90
+sensitivity:netslab:ttl300,20000,4112,13852,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300
+sensitivity:netslab:ttl600,20000,2055,8009,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600
+sensitivity:nidd:budget2000,120000,0,0,8100,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000
+sensitivity:nidd:budget500,120000,0,0,29964,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500
+sensitivity:nidd:original,120000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original
+sensitivity:nidd:reduction60,120000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60
+sensitivity:nidd:reduction90,120000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90
+sensitivity:nidd:ttl300,120000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300
+sensitivity:nidd:ttl600,120000,0,0,0,evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600

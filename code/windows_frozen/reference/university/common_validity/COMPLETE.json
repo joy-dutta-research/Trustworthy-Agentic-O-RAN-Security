@@ -1,0 +1,20 @@
+{
+  "constructed_case_count": 777,
+  "files": {
+    "REPORT.md": {
+      "sha256": "7a25cacc761797648565e4e31447325ed78945699c76ed0cf2678cb894a54152"
+    },
+    "cases.jsonl": {
+      "sha256": "4f5e96e9cb823ef9c908884d029029d1eab71c6f47e6170fc7768a5075a2c080"
+    },
+    "decisions.jsonl": {
+      "sha256": "4456e2c9b42f250eaf24283211aec83f0b7af8026b631fd01032f23c2fb916ca"
+    },
+    "summary.json": {
+      "sha256": "cf3c44282f897c11c836193e81766b17f557deb2d715a9099df098e9465eb5b5"
+    }
+  },
+  "initial_receipt": "INCOMPLETE.json is the preserved start marker; COMPLETE.json closes this attempt.",
+  "mode": "validity",
+  "status": "COMPLETED"
+}

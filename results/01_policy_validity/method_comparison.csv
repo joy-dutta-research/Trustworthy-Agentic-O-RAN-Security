@@ -1,0 +1,5 @@
+population,method,case_occurrences,reference_decision_agreement,block_required_admitted,block_required_total,permitted_admitted,permitted_total,source
+common_validity,direct,777,130,647,647,130,130,evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/direct
+common_validity,contract,777,172,605,647,130,130,evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/contract
+common_validity,contract_rbac,777,362,415,647,130,130,evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/contract_rbac
+common_validity,trust_boundary,777,777,0,647,130,130,evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/trust_boundary

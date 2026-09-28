@@ -1,0 +1,20 @@
+{
+  "constructed_case_count": 20000,
+  "files": {
+    "REPORT.md": {
+      "sha256": "47dd24edca877141f9fab518350e347c347b93e0e1e78e277278978c41c8ce77"
+    },
+    "cases.jsonl": {
+      "sha256": "1f187bd22047e67a78dcb72489d6354c689c1347d7916b30a8a2fb530b28bdd9"
+    },
+    "decisions.jsonl": {
+      "sha256": "4756be01f70359f2a60ec4c647f7155970462dba2dbffb87e49cc69527fc7063"
+    },
+    "summary.json": {
+      "sha256": "e01af7a2b5c52c5edfe43d333a0fcd9134c000b48094e2e184fabd1b797ebaca"
+    }
+  },
+  "initial_receipt": "INCOMPLETE.json is the preserved start marker; COMPLETE.json closes this attempt.",
+  "mode": "netslab",
+  "status": "COMPLETED"
+}

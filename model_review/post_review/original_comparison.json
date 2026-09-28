@@ -1,0 +1,100 @@
+{
+  "abstentions_or_ambiguities": [],
+  "agreement_among_joint_decided": 1.0,
+  "all_label_agreement_including_abstentions": 1.0,
+  "case_count": 120,
+  "cohens_kappa_among_joint_decided": 1.0,
+  "confusion_including_abstentions": {
+    "ALLOW": {
+      "ALLOW": 20,
+      "DENY": 0,
+      "ESCALATE": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "DENY": {
+      "ALLOW": 0,
+      "DENY": 60,
+      "ESCALATE": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "ESCALATE": {
+      "ALLOW": 0,
+      "DENY": 0,
+      "ESCALATE": 40,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "INSUFFICIENT_INFORMATION": {
+      "ALLOW": 0,
+      "DENY": 0,
+      "ESCALATE": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    }
+  },
+  "constructed_reference_agreement": {
+    "first": {
+      "agreement_among_decided": 1.0,
+      "decided_case_count": 120,
+      "matching_count": 120
+    },
+    "second": {
+      "agreement_among_decided": 1.0,
+      "decided_case_count": 120,
+      "matching_count": 120
+    }
+  },
+  "coverage": {
+    "first_decided": 120,
+    "joint_decided": 120,
+    "joint_decided_rate": 1.0,
+    "second_decided": 120
+  },
+  "disagreements": [],
+  "interpretation": "Model-assisted review only; correlated biases possible. Human adjudication required. Constructed references are not ground truth; agreement is not accuracy.",
+  "policy_critique": {
+    "first": [
+      "The supplied rubric determines every case decision; no case requires INSUFFICIENT_INFORMATION. Missing required approval is explicitly an ESCALATE condition. These decisions establish compliance with the written fixture rules, not whether the proposed action is necessary, effective, or operationally safe.",
+      "POLICY.json is not a complete standalone specification: INSTRUCTIONS.md supplies denial precedence, exact parameter-field semantics, identity matching, active-action conflict handling, approval binding, and time-boundary interpretation. Version these normative semantics together to reduce divergence between implementations. The rubric resolves them for this review.",
+      "ACTION_SCHEMA.json leaves parameters as a generic object, while action_parameter_contracts names fields and parameter_bounds supplies numeric limits. Explicit per-action value schemas would clarify numeric types, fractional durations, and the admissible content of message and snapshot_id. The rollback procedure also permits an empty string at the schema level; required rollback should define what constitutes an adequate procedure.",
+      "protected_slices relies on a declared slice_id, which ACTION_SCHEMA.json permits to be null. The package does not specify trusted target-to-slice resolution or the effects of an xApp or policy on multiple slices. A proposal naming an unprotected slice could affect a protected slice outside that declared scope. This is a policy-adequacy gap, not grounds to invent missing facts in the supplied simulated cases.",
+      "The conflict rule compares only interface, target type, target ID, and control_parameter, ignores active timestamps and values, and exempts the same action_id. Define the target-ID namespace, authenticated active-state lifecycle, atomic check-and-commit behavior, and immutable binding of action_id to proposal content for operational use. Reusing an action_id with changed content could otherwise evade this conflict test; different control parameters may also have interacting effects.",
+      "Trusted approval binding is explicit and usable in this offline fixture. Active actions whose approval hashes do not match still participate in conflict checking because the rubric requires structural validity, not reauthorization of those actions. Operational policy should separately specify registry authentication, approver identity, revocation freshness, and whether approval remains valid when policy or execution context changes.",
+      "roles and minimum_risk_by_action constrain individual requests, but there is no cumulative disruption budget, action-frequency limit, or trusted assessment of declared risk above the minimum. Repeated individually permissible actions could cause sustained disruption. expected_kpi and rollback text do not establish measurable success, a valid recoverable snapshot, or verified recovery.",
+      "rollback_policy requires approval and high risk but is absent from disruptive_actions, so the protected-slice and disruptive-action rollback restrictions do not apply to it under this rubric. Restoring an unsafe snapshot on a protected slice is an adequacy counterexample worth human adjudication. Conversely, the absolute protected_slices restriction can block containment even with human approval; any emergency exception would need an explicit policy change.",
+      "The 120 cases cover rate_limit_ue, quarantine_ue, isolate_xapp, and modify_a1_policy, but not notify_operator or rollback_policy. The package lacks tests for malformed proposals and active records, missing or mismatched principals, interface or target-type violations, exact numeric endpoints, stale or future proposals, TTL overflow or expiry, risk below minimum, missing rollback, and revoked, expired, or mismatched proposal approvals. All proposals use the same evaluation time and a 300-second age equal to their TTL. Results therefore do not validate the full rule surface or precedence among simultaneous failures.",
+      "Dataset labels and ETSI references provide provenance pointers only. They do not establish incident truth, a correct target mapping, or causal benefit from the action; the numeric thresholds are illustrative operator choices. Human adjudication is required before research or deployment claims, and model reviews may share correlated errors."
+    ],
+    "second": [
+      "The policy lacks verification of incident evidence relevance.",
+      "Dataset bindings and attack labels are informative but not actively verified by constraints.",
+      "Observer role is heavily restricted, causing many observer proposals to fail."
+    ]
+  },
+  "run_metadata": {
+    "first": {
+      "mode_as_displayed": "not_available",
+      "model_name_as_displayed": "not_available",
+      "run_date_utc": "2026-09-22",
+      "tools_used": [
+        "functions.exec: local JavaScript JSON parsing, review-record formatting, and case-ID coverage checks.",
+        "exec_command: PowerShell local ZIP attachment reading via System.IO.Compression.ZipFile, ConvertFrom-Json/ConvertTo-Json, UTC date formatting, output-file writing, and Test-Json output-schema validation."
+      ],
+      "unavailable_settings": [
+        "model_name_as_displayed",
+        "mode_as_displayed",
+        "reasoning_effort",
+        "seed",
+        "temperature"
+      ]
+    },
+    "second": {
+      "mode_as_displayed": "not_available",
+      "model_name_as_displayed": "not_available",
+      "run_date_utc": "2026-09-22",
+      "tools_used": [],
+      "unavailable_settings": [
+        "mode_as_displayed",
+        "model_name_as_displayed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "sensitivity:netslab:original",
+    "cases": 20000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original"
+  },
+  {
+    "condition": "sensitivity:netslab:reduction60",
+    "cases": 20000,
+    "expected_decision_changed_from_primary": 326,
+    "expected_reasons_changed_from_primary": 1216,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60"
+  },
+  {
+    "condition": "sensitivity:netslab:reduction90",
+    "cases": 20000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90"
+  },
+  {
+    "condition": "sensitivity:netslab:ttl300",
+    "cases": 20000,
+    "expected_decision_changed_from_primary": 4112,
+    "expected_reasons_changed_from_primary": 13852,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300"
+  },
+  {
+    "condition": "sensitivity:netslab:ttl600",
+    "cases": 20000,
+    "expected_decision_changed_from_primary": 2055,
+    "expected_reasons_changed_from_primary": 8009,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600"
+  },
+  {
+    "condition": "sensitivity:nidd:budget2000",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 8100,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000"
+  },
+  {
+    "condition": "sensitivity:nidd:budget500",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 29964,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500"
+  },
+  {
+    "condition": "sensitivity:nidd:original",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original"
+  },
+  {
+    "condition": "sensitivity:nidd:reduction60",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60"
+  },
+  {
+    "condition": "sensitivity:nidd:reduction90",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90"
+  },
+  {
+    "condition": "sensitivity:nidd:ttl300",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300"
+  },
+  {
+    "condition": "sensitivity:nidd:ttl600",
+    "cases": 120000,
+    "expected_decision_changed_from_primary": 0,
+    "expected_reasons_changed_from_primary": 0,
+    "proposal_changed_from_primary": 0,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600"
+  }
+]

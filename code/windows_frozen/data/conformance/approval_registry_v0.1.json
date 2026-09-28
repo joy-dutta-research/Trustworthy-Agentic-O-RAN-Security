@@ -1,0 +1,406 @@
+{
+  "approvals": {
+    "approval-11-allow": {
+      "action_id": "action-11-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "e3e69111568065573588344b1b9625b216658ed0b90da2fad3f10057e023605e",
+      "status": "approved"
+    },
+    "approval-11-conflict": {
+      "action_id": "action-11-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "b73ed7100e186e834dc6f93532a5b7f0e534cc746c3a29d52c1edecc46cdce7e",
+      "status": "approved"
+    },
+    "approval-11-protected": {
+      "action_id": "action-11-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "fcdbc3daea1fec96a92b79bfbbb8d2177c01eca9b9b9e75b0bce30e173497b79",
+      "status": "approved"
+    },
+    "approval-11-range": {
+      "action_id": "action-11-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "d804b770b048efc3a5e62bd706c9c6d5b2aaaf467c922a89a0b7c75554d7eea9",
+      "status": "approved"
+    },
+    "approval-11-unauthorized": {
+      "action_id": "action-11-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "7157c74f6692ab881243114c69ee69be582ac564394327525af7184067fcde38",
+      "status": "approved"
+    },
+    "approval-12-allow": {
+      "action_id": "action-12-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "598f099108c9b88f170d38ae477699c641b898561d8fe89ef06bc8eda0008061",
+      "status": "approved"
+    },
+    "approval-12-conflict": {
+      "action_id": "action-12-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "c4a6325c7ad8b7b4802560cf380f921cf77635cc251a23f27b7b8f4faa3895cf",
+      "status": "approved"
+    },
+    "approval-12-protected": {
+      "action_id": "action-12-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "3981d8530aa7afa3f2a8dbf49a41d66a929a6ac150ebddbcf9ff2f3359e03080",
+      "status": "approved"
+    },
+    "approval-12-range": {
+      "action_id": "action-12-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "09dd55aa41c0feb42f57ec6b89ec4c40e36c1531229c2105632609fce3fc0301",
+      "status": "approved"
+    },
+    "approval-12-unauthorized": {
+      "action_id": "action-12-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "f4d0f5f5189e3bda2029fce00035f0138afb7186990d502566d0ea42dc4b33eb",
+      "status": "approved"
+    },
+    "approval-13-allow": {
+      "action_id": "action-13-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "ee8f9543dfac60041d41c30d143297240874e32babdc55642b5047cfcdd88ea4",
+      "status": "approved"
+    },
+    "approval-13-conflict": {
+      "action_id": "action-13-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "defc056540d449a487c84dc21d8f5da1d94508b25629d153d925d9b0dfad8ab3",
+      "status": "approved"
+    },
+    "approval-13-protected": {
+      "action_id": "action-13-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "0593a8b286b7c1f78e05f36a7262ba96e2b0e48065edd477c0ba401dcbf93a2b",
+      "status": "approved"
+    },
+    "approval-13-range": {
+      "action_id": "action-13-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "ce52008c94243e8ace221e184d1893e2b8e52e728a1b1d5bd9000d389230e886",
+      "status": "approved"
+    },
+    "approval-13-unauthorized": {
+      "action_id": "action-13-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "666dc98cfff95bee359ec6a44162627a493abce4a0b8ed4493afb6de79eefcb6",
+      "status": "approved"
+    },
+    "approval-14-allow": {
+      "action_id": "action-14-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "26539288ce2107823ae3b94f11f51cc8cb0ede541285ea997f44fcca5f9b10da",
+      "status": "approved"
+    },
+    "approval-14-conflict": {
+      "action_id": "action-14-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "ee763df08796de17a9ec5ad75d288aee9093a9a263a38f716088186443926049",
+      "status": "approved"
+    },
+    "approval-14-protected": {
+      "action_id": "action-14-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "63bcef1b7c57e2e4c14d5eb780fa104ca9369e8e0be7496d9c372a44c9e6ce05",
+      "status": "approved"
+    },
+    "approval-14-range": {
+      "action_id": "action-14-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "0234366fb0792ab0e47aa47ab702b1730a42bc86090ad3c0e6453584e0ab3f36",
+      "status": "approved"
+    },
+    "approval-14-unauthorized": {
+      "action_id": "action-14-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "27cbb3d825ec90bbd3363aeaf5c454fd55e1a08dc55a149dc7d4b84f6210676b",
+      "status": "approved"
+    },
+    "approval-15-allow": {
+      "action_id": "action-15-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "9ede0ab422bb1d9a03d15c3bbd8774abef0aac2f0c7de5eec28bcc2ea6972f95",
+      "status": "approved"
+    },
+    "approval-15-conflict": {
+      "action_id": "action-15-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "2005d620dbf280742edc6629c06683a93e7dd174518c5837213a0070b42245d0",
+      "status": "approved"
+    },
+    "approval-15-protected": {
+      "action_id": "action-15-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "03a72940d5b614a583d6f1cd3c0a6ea6f8febd67d07f86161d87490effb0f30d",
+      "status": "approved"
+    },
+    "approval-15-range": {
+      "action_id": "action-15-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "1c96dc7887c89aa26cbc4c11fd5c99342adbd418524a46fa84d95484cd8f1eda",
+      "status": "approved"
+    },
+    "approval-15-unauthorized": {
+      "action_id": "action-15-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "3e481d6f0f723eccb244fd72244e9a30b1627bad941a1196e5158de1e8411a29",
+      "status": "approved"
+    },
+    "approval-16-allow": {
+      "action_id": "action-16-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "214de5665718c8b7f10d9203b2c743b811105fa7c5af5703a1b0c6e49d2487b7",
+      "status": "approved"
+    },
+    "approval-16-conflict": {
+      "action_id": "action-16-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "8ed7a82aaecc348141fa7cfbf8ead50e95f4de3ce5bf8e8f03e49e3e04ea0c0c",
+      "status": "approved"
+    },
+    "approval-16-protected": {
+      "action_id": "action-16-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "fe6dfd67cfdd05f6a592162a2ae145cd0f861b40acd5072c3c6f3f8484068d59",
+      "status": "approved"
+    },
+    "approval-16-range": {
+      "action_id": "action-16-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "63722365d98d619bfd71324ce265a74668b748c11c89983d9b0e5f747c1ddc67",
+      "status": "approved"
+    },
+    "approval-16-unauthorized": {
+      "action_id": "action-16-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "764191a440ef25f1577d9ae8cefa9a198e80a51fd54123ff78275dc534e0d10e",
+      "status": "approved"
+    },
+    "approval-17-allow": {
+      "action_id": "action-17-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "560017476092239fc236cabab7e37117ca94593f708d5f4e0ea959866f9becab",
+      "status": "approved"
+    },
+    "approval-17-conflict": {
+      "action_id": "action-17-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "bd52590aca51d07ffeac8189e3cbf5d6db9a4f7fbac1d2741f41a13b4453b4c7",
+      "status": "approved"
+    },
+    "approval-17-protected": {
+      "action_id": "action-17-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "7a6048a092fc77078ba9180d626c5ac9fe250a569cd33c5c42bbd0663498597d",
+      "status": "approved"
+    },
+    "approval-17-range": {
+      "action_id": "action-17-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "1c93a577174afca37ca4b80fcd8c20a9c5e6eb733578de3926771f76325ce5da",
+      "status": "approved"
+    },
+    "approval-17-unauthorized": {
+      "action_id": "action-17-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "939c61787c9e921a945064c640d557754e2d9f8165b1e984d01fe28deab7c96c",
+      "status": "approved"
+    },
+    "approval-18-allow": {
+      "action_id": "action-18-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "67d3798a0a9248bd0fc68433df04d00a3a7993f3028e1335f98789dbdf645121",
+      "status": "approved"
+    },
+    "approval-18-conflict": {
+      "action_id": "action-18-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "09e17b86efa17d878334522c70531fe4835cc74df5df838e1c6d1649371c7531",
+      "status": "approved"
+    },
+    "approval-18-protected": {
+      "action_id": "action-18-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "1d941a1621d1a12c8372d448bfc757af6513ebc4238a7fcba843f1684659be6d",
+      "status": "approved"
+    },
+    "approval-18-range": {
+      "action_id": "action-18-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "5819e8c236ec9f79c16e96f91a3fcad9456b616db709956fe1fa3515cba0c650",
+      "status": "approved"
+    },
+    "approval-18-unauthorized": {
+      "action_id": "action-18-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "0df6a5e6e6d820db0f79c78586c73c0bc853d23c8a72d276bb7d5712f72cf26e",
+      "status": "approved"
+    },
+    "approval-19-allow": {
+      "action_id": "action-19-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "88a8b49d1c8a5920d09b32b21f226ccf0822f48a0a3ab1dfaa5ae534fe51d2c3",
+      "status": "approved"
+    },
+    "approval-19-conflict": {
+      "action_id": "action-19-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "82ac3ece7e25df336d85ad3d3102351e5c4dd4a9e472013786e1649d02eb4371",
+      "status": "approved"
+    },
+    "approval-19-protected": {
+      "action_id": "action-19-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "b16cfd22c7e2c54e9c37e85853d140ca43b8d0f551967f8f22a9a4422a4844d7",
+      "status": "approved"
+    },
+    "approval-19-range": {
+      "action_id": "action-19-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "bb73ae43a0e2637cea33afb194c6bb9b941f13ffa45f4f0cfd91faee1e78990b",
+      "status": "approved"
+    },
+    "approval-19-unauthorized": {
+      "action_id": "action-19-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "f50f0d78e4cea363f128d7989e3834e7c6002ba396c84eead03e7a467d68649f",
+      "status": "approved"
+    },
+    "approval-20-allow": {
+      "action_id": "action-20-safe",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "965a2047a955a6584617c383e73d1f890d7ce2ca97cae434782d7319bc21ceee",
+      "status": "approved"
+    },
+    "approval-20-conflict": {
+      "action_id": "action-20-conflict",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "7cf509b5890710f3476b9e40cb182c5bca5d4f59961d927f395f1453ee095645",
+      "status": "approved"
+    },
+    "approval-20-protected": {
+      "action_id": "action-20-protected",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "82d80a4d74f00ff000b896efeea8a337b3adbea0b64cb1a970d23c29849e28a4",
+      "status": "approved"
+    },
+    "approval-20-range": {
+      "action_id": "action-20-range",
+      "agent_id": "agent-orchestrator-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "1f2fbefb78d5a13b8c2970b5dab7de9f2a710b9e4f83651699b2dde27b02501c",
+      "status": "approved"
+    },
+    "approval-20-unauthorized": {
+      "action_id": "action-20-unauthorized",
+      "agent_id": "agent-observer-01",
+      "approved_by_role": "human_operator",
+      "expires_at": "2026-01-15T13:00:00Z",
+      "proposal_sha256": "1920ecb5b98d35de1045f54aa9f8e4101ae4057399b75cc3a6a809bee1d57b8b",
+      "status": "approved"
+    }
+  },
+  "description": "Offline benchmark fixture; not a production approval authority.",
+  "registry_version": "0.1.0"
+}

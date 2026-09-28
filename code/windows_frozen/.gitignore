@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Raw third-party data must not be committed.
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+
+
+# Locally prepared data can be regenerated from the raw dataset.
+data/processed/*
+!data/processed/README.md
+!data/processed/.gitkeep
+!data/processed/netslab_contexts_v0.1.json
+
+# Local secrets and credentials.
+.env
+.env.*
+*.pem
+*.key
+kaggle.json
+
+# Temporary benchmark output. Curated release results may be force-added.
+results/local/
+tmp/
+
+# Blind-review keys, mappings, and completed sheets stay private until labels
+# are frozen and a reviewed release artifact is intentionally prepared.
+review/private/
+review/*.csv
+review/*.json
+
+# Per-reviewer blinded packages stay local until the review round is complete.
+review/model_review_round*/
+
+# Local-only virtual machines, Ubuntu media, verification keyring and receipts.
+.vm-local/
+
+# Generated portable source/results archives; publish only after review.
+deliverables/

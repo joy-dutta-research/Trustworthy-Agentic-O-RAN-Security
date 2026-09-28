@@ -1,0 +1,522 @@
+[
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "mean_legitimate_timely_percent": 29.649409497741146,
+    "mean_suspect_goodput_kbit_s": 815.3770666666666,
+    "mean_legitimate_received_rtt_p95_ms": 133.0463180000455,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/0"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "mean_legitimate_timely_percent": 72.59858442871587,
+    "mean_suspect_goodput_kbit_s": 528.2474666666667,
+    "mean_legitimate_received_rtt_p95_ms": 132.62503566663023,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5115372419997282,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      5.870185000276251,
+      6.209109999872453,
+      6.041676999302581
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.009842913000284,
+      6.013081142000374,
+      6.0134924240001055
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/1"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "mean_legitimate_timely_percent": 72.84395915974864,
+    "mean_suspect_goodput_kbit_s": 526.6090666666666,
+    "mean_legitimate_received_rtt_p95_ms": 132.71789166628878,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5125439490000947,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      5.4827910003041325,
+      4.8908190001384355,
+      6.521930999952019
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0028589620001185,
+      6.011737006999738,
+      6.013317650000317
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/2"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "mean_legitimate_timely_percent": 72.43930533404217,
+    "mean_suspect_goodput_kbit_s": 529.2031999999999,
+    "mean_legitimate_received_rtt_p95_ms": 132.6360946668501,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 2.5275340003333135,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      4.848916999890207,
+      5.4277720000754925,
+      5.7525849997546175
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.006100209000124,
+      6.011306714000057,
+      6.000041485000111
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/3"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "mean_legitimate_timely_percent": 96.53198653198652,
+    "mean_suspect_goodput_kbit_s": 512.5461333333333,
+    "mean_legitimate_received_rtt_p95_ms": 116.00337700019736,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/4"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "mean_legitimate_timely_percent": 96.39243554947882,
+    "mean_suspect_goodput_kbit_s": 413.42293333333333,
+    "mean_legitimate_received_rtt_p95_ms": 114.9228406666225,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.508754632000091,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      6.422108999686316,
+      6.167068999275216,
+      5.583995999586477
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.00647215599929,
+      6.00575248199948,
+      6.006506189999527
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/5"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "mean_legitimate_timely_percent": 96.39355894983589,
+    "mean_suspect_goodput_kbit_s": 413.9690666666667,
+    "mean_legitimate_received_rtt_p95_ms": 117.58279300011054,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5091817519996766,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      6.065431000024546,
+      5.846582999765815,
+      6.27261699992232
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.01360742199995,
+      6.008184037999854,
+      6.009944424000423
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/6"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "mean_legitimate_timely_percent": 96.36118515794956,
+    "mean_suspect_goodput_kbit_s": 513.2288,
+    "mean_legitimate_received_rtt_p95_ms": 117.83764566674411,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/7"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "mean_legitimate_timely_percent": 30.03014959563307,
+    "mean_suspect_goodput_kbit_s": 813.8752000000001,
+    "mean_legitimate_received_rtt_p95_ms": 133.0583230001139,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/8"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "mean_legitimate_timely_percent": 29.804605041420533,
+    "mean_suspect_goodput_kbit_s": 814.8309333333333,
+    "mean_legitimate_received_rtt_p95_ms": 133.07986966659277,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5100198933334166,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      4.958948999956192,
+      3.5187950002182333,
+      3.299475999938295
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0455419889999575,
+      6.04641446200003,
+      6.015595882000071
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/9"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "mean_legitimate_timely_percent": 29.35648276073808,
+    "mean_suspect_goodput_kbit_s": 816.4693333333333,
+    "mean_legitimate_received_rtt_p95_ms": 133.0879186666607,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5120767433336368,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      4.628890999811119,
+      6.121555000390799,
+      3.9231529999597115
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.023347629999989,
+      6.0224598059994605,
+      6.004878779999672
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/10"
+  },
+  {
+    "vm": "first",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "mean_legitimate_timely_percent": 29.207693099070482,
+    "mean_suspect_goodput_kbit_s": 817.0154666666667,
+    "mean_legitimate_received_rtt_p95_ms": 133.09086133328188,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 2.522190351000063,
+    "restore_reasons": {
+      "NO_OBSERVED_BENEFIT": 3
+    },
+    "restore_command_ms": [
+      3.712482000082673,
+      3.6982390001867316,
+      4.2452339994270005
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.018129938000129,
+      4.022252476000176,
+      4.019193103999896
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/aggregate_conditions/11"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "mean_legitimate_timely_percent": 28.87452210000238,
+    "mean_suspect_goodput_kbit_s": 818.2442666666666,
+    "mean_legitimate_received_rtt_p95_ms": 133.04405000000466,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/0"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "mean_legitimate_timely_percent": 72.85308252873773,
+    "mean_suspect_goodput_kbit_s": 526.7456,
+    "mean_legitimate_received_rtt_p95_ms": 132.67028200001127,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5441274946666492,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      5.074470000010933,
+      4.5631960000491745,
+      7.9757270000300196
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.041408999999987,
+      6.050120867000032,
+      6.00751593300015
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/1"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "mean_legitimate_timely_percent": 72.97877561035456,
+    "mean_suspect_goodput_kbit_s": 526.6090666666666,
+    "mean_legitimate_received_rtt_p95_ms": 132.6188136666815,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5262969823333303,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      4.6905049999850235,
+      4.683834000047682,
+      6.028065999998944
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.046361087000037,
+      6.003581136999969,
+      6.003879159999997
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/2"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "mean_legitimate_timely_percent": 72.9201689970143,
+    "mean_suspect_goodput_kbit_s": 527.0186666666667,
+    "mean_legitimate_received_rtt_p95_ms": 132.66063999994535,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 2.5108192463333125,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      4.988444999980857,
+      7.532192999974541,
+      7.041865000019243
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.001295036999977,
+      6.002578872999948,
+      6.028172552999877
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/3"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "mean_legitimate_timely_percent": 96.36241076079295,
+    "mean_suspect_goodput_kbit_s": 513.3653333333333,
+    "mean_legitimate_received_rtt_p95_ms": 117.6517959999804,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/4"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "mean_legitimate_timely_percent": 96.42736771149309,
+    "mean_suspect_goodput_kbit_s": 413.55946666666665,
+    "mean_legitimate_received_rtt_p95_ms": 118.89636766666929,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5327852743332642,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      7.023500000059357,
+      7.730409000032523,
+      7.424079999964306
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.002512877000072,
+      6.039656005999859,
+      6.02309847000015
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/5"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "mean_legitimate_timely_percent": 96.46226334800652,
+    "mean_suspect_goodput_kbit_s": 413.14986666666664,
+    "mean_legitimate_received_rtt_p95_ms": 118.44870833336547,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5318764003332792,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      6.471431000136363,
+      6.66023500002666,
+      7.473234000144657
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0039711590000024,
+      6.015643204000071,
+      6.023189072999912
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/6"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "mean_legitimate_timely_percent": 96.53198653198652,
+    "mean_suspect_goodput_kbit_s": 512.5461333333334,
+    "mean_legitimate_received_rtt_p95_ms": 118.67794733331039,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/7"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "mean_legitimate_timely_percent": 29.36990396039941,
+    "mean_suspect_goodput_kbit_s": 816.4693333333333,
+    "mean_legitimate_received_rtt_p95_ms": 133.0014066666839,
+    "intervention_count": 0,
+    "mean_apply_seconds_from_event_start": null,
+    "restore_reasons": {},
+    "restore_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/8"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "mean_legitimate_timely_percent": 29.46127946127946,
+    "mean_suspect_goodput_kbit_s": 815.9232000000001,
+    "mean_legitimate_received_rtt_p95_ms": 133.06448166664117,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5450399229999903,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      5.222016999994139,
+      3.4542220000730595,
+      3.4338839999463744
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.001248963000023,
+      6.038853139999958,
+      6.035881798999981
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/9"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "mean_legitimate_timely_percent": 29.77062805571134,
+    "mean_suspect_goodput_kbit_s": 814.6944,
+    "mean_legitimate_received_rtt_p95_ms": 133.05055700000898,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 1.5440910723333445,
+    "restore_reasons": {
+      "ACTION_TTL_EXPIRED": 3
+    },
+    "restore_command_ms": [
+      3.621280999936971,
+      2.671263999900475,
+      6.075074000136738
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.037188861000004,
+      6.038630689000001,
+      6.04535394100003
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/10"
+  },
+  {
+    "vm": "repeat",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "mean_legitimate_timely_percent": 28.97158896307425,
+    "mean_suspect_goodput_kbit_s": 817.9712,
+    "mean_legitimate_received_rtt_p95_ms": 133.0599363334007,
+    "intervention_count": 3,
+    "mean_apply_seconds_from_event_start": 2.525639602999945,
+    "restore_reasons": {
+      "NO_OBSERVED_BENEFIT": 3
+    },
+    "restore_command_ms": [
+      3.2985969999117515,
+      3.2380959999045444,
+      5.423350999990362
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.0092464470000095,
+      4.009609891000082,
+      3.9712211030000617
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/aggregate_conditions/11"
+  }
+]

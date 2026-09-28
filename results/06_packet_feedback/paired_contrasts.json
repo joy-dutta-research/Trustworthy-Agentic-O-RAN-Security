@@ -1,0 +1,272 @@
+[
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "delta_timely_pp": 42.94917493097473,
+    "individual_delta_timely_pp": [
+      43.27603640040445,
+      43.073811931243675,
+      42.49767646127605
+    ],
+    "delta_suspect_goodput_kbit_s": -287.12960000000004,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/0"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "delta_timely_pp": 43.19454966200749,
+    "individual_delta_timely_pp": [
+      42.69744972475002,
+      43.80886723657199,
+      43.077332024700446
+    ],
+    "delta_suspect_goodput_kbit_s": -288.76800000000003,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/1"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "delta_timely_pp": 42.789895836301035,
+    "individual_delta_timely_pp": [
+      42.84364855515938,
+      43.30381673152148,
+      42.22222222222222
+    ],
+    "delta_suspect_goodput_kbit_s": -286.1738666666667,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/2"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "delta_timely_pp": -0.13955098250771902,
+    "individual_delta_timely_pp": [
+      -0.20569701055039857,
+      -0.10458477597001803,
+      -0.10837116100274047
+    ],
+    "delta_suspect_goodput_kbit_s": -99.12319999999995,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/3"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "delta_timely_pp": -0.13842758215064271,
+    "individual_delta_timely_pp": [
+      0.10101010101010166,
+      -0.20569701055039857,
+      -0.3105958369116313
+    ],
+    "delta_suspect_goodput_kbit_s": -98.57706666666662,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/4"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "delta_timely_pp": -0.17080137403696627,
+    "individual_delta_timely_pp": [
+      -0.20569701055039857,
+      -0.10101010101010166,
+      -0.20569701055039857
+    ],
+    "delta_suspect_goodput_kbit_s": 0.6826666666666673,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/5"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "delta_timely_pp": -0.22554455421253303,
+    "individual_delta_timely_pp": [
+      0.0611376927166396,
+      -0.23221018245231928,
+      -0.5055611729019194
+    ],
+    "delta_suspect_goodput_kbit_s": 0.9557333333333418,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/6"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "delta_timely_pp": -0.6736668348949908,
+    "individual_delta_timely_pp": [
+      0.24311945364576815,
+      -1.6161616161616155,
+      -0.6479583421691248
+    ],
+    "delta_suspect_goodput_kbit_s": 2.5941333333333128,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/7"
+  },
+  {
+    "vm": "first",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "delta_timely_pp": -0.8224564965625921,
+    "individual_delta_timely_pp": [
+      0.0305997552019599,
+      -1.0700118594855423,
+      -1.4279573854041938
+    ],
+    "delta_suspect_goodput_kbit_s": 3.140266666666624,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/comparisons/8"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "delta_timely_pp": 43.978560428735356,
+    "individual_delta_timely_pp": [
+      42.92729612008582,
+      45.39939332659252,
+      43.60899183952773
+    ],
+    "delta_suspect_goodput_kbit_s": -291.4986666666667,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/0"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "delta_timely_pp": 44.10425351035217,
+    "individual_delta_timely_pp": [
+      45.02241831867717,
+      43.95700887904602,
+      43.333333333333336
+    ],
+    "delta_suspect_goodput_kbit_s": -291.6352,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/1"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "delta_timely_pp": 44.04564689701191,
+    "individual_delta_timely_pp": [
+      45.12342841968727,
+      43.37714863498483,
+      43.63636363636364
+    ],
+    "delta_suspect_goodput_kbit_s": -291.22560000000004,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/2"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "delta_timely_pp": 0.06495695070012722,
+    "individual_delta_timely_pp": [
+      0.4004657290804903,
+      -0.4078193461408808,
+      0.2022244691607722
+    ],
+    "delta_suspect_goodput_kbit_s": -99.8058666666666,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/3"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "delta_timely_pp": 0.09985258721355954,
+    "individual_delta_timely_pp": [
+      0.2022244691607722,
+      0.40404040404040664,
+      -0.30670711156050023
+    ],
+    "delta_suspect_goodput_kbit_s": -100.21546666666661,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/4"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "delta_timely_pp": 0.16957577119356787,
+    "individual_delta_timely_pp": [
+      0.10101010101010166,
+      0.20569701055039857,
+      0.20202020202020332
+    ],
+    "delta_suspect_goodput_kbit_s": -0.8191999999999476,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/5"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "delta_timely_pp": 0.09137550088005134,
+    "individual_delta_timely_pp": [
+      1.5872578157714645,
+      1.1111111111111127,
+      -2.424242424242423
+    ],
+    "delta_suspect_goodput_kbit_s": -0.546133333333349,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/6"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "delta_timely_pp": 0.4007240953119273,
+    "individual_delta_timely_pp": [
+      -0.07139136562797077,
+      0.8386789092978186,
+      0.4348847422659341
+    ],
+    "delta_suspect_goodput_kbit_s": -1.7749333333333273,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/7"
+  },
+  {
+    "vm": "repeat",
+    "baseline": "no_action",
+    "paired_repetitions": 3,
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "delta_timely_pp": -0.3983149973251628,
+    "individual_delta_timely_pp": [
+      -0.2427105058683987,
+      -0.5477855477855509,
+      -0.40444893832153883
+    ],
+    "delta_suspect_goodput_kbit_s": 1.5018666666666907,
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/comparisons/8"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "acceptance": "Original packet/scorer checks; tolerate known dynamic echo error only as a retained diagnostic failure. Stop on any corrected failure. No final execution in this release.",
+  "approval": "Owner explicitly requested comprehensive bounded investigation and necessary tests in current conversation.",
+  "budget": {
+    "corrected_36_episode_pilot_attempts": 1,
+    "dynamic_diagnostic_episodes": 12,
+    "fresh_qualification_attempts": 1,
+    "guest_phase_limit_seconds": 6000,
+    "matched_corrected_episodes": 12,
+    "max_return_MiB": 480,
+    "retry_per_episode": 0,
+    "stress_60s_episodes": 4
+  },
+  "changes": [
+    "scripts/closed_loop_worker.py",
+    "scripts/home_lab_run.py",
+    "scripts/run_closed_loop.py"
+  ],
+  "classification": "TRANSPORT_INVESTIGATION_AND_CORRECTED_PILOT_NOT_FINAL",
+  "correction": "Six readback-verified permanent peer neighbors only in newly owned namespaces, fixed for every method.",
+  "created_utc": "2026-09-24T12:06:56.219993+00:00",
+  "hypothesis": "Dynamic ARP/neighbor resolution through congested netem can queue server replies and exhaust socket writability. Requires guest evidence.",
+  "parent_sha256": "720d0cf1f10c71a5239e43e924bb23412a624283921a3ac179dc73aff0d08188",
+  "preserved_gateway_policy_controller_settings_scorers": true
+}

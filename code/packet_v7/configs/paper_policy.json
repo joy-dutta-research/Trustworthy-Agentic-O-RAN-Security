@@ -1,0 +1,127 @@
+{
+  "policy_version": "0.1.0",
+  "description": "Illustrative dry-run operator policy for the TNSE proof of concept.",
+  "principals": {
+    "agent-observer-01": "observer",
+    "agent-detector-01": "detector",
+    "agent-responder-01": "security_responder",
+    "agent-orchestrator-01": "security_orchestrator",
+    "operator-test-01": "human_operator"
+  },
+  "roles": {
+    "observer": ["notify_operator"],
+    "detector": ["notify_operator"],
+    "security_responder": [
+      "rate_limit_ue",
+      "quarantine_ue",
+      "notify_operator"
+    ],
+    "security_orchestrator": [
+      "rate_limit_ue",
+      "quarantine_ue",
+      "isolate_xapp",
+      "modify_a1_policy",
+      "rollback_policy",
+      "notify_operator"
+    ],
+    "human_operator": [
+      "rate_limit_ue",
+      "quarantine_ue",
+      "isolate_xapp",
+      "modify_a1_policy",
+      "rollback_policy",
+      "notify_operator"
+    ]
+  },
+  "interface_actions": {
+    "E2": ["rate_limit_ue", "quarantine_ue"],
+    "A1": ["modify_a1_policy", "rollback_policy"],
+    "SMO": ["isolate_xapp", "notify_operator"]
+  },
+  "action_targets": {
+    "rate_limit_ue": ["ue"],
+    "quarantine_ue": ["ue"],
+    "isolate_xapp": ["xapp"],
+    "modify_a1_policy": ["policy"],
+    "rollback_policy": ["policy"],
+    "notify_operator": ["operator"]
+  },
+  "action_parameter_contracts": {
+    "rate_limit_ue": {
+      "required_fields": ["control_parameter", "reduction_percent"],
+      "control_parameter": "traffic_rate_limit"
+    },
+    "quarantine_ue": {
+      "required_fields": ["control_parameter", "duration_seconds"],
+      "control_parameter": "ue_admission_state"
+    },
+    "isolate_xapp": {
+      "required_fields": ["control_parameter", "duration_seconds"],
+      "control_parameter": "xapp_execution_state"
+    },
+    "modify_a1_policy": {
+      "required_fields": ["control_parameter", "policy_weight"],
+      "control_parameter": "a1_policy_weight"
+    },
+    "rollback_policy": {
+      "required_fields": ["control_parameter", "snapshot_id"],
+      "control_parameter": "a1_policy_state"
+    },
+    "notify_operator": {
+      "required_fields": ["control_parameter", "message"],
+      "control_parameter": "operator_notification"
+    }
+  },
+  "protected_slices": ["slice-emergency", "slice-public-safety"],
+  "disruptive_actions": [
+    "rate_limit_ue",
+    "quarantine_ue",
+    "isolate_xapp",
+    "modify_a1_policy"
+  ],
+  "max_ttl_seconds": 900,
+  "max_proposal_age_seconds": 600,
+  "max_clock_skew_seconds": 30,
+  "parameter_bounds": {
+    "rate_limit_ue": {
+      "reduction_percent": {"minimum": 1, "maximum": 80}
+    },
+    "quarantine_ue": {
+      "duration_seconds": {"minimum": 1, "maximum": 300}
+    },
+    "isolate_xapp": {
+      "duration_seconds": {"minimum": 1, "maximum": 600}
+    },
+    "modify_a1_policy": {
+      "policy_weight": {"minimum": 0.0, "maximum": 1.0}
+    }
+  },
+  "minimum_risk_by_action": {
+    "rate_limit_ue": "medium",
+    "quarantine_ue": "medium",
+    "isolate_xapp": "high",
+    "modify_a1_policy": "high",
+    "rollback_policy": "high",
+    "notify_operator": "low"
+  },
+  "approval_required_for_risk": ["high", "critical"],
+  "approval_required_actions": [
+    "isolate_xapp",
+    "modify_a1_policy",
+    "rollback_policy"
+  ],
+  "audit_required_fields": [
+    "audit_id",
+    "action_id",
+    "incident_id",
+    "decision",
+    "reason_codes",
+    "policy_ids",
+    "policy_version",
+    "policy_sha256",
+    "proposal_sha256",
+    "evaluated_at",
+    "record_sha256",
+    "authenticated_principal"
+  ]
+}

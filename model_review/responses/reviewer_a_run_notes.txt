@@ -1,0 +1,27 @@
+Run notes for model_review_round1-reviewer_a
+UTC run date: 2026-09-22
+
+Completeness:
+Read INSTRUCTIONS.md, RUN_METADATA.md, POLICY.json, ACTION_SCHEMA.json, OUTPUT_SCHEMA.json, all 120 cases including active_actions and source_context, the complete trusted approval registry, and all approval_binding_verification records from reviewer_a.zip.
+All 120 unique review IDs occur exactly once in review_result.json. No case or required file was inaccessible.
+No expected decisions, implementation results, or other reviewer results were available or consulted. No comparative agreement claim is made.
+
+Access and isolation:
+Only local attachment reading, JSON parsing, case-ID checking, UTC date/output formatting, and output-file writing/validation were used.
+No network access, browsing, prior repository-context inspection, model delegation, project-engine execution, or access to another reviewer's output occurred.
+Service-enforced blinding could not be verified: forbidden capabilities remained exposed in the tool interface, and the service's isolation of prior context is not observable to this reviewer. No prior implementation or review-result context appeared in the supplied conversation. This run is therefore reported as an attachment-only policy review, not as a certified blinded run. This limitation does not mean any forbidden source was consulted.
+The actual interface model and mode labels, reasoning effort, seed, and temperature were not observable. The result records not_available for model and mode and lists all unavailable settings.
+
+Recorded tool/display and formatting failures:
+1. An early combined display of approval binding evidence, the registry, and the first ten cases was truncated by the tool-output display limit. The complete registry was then read separately, and the full approval binding evidence was subsequently read again. Every case was read in full. This was an input-display truncation, not an omitted-case result.
+2. The first attempt to write the already composed JSON failed before process creation with Windows CreateProcessAsUserW error 206 (command length exceeded). No result file was created by that attempt. The exact same serialized first result was written in eight smaller chunks. No policy decision or result metadata was revised in that recovery.
+No timeout or refusal occurred. No result rerun or substantive correction was performed.
+
+Preservation and final format checks:
+The saved result matches the first serialized result: true.
+All source review IDs are covered exactly once: true.
+PowerShell Test-Json validated the saved result against the package's OUTPUT_SCHEMA.json: true.
+The result file was created with create-new semantics and has not been overwritten or edited.
+Output validation checked formatting and coverage only; no project policy engine was imported or run.
+
+This is model-assisted review, not human validation. Human adjudication remains required before a final research claim.

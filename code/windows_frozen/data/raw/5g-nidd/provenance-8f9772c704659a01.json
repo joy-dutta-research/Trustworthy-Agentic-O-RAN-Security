@@ -1,0 +1,34 @@
+{
+  "access": "open",
+  "archive": {
+    "checksum": "sha256:07531b251f3f35be70bf1d3dcca2e27274bd1b267c5a057c0fcea18668b9293d",
+    "filename": "Combined.zip",
+    "frozen": "2022-12-10T23:27:02Z",
+    "id": "b8f5a22c-ee6e-4c0f-8021-8bc66bec4755",
+    "modified": "2022-12-07T08:29:25Z",
+    "pathname": "/Combined.zip",
+    "size": 28028224,
+    "storage_identifier": "639515c6e1664373518560f71497050"
+  },
+  "archive_members": [
+    {
+      "compressed_size": 28028066,
+      "crc32": "48bebfd2",
+      "name": "Combined.csv",
+      "size": 275265610
+    }
+  ],
+  "dataset_doi": "https://doi.org/10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361",
+  "dataset_id": "9d13ef28-2ca7-44b0-9950-225359afac65",
+  "descriptor_doi": "https://doi.org/10.1109/IEEEDATA.2025.3592888",
+  "files_url": "https://metax.fairdata.fi/v3/datasets/9d13ef28-2ca7-44b0-9950-225359afac65/files?pagination=false",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "metadata_modified": "2025-08-14T20:20:07Z",
+  "metadata_url": "https://metax.fairdata.fi/v3/datasets/9d13ef28-2ca7-44b0-9950-225359afac65",
+  "receipt_version": "1.0",
+  "title": {
+    "en": "5G-NIDD: A Comprehensive Network Intrusion Detection Dataset Generated over 5G Wireless Network"
+  },
+  "verified_sha256": "07531b251f3f35be70bf1d3dcca2e27274bd1b267c5a057c0fcea18668b9293d",
+  "version": 1
+}

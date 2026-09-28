@@ -1,0 +1,938 @@
+{
+  "audit": {
+    "attack_counts": {
+      "Benign": 477737,
+      "HTTPFlood": 140812,
+      "ICMPFlood": 1155,
+      "SYNFlood": 9721,
+      "SYNScan": 20043,
+      "SlowrateDoS": 73124,
+      "TCPConnectScan": 20052,
+      "UDPFlood": 457340,
+      "UDPScan": 15906
+    },
+    "binary_label_counts": {
+      "Benign": 477737,
+      "Malicious": 738153
+    },
+    "columns": [
+      "",
+      "Seq",
+      "Dur",
+      "RunTime",
+      "Mean",
+      "Sum",
+      "Min",
+      "Max",
+      "Proto",
+      "sTos",
+      "dTos",
+      "sDSb",
+      "dDSb",
+      "sTtl",
+      "dTtl",
+      "sHops",
+      "dHops",
+      "Cause",
+      "TotPkts",
+      "SrcPkts",
+      "DstPkts",
+      "TotBytes",
+      "SrcBytes",
+      "DstBytes",
+      "Offset",
+      "sMeanPktSz",
+      "dMeanPktSz",
+      "Load",
+      "SrcLoad",
+      "DstLoad",
+      "Loss",
+      "SrcLoss",
+      "DstLoss",
+      "pLoss",
+      "SrcGap",
+      "DstGap",
+      "Rate",
+      "SrcRate",
+      "DstRate",
+      "State",
+      "SrcWin",
+      "DstWin",
+      "sVid",
+      "dVid",
+      "SrcTCPBase",
+      "DstTCPBase",
+      "TcpRtt",
+      "SynAck",
+      "AckDat",
+      "Label",
+      "Attack Type",
+      "Attack Tool"
+    ],
+    "duplicate_counts": {
+      "Benign": 21
+    },
+    "duplicate_rows": 21,
+    "eligible_unique_counts": {
+      "Benign": 477716,
+      "ICMPFlood": 1154,
+      "SYNFlood": 8394,
+      "UDPFlood": 246429
+    },
+    "invalid_measurement_rows": 0,
+    "malformed_rows": 0,
+    "missing_counts": {
+      "DstGap": 937219,
+      "DstTCPBase": 985843,
+      "DstWin": 1038812,
+      "SrcGap": 937219,
+      "SrcTCPBase": 937219,
+      "SrcWin": 973470,
+      "dDSb": 943067,
+      "dHops": 943067,
+      "dTos": 943067,
+      "dTtl": 943067,
+      "dVid": 1213881,
+      "sDSb": 214,
+      "sHops": 214,
+      "sTos": 214,
+      "sTtl": 214,
+      "sVid": 1101319
+    },
+    "row_count": 1215890,
+    "selection_exclusions": {
+      "Benign:duplicate_record": 21,
+      "HTTPFlood:outside_predeclared_flood_comparison": 140812,
+      "ICMPFlood:nonpositive_or_undefined_packet_rate": 1,
+      "SYNFlood:nonpositive_or_undefined_packet_rate": 1327,
+      "SYNScan:outside_predeclared_flood_comparison": 20043,
+      "SlowrateDoS:outside_predeclared_flood_comparison": 73124,
+      "TCPConnectScan:outside_predeclared_flood_comparison": 20052,
+      "UDPFlood:nonpositive_or_undefined_packet_rate": 210911,
+      "UDPScan:outside_predeclared_flood_comparison": 15906
+    }
+  },
+  "contexts": [
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "1185f1769326c7ec7297b4155eab850a",
+      "source_row_number": 255643,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "4503bedcf6086e66dd9a5436a051a983",
+      "source_row_number": 250850,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "6485264107a8690423e0804fa2ed7924",
+      "source_row_number": 484966,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "8153092cc39076a3842265418738d725",
+      "source_row_number": 509699,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "16193b404483b2894426bd3fe29470a4",
+      "source_row_number": 471727,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "631c72944c274836518d151d5da3a677",
+      "source_row_number": 1170046,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.581773,
+      "packets_per_second": 0.7746614438992119,
+      "record_id": "a407d5816ed5f4603e742482fc723939",
+      "source_row_number": 446896,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.589563,
+      "packets_per_second": 0.7723310844339373,
+      "record_id": "fe8e6708fd1e85031ea8440885fa5d62",
+      "source_row_number": 272013,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "c9136ef99553825712ff49b45dda5845",
+      "source_row_number": 266626,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "9b081cd9ded042e645b149f0c9e7a13e",
+      "source_row_number": 771482,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.581699,
+      "packets_per_second": 0.7746836482486921,
+      "record_id": "5ef82390904bcfa2bd71ef7a5b468cd9",
+      "source_row_number": 437361,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.577172,
+      "packets_per_second": 0.7760444394087783,
+      "record_id": "5c2dc620f052bd2fb3c8edb7f27d5ebe",
+      "source_row_number": 490346,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "1f0f808ffbfca86404ea635c47c73ed2",
+      "source_row_number": 498015,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "b68762f9c02d12fa0f93fc7a60527826",
+      "source_row_number": 417563,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "f79f0929892f1be285b71eaf20448a80",
+      "source_row_number": 433632,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.575853,
+      "packets_per_second": 0.7764418233493915,
+      "record_id": "ce8c76e1b09c849ea0951c6d127f3540",
+      "source_row_number": 348008,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.594256,
+      "packets_per_second": 0.770933940212531,
+      "record_id": "fb9c178fb0cf567c59f6d12bc5bfe943",
+      "source_row_number": 269475,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.137467,
+      "packets_per_second": 741.9962609208028,
+      "record_id": "06e5f0f2128bc62596e4c889a85d2b0a",
+      "source_row_number": 516133,
+      "total_packets": 102
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 2.578852,
+      "packets_per_second": 0.7755388831929867,
+      "record_id": "f8d8c4c4859755f70e01823b54e2297a",
+      "source_row_number": 308694,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "e13b237003d5302a5d379361a908d583",
+      "source_row_number": 319653,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "af26afb1ec9163d53080d2a7fd1f8664",
+      "source_row_number": 304207,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "81e14cba3a3d2ade75252faec4f446a2",
+      "source_row_number": 513473,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "1436564e1d7a2f3acf4a5d77cfb65f0b",
+      "source_row_number": 248748,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "74ca8fcfe9d19b935770bf195c1579fe",
+      "source_row_number": 299838,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "Benign",
+      "duration_seconds": 0.0,
+      "packets_per_second": null,
+      "record_id": "9ea4d1c0e46df4ef13c147d609ed450d",
+      "source_row_number": 502834,
+      "total_packets": 1
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002279,
+      "packets_per_second": 877.5778850372969,
+      "record_id": "9e1869a3248b93688a08e3311fdd5eb7",
+      "source_row_number": 765402,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002207,
+      "packets_per_second": 906.2075215224286,
+      "record_id": "36faca0c04536a03a7728fc574183f84",
+      "source_row_number": 36832,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002054,
+      "packets_per_second": 973.7098344693283,
+      "record_id": "865167022bf96d2ba8988119bbb16a3f",
+      "source_row_number": 36445,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002149,
+      "packets_per_second": 930.6654257794323,
+      "record_id": "5ca0c1922cc278ae47597f76b7abae01",
+      "source_row_number": 764199,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.00223,
+      "packets_per_second": 896.8609865470851,
+      "record_id": "93a6b9e826cbdf1aa31affc8a5437be8",
+      "source_row_number": 35587,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002052,
+      "packets_per_second": 974.6588693957115,
+      "record_id": "e5c12c1cd5d92de45aef1f2f8e958c12",
+      "source_row_number": 34967,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002439,
+      "packets_per_second": 820.0082000820007,
+      "record_id": "66ed7acdb59fd438b84466ce022d5077",
+      "source_row_number": 37130,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002064,
+      "packets_per_second": 968.9922480620156,
+      "record_id": "5bebd26c19f5ab391cf2ff457f9c9f17",
+      "source_row_number": 36328,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.001837,
+      "packets_per_second": 1088.7316276537833,
+      "record_id": "6564d45cf859e4f07e1123bc8042bc1d",
+      "source_row_number": 36279,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002281,
+      "packets_per_second": 876.8084173608066,
+      "record_id": "d2ad9445d8fec51fcb235465e17a418e",
+      "source_row_number": 766575,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.001753,
+      "packets_per_second": 1140.901312036509,
+      "record_id": "84f6aa712bbdcf457fa557bb8cc931f5",
+      "source_row_number": 34500,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002414,
+      "packets_per_second": 828.5004142502072,
+      "record_id": "2f5a9e82884f99a6f3dcfdd86cdb4c30",
+      "source_row_number": 35797,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002079,
+      "packets_per_second": 962.000962000962,
+      "record_id": "cb7a1c6ddf60d11e6232d6378d2b2697",
+      "source_row_number": 35234,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002196,
+      "packets_per_second": 910.7468123861566,
+      "record_id": "222d08eb29ced401a98a1bb2fbbe254a",
+      "source_row_number": 36675,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002099,
+      "packets_per_second": 952.8346831824678,
+      "record_id": "7b453dc708bb2c85c1b2e340c6ee1bc7",
+      "source_row_number": 766516,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002192,
+      "packets_per_second": 912.4087591240876,
+      "record_id": "005d023cac362d5248bf03bb839c3bdf",
+      "source_row_number": 764931,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002126,
+      "packets_per_second": 940.7337723424272,
+      "record_id": "65cf97f9571c5724f59195d8a6488eb6",
+      "source_row_number": 36797,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002211,
+      "packets_per_second": 904.5680687471732,
+      "record_id": "47497da79fad565520e55d8f70ce6774",
+      "source_row_number": 35996,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002368,
+      "packets_per_second": 844.5945945945946,
+      "record_id": "85b11f97f181cb419a30ee13dcbe8be1",
+      "source_row_number": 35017,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002209,
+      "packets_per_second": 905.3870529651426,
+      "record_id": "70772b266d40de3af1088be6a1e41390",
+      "source_row_number": 36019,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.001436,
+      "packets_per_second": 1392.757660167131,
+      "record_id": "25f5c4e19efed94e21f263b450cc9119",
+      "source_row_number": 36510,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002109,
+      "packets_per_second": 948.3167377904219,
+      "record_id": "2151411d10472c412c87254440dda7e2",
+      "source_row_number": 35597,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002141,
+      "packets_per_second": 934.1429238673517,
+      "record_id": "3dd5a347a63dcdbe23b9c2cc2925c7a7",
+      "source_row_number": 37049,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.002151,
+      "packets_per_second": 929.8000929800093,
+      "record_id": "d00c50a4833b6c1e3b4f408b010084eb",
+      "source_row_number": 36800,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "ICMPFlood",
+      "duration_seconds": 0.00213,
+      "packets_per_second": 938.9671361502348,
+      "record_id": "22d32821e9d4b57cbec8a3c71993a384",
+      "source_row_number": 764342,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015999,
+      "packets_per_second": 187.51171948246767,
+      "record_id": "df8356c795e61bff68ef8122ce1dac9d",
+      "source_row_number": 521998,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.019105,
+      "packets_per_second": 157.02695629416382,
+      "record_id": "b8cebe042d65269c807419d3481affa4",
+      "source_row_number": 1074927,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.038994,
+      "packets_per_second": 76.93491306354824,
+      "record_id": "ac5f8c389dd55626a9be6740905907f7",
+      "source_row_number": 541660,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.038864,
+      "packets_per_second": 77.19226018937835,
+      "record_id": "1f242c5401c2983169856058851cebe1",
+      "source_row_number": 535401,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.016897,
+      "packets_per_second": 177.54630999585726,
+      "record_id": "7e5121fc575fc8415a9a77983a988cf9",
+      "source_row_number": 521852,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015006,
+      "packets_per_second": 199.9200319872051,
+      "record_id": "3efd3ff5eb140d3addace0187f219086",
+      "source_row_number": 1073010,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015096,
+      "packets_per_second": 198.7281399046105,
+      "record_id": "115a057768afda44ed947995bf43a64f",
+      "source_row_number": 1071892,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.017003,
+      "packets_per_second": 176.4394518614362,
+      "record_id": "f6925bfb8be69273efdf158a8ca12c10",
+      "source_row_number": 1071767,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015001,
+      "packets_per_second": 199.9866675554963,
+      "record_id": "94f936ef94611dbf6b4d3bee552bf9c4",
+      "source_row_number": 1075383,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015071,
+      "packets_per_second": 199.05779311260036,
+      "record_id": "c6d42c5a8a5d6fa3b9ef556b92ba851a",
+      "source_row_number": 1067693,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.01901,
+      "packets_per_second": 157.81167806417676,
+      "record_id": "9d5bf241aaab1a53d54330136546e8b4",
+      "source_row_number": 1072675,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.038967,
+      "packets_per_second": 76.98822080221726,
+      "record_id": "a0f2f24dcb192f67fa34a2bfc466a89d",
+      "source_row_number": 543006,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.019001,
+      "packets_per_second": 157.8864270301563,
+      "record_id": "44fc39b939b53870196a951f149c3628",
+      "source_row_number": 1073452,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.052874,
+      "packets_per_second": 56.738661724098804,
+      "record_id": "72ad4d9aeeaea3ad96ba6b5e06a874aa",
+      "source_row_number": 526084,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015097,
+      "packets_per_second": 198.71497648539446,
+      "record_id": "412237b48b6b0ede736b034dc04505b4",
+      "source_row_number": 1075282,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.014853,
+      "packets_per_second": 201.97939810139366,
+      "record_id": "9e4f7f6682c6f0ab3a1b0dc1a75e8b79",
+      "source_row_number": 1075407,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.018999,
+      "packets_per_second": 157.90304752881732,
+      "record_id": "2e876fe22a0b8895356d6241831e42d2",
+      "source_row_number": 1070050,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.031066,
+      "packets_per_second": 96.56859589261572,
+      "record_id": "bfb9fb5ec0c1a576b9006e840a78c322",
+      "source_row_number": 535393,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.059112,
+      "packets_per_second": 50.75111652456354,
+      "record_id": "d5b3c1c838012bf52aba0d39fdd36ffd",
+      "source_row_number": 537855,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.015088,
+      "packets_per_second": 198.83351007423116,
+      "record_id": "a85b551ce5a7f8eacf136195acce1a4b",
+      "source_row_number": 1069743,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.038999,
+      "packets_per_second": 76.92504936024001,
+      "record_id": "229e77e89cf98673c4dfa7f9523f52d8",
+      "source_row_number": 529919,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.03901,
+      "packets_per_second": 76.90335811330428,
+      "record_id": "63121a4ce8f3ee1d8e107c8d5b803ad1",
+      "source_row_number": 532104,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.014092,
+      "packets_per_second": 212.8867442520579,
+      "record_id": "17a3ff09578caa97bd12152573c7ad0d",
+      "source_row_number": 1075552,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 1.95233,
+      "packets_per_second": 1.0244169786870048,
+      "record_id": "bb74246d01b57413456f371bc1ffeff2",
+      "source_row_number": 522886,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "SYNFlood",
+      "duration_seconds": 0.054925,
+      "packets_per_second": 54.61993627674101,
+      "record_id": "ff07b90c5380900b114232d8c5d07182",
+      "source_row_number": 550053,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.544587,
+      "packets_per_second": 0.44008399443117713,
+      "record_id": "e0b8d2703c88fbcf9a73e12a729fba11",
+      "source_row_number": 61209,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.556307,
+      "packets_per_second": 0.43895198457873885,
+      "record_id": "f9bea519f40ac0b08acd7411ce84743b",
+      "source_row_number": 68802,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.55623,
+      "packets_per_second": 0.6584391042594425,
+      "record_id": "5e8181d7b5c3c5d506ac3cf6e1340d94",
+      "source_row_number": 147714,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.593097,
+      "packets_per_second": 0.7712785136846018,
+      "record_id": "a0ce0baaeb5f4fee5f3630e72f4f0109",
+      "source_row_number": 844802,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.579256,
+      "packets_per_second": 0.4367521710950425,
+      "record_id": "ad8a375a1bdaa579ea2a1d829bfbe264",
+      "source_row_number": 129568,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.259849,
+      "packets_per_second": 0.8850148837378072,
+      "record_id": "f54cfebfc350cf9f7db1a49124043089",
+      "source_row_number": 86721,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.574818,
+      "packets_per_second": 0.7767539297923193,
+      "record_id": "7b0ab044be7d6cffef9b58184fddb7e2",
+      "source_row_number": 904892,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.579117,
+      "packets_per_second": 0.7754591978572511,
+      "record_id": "ba7874887ce29f1e616f74625701457c",
+      "source_row_number": 990160,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.286551,
+      "packets_per_second": 0.874679812521129,
+      "record_id": "995b22394acd70bb076f71f2bd4466ab",
+      "source_row_number": 168108,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.55071,
+      "packets_per_second": 0.6592377892680483,
+      "record_id": "a95a3bdd609775378514a413050ab2a4",
+      "source_row_number": 91594,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.56841,
+      "packets_per_second": 0.7786918755183168,
+      "record_id": "744febbe1c0bc52f72e25574fba5e5b3",
+      "source_row_number": 906349,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.57074,
+      "packets_per_second": 0.7779861051681618,
+      "record_id": "72c1b3f146024828ba93115ba728efde",
+      "source_row_number": 863168,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.578008,
+      "packets_per_second": 0.7757927826445845,
+      "record_id": "45fb53f69bf26605da8dc1ef2d567d80",
+      "source_row_number": 1011119,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.555036,
+      "packets_per_second": 0.6586116992269655,
+      "record_id": "b0b409be4cf2f79bc6f1dcac5f862562",
+      "source_row_number": 175456,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.581016,
+      "packets_per_second": 0.7748886485012104,
+      "record_id": "7c8e3bf21a3bb3f00a196f1f7f8ee186",
+      "source_row_number": 935531,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.58873,
+      "packets_per_second": 0.7725796046710163,
+      "record_id": "e1538efa8c926f20939860448190b231",
+      "source_row_number": 941141,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.568901,
+      "packets_per_second": 0.437742030304443,
+      "record_id": "c87cef948cd7bd432208953ce97c1754",
+      "source_row_number": 118696,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.580044,
+      "packets_per_second": 0.7751805783157186,
+      "record_id": "8d61ee1a452b8375d0c5f320ea25617c",
+      "source_row_number": 856078,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.574168,
+      "packets_per_second": 0.6558569777061096,
+      "record_id": "42e97672f302cf6d2916c9191e6f8891",
+      "source_row_number": 113204,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.807261,
+      "packets_per_second": 0.7124382093435558,
+      "record_id": "df22b7bae54b8865b9f9a1c2bc6e39bb",
+      "source_row_number": 793888,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.575407,
+      "packets_per_second": 0.7765762848357561,
+      "record_id": "1a782396d60e0dbd808cae94a7de3b76",
+      "source_row_number": 851946,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.580171,
+      "packets_per_second": 0.7751424227308965,
+      "record_id": "a34cf884c7ae06c40bd6a8e7f4044cae",
+      "source_row_number": 993835,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 2.589092,
+      "packets_per_second": 0.7724715846327593,
+      "record_id": "7b7564c9232a1a85ac8b9c14b389923d",
+      "source_row_number": 937584,
+      "total_packets": 2
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.548075,
+      "packets_per_second": 0.6596197292261011,
+      "record_id": "3307e5ac26b15f99bf87f1853078d592",
+      "source_row_number": 165505,
+      "total_packets": 3
+    },
+    {
+      "attack_type": "UDPFlood",
+      "duration_seconds": 4.551947,
+      "packets_per_second": 0.6590586401818825,
+      "record_id": "4df89f0d25f4af5080f1fd2684a0107c",
+      "source_row_number": 174308,
+      "total_packets": 3
+    }
+  ],
+  "dataset": {
+    "archive_sha256": "07531b251f3f35be70bf1d3dcca2e27274bd1b267c5a057c0fcea18668b9293d",
+    "csv_member": "Combined.csv",
+    "csv_uncompressed_bytes": 275265610,
+    "doi": "10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361",
+    "license": "CC-BY-4.0",
+    "name": "5G-NIDD"
+  },
+  "manifest_version": "5gnidd-0.1",
+  "privacy": "No raw addresses, ports, timestamps, or network identifiers exported; opaque row references are linkable to the public source.",
+  "selection": {
+    "method": "smallest_sha256_unique_parsed_rows_excluding_unnamed_index",
+    "sample_per_label": 25,
+    "selected_counts": {
+      "Benign": 25,
+      "ICMPFlood": 25,
+      "SYNFlood": 25,
+      "UDPFlood": 25
+    },
+    "session_independence": "not established; do not infer sessions/base stations from combined-row order"
+  }
+}

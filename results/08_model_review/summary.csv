@@ -1,0 +1,3 @@
+reviewer,case_count,allow,deny,escalate,insufficient_information,reference_matching_count,ambiguity_count,nonempty_rule_reference_count,empty_rule_reference_count,policy_critique_count
+reviewer_a,120,20,60,40,0,120,0,120,0,10
+reviewer_b,120,20,60,40,0,120,0,80,40,3

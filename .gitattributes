@@ -1,0 +1,5 @@
+# Preserve frozen scientific bytes across Windows/Linux checkouts.
+* -text
+*.zip binary
+*.png binary
+*.pdf binary

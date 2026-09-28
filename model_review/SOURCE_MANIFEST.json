@@ -1,0 +1,133 @@
+{
+  "scope": "Completed review round 1; all original sources are preserved outside this publication draft.",
+  "privacy_review": "Selected text scanned for personal absolute paths, account addresses and credential patterns. Copied response bytes unchanged. This bounded scan is not a general privacy certification.",
+  "files": [
+    {
+      "public_path": "model_review/inputs/reviewer_a/ACTION_SCHEMA.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "25d70aa68a718dd9e442f07c7d009cc64701b4446cd1648297d66a6be9725187",
+      "original_sha256": "25d70aa68a718dd9e442f07c7d009cc64701b4446cd1648297d66a6be9725187"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_a/CASES.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "d9acb3cb07c4be9979c8a90921575e1cded7fbeba078cd8d8dd0e1cbfb48a228",
+      "original_sha256": "d9acb3cb07c4be9979c8a90921575e1cded7fbeba078cd8d8dd0e1cbfb48a228"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_a/INSTRUCTIONS.md",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "48b4a31c5ad8cef7ae05ae09d9664725847c1e4648a58a7e7e212f2e3406bba0",
+      "original_sha256": "48b4a31c5ad8cef7ae05ae09d9664725847c1e4648a58a7e7e212f2e3406bba0"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_a/OUTPUT_SCHEMA.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "77744e516219e122057b055b19669302c9dfec6fc182f52e922ba667757f396f",
+      "original_sha256": "77744e516219e122057b055b19669302c9dfec6fc182f52e922ba667757f396f"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_a/PASTE_PROMPT.txt",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "323bcab19420d6c853a004f3c7cdc20ed8d8cb7b7e678a3ab78854fc17f72a8a",
+      "original_sha256": "323bcab19420d6c853a004f3c7cdc20ed8d8cb7b7e678a3ab78854fc17f72a8a"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_a/POLICY.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "6a5c34ac5684d05d3f857a7f371320aab6f03518379a0b78495f51c532681127",
+      "original_sha256": "6a5c34ac5684d05d3f857a7f371320aab6f03518379a0b78495f51c532681127"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_a/RUN_METADATA.md",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "530c0becba0b4c46ba8c14bd034639dbee37b2d8b3b608f0e77cb39bf53f12d0",
+      "original_sha256": "530c0becba0b4c46ba8c14bd034639dbee37b2d8b3b608f0e77cb39bf53f12d0"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/ACTION_SCHEMA.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "25d70aa68a718dd9e442f07c7d009cc64701b4446cd1648297d66a6be9725187",
+      "original_sha256": "25d70aa68a718dd9e442f07c7d009cc64701b4446cd1648297d66a6be9725187"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/CASES.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "bbba4e21aeb1d1d2e8deeae75ec172ae7089c8499841bdbb56232f3bc593cb78",
+      "original_sha256": "bbba4e21aeb1d1d2e8deeae75ec172ae7089c8499841bdbb56232f3bc593cb78"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/INSTRUCTIONS.md",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "8ca7ad3914f506ed0b9c7e7bc01222e106c4c3f3c32993b8a6de42a869468f6f",
+      "original_sha256": "8ca7ad3914f506ed0b9c7e7bc01222e106c4c3f3c32993b8a6de42a869468f6f"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/OUTPUT_SCHEMA.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "2c51f2bca088ebd63d822877a348bfe03d5a899e2738c645185cc91a821897f5",
+      "original_sha256": "2c51f2bca088ebd63d822877a348bfe03d5a899e2738c645185cc91a821897f5"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/PASTE_PROMPT.txt",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "323bcab19420d6c853a004f3c7cdc20ed8d8cb7b7e678a3ab78854fc17f72a8a",
+      "original_sha256": "323bcab19420d6c853a004f3c7cdc20ed8d8cb7b7e678a3ab78854fc17f72a8a"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/POLICY.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "6a5c34ac5684d05d3f857a7f371320aab6f03518379a0b78495f51c532681127",
+      "original_sha256": "6a5c34ac5684d05d3f857a7f371320aab6f03518379a0b78495f51c532681127"
+    },
+    {
+      "public_path": "model_review/inputs/reviewer_b/RUN_METADATA.md",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "530c0becba0b4c46ba8c14bd034639dbee37b2d8b3b608f0e77cb39bf53f12d0",
+      "original_sha256": "530c0becba0b4c46ba8c14bd034639dbee37b2d8b3b608f0e77cb39bf53f12d0"
+    },
+    {
+      "public_path": "model_review/post_review/HISTORICAL_REVIEW_ASSESSMENT.md",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "df643b490b5ea387c307d743c48f64a377a85d045fb2235e9214eb832fcec080",
+      "original_sha256": "df643b490b5ea387c307d743c48f64a377a85d045fb2235e9214eb832fcec080"
+    },
+    {
+      "public_path": "model_review/post_review/original_comparison.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "eb2eab373e80564ca7e02a991ae2b18485e02957d5112c0061f8558859c8da2e",
+      "original_sha256": "eb2eab373e80564ca7e02a991ae2b18485e02957d5112c0061f8558859c8da2e"
+    },
+    {
+      "public_path": "model_review/post_review/reviewer_a_mapping.json",
+      "transformation": "Complete crosswalk, reference labels and source identities retained. Retired blind_key_hex omitted; explanatory disclosure added.",
+      "public_sha256": "fdb435cdb0a2da015ffe7ad11068a75a9ef3b6c6fcff78a8d14f3a7cf9686603",
+      "original_sha256": "1141bf78275527c379e606fe895f380a655ce35a429674360b9b74eb9c3ec624"
+    },
+    {
+      "public_path": "model_review/post_review/reviewer_b_mapping.json",
+      "transformation": "Complete crosswalk, reference labels and source identities retained. Retired blind_key_hex omitted; explanatory disclosure added.",
+      "public_sha256": "97e9cee234033c8c54a6af8a4da124ee42c9e1d8c3e280bfb15fc069f85c9e6e",
+      "original_sha256": "729c22d548de9c975ae65414ff49af1fc8a09e6920bf398e2df0f25e8fb0d5f6"
+    },
+    {
+      "public_path": "model_review/responses/reviewer_a_run_notes.txt",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "fec9df118b0b24f011ab6c4a7741c8ff385a37ff3efd97b59ce2fac6a0ca253d",
+      "original_sha256": "fec9df118b0b24f011ab6c4a7741c8ff385a37ff3efd97b59ce2fac6a0ca253d"
+    },
+    {
+      "public_path": "model_review/responses/reviewer_a.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "8829eb4e7737a01397c8b92d96630b22a2dae0654bd98653c1a23e53ac68a1c9",
+      "original_sha256": "8829eb4e7737a01397c8b92d96630b22a2dae0654bd98653c1a23e53ac68a1c9"
+    },
+    {
+      "public_path": "model_review/responses/reviewer_b.json",
+      "transformation": "Unchanged byte-for-byte copy; public filename/location may differ.",
+      "public_sha256": "265c8c07d36e39f4cb3a0c647f8cd06e627861f7e9b73f0f8f5f54054615dece",
+      "original_sha256": "265c8c07d36e39f4cb3a0c647f8cd06e627861f7e9b73f0f8f5f54054615dece"
+    }
+  ],
+  "schema_version": 1
+}

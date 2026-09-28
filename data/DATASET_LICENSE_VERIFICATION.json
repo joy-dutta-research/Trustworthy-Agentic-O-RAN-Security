@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-28",
+  "purpose": "Record the original providers' declared dataset licences before sharing attributed derived evidence.",
+  "sources": [
+    {
+      "dataset": "NetsLab-5GORAN-IDD",
+      "creator_page": "https://netslab.ucd.ie/netslab-datasets/netslab-5goran-idd/",
+      "distribution": "https://www.kaggle.com/datasets/netslabdemo/netslab-5g-oran-idd",
+      "metadata_checked": "https://www.kaggle.com/api/v1/datasets/view/netslabdemo/netslab-5g-oran-idd",
+      "doi": "10.34740/kaggle/ds/7416931",
+      "observed_dataset_id": 7416931,
+      "observed_current_version": 4,
+      "observed_license_name": "Attribution 4.0 International (CC BY 4.0)",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "verification": "Read-only live Kaggle metadata request, with source attribution checked against the creator page and DOI metadata.",
+      "boundary": "The DOI metadata rights list was empty. The licence finding comes from Kaggle, not from the related software repository or descriptor paper. Exact frozen input hashes are recorded in the separate dataset acquisition provenance."
+    },
+    {
+      "dataset": "5G-NIDD",
+      "creator_repository": "https://github.com/yushan1986/5g-nidd",
+      "distribution": "https://etsin.fairdata.fi/dataset/9d13ef28-2ca7-44b0-9950-225359afac65",
+      "metadata_checked": "https://metax.fairdata.fi/v3/datasets/9d13ef28-2ca7-44b0-9950-225359afac65",
+      "doi": "10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361",
+      "observed_version": 1,
+      "observed_access": "Open",
+      "observed_licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "listed_input": {
+        "filename": "Combined.zip",
+        "bytes": 28028224,
+        "sha256": "07531b251f3f35be70bf1d3dcca2e27274bd1b267c5a057c0fcea18668b9293d"
+      },
+      "verification": "Read-only live original Fairdata dataset and file metadata requests; listed input identity matches the preserved acquisition receipt.",
+      "boundary": "No dataset was downloaded during this check. The licence is not inferred from a Kaggle mirror or the descriptor paper."
+    }
+  ],
+  "conditions": "Retain creator/source credit, licence links, supplied notices and the modification descriptions. Do not imply endorsement or replace source-dataset rights with the code licence.",
+  "limitations": "This is a declared-source-licence and packaging review, not legal advice, an authenticated publisher signature, an exhaustive privacy audit or confirmation of authors' institutional rights. No absolute legal clearance is claimed."
+}

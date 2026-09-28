@@ -1,0 +1,1141 @@
+{
+  "package_id": "model_review_round1-reviewer_b",
+  "run_metadata": {
+    "mode_as_displayed": "not_available",
+    "model_name_as_displayed": "not_available",
+    "run_date_utc": "2026-09-22",
+    "tools_used": [],
+    "unavailable_settings": [
+      "mode_as_displayed",
+      "model_name_as_displayed"
+    ]
+  },
+  "decisions": [
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid action by authorized principal, within parameter bounds, approved.",
+      "rationale": "All rules pass. Action is correctly targeted and approved.",
+      "review_id": "review-6a695a49130665a639d45e40fc6c86c5",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Policy weight exceeds maximum allowed.",
+      "rationale": "Parameter policy_weight is 1.5, which exceeds the maximum value of 1.0.",
+      "review_id": "review-1b158d6efd2768dc5a63248aa02553ee",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved isolation on best-effort slice.",
+      "rationale": "All rules pass. Authorized and approved.",
+      "review_id": "review-4ac98afb1acf6bcc3be3d3013eaff489",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer role does not have isolate_xapp privileges.",
+      "rationale": "The observer role is attempting an action (isolate_xapp) not permitted by the policy.",
+      "review_id": "review-b81f5780440c5d0e6a3d26e4d925ce70",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer role does not have rate_limit_ue privileges.",
+      "rationale": "The observer role is attempting an action (rate_limit_ue) not permitted by the policy.",
+      "review_id": "review-4b7b93a2405684e7d3d264aee9e048d7",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action requires approval, but approval is missing.",
+      "rationale": "Action has high risk and is in approval_required_actions but lacks an approval block.",
+      "review_id": "review-04669f8d68865df44b0c2917fe278cb3",
+      "rule_refs": [
+        "approval_required_actions",
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved modify_a1_policy action.",
+      "rationale": "Valid role, target, parameters, and valid trusted approval.",
+      "review_id": "review-47fb4672dafe9df390952462e0b1d752",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Conflict with an active action on the same target.",
+      "rationale": "An active action exists with the same interface, target type, target ID, and control parameter.",
+      "review_id": "review-cf6ac76ae39e2ba83f47dc4b64596891",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Approval required for isolate_xapp.",
+      "rationale": "Action is in approval_required_actions and risk is high, but approval is missing.",
+      "review_id": "review-65dad135918a124663442cf5b558faf8",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid quarantine_ue by security_responder.",
+      "rationale": "Medium risk, parameters in bounds, non-protected slice, no approval required.",
+      "review_id": "review-45846dd1051a68ac7386f20392fb9547",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict on the UE target.",
+      "rationale": "An active action exists for the same target with the same control parameter.",
+      "review_id": "review-9bcdf4b18de389be8c64fc8cb1eb0775",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict on xApp target.",
+      "rationale": "An active action exists for the same target with the same control parameter.",
+      "review_id": "review-c44b55979be6f5a641d09c8b9538f2de",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid rate limit action.",
+      "rationale": "Authorized responder targeting a non-protected slice, parameters within bounds.",
+      "review_id": "review-cbe72177f21d74691706ea398c3f9564",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "Parameter duration_seconds is 1200, which exceeds the maximum value of 600.",
+      "review_id": "review-0b8fca916e3edb7bec91a10788a02862",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action without approval.",
+      "rationale": "Action risk is high, which requires approval, but none is provided.",
+      "review_id": "review-e03f87671b7a6a7f216df1b44d4b249c",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid and approved modify_a1_policy.",
+      "rationale": "Matches all required constraints and approval hash is correct.",
+      "review_id": "review-81518e4c0d5e096a2b7ee4154dbaaf05",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval for isolate_xapp.",
+      "rationale": "isolate_xapp requires approval, but none was supplied.",
+      "review_id": "review-bb2016661b40ecd70a0f97b2e87f4ed3",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Action modifies A1 policy on slice-emergency, which is protected.",
+      "review_id": "review-720aa954cb2be87e7e2628b22da7828b",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Action quarantines UE on slice-emergency, which is protected.",
+      "review_id": "review-a50b305a92c169b11bd926416ca29725",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid rate_limit_ue by security_responder.",
+      "rationale": "Medium risk on an unprotected slice within parameter bounds.",
+      "review_id": "review-addf5d4d0e43eef1f595b499460c8e91",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "Parameter duration_seconds is 1200, exceeding the allowed maximum of 600.",
+      "review_id": "review-92e0ad13ed686c98b85a5ee30c02d1be",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is in protected_slices.",
+      "review_id": "review-53c501aafe154714027a53cf629dd050",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is in protected_slices.",
+      "review_id": "review-7e762740d69f7f32b82cb2d91a626bbd",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval for modify_a1_policy.",
+      "rationale": "Action is in approval_required_actions but has no approval block.",
+      "review_id": "review-12f08d36435cc30619ac85e028b42c71",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval for isolate_xapp.",
+      "rationale": "Action requires approval but has no approval block.",
+      "review_id": "review-b01c5db6414a3c4af00becf55d89f437",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds parameter bounds for quarantine_ue.",
+      "rationale": "duration_seconds is 600, exceeding the maximum 300.",
+      "review_id": "review-5d7b250c01fb46c2f8846054d779aa74",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges for rate_limit_ue.",
+      "rationale": "Action is not found in the roles mapping for observer.",
+      "review_id": "review-555f0b58ebd76cbfe98c159dfa54cb97",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Policy weight exceeds bounds.",
+      "rationale": "policy_weight is 1.5, exceeding the maximum of 1.0.",
+      "review_id": "review-6f2c5ab6aa209c916600f0fad0ec84b6",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action requires approval.",
+      "rationale": "The proposal has high risk but lacks an approval block.",
+      "review_id": "review-af4c5c18a405373be9c0848716e0a617",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active action exists on the same policy with the same control parameter.",
+      "review_id": "review-2c236899bf52fd0562c2673c9f7da51d",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid isolate_xapp on unprotected slice.",
+      "rationale": "Authorized role, bounds compliant, approval verified.",
+      "review_id": "review-bf972910fc087aadea5356eff7182a13",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Reduction percent exceeds maximum.",
+      "rationale": "reduction_percent is 95, maximum is 80.",
+      "review_id": "review-7f51d5501ac6d3f9a65317a3cc008adf",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active modify_a1_policy action applies to the same policy target.",
+      "review_id": "review-46d90eb502c785e4da051a235e7557ad",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-65de70c79a765c69058e39988f49e307",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active quarantine_ue action applies to the same UE target.",
+      "review_id": "review-22939376b7af42938bbeedc52abb8108",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing required approval.",
+      "rationale": "Action is in approval_required_actions but no approval is present.",
+      "review_id": "review-a74042dd1bcacfb379dc49602aa9b0c8",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice is slice-emergency.",
+      "review_id": "review-1048d11fe8863d5f1b7f250f1604e69c",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action requires approval.",
+      "rationale": "Risk is high, but the approval field is missing.",
+      "review_id": "review-f0044a14618373bb685eb602c30bbecd",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid quarantine_ue operation.",
+      "rationale": "Authorized responder, valid parameters, no active conflicts.",
+      "review_id": "review-d3e1264a0721206a06569e971a6ff27e",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 1200, exceeding max 600.",
+      "review_id": "review-d8232426e602f2bbb7ecb3500bca7ce4",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer role does not have modify_a1_policy privileges.",
+      "rationale": "modify_a1_policy is not permitted for the observer role.",
+      "review_id": "review-c3c804fb2486ea22ee0c1389054f19bb",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active isolate_xapp action applies to the same xApp target.",
+      "review_id": "review-468ab60320f18121ea72f311d3def5cb",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active rate_limit_ue action applies to the same UE target.",
+      "review_id": "review-36e7accb8afca22b94e4d2f2915cedfa",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved modify_a1_policy action.",
+      "rationale": "Complies with role, bounds, and approval verification.",
+      "review_id": "review-dacbce70bd94b5d2dda8fcd7883fd0d2",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform modify_a1_policy.",
+      "review_id": "review-99d31e244a910689d6412016dd3cb460",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active quarantine_ue applies to the same target.",
+      "review_id": "review-286e81fd5e5b90db180be99e6d4e1cfd",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 1200, exceeding max 600.",
+      "review_id": "review-77e44c43145a47ff17c9b45b9038f9d6",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid rate_limit_ue action.",
+      "rationale": "Complies with role, bounds, slice protection rules.",
+      "review_id": "review-24f66d77ef5c32ab5963e42a7fb1f1b9",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform isolate_xapp.",
+      "review_id": "review-d3d7c8c5de9783f6ce4806309c7ff3a2",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Policy weight exceeds maximum allowed.",
+      "rationale": "policy_weight is 1.5, exceeding the max limit of 1.0.",
+      "review_id": "review-be6bd86b6dcb2744eefa83ba30feeebd",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active rate_limit_ue applies to the same target.",
+      "review_id": "review-a495ef0da40e08a4402a405d89614f3d",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform modify_a1_policy.",
+      "review_id": "review-7905ada02f6e391879a09a838ab9d482",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action missing approval.",
+      "rationale": "Risk is high, requiring approval, but none is supplied.",
+      "review_id": "review-e94c68d2d61a0ab34b26f8e50da0679c",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-e056e86b3be8e04146c764a2f49593e7",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active rate_limit_ue action applies to the same target.",
+      "review_id": "review-ed458035cafb9c674dc01986453def44",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-a514adc237d7dafa7fe96e4414d20da6",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 1200, exceeding max 600.",
+      "review_id": "review-387838cf30359dd33ebeca0345db42a3",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-15dce79cbc22b150a8514a1466cde3e5",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform quarantine_ue.",
+      "review_id": "review-4f72c33fce5709c0e8feb13927223ce2",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform quarantine_ue.",
+      "review_id": "review-1cf9a594a717100d0229126a3c21ac45",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-d816c37ded572eb3f74bbd9844f963de",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active isolate_xapp applies to the same xApp target.",
+      "review_id": "review-694869323adfaef28471cb70ce3b36a3",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-65bbfe0ff7ee8c9eef8267ee96ed63e0",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on a protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-ea4a6aee8b311a812e1772d069740a88",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval.",
+      "rationale": "modify_a1_policy requires approval.",
+      "review_id": "review-0d81bd13d243abe9e7eaa1eaa4b6979f",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval.",
+      "rationale": "modify_a1_policy requires approval.",
+      "review_id": "review-78ee4525fcefa8475c76abcdac17a5b0",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active modify_a1_policy applies to the same policy.",
+      "review_id": "review-3c85e3b1ed673b8c0fe502e33d6ca2b4",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved action.",
+      "rationale": "All rules pass. Action correctly targeted and approved.",
+      "review_id": "review-2e333d36b93b4aacd9fdc699281d77c5",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-266c6dcd58a2c6215205d7cd14cfa263",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform quarantine_ue.",
+      "review_id": "review-fda554c27ec55381d0a3b189028fae7e",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-8eb39dc1824e6c72f0b5960cdb9ee3df",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action missing approval.",
+      "rationale": "Risk is high, requiring approval, but none is provided.",
+      "review_id": "review-85ef3eb8658b54fcd8b3257b56fcbebd",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-9ae43663c6d406f8cb83bfe599f702d7",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-e7f14d27414539b4094911883f3ca335",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-879ef97c7657edb9890d67a5c2e6e686",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Reduction percent exceeds maximum.",
+      "rationale": "reduction_percent is 95, maximum is 80.",
+      "review_id": "review-5dbbdd78171ab24bdcc01a7be1a4b5cc",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval.",
+      "rationale": "modify_a1_policy requires approval.",
+      "review_id": "review-91cba03b48a55db2baaf96015aa7fa5a",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active quarantine_ue applies to the same target.",
+      "review_id": "review-c59028d3482b112e270599e889706d1f",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform modify_a1_policy.",
+      "review_id": "review-4e0c17c0ccc93a8c802d74992d89d33d",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active isolate_xapp applies to the same target.",
+      "review_id": "review-69a1e371b529fbbdba9b6ffa91fc3696",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid action.",
+      "rationale": "Complies with role, bounds, target, and risk rules.",
+      "review_id": "review-078fbf945cdfcf2e9d33d19c7450bbf2",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved isolate_xapp.",
+      "rationale": "All rules pass. Action correctly targeted and approved.",
+      "review_id": "review-c9c61132c3abe5cc3d70441a81b2d832",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid action.",
+      "rationale": "Complies with all requirements for quarantine_ue.",
+      "review_id": "review-4622f6d81e8d13186b1f132954071651",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid action.",
+      "rationale": "Complies with all requirements for rate_limit_ue.",
+      "review_id": "review-df963176f684b81a95694fa494461d62",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform rate_limit_ue.",
+      "review_id": "review-6571a821d8ff744771998c01f1cc6b97",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk action requires approval.",
+      "rationale": "Risk is high, requiring approval, but none is supplied.",
+      "review_id": "review-bb935dadd447fc33fdb18267463887bc",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Reduction percent exceeds maximum.",
+      "rationale": "reduction_percent is 95, maximum is 80.",
+      "review_id": "review-c9b7b9da8702871a59092c92b7978fd3",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid quarantine_ue action.",
+      "rationale": "Complies with all constraints, medium risk requires no approval.",
+      "review_id": "review-9cdd4125fa3c74fe4814991b0ed7d2cd",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform modify_a1_policy.",
+      "review_id": "review-c95c7ba25eb94b5ce79618d7645fa7a3",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active quarantine_ue applies to the same target.",
+      "review_id": "review-0839a576351791af7c0e0884e9afde32",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active rate_limit_ue applies to the same target.",
+      "review_id": "review-e6cc0decef98391fa79228edbd217b2b",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform isolate_xapp.",
+      "review_id": "review-88bc875e515790952a927e0179821160",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Policy weight exceeds bounds.",
+      "rationale": "policy_weight is 1.5, exceeding max limit 1.0.",
+      "review_id": "review-fafd3d865de09fe4454b1e2f4d4f197e",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-837f937dc7f2c8ba1b8013be02163411",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk missing approval.",
+      "rationale": "Action risk is high, requiring approval.",
+      "review_id": "review-69fcaaa690a08de5b41a562d7aa4a87d",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active isolate_xapp applies to the same target.",
+      "review_id": "review-0c737d5d9a8859031424a6cbba9db358",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk missing approval.",
+      "rationale": "Action risk is high, requiring approval.",
+      "review_id": "review-4b865ed6b885e12702437cd3eeaa2d2f",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform quarantine_ue.",
+      "review_id": "review-c5bef79c92a8cfa00463ce817c55123e",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Policy weight exceeds bounds.",
+      "rationale": "policy_weight is 1.5, exceeding max limit 1.0.",
+      "review_id": "review-b567d8608d3069fd0044f640cb488c28",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Reduction percent exceeds maximum.",
+      "rationale": "reduction_percent is 95, maximum is 80.",
+      "review_id": "review-0f2fbae143433b47499f5a76b32ba1be",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform isolate_xapp.",
+      "review_id": "review-446bfb93c165a3047af628bdc3d32467",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk missing approval.",
+      "rationale": "Action risk is high, requiring approval.",
+      "review_id": "review-a227874f87f4ac15c267ce19ab4d0a52",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "High risk missing approval.",
+      "rationale": "Action risk is high, requiring approval.",
+      "review_id": "review-16fd43f25622511258a19e87d15637fe",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 600, exceeding max limit 300.",
+      "review_id": "review-8b0245b33dc3ec24e04a952e3f096e4e",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform quarantine_ue.",
+      "review_id": "review-d14fffe1b3d843971dce8fc575a9ff6f",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform rate_limit_ue.",
+      "review_id": "review-b52dce7a0a5794055c36589b497ded23",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-0e138b766a090fad981db4f6bc5e0d8a",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Disruptive action on protected slice.",
+      "rationale": "Target slice slice-emergency is protected.",
+      "review_id": "review-c87ade50f30458b654e0df448f5fc13e",
+      "rule_refs": [
+        "protected_slices"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active modify_a1_policy applies to the same policy.",
+      "review_id": "review-ac8ef414b6389a04f09a409e50287574",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 600, exceeding max limit 300.",
+      "review_id": "review-58f116e76a4cec65add6e6f324dd0f0d",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform rate_limit_ue.",
+      "review_id": "review-2a0bd254b8be1e8142ddc70f79795612",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid action.",
+      "rationale": "Complies with role, bounds, target, and risk rules.",
+      "review_id": "review-ae556a8a8d1972e84f302dedc0fd05c2",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 600, exceeding max limit 300.",
+      "review_id": "review-3352be5705f68aeafd3cc0375c9b3e20",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Observer lacks privileges.",
+      "rationale": "The observer role cannot perform isolate_xapp.",
+      "review_id": "review-4d0c5cebcc1ff5c555ddc46157422ae9",
+      "rule_refs": [
+        "roles.observer"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Reduction percent exceeds maximum.",
+      "rationale": "reduction_percent is 95, maximum is 80.",
+      "review_id": "review-9c43b4b87768644d14847fd18b5a2ff7",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved modify_a1_policy.",
+      "rationale": "All rules pass. Action correctly targeted and approved.",
+      "review_id": "review-f6b72843ca8cfaebe5688d6d93bc0699",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ALLOW",
+      "notes": "Valid approved isolate_xapp.",
+      "rationale": "All rules pass. Action correctly targeted and approved.",
+      "review_id": "review-afccfebb9c61639ceb4e335314f00232",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Missing approval.",
+      "rationale": "isolate_xapp requires approval.",
+      "review_id": "review-74b6d09950938b70d3bd147d11521e66",
+      "rule_refs": [
+        "approval_required_actions"
+      ]
+    },
+    {
+      "ambiguity": false,
+      "decision": "ESCALATE",
+      "notes": "Active action conflict.",
+      "rationale": "An active quarantine_ue action applies to the same UE target.",
+      "review_id": "review-0294f4b5bad0426e236fbb4a34c1db08",
+      "rule_refs": []
+    },
+    {
+      "ambiguity": false,
+      "decision": "DENY",
+      "notes": "Duration exceeds maximum.",
+      "rationale": "duration_seconds is 600, exceeding max limit 300.",
+      "review_id": "review-94f01a17acac8929605e3af2d785153f",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ]
+    }
+  ],
+  "policy_critique": [
+    "The policy lacks verification of incident evidence relevance.",
+    "Dataset bindings and attack labels are informative but not actively verified by constraints.",
+    "Observer role is heavily restricted, causing many observer proposals to fail."
+  ]
+}

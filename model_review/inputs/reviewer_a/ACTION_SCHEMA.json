@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "rate_limit_ue",
+        "quarantine_ue",
+        "isolate_xapp",
+        "modify_a1_policy",
+        "rollback_policy",
+        "notify_operator"
+      ]
+    },
+    "action_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "agent": {
+      "additionalProperties": false,
+      "properties": {
+        "agent_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "type": "string"
+        },
+        "role": {
+          "maxLength": 64,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "agent_id",
+        "role"
+      ],
+      "type": "object"
+    },
+    "approval": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "approval_id": {
+              "maxLength": 128,
+              "minLength": 1,
+              "type": "string"
+            },
+            "approved_by_role": {
+              "const": "human_operator"
+            },
+            "expires_at": {
+              "format": "date-time",
+              "type": "string"
+            }
+          },
+          "required": [
+            "approval_id",
+            "approved_by_role",
+            "expires_at"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "evidence_refs": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 32,
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "expected_kpi": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "incident_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "interface": {
+      "enum": [
+        "E2",
+        "A1",
+        "SMO"
+      ]
+    },
+    "parameters": {
+      "maxProperties": 16,
+      "minProperties": 1,
+      "type": "object"
+    },
+    "requested_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "risk_level": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "rollback": {
+      "additionalProperties": false,
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "procedure": {
+          "maxLength": 512,
+          "type": "string"
+        }
+      },
+      "required": [
+        "available",
+        "procedure"
+      ],
+      "type": "object"
+    },
+    "target": {
+      "additionalProperties": false,
+      "properties": {
+        "cell_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slice_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "target_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "type": "string"
+        },
+        "target_type": {
+          "enum": [
+            "ue",
+            "xapp",
+            "policy",
+            "cell",
+            "operator"
+          ]
+        }
+      },
+      "required": [
+        "target_type",
+        "target_id",
+        "cell_id",
+        "slice_id"
+      ],
+      "type": "object"
+    },
+    "ttl_seconds": {
+      "maximum": 86400,
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "action_id",
+    "incident_id",
+    "requested_at",
+    "agent",
+    "action",
+    "interface",
+    "target",
+    "parameters",
+    "risk_level",
+    "ttl_seconds",
+    "expected_kpi",
+    "rollback",
+    "evidence_refs",
+    "approval"
+  ],
+  "title": "O-RAN pre-action trust contract",
+  "type": "object"
+}

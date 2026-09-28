@@ -1,0 +1,16 @@
+{
+  "record_type": "premeasurement_host_context",
+  "date": "2026-09-23",
+  "processor": "Intel(R) Core(TM) Ultra 7 268V",
+  "logical_processors": 8,
+  "total_physical_memory_bytes": 33895956480,
+  "operating_system": "Windows 11, version 10.0.26200",
+  "python": "CPython 3.12.14",
+  "power_scheme_name": "Customized Peak (ConfigMgr)",
+  "power_scheme_changed": false,
+  "security_controls_changed": false,
+  "priority_or_affinity_changed": false,
+  "exclusive_host_idleness_verified": false,
+  "conditions": "Normal institution-managed workstation. User advised to avoid concurrent heavy work. Benchmark stages run serially; no concurrent tests or dataset campaigns during comparative timing. Supervisory resource polling remains active and is part of this experimental environment.",
+  "metadata_collection_note": "Read-only WMI initially denied in sandbox, later succeeded with ordinary process access. Registry query emitted a conversion warning for another property but returned the processor-name string. No administrative setting changes. Per-process runtime details are retained in each run_plan.json."
+}

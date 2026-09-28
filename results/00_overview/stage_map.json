@@ -1,0 +1,50 @@
+[
+  {
+    "stage": 0,
+    "question": "Are the inputs and code traceable?",
+    "evidence": "Frozen source/input identities and regeneration records",
+    "meaning": "A stable baseline for repeating the study"
+  },
+  {
+    "stage": 1,
+    "question": "Does the Trust Boundary enforce the stated policy?",
+    "evidence": "777 constructed cases, scoped properties, targeted mutants",
+    "meaning": "Policy conformance under the tested rules"
+  },
+  {
+    "stage": 2,
+    "question": "Does the result hold across the defined dataset mappings and seeds?",
+    "evidence": "NetsLab controls, 5G-NIDD census and seeded panels",
+    "meaning": "Coverage beyond a small illustrative example"
+  },
+  {
+    "stage": 3,
+    "question": "How do operator assumptions affect decisions?",
+    "evidence": "12 predefined sensitivity conditions",
+    "meaning": "Explicit dependence on the selected policy and mapping"
+  },
+  {
+    "stage": 4,
+    "question": "What does local verification cost?",
+    "evidence": "Four methods, two timing boundaries, 20 process blocks",
+    "meaning": "Measured local processing overhead"
+  },
+  {
+    "stage": 5,
+    "question": "What happens as state and incoming load grow?",
+    "evidence": "All declared state paths and offered-load conditions",
+    "meaning": "A measured operating envelope for the prototype"
+  },
+  {
+    "stage": 6,
+    "question": "Does action, corroboration and feedback improve the tested packet scenarios?",
+    "evidence": "36 exploratory episodes",
+    "meaning": "Flood benefit, collateral avoidance and ineffective-action recognition"
+  },
+  {
+    "stage": 7,
+    "question": "Can the same protocol be reproduced in another environment?",
+    "evidence": "Second Windows host and 36-episode clean-VM repeat",
+    "meaning": "Cross-host Windows reproducibility and same-host packet repeatability"
+  }
+]

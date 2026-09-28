@@ -1,0 +1,2978 @@
+[
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "replicate": 1,
+    "episode_id": "episode_0000",
+    "protected": {
+      "deadline_miss_ratio": 0.6973684210526315,
+      "delivery_ratio": 0.3026315789473684,
+      "echo_goodput_kbit_s": 122.4704,
+      "lost_after_drain": 689,
+      "received": 299,
+      "rtt_p95_ms_received_only": 133.13685399998576,
+      "sent": 988,
+      "timely_500ms": 299,
+      "timely_delivery_ratio": 0.3026315789473684
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48145245559038663,
+      "delivery_ratio": 0.5185475444096134,
+      "echo_goodput_kbit_s": 813.056,
+      "lost_after_drain": 1843,
+      "received": 1985,
+      "rtt_p95_ms_received_only": 133.0343169997832,
+      "sent": 3828,
+      "timely_500ms": 1985,
+      "timely_delivery_ratio": 0.5185475444096134
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5100492950000444
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.958948999956192
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0455419889999575
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/0"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "replicate": 0,
+    "episode_id": "episode_0001",
+    "protected": {
+      "deadline_miss_ratio": 0.03535353535353535,
+      "delivery_ratio": 0.9646464646464646,
+      "echo_goodput_kbit_s": 391.168,
+      "lost_after_drain": 35,
+      "received": 955,
+      "rtt_p95_ms_received_only": 115.8711820003191,
+      "sent": 990,
+      "timely_500ms": 955,
+      "timely_delivery_ratio": 0.9646464646464646
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.07052709725315516,
+      "delivery_ratio": 0.9294729027468448,
+      "echo_goodput_kbit_s": 512.8192,
+      "lost_after_drain": 95,
+      "received": 1252,
+      "rtt_p95_ms_received_only": 131.51652200031094,
+      "sent": 1347,
+      "timely_500ms": 1252,
+      "timely_delivery_ratio": 0.9294729027468448
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/1"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "replicate": 0,
+    "episode_id": "episode_0002",
+    "protected": {
+      "deadline_miss_ratio": 0.2750252780586451,
+      "delivery_ratio": 0.7249747219413549,
+      "echo_goodput_kbit_s": 293.6832,
+      "lost_after_drain": 272,
+      "received": 717,
+      "rtt_p95_ms_received_only": 132.5673530000131,
+      "sent": 989,
+      "timely_500ms": 717,
+      "timely_delivery_ratio": 0.7249747219413549
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6645010395010394,
+      "delivery_ratio": 0.3354989604989605,
+      "echo_goodput_kbit_s": 528.7936,
+      "lost_after_drain": 2557,
+      "received": 1291,
+      "rtt_p95_ms_received_only": 132.8915309995864,
+      "sent": 3848,
+      "timely_500ms": 1291,
+      "timely_delivery_ratio": 0.3354989604989605
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5071674619998703
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.870185000276251
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.009842913000284
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/2"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "replicate": 2,
+    "episode_id": "episode_0003",
+    "protected": {
+      "deadline_miss_ratio": 0.03640040444893832,
+      "delivery_ratio": 0.9635995955510617,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 36,
+      "received": 953,
+      "rtt_p95_ms_received_only": 119.63165800034403,
+      "sent": 989,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9635995955510617
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06770833333333333,
+      "delivery_ratio": 0.9322916666666666,
+      "echo_goodput_kbit_s": 513.2288,
+      "lost_after_drain": 91,
+      "received": 1253,
+      "rtt_p95_ms_received_only": 131.66041400018003,
+      "sent": 1344,
+      "timely_500ms": 1253,
+      "timely_delivery_ratio": 0.9322916666666666
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/3"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "replicate": 1,
+    "episode_id": "episode_0004",
+    "protected": {
+      "deadline_miss_ratio": 0.27631578947368424,
+      "delivery_ratio": 0.7236842105263158,
+      "echo_goodput_kbit_s": 292.864,
+      "lost_after_drain": 273,
+      "received": 715,
+      "rtt_p95_ms_received_only": 132.57313700023587,
+      "sent": 988,
+      "timely_500ms": 715,
+      "timely_delivery_ratio": 0.7236842105263158
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.662754303599374,
+      "delivery_ratio": 0.33724569640062596,
+      "echo_goodput_kbit_s": 529.6128,
+      "lost_after_drain": 2541,
+      "received": 1293,
+      "rtt_p95_ms_received_only": 132.9535909999322,
+      "sent": 3834,
+      "timely_500ms": 1293,
+      "timely_delivery_ratio": 0.33724569640062596
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.5179206429997976
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.848916999890207
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.006100209000124
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/4"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "replicate": 0,
+    "episode_id": "episode_0005",
+    "protected": {
+      "deadline_miss_ratio": 0.7057633973710818,
+      "delivery_ratio": 0.2942366026289181,
+      "echo_goodput_kbit_s": 119.1936,
+      "lost_after_drain": 698,
+      "received": 291,
+      "rtt_p95_ms_received_only": 133.04312399986884,
+      "sent": 989,
+      "timely_500ms": 291,
+      "timely_delivery_ratio": 0.2942366026289181
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4801773604590506,
+      "delivery_ratio": 0.5198226395409494,
+      "echo_goodput_kbit_s": 816.3328,
+      "lost_after_drain": 1841,
+      "received": 1993,
+      "rtt_p95_ms_received_only": 133.0248499998561,
+      "sent": 3834,
+      "timely_500ms": 1993,
+      "timely_delivery_ratio": 0.5198226395409494
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.508307839000281
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      3.5187950002182333
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.04641446200003
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/5"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "replicate": 0,
+    "episode_id": "episode_0006",
+    "protected": {
+      "deadline_miss_ratio": 0.7034412955465587,
+      "delivery_ratio": 0.2965587044534413,
+      "echo_goodput_kbit_s": 120.0128,
+      "lost_after_drain": 695,
+      "received": 293,
+      "rtt_p95_ms_received_only": 133.10478499988676,
+      "sent": 988,
+      "timely_500ms": 293,
+      "timely_delivery_ratio": 0.2965587044534413
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4805635272632403,
+      "delivery_ratio": 0.5194364727367597,
+      "echo_goodput_kbit_s": 815.5136,
+      "lost_after_drain": 1842,
+      "received": 1991,
+      "rtt_p95_ms_received_only": 133.0389899999318,
+      "sent": 3833,
+      "timely_500ms": 1991,
+      "timely_delivery_ratio": 0.5194364727367597
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/6"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "replicate": 1,
+    "episode_id": "episode_0007",
+    "protected": {
+      "deadline_miss_ratio": 0.697979797979798,
+      "delivery_ratio": 0.302020202020202,
+      "echo_goodput_kbit_s": 122.4704,
+      "lost_after_drain": 691,
+      "received": 299,
+      "rtt_p95_ms_received_only": 133.05576300035682,
+      "sent": 990,
+      "timely_500ms": 299,
+      "timely_delivery_ratio": 0.302020202020202
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4849507005708355,
+      "delivery_ratio": 0.5150492994291646,
+      "echo_goodput_kbit_s": 813.056,
+      "lost_after_drain": 1869,
+      "received": 1985,
+      "rtt_p95_ms_received_only": 132.9990409999482,
+      "sent": 3854,
+      "timely_500ms": 1985,
+      "timely_delivery_ratio": 0.5150492994291646
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/7"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "replicate": 2,
+    "episode_id": "episode_0008",
+    "protected": {
+      "deadline_miss_ratio": 0.7027300303336703,
+      "delivery_ratio": 0.2972699696663296,
+      "echo_goodput_kbit_s": 120.4224,
+      "lost_after_drain": 695,
+      "received": 294,
+      "rtt_p95_ms_received_only": 133.05963099992368,
+      "sent": 989,
+      "timely_500ms": 294,
+      "timely_delivery_ratio": 0.2972699696663296
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48284823284823286,
+      "delivery_ratio": 0.5171517671517671,
+      "echo_goodput_kbit_s": 815.104,
+      "lost_after_drain": 1858,
+      "received": 1990,
+      "rtt_p95_ms_received_only": 132.993881999937,
+      "sent": 3848,
+      "timely_500ms": 1990,
+      "timely_delivery_ratio": 0.5171517671517671
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.511702545999924
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      3.299475999938295
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.015595882000071
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/8"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "replicate": 1,
+    "episode_id": "episode_0009",
+    "protected": {
+      "deadline_miss_ratio": 0.03434343434343434,
+      "delivery_ratio": 0.9656565656565657,
+      "echo_goodput_kbit_s": 391.57759999999996,
+      "lost_after_drain": 34,
+      "received": 956,
+      "rtt_p95_ms_received_only": 116.40709400035121,
+      "sent": 990,
+      "timely_500ms": 956,
+      "timely_delivery_ratio": 0.9656565656565657
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.07126948775055679,
+      "delivery_ratio": 0.9287305122494433,
+      "echo_goodput_kbit_s": 512.4096,
+      "lost_after_drain": 96,
+      "received": 1251,
+      "rtt_p95_ms_received_only": 131.5635089999887,
+      "sent": 1347,
+      "timely_500ms": 1251,
+      "timely_delivery_ratio": 0.9287305122494433
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/9"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "replicate": 2,
+    "episode_id": "episode_0010",
+    "protected": {
+      "deadline_miss_ratio": 0.6976744186046512,
+      "delivery_ratio": 0.3023255813953488,
+      "echo_goodput_kbit_s": 122.4704,
+      "lost_after_drain": 690,
+      "received": 299,
+      "rtt_p95_ms_received_only": 133.01442100009808,
+      "sent": 989,
+      "timely_500ms": 299,
+      "timely_delivery_ratio": 0.3023255813953488
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4840135170262542,
+      "delivery_ratio": 0.5159864829737458,
+      "echo_goodput_kbit_s": 813.056,
+      "lost_after_drain": 1862,
+      "received": 1985,
+      "rtt_p95_ms_received_only": 132.99390499969377,
+      "sent": 3847,
+      "timely_500ms": 1985,
+      "timely_delivery_ratio": 0.5159864829737458
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/10"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "replicate": 2,
+    "episode_id": "episode_0011",
+    "protected": {
+      "deadline_miss_ratio": 0.03434343434343434,
+      "delivery_ratio": 0.9656565656565657,
+      "echo_goodput_kbit_s": 391.57759999999996,
+      "lost_after_drain": 34,
+      "received": 956,
+      "rtt_p95_ms_received_only": 115.73185499992178,
+      "sent": 990,
+      "timely_500ms": 956,
+      "timely_delivery_ratio": 0.9656565656565657
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.07057949479940565,
+      "delivery_ratio": 0.9294205052005944,
+      "echo_goodput_kbit_s": 512.4096,
+      "lost_after_drain": 95,
+      "received": 1251,
+      "rtt_p95_ms_received_only": 131.576653999673,
+      "sent": 1346,
+      "timely_500ms": 1251,
+      "timely_delivery_ratio": 0.9294205052005944
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/11"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "replicate": 2,
+    "episode_id": "episode_0012",
+    "protected": {
+      "deadline_miss_ratio": 0.6973684210526315,
+      "delivery_ratio": 0.3026315789473684,
+      "echo_goodput_kbit_s": 122.4704,
+      "lost_after_drain": 689,
+      "received": 299,
+      "rtt_p95_ms_received_only": 133.09391700022388,
+      "sent": 988,
+      "timely_500ms": 299,
+      "timely_delivery_ratio": 0.3026315789473684
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4823897730237412,
+      "delivery_ratio": 0.5176102269762588,
+      "echo_goodput_kbit_s": 812.6464,
+      "lost_after_drain": 1849,
+      "received": 1984,
+      "rtt_p95_ms_received_only": 133.04003600023862,
+      "sent": 3833,
+      "timely_500ms": 1984,
+      "timely_delivery_ratio": 0.5176102269762588
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.518671151000035
+    ],
+    "restore_reasons": [
+      "NO_OBSERVED_BENEFIT"
+    ],
+    "operator_review_requested": true,
+    "restoration_command_ms": [
+      3.712482000082673
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.018129938000129
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/12"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "replicate": 1,
+    "episode_id": "episode_0013",
+    "protected": {
+      "deadline_miss_ratio": 0.704752275025278,
+      "delivery_ratio": 0.29524772497472196,
+      "echo_goodput_kbit_s": 119.6032,
+      "lost_after_drain": 697,
+      "received": 292,
+      "rtt_p95_ms_received_only": 133.0137370000557,
+      "sent": 989,
+      "timely_500ms": 292,
+      "timely_delivery_ratio": 0.29524772497472196
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48246297739672644,
+      "delivery_ratio": 0.5175370226032736,
+      "echo_goodput_kbit_s": 815.9232,
+      "lost_after_drain": 1857,
+      "received": 1992,
+      "rtt_p95_ms_received_only": 133.00274500033993,
+      "sent": 3849,
+      "timely_500ms": 1992,
+      "timely_delivery_ratio": 0.5175370226032736
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/13"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "replicate": 0,
+    "episode_id": "episode_0014",
+    "protected": {
+      "deadline_miss_ratio": 0.27474747474747474,
+      "delivery_ratio": 0.7252525252525253,
+      "echo_goodput_kbit_s": 294.0928,
+      "lost_after_drain": 272,
+      "received": 718,
+      "rtt_p95_ms_received_only": 132.67903099995237,
+      "sent": 990,
+      "timely_500ms": 718,
+      "timely_delivery_ratio": 0.7252525252525253
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6645010395010394,
+      "delivery_ratio": 0.3354989604989605,
+      "echo_goodput_kbit_s": 528.7936,
+      "lost_after_drain": 2557,
+      "received": 1291,
+      "rtt_p95_ms_received_only": 132.9576839998481,
+      "sent": 3848,
+      "timely_500ms": 1291,
+      "timely_delivery_ratio": 0.3354989604989605
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.527257023999937
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.4277720000754925
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.011306714000057
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/14"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "replicate": 0,
+    "episode_id": "episode_0015",
+    "protected": {
+      "deadline_miss_ratio": 0.701010101010101,
+      "delivery_ratio": 0.298989898989899,
+      "echo_goodput_kbit_s": 121.2416,
+      "lost_after_drain": 694,
+      "received": 296,
+      "rtt_p95_ms_received_only": 133.09881499981202,
+      "sent": 990,
+      "timely_500ms": 296,
+      "timely_delivery_ratio": 0.298989898989899
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4837704492339652,
+      "delivery_ratio": 0.5162295507660348,
+      "echo_goodput_kbit_s": 814.2848,
+      "lost_after_drain": 1863,
+      "received": 1988,
+      "rtt_p95_ms_received_only": 133.01484000021446,
+      "sent": 3851,
+      "timely_500ms": 1988,
+      "timely_delivery_ratio": 0.5162295507660348
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.510817384999882
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.628890999811119
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.023347629999989
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/15"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "replicate": 0,
+    "episode_id": "episode_0016",
+    "protected": {
+      "deadline_miss_ratio": 0.03636363636363636,
+      "delivery_ratio": 0.9636363636363636,
+      "echo_goodput_kbit_s": 390.75840000000005,
+      "lost_after_drain": 36,
+      "received": 954,
+      "rtt_p95_ms_received_only": 118.35617199994886,
+      "sent": 990,
+      "timely_500ms": 954,
+      "timely_delivery_ratio": 0.9636363636363636
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06899109792284866,
+      "delivery_ratio": 0.9310089020771514,
+      "echo_goodput_kbit_s": 514.048,
+      "lost_after_drain": 93,
+      "received": 1255,
+      "rtt_p95_ms_received_only": 131.65991899995788,
+      "sent": 1348,
+      "timely_500ms": 1255,
+      "timely_delivery_ratio": 0.9310089020771514
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/16"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "replicate": 1,
+    "episode_id": "episode_0017",
+    "protected": {
+      "deadline_miss_ratio": 0.2777777777777778,
+      "delivery_ratio": 0.7222222222222222,
+      "echo_goodput_kbit_s": 292.864,
+      "lost_after_drain": 275,
+      "received": 715,
+      "rtt_p95_ms_received_only": 132.67854199966678,
+      "sent": 990,
+      "timely_500ms": 715,
+      "timely_delivery_ratio": 0.7222222222222222
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.663629263212705,
+      "delivery_ratio": 0.33637073678729495,
+      "echo_goodput_kbit_s": 529.2031999999999,
+      "lost_after_drain": 2549,
+      "received": 1292,
+      "rtt_p95_ms_received_only": 132.9408470000999,
+      "sent": 3841,
+      "timely_500ms": 1292,
+      "timely_delivery_ratio": 0.33637073678729495
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5161527210002532
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.4827910003041325
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0028589620001185
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/17"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "replicate": 1,
+    "episode_id": "episode_0018",
+    "protected": {
+      "deadline_miss_ratio": 0.03640040444893832,
+      "delivery_ratio": 0.9635995955510617,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 36,
+      "received": 953,
+      "rtt_p95_ms_received_only": 115.52510699993945,
+      "sent": 989,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9635995955510617
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06919642857142858,
+      "delivery_ratio": 0.9308035714285714,
+      "echo_goodput_kbit_s": 512.4096,
+      "lost_after_drain": 93,
+      "received": 1251,
+      "rtt_p95_ms_received_only": 131.0236999997869,
+      "sent": 1344,
+      "timely_500ms": 1251,
+      "timely_delivery_ratio": 0.9308035714285714
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/18"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "replicate": 0,
+    "episode_id": "episode_0019",
+    "protected": {
+      "deadline_miss_ratio": 0.2696969696969697,
+      "delivery_ratio": 0.7303030303030303,
+      "echo_goodput_kbit_s": 296.1408,
+      "lost_after_drain": 267,
+      "received": 723,
+      "rtt_p95_ms_received_only": 132.72451299962995,
+      "sent": 990,
+      "timely_500ms": 723,
+      "timely_delivery_ratio": 0.7303030303030303
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6667532467532468,
+      "delivery_ratio": 0.33324675324675324,
+      "echo_goodput_kbit_s": 525.5168000000001,
+      "lost_after_drain": 2567,
+      "received": 1283,
+      "rtt_p95_ms_received_only": 132.97012200018798,
+      "sent": 3850,
+      "timely_500ms": 1283,
+      "timely_delivery_ratio": 0.33324675324675324
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.512462103999951
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.8908190001384355
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.011737006999738
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/19"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "replicate": 0,
+    "episode_id": "episode_0020",
+    "protected": {
+      "deadline_miss_ratio": 0.7077856420626896,
+      "delivery_ratio": 0.29221435793731043,
+      "echo_goodput_kbit_s": 118.3744,
+      "lost_after_drain": 700,
+      "received": 289,
+      "rtt_p95_ms_received_only": 133.0593590000717,
+      "sent": 989,
+      "timely_500ms": 289,
+      "timely_delivery_ratio": 0.29221435793731043
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48046875,
+      "delivery_ratio": 0.51953125,
+      "echo_goodput_kbit_s": 817.152,
+      "lost_after_drain": 1845,
+      "received": 1995,
+      "rtt_p95_ms_received_only": 133.006364999801,
+      "sent": 3840,
+      "timely_500ms": 1995,
+      "timely_delivery_ratio": 0.51953125
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/20"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "replicate": 2,
+    "episode_id": "episode_0021",
+    "protected": {
+      "deadline_miss_ratio": 0.697979797979798,
+      "delivery_ratio": 0.302020202020202,
+      "echo_goodput_kbit_s": 122.4704,
+      "lost_after_drain": 691,
+      "received": 299,
+      "rtt_p95_ms_received_only": 133.06585800000903,
+      "sent": 990,
+      "timely_500ms": 299,
+      "timely_delivery_ratio": 0.302020202020202
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4848170256942642,
+      "delivery_ratio": 0.5151829743057358,
+      "echo_goodput_kbit_s": 813.056,
+      "lost_after_drain": 1868,
+      "received": 1985,
+      "rtt_p95_ms_received_only": 133.00160100016,
+      "sent": 3853,
+      "timely_500ms": 1985,
+      "timely_delivery_ratio": 0.5151829743057358
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/21"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "replicate": 1,
+    "episode_id": "episode_0022",
+    "protected": {
+      "deadline_miss_ratio": 0.27401415571284127,
+      "delivery_ratio": 0.7259858442871587,
+      "echo_goodput_kbit_s": 294.0928,
+      "lost_after_drain": 271,
+      "received": 718,
+      "rtt_p95_ms_received_only": 132.7055929996277,
+      "sent": 989,
+      "timely_500ms": 718,
+      "timely_delivery_ratio": 0.7259858442871587
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6638874413757165,
+      "delivery_ratio": 0.33611255862428346,
+      "echo_goodput_kbit_s": 528.384,
+      "lost_after_drain": 2548,
+      "received": 1290,
+      "rtt_p95_ms_received_only": 132.9466649999631,
+      "sent": 3838,
+      "timely_500ms": 1290,
+      "timely_delivery_ratio": 0.33611255862428346
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5167412139999215
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.209109999872453
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.013081142000374
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/22"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "replicate": 0,
+    "episode_id": "episode_0023",
+    "protected": {
+      "deadline_miss_ratio": 0.7141414141414142,
+      "delivery_ratio": 0.28585858585858587,
+      "echo_goodput_kbit_s": 115.91680000000001,
+      "lost_after_drain": 707,
+      "received": 283,
+      "rtt_p95_ms_received_only": 133.03884800006927,
+      "sent": 990,
+      "timely_500ms": 283,
+      "timely_delivery_ratio": 0.28585858585858587
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48039470267462997,
+      "delivery_ratio": 0.5196052973253701,
+      "echo_goodput_kbit_s": 819.6096,
+      "lost_after_drain": 1850,
+      "received": 2001,
+      "rtt_p95_ms_received_only": 132.99620599991613,
+      "sent": 3851,
+      "timely_500ms": 2001,
+      "timely_delivery_ratio": 0.5196052973253701
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.519561294000141
+    ],
+    "restore_reasons": [
+      "NO_OBSERVED_BENEFIT"
+    ],
+    "operator_review_requested": true,
+    "restoration_command_ms": [
+      3.6982390001867316
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.022252476000176
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/23"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "replicate": 1,
+    "episode_id": "episode_0024",
+    "protected": {
+      "deadline_miss_ratio": 0.7141414141414142,
+      "delivery_ratio": 0.28585858585858587,
+      "echo_goodput_kbit_s": 115.91680000000001,
+      "lost_after_drain": 707,
+      "received": 283,
+      "rtt_p95_ms_received_only": 133.03537800038612,
+      "sent": 990,
+      "timely_500ms": 283,
+      "timely_delivery_ratio": 0.28585858585858587
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.47985443202495454,
+      "delivery_ratio": 0.5201455679750455,
+      "echo_goodput_kbit_s": 819.6096,
+      "lost_after_drain": 1846,
+      "received": 2001,
+      "rtt_p95_ms_received_only": 133.01063899962173,
+      "sent": 3847,
+      "timely_500ms": 2001,
+      "timely_delivery_ratio": 0.5201455679750455
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.512455100000352
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.121555000390799
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0224598059994605
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/24"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "replicate": 2,
+    "episode_id": "episode_0025",
+    "protected": {
+      "deadline_miss_ratio": 0.27575757575757576,
+      "delivery_ratio": 0.7242424242424242,
+      "echo_goodput_kbit_s": 293.6832,
+      "lost_after_drain": 273,
+      "received": 717,
+      "rtt_p95_ms_received_only": 132.6561160003621,
+      "sent": 990,
+      "timely_500ms": 717,
+      "timely_delivery_ratio": 0.7242424242424242
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6643283969862301,
+      "delivery_ratio": 0.3356716030137698,
+      "echo_goodput_kbit_s": 529.2031999999999,
+      "lost_after_drain": 2557,
+      "received": 1292,
+      "rtt_p95_ms_received_only": 132.9415580003115,
+      "sent": 3849,
+      "timely_500ms": 1292,
+      "timely_delivery_ratio": 0.3356716030137698
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.5374243340002067
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.7525849997546175
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.000041485000111
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/25"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "replicate": 0,
+    "episode_id": "episode_0026",
+    "protected": {
+      "deadline_miss_ratio": 0.03434343434343434,
+      "delivery_ratio": 0.9656565656565657,
+      "echo_goodput_kbit_s": 391.57759999999996,
+      "lost_after_drain": 34,
+      "received": 956,
+      "rtt_p95_ms_received_only": 117.90290399949299,
+      "sent": 990,
+      "timely_500ms": 956,
+      "timely_delivery_ratio": 0.9656565656565657
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.24962852897473997,
+      "delivery_ratio": 0.75037147102526,
+      "echo_goodput_kbit_s": 413.696,
+      "lost_after_drain": 336,
+      "received": 1010,
+      "rtt_p95_ms_received_only": 131.94989200019336,
+      "sent": 1346,
+      "timely_500ms": 1010,
+      "timely_delivery_ratio": 0.75037147102526
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.509794266999961
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.065431000024546
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.01360742199995
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/26"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "replicate": 1,
+    "episode_id": "episode_0027",
+    "protected": {
+      "deadline_miss_ratio": 0.03640040444893832,
+      "delivery_ratio": 0.9635995955510617,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 36,
+      "received": 953,
+      "rtt_p95_ms_received_only": 117.52922400046373,
+      "sent": 989,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9635995955510617
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.2479523454951601,
+      "delivery_ratio": 0.7520476545048399,
+      "echo_goodput_kbit_s": 413.696,
+      "lost_after_drain": 333,
+      "received": 1010,
+      "rtt_p95_ms_received_only": 131.94601600025635,
+      "sent": 1343,
+      "timely_500ms": 1010,
+      "timely_delivery_ratio": 0.7520476545048399
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5083859509995818
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.846582999765815
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.008184037999854
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/27"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "replicate": 1,
+    "episode_id": "episode_0028",
+    "protected": {
+      "deadline_miss_ratio": 0.03640040444893832,
+      "delivery_ratio": 0.9635995955510617,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 36,
+      "received": 953,
+      "rtt_p95_ms_received_only": 112.84672199963097,
+      "sent": 989,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9635995955510617
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.2481371087928465,
+      "delivery_ratio": 0.7518628912071535,
+      "echo_goodput_kbit_s": 413.2864,
+      "lost_after_drain": 333,
+      "received": 1009,
+      "rtt_p95_ms_received_only": 131.4955629995893,
+      "sent": 1342,
+      "timely_500ms": 1009,
+      "timely_delivery_ratio": 0.7518628912071535
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5086734030001026
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.422108999686316
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.00647215599929
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/28"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "replicate": 2,
+    "episode_id": "episode_0029",
+    "protected": {
+      "deadline_miss_ratio": 0.03538928210313448,
+      "delivery_ratio": 0.9646107178968655,
+      "echo_goodput_kbit_s": 390.75840000000005,
+      "lost_after_drain": 35,
+      "received": 954,
+      "rtt_p95_ms_received_only": 115.77252200004295,
+      "sent": 989,
+      "timely_500ms": 954,
+      "timely_delivery_ratio": 0.9646107178968655
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.2486969471332837,
+      "delivery_ratio": 0.7513030528667163,
+      "echo_goodput_kbit_s": 413.2864,
+      "lost_after_drain": 334,
+      "received": 1009,
+      "rtt_p95_ms_received_only": 131.2702650002393,
+      "sent": 1343,
+      "timely_500ms": 1009,
+      "timely_delivery_ratio": 0.7513030528667163
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5094537969998783
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.167068999275216
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.00575248199948
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/29"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "replicate": 2,
+    "episode_id": "episode_0030",
+    "protected": {
+      "deadline_miss_ratio": 0.26720647773279355,
+      "delivery_ratio": 0.7327935222672065,
+      "echo_goodput_kbit_s": 296.5504,
+      "lost_after_drain": 264,
+      "received": 724,
+      "rtt_p95_ms_received_only": 132.7506199995696,
+      "sent": 988,
+      "timely_500ms": 724,
+      "timely_delivery_ratio": 0.7327935222672065
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6645735217163788,
+      "delivery_ratio": 0.33542647828362115,
+      "echo_goodput_kbit_s": 525.1071999999999,
+      "lost_after_drain": 2540,
+      "received": 1282,
+      "rtt_p95_ms_received_only": 132.99336899945047,
+      "sent": 3822,
+      "timely_500ms": 1282,
+      "timely_delivery_ratio": 0.33542647828362115
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.50901702200008
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.521930999952019
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.013317650000317
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/30"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "replicate": 2,
+    "episode_id": "episode_0031",
+    "protected": {
+      "deadline_miss_ratio": 0.03744939271255061,
+      "delivery_ratio": 0.9625506072874493,
+      "echo_goodput_kbit_s": 389.52959999999996,
+      "lost_after_drain": 37,
+      "received": 951,
+      "rtt_p95_ms_received_only": 117.3162510003749,
+      "sent": 988,
+      "timely_500ms": 951,
+      "timely_delivery_ratio": 0.9625506072874493
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.2453392990305742,
+      "delivery_ratio": 0.7546607009694258,
+      "echo_goodput_kbit_s": 414.5152,
+      "lost_after_drain": 329,
+      "received": 1012,
+      "rtt_p95_ms_received_only": 131.9244529995558,
+      "sent": 1341,
+      "timely_500ms": 1012,
+      "timely_delivery_ratio": 0.7546607009694258
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.509365037999487
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.27261699992232
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.009944424000423
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/31"
+  },
+  {
+    "vm": "first",
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "replicate": 2,
+    "episode_id": "episode_0032",
+    "protected": {
+      "deadline_miss_ratio": 0.2730030333670374,
+      "delivery_ratio": 0.7269969666329625,
+      "echo_goodput_kbit_s": 294.5024,
+      "lost_after_drain": 270,
+      "received": 719,
+      "rtt_p95_ms_received_only": 132.6021610002499,
+      "sent": 989,
+      "timely_500ms": 719,
+      "timely_delivery_ratio": 0.7269969666329625
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6635318704284221,
+      "delivery_ratio": 0.33646812957157785,
+      "echo_goodput_kbit_s": 527.5648,
+      "lost_after_drain": 2540,
+      "received": 1288,
+      "rtt_p95_ms_received_only": 132.99455500055046,
+      "sent": 3828,
+      "timely_500ms": 1288,
+      "timely_delivery_ratio": 0.33646812957157785
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5107030499993925
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.041676999302581
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0134924240001055
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/32"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "replicate": 2,
+    "episode_id": "episode_0033",
+    "protected": {
+      "deadline_miss_ratio": 0.7041540020263425,
+      "delivery_ratio": 0.29584599797365757,
+      "echo_goodput_kbit_s": 119.6032,
+      "lost_after_drain": 695,
+      "received": 292,
+      "rtt_p95_ms_received_only": 133.12956299978396,
+      "sent": 987,
+      "timely_500ms": 292,
+      "timely_delivery_ratio": 0.29584599797365757
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4796131730266597,
+      "delivery_ratio": 0.5203868269733403,
+      "echo_goodput_kbit_s": 815.5136,
+      "lost_after_drain": 1835,
+      "received": 1991,
+      "rtt_p95_ms_received_only": 133.06467500024155,
+      "sent": 3826,
+      "timely_500ms": 1991,
+      "timely_delivery_ratio": 0.5203868269733403
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5129577450006764
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      3.9231529999597115
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.004878779999672
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/33"
+  },
+  {
+    "vm": "first",
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "replicate": 1,
+    "episode_id": "episode_0034",
+    "protected": {
+      "deadline_miss_ratio": 0.7122593718338399,
+      "delivery_ratio": 0.2877406281661601,
+      "echo_goodput_kbit_s": 116.32639999999999,
+      "lost_after_drain": 703,
+      "received": 284,
+      "rtt_p95_ms_received_only": 133.13981899955252,
+      "sent": 987,
+      "timely_500ms": 284,
+      "timely_delivery_ratio": 0.2877406281661601
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.47615303983228513,
+      "delivery_ratio": 0.5238469601677149,
+      "echo_goodput_kbit_s": 818.7904,
+      "lost_after_drain": 1817,
+      "received": 1999,
+      "rtt_p95_ms_received_only": 133.0912929997794,
+      "sent": 3816,
+      "timely_500ms": 1999,
+      "timely_delivery_ratio": 0.5238469601677149
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.5283386080000128
+    ],
+    "restore_reasons": [
+      "NO_OBSERVED_BENEFIT"
+    ],
+    "operator_review_requested": true,
+    "restoration_command_ms": [
+      4.2452339994270005
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.019193103999896
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/34"
+  },
+  {
+    "vm": "first",
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "replicate": 0,
+    "episode_id": "episode_0035",
+    "protected": {
+      "deadline_miss_ratio": 0.03643724696356275,
+      "delivery_ratio": 0.9635627530364372,
+      "echo_goodput_kbit_s": 389.9392,
+      "lost_after_drain": 36,
+      "received": 952,
+      "rtt_p95_ms_received_only": 116.14927800019359,
+      "sent": 988,
+      "timely_500ms": 952,
+      "timely_delivery_ratio": 0.9635627530364372
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.2479523454951601,
+      "delivery_ratio": 0.7520476545048399,
+      "echo_goodput_kbit_s": 413.696,
+      "lost_after_drain": 333,
+      "received": 1010,
+      "rtt_p95_ms_received_only": 131.97723499979475,
+      "sent": 1343,
+      "timely_500ms": 1010,
+      "timely_delivery_ratio": 0.7520476545048399
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5081366960002924
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.583995999586477
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.006506189999527
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/first/episodes/35"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "replicate": 1,
+    "episode_id": "episode_0000",
+    "protected": {
+      "deadline_miss_ratio": 0.697979797979798,
+      "delivery_ratio": 0.302020202020202,
+      "echo_goodput_kbit_s": 122.4704,
+      "lost_after_drain": 691,
+      "received": 299,
+      "rtt_p95_ms_received_only": 133.09206999997514,
+      "sent": 990,
+      "timely_500ms": 299,
+      "timely_delivery_ratio": 0.302020202020202
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4836108220603538,
+      "delivery_ratio": 0.5163891779396462,
+      "echo_goodput_kbit_s": 813.056,
+      "lost_after_drain": 1859,
+      "received": 1985,
+      "rtt_p95_ms_received_only": 133.01565199998322,
+      "sent": 3844,
+      "timely_500ms": 1985,
+      "timely_delivery_ratio": 0.5163891779396462
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.535212016999992
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.222016999994139
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.001248963000023
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/0"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "replicate": 0,
+    "episode_id": "episode_0001",
+    "protected": {
+      "deadline_miss_ratio": 0.03640040444893832,
+      "delivery_ratio": 0.9635995955510617,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 36,
+      "received": 953,
+      "rtt_p95_ms_received_only": 118.78572199998416,
+      "sent": 989,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9635995955510617
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06840148698884758,
+      "delivery_ratio": 0.9315985130111524,
+      "echo_goodput_kbit_s": 513.2288,
+      "lost_after_drain": 92,
+      "received": 1253,
+      "rtt_p95_ms_received_only": 131.65254799997683,
+      "sent": 1345,
+      "timely_500ms": 1253,
+      "timely_delivery_ratio": 0.9315985130111524
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/1"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "replicate": 0,
+    "episode_id": "episode_0002",
+    "protected": {
+      "deadline_miss_ratio": 0.27547931382441976,
+      "delivery_ratio": 0.7245206861755802,
+      "echo_goodput_kbit_s": 294.0928,
+      "lost_after_drain": 273,
+      "received": 718,
+      "rtt_p95_ms_received_only": 132.68958100002237,
+      "sent": 991,
+      "timely_500ms": 718,
+      "timely_delivery_ratio": 0.7245206861755802
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6656290531776913,
+      "delivery_ratio": 0.33437094682230867,
+      "echo_goodput_kbit_s": 527.9744000000001,
+      "lost_after_drain": 2566,
+      "received": 1289,
+      "rtt_p95_ms_received_only": 132.91708799999924,
+      "sent": 3855,
+      "timely_500ms": 1289,
+      "timely_delivery_ratio": 0.33437094682230867
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5500430359999768
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      5.074470000010933
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.041408999999987
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/2"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "replicate": 2,
+    "episode_id": "episode_0003",
+    "protected": {
+      "deadline_miss_ratio": 0.03232323232323232,
+      "delivery_ratio": 0.9676767676767677,
+      "echo_goodput_kbit_s": 392.3968,
+      "lost_after_drain": 32,
+      "received": 958,
+      "rtt_p95_ms_received_only": 118.36519299998827,
+      "sent": 990,
+      "timely_500ms": 958,
+      "timely_delivery_ratio": 0.9676767676767677
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.07211895910780669,
+      "delivery_ratio": 0.9278810408921933,
+      "echo_goodput_kbit_s": 511.1808,
+      "lost_after_drain": 97,
+      "received": 1248,
+      "rtt_p95_ms_received_only": 131.48502400002826,
+      "sent": 1345,
+      "timely_500ms": 1248,
+      "timely_delivery_ratio": 0.9278810408921933
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/3"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "replicate": 1,
+    "episode_id": "episode_0004",
+    "protected": {
+      "deadline_miss_ratio": 0.27070707070707073,
+      "delivery_ratio": 0.7292929292929293,
+      "echo_goodput_kbit_s": 295.7312,
+      "lost_after_drain": 268,
+      "received": 722,
+      "rtt_p95_ms_received_only": 132.67512199996645,
+      "sent": 990,
+      "timely_500ms": 722,
+      "timely_delivery_ratio": 0.7292929292929293
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6655405405405406,
+      "delivery_ratio": 0.3344594594594595,
+      "echo_goodput_kbit_s": 527.1551999999999,
+      "lost_after_drain": 2561,
+      "received": 1287,
+      "rtt_p95_ms_received_only": 132.91488700002674,
+      "sent": 3848,
+      "timely_500ms": 1287,
+      "timely_delivery_ratio": 0.3344594594594595
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.5127877300000137
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.988444999980857
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.001295036999977
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/4"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "replicate": 0,
+    "episode_id": "episode_0005",
+    "protected": {
+      "deadline_miss_ratio": 0.694949494949495,
+      "delivery_ratio": 0.30505050505050507,
+      "echo_goodput_kbit_s": 123.69919999999999,
+      "lost_after_drain": 688,
+      "received": 302,
+      "rtt_p95_ms_received_only": 133.0529370000022,
+      "sent": 990,
+      "timely_500ms": 302,
+      "timely_delivery_ratio": 0.30505050505050507
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4850610548194336,
+      "delivery_ratio": 0.5149389451805664,
+      "echo_goodput_kbit_s": 811.8272,
+      "lost_after_drain": 1867,
+      "received": 1982,
+      "rtt_p95_ms_received_only": 132.97929299994848,
+      "sent": 3849,
+      "timely_500ms": 1982,
+      "timely_delivery_ratio": 0.5149389451805664
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5501851600000123
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      3.4542220000730595
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.038853139999958
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/5"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "replicate": 0,
+    "episode_id": "episode_0006",
+    "protected": {
+      "deadline_miss_ratio": 0.706060606060606,
+      "delivery_ratio": 0.29393939393939394,
+      "echo_goodput_kbit_s": 119.1936,
+      "lost_after_drain": 699,
+      "received": 291,
+      "rtt_p95_ms_received_only": 133.0143620000399,
+      "sent": 990,
+      "timely_500ms": 291,
+      "timely_delivery_ratio": 0.29393939393939394
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4822031696544557,
+      "delivery_ratio": 0.5177968303455442,
+      "echo_goodput_kbit_s": 816.3328,
+      "lost_after_drain": 1856,
+      "received": 1993,
+      "rtt_p95_ms_received_only": 132.97329800002444,
+      "sent": 3849,
+      "timely_500ms": 1993,
+      "timely_delivery_ratio": 0.5177968303455442
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/6"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "replicate": 1,
+    "episode_id": "episode_0007",
+    "protected": {
+      "deadline_miss_ratio": 0.7138523761375126,
+      "delivery_ratio": 0.2861476238624874,
+      "echo_goodput_kbit_s": 115.91680000000001,
+      "lost_after_drain": 706,
+      "received": 283,
+      "rtt_p95_ms_received_only": 132.96812099997624,
+      "sent": 989,
+      "timely_500ms": 283,
+      "timely_delivery_ratio": 0.2861476238624874
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.47998960498960497,
+      "delivery_ratio": 0.520010395010395,
+      "echo_goodput_kbit_s": 819.6096,
+      "lost_after_drain": 1847,
+      "received": 2001,
+      "rtt_p95_ms_received_only": 133.0029859999513,
+      "sent": 3848,
+      "timely_500ms": 2001,
+      "timely_delivery_ratio": 0.520010395010395
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/7"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "fixed_rule",
+    "replicate": 2,
+    "episode_id": "episode_0008",
+    "protected": {
+      "deadline_miss_ratio": 0.7232323232323232,
+      "delivery_ratio": 0.2767676767676768,
+      "echo_goodput_kbit_s": 112.23039999999999,
+      "lost_after_drain": 716,
+      "received": 274,
+      "rtt_p95_ms_received_only": 133.04843799994615,
+      "sent": 990,
+      "timely_500ms": 274,
+      "timely_delivery_ratio": 0.2767676767676768
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4775032509752926,
+      "delivery_ratio": 0.5224967490247074,
+      "echo_goodput_kbit_s": 822.8864,
+      "lost_after_drain": 1836,
+      "received": 2009,
+      "rtt_p95_ms_received_only": 132.98834499994427,
+      "sent": 3845,
+      "timely_500ms": 2009,
+      "timely_delivery_ratio": 0.5224967490247074
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5497225919999664
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      3.4338839999463744
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.035881798999981
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/8"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "replicate": 1,
+    "episode_id": "episode_0009",
+    "protected": {
+      "deadline_miss_ratio": 0.03939393939393939,
+      "delivery_ratio": 0.9606060606060606,
+      "echo_goodput_kbit_s": 389.52959999999996,
+      "lost_after_drain": 39,
+      "received": 951,
+      "rtt_p95_ms_received_only": 114.92709200001627,
+      "sent": 990,
+      "timely_500ms": 951,
+      "timely_delivery_ratio": 0.9606060606060606
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06755753526354863,
+      "delivery_ratio": 0.9324424647364514,
+      "echo_goodput_kbit_s": 514.4576,
+      "lost_after_drain": 91,
+      "received": 1256,
+      "rtt_p95_ms_received_only": 131.65984899990235,
+      "sent": 1347,
+      "timely_500ms": 1256,
+      "timely_delivery_ratio": 0.9324424647364514
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/9"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "no_action",
+    "replicate": 2,
+    "episode_id": "episode_0010",
+    "protected": {
+      "deadline_miss_ratio": 0.6989898989898989,
+      "delivery_ratio": 0.301010101010101,
+      "echo_goodput_kbit_s": 122.0608,
+      "lost_after_drain": 692,
+      "received": 298,
+      "rtt_p95_ms_received_only": 133.0217370000355,
+      "sent": 990,
+      "timely_500ms": 298,
+      "timely_delivery_ratio": 0.301010101010101
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4836193447737909,
+      "delivery_ratio": 0.516380655226209,
+      "echo_goodput_kbit_s": 813.4656,
+      "lost_after_drain": 1860,
+      "received": 1986,
+      "rtt_p95_ms_received_only": 132.99537399996098,
+      "sent": 3846,
+      "timely_500ms": 1986,
+      "timely_delivery_ratio": 0.516380655226209
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/10"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "no_action",
+    "replicate": 2,
+    "episode_id": "episode_0011",
+    "protected": {
+      "deadline_miss_ratio": 0.03333333333333333,
+      "delivery_ratio": 0.9666666666666667,
+      "echo_goodput_kbit_s": 391.98720000000003,
+      "lost_after_drain": 33,
+      "received": 957,
+      "rtt_p95_ms_received_only": 119.24257399994076,
+      "sent": 990,
+      "timely_500ms": 957,
+      "timely_delivery_ratio": 0.9666666666666667
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.07057949479940565,
+      "delivery_ratio": 0.9294205052005944,
+      "echo_goodput_kbit_s": 512.4096,
+      "lost_after_drain": 95,
+      "received": 1251,
+      "rtt_p95_ms_received_only": 131.55782899991664,
+      "sent": 1346,
+      "timely_500ms": 1251,
+      "timely_delivery_ratio": 0.9294205052005944
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/11"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "replicate": 2,
+    "episode_id": "episode_0012",
+    "protected": {
+      "deadline_miss_ratio": 0.701417004048583,
+      "delivery_ratio": 0.298582995951417,
+      "echo_goodput_kbit_s": 120.832,
+      "lost_after_drain": 693,
+      "received": 295,
+      "rtt_p95_ms_received_only": 133.05259400010527,
+      "sent": 988,
+      "timely_500ms": 295,
+      "timely_delivery_ratio": 0.298582995951417
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48093994778067883,
+      "delivery_ratio": 0.5190600522193212,
+      "echo_goodput_kbit_s": 814.2848,
+      "lost_after_drain": 1842,
+      "received": 1988,
+      "rtt_p95_ms_received_only": 133.0282349999834,
+      "sent": 3830,
+      "timely_500ms": 1988,
+      "timely_delivery_ratio": 0.5190600522193212
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.514834843000017
+    ],
+    "restore_reasons": [
+      "NO_OBSERVED_BENEFIT"
+    ],
+    "operator_review_requested": true,
+    "restoration_command_ms": [
+      3.2985969999117515
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.0092464470000095
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/12"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "replicate": 1,
+    "episode_id": "episode_0013",
+    "protected": {
+      "deadline_miss_ratio": 0.7219413549039434,
+      "delivery_ratio": 0.2780586450960566,
+      "echo_goodput_kbit_s": 112.64,
+      "lost_after_drain": 714,
+      "received": 275,
+      "rtt_p95_ms_received_only": 133.0725220000204,
+      "sent": 989,
+      "timely_500ms": 275,
+      "timely_delivery_ratio": 0.2780586450960566
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.47668663714508985,
+      "delivery_ratio": 0.5233133628549101,
+      "echo_goodput_kbit_s": 822.8864,
+      "lost_after_drain": 1830,
+      "received": 2009,
+      "rtt_p95_ms_received_only": 132.9995550000831,
+      "sent": 3839,
+      "timely_500ms": 2009,
+      "timely_delivery_ratio": 0.5233133628549101
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/13"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "replicate": 0,
+    "episode_id": "episode_0014",
+    "protected": {
+      "deadline_miss_ratio": 0.27098078867542974,
+      "delivery_ratio": 0.7290192113245703,
+      "echo_goodput_kbit_s": 295.3216,
+      "lost_after_drain": 268,
+      "received": 721,
+      "rtt_p95_ms_received_only": 132.56887099998949,
+      "sent": 989,
+      "timely_500ms": 721,
+      "timely_delivery_ratio": 0.7290192113245703
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6641460234680574,
+      "delivery_ratio": 0.33585397653194266,
+      "echo_goodput_kbit_s": 527.5648,
+      "lost_after_drain": 2547,
+      "received": 1288,
+      "rtt_p95_ms_received_only": 132.9145619999963,
+      "sent": 3835,
+      "timely_500ms": 1288,
+      "timely_delivery_ratio": 0.33585397653194266
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.514243018000002
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.532192999974541
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.002578872999948
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/14"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "replicate": 0,
+    "episode_id": "episode_0015",
+    "protected": {
+      "deadline_miss_ratio": 0.7067745197168858,
+      "delivery_ratio": 0.29322548028311424,
+      "echo_goodput_kbit_s": 118.784,
+      "lost_after_drain": 699,
+      "received": 290,
+      "rtt_p95_ms_received_only": 133.06115299997145,
+      "sent": 989,
+      "timely_500ms": 290,
+      "timely_delivery_ratio": 0.29322548028311424
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4819339745256044,
+      "delivery_ratio": 0.5180660254743956,
+      "echo_goodput_kbit_s": 816.3328,
+      "lost_after_drain": 1854,
+      "received": 1993,
+      "rtt_p95_ms_received_only": 132.9986389999931,
+      "sent": 3847,
+      "timely_500ms": 1993,
+      "timely_delivery_ratio": 0.5180660254743956
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5509534760000179
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      3.621280999936971
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.037188861000004
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/15"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "replicate": 0,
+    "episode_id": "episode_0016",
+    "protected": {
+      "deadline_miss_ratio": 0.03434343434343434,
+      "delivery_ratio": 0.9656565656565657,
+      "echo_goodput_kbit_s": 391.57759999999996,
+      "lost_after_drain": 34,
+      "received": 956,
+      "rtt_p95_ms_received_only": 119.59078899997166,
+      "sent": 990,
+      "timely_500ms": 956,
+      "timely_delivery_ratio": 0.9656565656565657
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06983655274888559,
+      "delivery_ratio": 0.9301634472511144,
+      "echo_goodput_kbit_s": 512.8192,
+      "lost_after_drain": 94,
+      "received": 1252,
+      "rtt_p95_ms_received_only": 131.53598700000657,
+      "sent": 1346,
+      "timely_500ms": 1252,
+      "timely_delivery_ratio": 0.9301634472511144
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/16"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "replicate": 1,
+    "episode_id": "episode_0017",
+    "protected": {
+      "deadline_miss_ratio": 0.2717171717171717,
+      "delivery_ratio": 0.7282828282828283,
+      "echo_goodput_kbit_s": 295.3216,
+      "lost_after_drain": 269,
+      "received": 721,
+      "rtt_p95_ms_received_only": 132.62467999993532,
+      "sent": 990,
+      "timely_500ms": 721,
+      "timely_delivery_ratio": 0.7282828282828283
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6655387818844352,
+      "delivery_ratio": 0.3344612181155648,
+      "echo_goodput_kbit_s": 526.336,
+      "lost_after_drain": 2557,
+      "received": 1285,
+      "rtt_p95_ms_received_only": 132.88634999992155,
+      "sent": 3842,
+      "timely_500ms": 1285,
+      "timely_delivery_ratio": 0.3344612181155648
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5017869529999643
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.6905049999850235
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.046361087000037
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/17"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "evidence_feedback",
+    "replicate": 1,
+    "episode_id": "episode_0018",
+    "protected": {
+      "deadline_miss_ratio": 0.03737373737373737,
+      "delivery_ratio": 0.9626262626262626,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 37,
+      "received": 953,
+      "rtt_p95_ms_received_only": 118.07785999997122,
+      "sent": 990,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9626262626262626
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.06835066864784546,
+      "delivery_ratio": 0.9316493313521546,
+      "echo_goodput_kbit_s": 513.6384,
+      "lost_after_drain": 92,
+      "received": 1254,
+      "rtt_p95_ms_received_only": 131.64523099999315,
+      "sent": 1346,
+      "timely_500ms": 1254,
+      "timely_delivery_ratio": 0.9316493313521546
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/18"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "replicate": 0,
+    "episode_id": "episode_0019",
+    "protected": {
+      "deadline_miss_ratio": 0.2651821862348178,
+      "delivery_ratio": 0.7348178137651822,
+      "echo_goodput_kbit_s": 297.3696,
+      "lost_after_drain": 262,
+      "received": 726,
+      "rtt_p95_ms_received_only": 132.5739669999848,
+      "sent": 988,
+      "timely_500ms": 726,
+      "timely_delivery_ratio": 0.7348178137651822
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6650980392156862,
+      "delivery_ratio": 0.3349019607843137,
+      "echo_goodput_kbit_s": 524.6976,
+      "lost_after_drain": 2544,
+      "received": 1281,
+      "rtt_p95_ms_received_only": 132.94541499999468,
+      "sent": 3825,
+      "timely_500ms": 1281,
+      "timely_delivery_ratio": 0.3349019607843137
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.55105279899999
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.683834000047682
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.003581136999969
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/19"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "replicate": 0,
+    "episode_id": "episode_0020",
+    "protected": {
+      "deadline_miss_ratio": 0.704752275025278,
+      "delivery_ratio": 0.29524772497472196,
+      "echo_goodput_kbit_s": 119.6032,
+      "lost_after_drain": 697,
+      "received": 292,
+      "rtt_p95_ms_received_only": 133.04682799991951,
+      "sent": 989,
+      "timely_500ms": 292,
+      "timely_delivery_ratio": 0.29524772497472196
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4825883575883576,
+      "delivery_ratio": 0.5174116424116424,
+      "echo_goodput_kbit_s": 815.5136,
+      "lost_after_drain": 1857,
+      "received": 1991,
+      "rtt_p95_ms_received_only": 132.9876229999627,
+      "sent": 3848,
+      "timely_500ms": 1991,
+      "timely_delivery_ratio": 0.5174116424116424
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/20"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "no_action",
+    "replicate": 2,
+    "episode_id": "episode_0021",
+    "protected": {
+      "deadline_miss_ratio": 0.7070707070707071,
+      "delivery_ratio": 0.29292929292929293,
+      "echo_goodput_kbit_s": 118.784,
+      "lost_after_drain": 700,
+      "received": 290,
+      "rtt_p95_ms_received_only": 133.0128000000741,
+      "sent": 990,
+      "timely_500ms": 290,
+      "timely_delivery_ratio": 0.29292929292929293
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48233766233766234,
+      "delivery_ratio": 0.5176623376623377,
+      "echo_goodput_kbit_s": 816.3328,
+      "lost_after_drain": 1857,
+      "received": 1993,
+      "rtt_p95_ms_received_only": 132.98692499995468,
+      "sent": 3850,
+      "timely_500ms": 1993,
+      "timely_delivery_ratio": 0.5176623376623377
+    },
+    "intervention_count": 0,
+    "event_to_apply_decision_seconds": [],
+    "restore_reasons": [],
+    "operator_review_requested": false,
+    "restoration_command_ms": [],
+    "apply_decision_to_restore_trigger_seconds": [],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/21"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "replicate": 1,
+    "episode_id": "episode_0022",
+    "protected": {
+      "deadline_miss_ratio": 0.2679474216380182,
+      "delivery_ratio": 0.7320525783619818,
+      "echo_goodput_kbit_s": 296.5504,
+      "lost_after_drain": 265,
+      "received": 724,
+      "rtt_p95_ms_received_only": 132.67831999996815,
+      "sent": 989,
+      "timely_500ms": 724,
+      "timely_delivery_ratio": 0.7320525783619818
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6663196251952108,
+      "delivery_ratio": 0.3336803748047892,
+      "echo_goodput_kbit_s": 525.1071999999999,
+      "lost_after_drain": 2560,
+      "received": 1282,
+      "rtt_p95_ms_received_only": 132.95491500002754,
+      "sent": 3842,
+      "timely_500ms": 1282,
+      "timely_delivery_ratio": 0.3336803748047892
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5508596979999538
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      4.5631960000491745
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.050120867000032
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/22"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "replicate": 0,
+    "episode_id": "episode_0023",
+    "protected": {
+      "deadline_miss_ratio": 0.7115384615384616,
+      "delivery_ratio": 0.28846153846153844,
+      "echo_goodput_kbit_s": 116.736,
+      "lost_after_drain": 703,
+      "received": 285,
+      "rtt_p95_ms_received_only": 133.0244700000094,
+      "sent": 988,
+      "timely_500ms": 285,
+      "timely_delivery_ratio": 0.28846153846153844
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.48036410923276984,
+      "delivery_ratio": 0.5196358907672302,
+      "echo_goodput_kbit_s": 818.3808,
+      "lost_after_drain": 1847,
+      "received": 1998,
+      "rtt_p95_ms_received_only": 132.99786500010669,
+      "sent": 3845,
+      "timely_500ms": 1998,
+      "timely_delivery_ratio": 0.5196358907672302
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.5133407119999447
+    ],
+    "restore_reasons": [
+      "NO_OBSERVED_BENEFIT"
+    ],
+    "operator_review_requested": true,
+    "restoration_command_ms": [
+      3.2380959999045444
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      4.009609891000082
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/23"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "replicate": 1,
+    "episode_id": "episode_0024",
+    "protected": {
+      "deadline_miss_ratio": 0.7054655870445344,
+      "delivery_ratio": 0.29453441295546556,
+      "echo_goodput_kbit_s": 119.1936,
+      "lost_after_drain": 697,
+      "received": 291,
+      "rtt_p95_ms_received_only": 133.0557209998915,
+      "sent": 988,
+      "timely_500ms": 291,
+      "timely_delivery_ratio": 0.29453441295546556
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4803129074315515,
+      "delivery_ratio": 0.5196870925684485,
+      "echo_goodput_kbit_s": 816.3328,
+      "lost_after_drain": 1842,
+      "received": 1993,
+      "rtt_p95_ms_received_only": 133.01266200005557,
+      "sent": 3835,
+      "timely_500ms": 1993,
+      "timely_delivery_ratio": 0.5196870925684485
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5498959980000109
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      2.671263999900475
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.038630689000001
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/24"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "evidence_feedback",
+    "replicate": 2,
+    "episode_id": "episode_0025",
+    "protected": {
+      "deadline_miss_ratio": 0.27070707070707073,
+      "delivery_ratio": 0.7292929292929293,
+      "echo_goodput_kbit_s": 295.7312,
+      "lost_after_drain": 268,
+      "received": 722,
+      "rtt_p95_ms_received_only": 132.73792699988007,
+      "sent": 990,
+      "timely_500ms": 722,
+      "timely_delivery_ratio": 0.7292929292929293
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6657127991675338,
+      "delivery_ratio": 0.33428720083246616,
+      "echo_goodput_kbit_s": 526.336,
+      "lost_after_drain": 2559,
+      "received": 1285,
+      "rtt_p95_ms_received_only": 132.9488119999951,
+      "sent": 3844,
+      "timely_500ms": 1285,
+      "timely_delivery_ratio": 0.33428720083246616
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.505426990999922
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.041865000019243
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.028172552999877
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/25"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "replicate": 0,
+    "episode_id": "episode_0026",
+    "protected": {
+      "deadline_miss_ratio": 0.034378159757330634,
+      "delivery_ratio": 0.9656218402426694,
+      "echo_goodput_kbit_s": 391.168,
+      "lost_after_drain": 34,
+      "received": 955,
+      "rtt_p95_ms_received_only": 117.90651000001162,
+      "sent": 989,
+      "timely_500ms": 955,
+      "timely_delivery_ratio": 0.9656218402426694
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.2505576208178439,
+      "delivery_ratio": 0.7494423791821562,
+      "echo_goodput_kbit_s": 412.8768,
+      "lost_after_drain": 337,
+      "received": 1008,
+      "rtt_p95_ms_received_only": 131.89895200002866,
+      "sent": 1345,
+      "timely_500ms": 1008,
+      "timely_delivery_ratio": 0.7494423791821562
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5358932899998763
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.471431000136363
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.0039711590000024
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/26"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "replicate": 1,
+    "episode_id": "episode_0027",
+    "protected": {
+      "deadline_miss_ratio": 0.03535353535353535,
+      "delivery_ratio": 0.9646464646464646,
+      "echo_goodput_kbit_s": 391.168,
+      "lost_after_drain": 35,
+      "received": 955,
+      "rtt_p95_ms_received_only": 118.58907999999246,
+      "sent": 990,
+      "timely_500ms": 955,
+      "timely_delivery_ratio": 0.9646464646464646
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.25037147102526003,
+      "delivery_ratio": 0.74962852897474,
+      "echo_goodput_kbit_s": 413.2864,
+      "lost_after_drain": 337,
+      "received": 1009,
+      "rtt_p95_ms_received_only": 132.0280919999277,
+      "sent": 1346,
+      "timely_500ms": 1009,
+      "timely_delivery_ratio": 0.74962852897474
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.528721798999868
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.66023500002666
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.015643204000071
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/27"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "replicate": 1,
+    "episode_id": "episode_0028",
+    "protected": {
+      "deadline_miss_ratio": 0.03538928210313448,
+      "delivery_ratio": 0.9646107178968655,
+      "echo_goodput_kbit_s": 390.75840000000005,
+      "lost_after_drain": 35,
+      "received": 954,
+      "rtt_p95_ms_received_only": 119.02794699994956,
+      "sent": 989,
+      "timely_500ms": 954,
+      "timely_delivery_ratio": 0.9646107178968655
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.24907063197026022,
+      "delivery_ratio": 0.7509293680297398,
+      "echo_goodput_kbit_s": 413.696,
+      "lost_after_drain": 335,
+      "received": 1010,
+      "rtt_p95_ms_received_only": 131.89480799997,
+      "sent": 1345,
+      "timely_500ms": 1010,
+      "timely_delivery_ratio": 0.7509293680297398
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5339827779998814
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.023500000059357
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.002512877000072
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/28"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "replicate": 2,
+    "episode_id": "episode_0029",
+    "protected": {
+      "deadline_miss_ratio": 0.03741152679474216,
+      "delivery_ratio": 0.9625884732052579,
+      "echo_goodput_kbit_s": 389.9392,
+      "lost_after_drain": 37,
+      "received": 952,
+      "rtt_p95_ms_received_only": 117.57849800005715,
+      "sent": 989,
+      "timely_500ms": 952,
+      "timely_delivery_ratio": 0.9625884732052579
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.24907063197026022,
+      "delivery_ratio": 0.7509293680297398,
+      "echo_goodput_kbit_s": 413.696,
+      "lost_after_drain": 335,
+      "received": 1010,
+      "rtt_p95_ms_received_only": 131.99635099999796,
+      "sent": 1345,
+      "timely_500ms": 1010,
+      "timely_delivery_ratio": 0.7509293680297398
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5317141420000553
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.730409000032523
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.039656005999859
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/29"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "current_gate",
+    "replicate": 2,
+    "episode_id": "episode_0030",
+    "protected": {
+      "deadline_miss_ratio": 0.2737373737373737,
+      "delivery_ratio": 0.7262626262626263,
+      "echo_goodput_kbit_s": 294.5024,
+      "lost_after_drain": 271,
+      "received": 719,
+      "rtt_p95_ms_received_only": 132.65779400012434,
+      "sent": 990,
+      "timely_500ms": 719,
+      "timely_delivery_ratio": 0.7262626262626263
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.664064532916992,
+      "delivery_ratio": 0.3359354670830081,
+      "echo_goodput_kbit_s": 528.7936,
+      "lost_after_drain": 2552,
+      "received": 1291,
+      "rtt_p95_ms_received_only": 132.9742319999241,
+      "sent": 3843,
+      "timely_500ms": 1291,
+      "timely_delivery_ratio": 0.3359354670830081
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5260511950000364
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.028065999998944
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.003879159999997
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/30"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "current_gate",
+    "replicate": 2,
+    "episode_id": "episode_0031",
+    "protected": {
+      "deadline_miss_ratio": 0.03640040444893832,
+      "delivery_ratio": 0.9635995955510617,
+      "echo_goodput_kbit_s": 390.3488,
+      "lost_after_drain": 36,
+      "received": 953,
+      "rtt_p95_ms_received_only": 118.85053500009235,
+      "sent": 989,
+      "timely_500ms": 953,
+      "timely_delivery_ratio": 0.9635995955510617
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.24981412639405204,
+      "delivery_ratio": 0.7501858736059479,
+      "echo_goodput_kbit_s": 413.2864,
+      "lost_after_drain": 336,
+      "received": 1009,
+      "rtt_p95_ms_received_only": 131.9392410000546,
+      "sent": 1345,
+      "timely_500ms": 1009,
+      "timely_delivery_ratio": 0.7501858736059479
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5310141120000935
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.473234000144657
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.023189072999912
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/31"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "persistent_flood",
+    "method": "fixed_rule",
+    "replicate": 2,
+    "episode_id": "episode_0032",
+    "protected": {
+      "deadline_miss_ratio": 0.27098078867542974,
+      "delivery_ratio": 0.7290192113245703,
+      "echo_goodput_kbit_s": 295.3216,
+      "lost_after_drain": 268,
+      "received": 721,
+      "rtt_p95_ms_received_only": 132.64294500004326,
+      "sent": 989,
+      "timely_500ms": 721,
+      "timely_delivery_ratio": 0.7290192113245703
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.6651053864168618,
+      "delivery_ratio": 0.33489461358313816,
+      "echo_goodput_kbit_s": 527.1551999999999,
+      "lost_after_drain": 2556,
+      "received": 1287,
+      "rtt_p95_ms_received_only": 132.96962699996584,
+      "sent": 3843,
+      "timely_500ms": 1287,
+      "timely_delivery_ratio": 0.33489461358313816
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5314797500000168
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.9757270000300196
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.00751593300015
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/32"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "current_gate",
+    "replicate": 2,
+    "episode_id": "episode_0033",
+    "protected": {
+      "deadline_miss_ratio": 0.6946410515672397,
+      "delivery_ratio": 0.30535894843276035,
+      "echo_goodput_kbit_s": 123.69919999999999,
+      "lost_after_drain": 687,
+      "received": 302,
+      "rtt_p95_ms_received_only": 133.03479700016396,
+      "sent": 989,
+      "timely_500ms": 302,
+      "timely_delivery_ratio": 0.30535894843276035
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4851871101871102,
+      "delivery_ratio": 0.5148128898128899,
+      "echo_goodput_kbit_s": 811.4176,
+      "lost_after_drain": 1867,
+      "received": 1981,
+      "rtt_p95_ms_received_only": 133.02475499995126,
+      "sent": 3848,
+      "timely_500ms": 1981,
+      "timely_delivery_ratio": 0.5148128898128899
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5314237430000048
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      6.075074000136738
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.04535394100003
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/33"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "ineffective_action",
+    "method": "evidence_feedback",
+    "replicate": 1,
+    "episode_id": "episode_0034",
+    "protected": {
+      "deadline_miss_ratio": 0.717896865520728,
+      "delivery_ratio": 0.282103134479272,
+      "echo_goodput_kbit_s": 114.27839999999999,
+      "lost_after_drain": 710,
+      "received": 279,
+      "rtt_p95_ms_received_only": 133.10274500008745,
+      "sent": 989,
+      "timely_500ms": 279,
+      "timely_delivery_ratio": 0.282103134479272
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.4781363872982821,
+      "delivery_ratio": 0.5218636127017179,
+      "echo_goodput_kbit_s": 821.248,
+      "lost_after_drain": 1837,
+      "received": 2005,
+      "rtt_p95_ms_received_only": 133.02680299989333,
+      "sent": 3842,
+      "timely_500ms": 2005,
+      "timely_delivery_ratio": 0.5218636127017179
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      2.5487432539998736
+    ],
+    "restore_reasons": [
+      "NO_OBSERVED_BENEFIT"
+    ],
+    "operator_review_requested": true,
+    "restoration_command_ms": [
+      5.423350999990362
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      3.9712211030000617
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/34"
+  },
+  {
+    "vm": "repeat",
+    "scenario": "benign_burst",
+    "method": "fixed_rule",
+    "replicate": 0,
+    "episode_id": "episode_0035",
+    "protected": {
+      "deadline_miss_ratio": 0.034378159757330634,
+      "delivery_ratio": 0.9656218402426694,
+      "echo_goodput_kbit_s": 391.168,
+      "lost_after_drain": 34,
+      "received": 955,
+      "rtt_p95_ms_received_only": 120.08265800000117,
+      "sent": 989,
+      "timely_500ms": 955,
+      "timely_delivery_ratio": 0.9656218402426694
+    },
+    "suspect": {
+      "deadline_miss_ratio": 0.25037147102526003,
+      "delivery_ratio": 0.74962852897474,
+      "echo_goodput_kbit_s": 413.2864,
+      "lost_after_drain": 337,
+      "received": 1009,
+      "rtt_p95_ms_received_only": 131.88381399982063,
+      "sent": 1346,
+      "timely_500ms": 1009,
+      "timely_delivery_ratio": 0.74962852897474
+    },
+    "intervention_count": 1,
+    "event_to_apply_decision_seconds": [
+      1.5326589029998559
+    ],
+    "restore_reasons": [
+      "ACTION_TTL_EXPIRED"
+    ],
+    "operator_review_requested": false,
+    "restoration_command_ms": [
+      7.424079999964306
+    ],
+    "apply_decision_to_restore_trigger_seconds": [
+      6.02309847000015
+    ],
+    "source": "evidence/summaries/packet_recomputation.json#/runs/repeat/episodes/35"
+  }
+]

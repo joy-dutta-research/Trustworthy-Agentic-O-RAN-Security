@@ -1,0 +1,46 @@
+[
+  {
+    "population": "NetsLab generated controls",
+    "method": "direct",
+    "case_occurrences": 20000,
+    "reference_decision_agreement": 4000,
+    "block_required_admitted": 16000,
+    "block_required_total": 16000,
+    "permitted_admitted": 4000,
+    "permitted_total": 4000,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/netslab/comparators/direct"
+  },
+  {
+    "population": "NetsLab generated controls",
+    "method": "contract",
+    "case_occurrences": 20000,
+    "reference_decision_agreement": 4000,
+    "block_required_admitted": 16000,
+    "block_required_total": 16000,
+    "permitted_admitted": 4000,
+    "permitted_total": 4000,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/netslab/comparators/contract"
+  },
+  {
+    "population": "NetsLab generated controls",
+    "method": "contract_rbac",
+    "case_occurrences": 20000,
+    "reference_decision_agreement": 10394,
+    "block_required_admitted": 9606,
+    "block_required_total": 16000,
+    "permitted_admitted": 4000,
+    "permitted_total": 4000,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/netslab/comparators/contract_rbac"
+  },
+  {
+    "population": "NetsLab generated controls",
+    "method": "trust_boundary",
+    "case_occurrences": 20000,
+    "reference_decision_agreement": 20000,
+    "block_required_admitted": 0,
+    "block_required_total": 16000,
+    "permitted_admitted": 4000,
+    "permitted_total": 4000,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/netslab/comparators/trust_boundary"
+  }
+]

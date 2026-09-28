@@ -1,0 +1,33 @@
+{
+  "schema": "oran-packaging-verification/v1",
+  "date": "2026-09-28",
+  "scope": "Read-only assembly and structural checks; no scientific experiment rerun",
+  "original_evidence_modified": false,
+  "external_uploads": false,
+  "source_checks": {
+    "python_files_parsed_without_execution": 189,
+    "modified_existing_full_campaign_pins": [],
+    "intentionally_external_raw_input_pins": [
+      "data/raw/Lower_Layer_Data.db",
+      "data/raw/5g-nidd/Combined.zip"
+    ],
+    "canonical_snapshots_copied_byte_exact": true,
+    "all_browsable_code_folders_have_markdown": true
+  },
+  "archives": [
+    {"path": "raw_archives/university_windows_final.zip", "original_file_count": 11518, "added_readmes": 1893, "performance_jobs": 1820, "requests_csv": 1760, "arrivals_csv": 60, "completions_csv": 60, "privacy_transformed_files": 0},
+    {"path": "raw_archives/workstation_windows_final.zip", "original_file_count": 11497, "added_readmes": 1889, "performance_jobs": 1820, "requests_csv": 1760, "arrivals_csv": 60, "completions_csv": 60, "privacy_transformed_files": 0},
+    {"path": "raw_archives/packet_primary.zip", "original_file_count": 563, "added_readmes": 48, "completed_packet_episodes": 36, "expected_episode_files_per_episode": 13, "missing_expected_episode_files": 0, "privacy_transformed_files": 0},
+    {"path": "raw_archives/packet_repeat.zip", "original_file_count": 560, "added_readmes": 48, "completed_packet_episodes": 36, "expected_episode_files_per_episode": 13, "missing_expected_episode_files": 0, "privacy_transformed_files": 0},
+    {"path": "history/packet_development_context.zip", "original_file_count": 789, "added_readmes": 93, "included_in_final_comparison": false, "privacy_transformed_files": 0},
+    {"path": "raw_archives/campaign_provenance.zip", "original_file_count": 111, "added_readmes": 17, "privacy_transformed_files": 8, "transformation_scope": "Alias personal account/workspace/device identifiers in provenance only; scientific values unchanged"}
+  ],
+  "all_generated_archives": {
+    "crc_decompression": "PASS",
+    "duplicate_member_check": "PASS",
+    "manifest_membership_and_declared_readme_additions": "PASS",
+    "every_extracted_directory_has_readme": "PASS",
+    "file_level_original_and_public_hashes_recorded": true
+  },
+  "interpretation": "These checks establish coverage and packaging integrity. They are not a new scientific validation, an authentication signature, a complete legal/privacy certification, or proof of identical future timing. Author review is still required before publication."
+}

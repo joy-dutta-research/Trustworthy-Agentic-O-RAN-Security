@@ -1,0 +1,188 @@
+{
+  "action_parameter_contracts": {
+    "isolate_xapp": {
+      "control_parameter": "xapp_execution_state",
+      "required_fields": [
+        "control_parameter",
+        "duration_seconds"
+      ]
+    },
+    "modify_a1_policy": {
+      "control_parameter": "a1_policy_weight",
+      "required_fields": [
+        "control_parameter",
+        "policy_weight"
+      ]
+    },
+    "notify_operator": {
+      "control_parameter": "operator_notification",
+      "required_fields": [
+        "control_parameter",
+        "message"
+      ]
+    },
+    "quarantine_ue": {
+      "control_parameter": "ue_admission_state",
+      "required_fields": [
+        "control_parameter",
+        "duration_seconds"
+      ]
+    },
+    "rate_limit_ue": {
+      "control_parameter": "traffic_rate_limit",
+      "required_fields": [
+        "control_parameter",
+        "reduction_percent"
+      ]
+    },
+    "rollback_policy": {
+      "control_parameter": "a1_policy_state",
+      "required_fields": [
+        "control_parameter",
+        "snapshot_id"
+      ]
+    }
+  },
+  "action_targets": {
+    "isolate_xapp": [
+      "xapp"
+    ],
+    "modify_a1_policy": [
+      "policy"
+    ],
+    "notify_operator": [
+      "operator"
+    ],
+    "quarantine_ue": [
+      "ue"
+    ],
+    "rate_limit_ue": [
+      "ue"
+    ],
+    "rollback_policy": [
+      "policy"
+    ]
+  },
+  "approval_required_actions": [
+    "isolate_xapp",
+    "modify_a1_policy",
+    "rollback_policy"
+  ],
+  "approval_required_for_risk": [
+    "high",
+    "critical"
+  ],
+  "audit_required_fields": [
+    "audit_id",
+    "action_id",
+    "incident_id",
+    "decision",
+    "reason_codes",
+    "policy_ids",
+    "policy_version",
+    "policy_sha256",
+    "proposal_sha256",
+    "evaluated_at",
+    "record_sha256",
+    "authenticated_principal"
+  ],
+  "description": "Illustrative dry-run operator policy for the TNSE proof of concept.",
+  "disruptive_actions": [
+    "rate_limit_ue",
+    "quarantine_ue",
+    "isolate_xapp",
+    "modify_a1_policy"
+  ],
+  "interface_actions": {
+    "A1": [
+      "modify_a1_policy",
+      "rollback_policy"
+    ],
+    "E2": [
+      "rate_limit_ue",
+      "quarantine_ue"
+    ],
+    "SMO": [
+      "isolate_xapp",
+      "notify_operator"
+    ]
+  },
+  "max_clock_skew_seconds": 30,
+  "max_proposal_age_seconds": 600,
+  "max_ttl_seconds": 900,
+  "minimum_risk_by_action": {
+    "isolate_xapp": "high",
+    "modify_a1_policy": "high",
+    "notify_operator": "low",
+    "quarantine_ue": "medium",
+    "rate_limit_ue": "medium",
+    "rollback_policy": "high"
+  },
+  "parameter_bounds": {
+    "isolate_xapp": {
+      "duration_seconds": {
+        "maximum": 600,
+        "minimum": 1
+      }
+    },
+    "modify_a1_policy": {
+      "policy_weight": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      }
+    },
+    "quarantine_ue": {
+      "duration_seconds": {
+        "maximum": 300,
+        "minimum": 1
+      }
+    },
+    "rate_limit_ue": {
+      "reduction_percent": {
+        "maximum": 80,
+        "minimum": 1
+      }
+    }
+  },
+  "policy_version": "0.1.0",
+  "principals": {
+    "agent-detector-01": "detector",
+    "agent-observer-01": "observer",
+    "agent-orchestrator-01": "security_orchestrator",
+    "agent-responder-01": "security_responder",
+    "operator-test-01": "human_operator"
+  },
+  "protected_slices": [
+    "slice-emergency",
+    "slice-public-safety"
+  ],
+  "roles": {
+    "detector": [
+      "notify_operator"
+    ],
+    "human_operator": [
+      "rate_limit_ue",
+      "quarantine_ue",
+      "isolate_xapp",
+      "modify_a1_policy",
+      "rollback_policy",
+      "notify_operator"
+    ],
+    "observer": [
+      "notify_operator"
+    ],
+    "security_orchestrator": [
+      "rate_limit_ue",
+      "quarantine_ue",
+      "isolate_xapp",
+      "modify_a1_policy",
+      "rollback_policy",
+      "notify_operator"
+    ],
+    "security_responder": [
+      "rate_limit_ue",
+      "quarantine_ue",
+      "notify_operator"
+    ]
+  }
+}

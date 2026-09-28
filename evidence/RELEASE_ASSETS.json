@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "release_status": "published",
+  "release_page_url": "https://drive.google.com/drive/folders/1vaiQhjLWn-viAMDSxuBOzmFYOnNER1jP?usp=sharing",
+  "publication_scope": "Published means the six companion assets are available from a read-only Drive folder. It does not assert public GitHub repository visibility, a tagged GitHub release, or paper acceptance.",
+  "companion_readme_url": "https://drive.google.com/file/d/1XG_CpFmeNoJiUm7IOpQz0bhVa_5L0-Hi/view?usp=drivesdk",
+  "transfer_verification": "All six archives and the companion README were downloaded anonymously on 2026-09-28; every size and SHA-256 matched. See evidence/DOWNLOAD_VERIFICATION.json. Readers should verify their own copies; present byte integrity does not guarantee scientific correctness or future link permanence.",
+  "guide_path": "evidence/ASSET_GUIDE.md",
+  "meaning": "These archives contain recorded experiment outputs and supporting provenance, including attributed dataset-derived contexts. They are not substitutes for acquiring the original datasets. Exact saved-data reanalysis requires matching assets; new runs use source code and separately acquired original inputs.",
+  "assets": [
+    {
+      "filename": "university_windows_final.zip",
+      "relative_path": "evidence/raw_archives/university_windows_final.zip",
+      "bytes": 668122071,
+      "sha256": "5121d903f9e5fe31bfaba42360ea26bcb2d820e9dddad1465435d3e66a8ac2c2",
+      "download_url": "https://drive.google.com/file/d/1G3QzEujtQjFyYLHnKTcYqERfQ0wOYBQv/view?usp=drivesdk",
+      "publication_status": "published",
+      "purpose": "Recorded Workstation 1 Windows policy, dataset, sensitivity, processing, scaling and load outcomes; historical university identifiers are preserved.",
+      "required_for": [
+        "Workstation 1 request-level reanalysis",
+        "complete historical evidence verification"
+      ],
+      "regeneration": {
+        "possible": true,
+        "creates_new_measurements": true,
+        "guide_anchor": "windows-measurements",
+        "note": "The frozen Windows protocol can create a new run. It cannot recreate the original timestamps, machine state or byte-identical timing observations."
+      }
+    },
+    {
+      "filename": "workstation_windows_final.zip",
+      "relative_path": "evidence/raw_archives/workstation_windows_final.zip",
+      "bytes": 667443976,
+      "sha256": "e10c66e9acb31b74a2401240caf8a4adca6c6b9e22953c9f4d68b77326fdb6a9",
+      "download_url": "https://drive.google.com/file/d/1tzGtWpYJf8F4Bhph60uDMMQgjciUUyiK/view?usp=drivesdk",
+      "publication_status": "published",
+      "purpose": "Recorded Workstation 2 Windows regeneration, policy, dataset, sensitivity, processing, scaling and load outcomes; historical workstation identifiers are preserved.",
+      "required_for": [
+        "Workstation 2 request-level reanalysis",
+        "complete historical evidence verification"
+      ],
+      "regeneration": {
+        "possible": true,
+        "creates_new_measurements": true,
+        "guide_anchor": "windows-measurements",
+        "note": "The frozen Windows protocol can create a new run. Compare deterministic outputs separately from environment-dependent timing and load measurements."
+      }
+    },
+    {
+      "filename": "packet_primary.zip",
+      "relative_path": "evidence/raw_archives/packet_primary.zip",
+      "bytes": 3883599,
+      "sha256": "f2b300ef848fd4640ad5888b914e401f32a692a0598ba3aa62b9c70a10b43452",
+      "download_url": "https://drive.google.com/file/d/1aHKIrLyLXN-Bq_CL14JOhFCp58Q8jfsS/view?usp=drivesdk",
+      "publication_status": "published",
+      "purpose": "Qualification and 36 completed initial packet episodes from the primary VM on Workstation 2.",
+      "required_for": [
+        "saved packet cohort reanalysis",
+        "complete historical evidence verification"
+      ],
+      "regeneration": {
+        "possible": true,
+        "creates_new_measurements": true,
+        "guide_anchor": "packet-measurements",
+        "note": "Use the included packet-v7 snapshot in an authorized isolated VM. The packet protocol uses controlled lab traffic, not a NetsLab or 5G-NIDD traffic replay."
+      }
+    },
+    {
+      "filename": "packet_repeat.zip",
+      "relative_path": "evidence/raw_archives/packet_repeat.zip",
+      "bytes": 3793773,
+      "sha256": "cf845867514a07a03759b849b70ec1b578451ea345a26de33dad3519d0d78e02",
+      "download_url": "https://drive.google.com/file/d/1jhZEgZ9mmPHUANw3GLMwXmZteG8KxzTg/view?usp=drivesdk",
+      "publication_status": "published",
+      "purpose": "Qualification and the identical 36-episode protocol in a separately installed clean VM on the same Workstation 2.",
+      "required_for": [
+        "saved clean-VM repeat reanalysis",
+        "complete historical evidence verification"
+      ],
+      "regeneration": {
+        "possible": true,
+        "creates_new_measurements": true,
+        "guide_anchor": "packet-measurements",
+        "note": "Install a separate clean VM and repeat the same source, conditions and seed. This is clean-environment reproduction, not an independent physical-workstation replication."
+      }
+    },
+    {
+      "filename": "campaign_provenance.zip",
+      "relative_path": "evidence/raw_archives/campaign_provenance.zip",
+      "bytes": 644161,
+      "sha256": "52d08247c1a9d131f72cf9b3f61d5409f489dd96a5d577d0930857655864c3a1",
+      "download_url": "https://drive.google.com/file/d/1YhpdZQijS1UIhSK6mn7bpDu2tVNNqIQy/view?usp=drivesdk",
+      "publication_status": "published",
+      "purpose": "Historical Stage 0 baselines, Stage 4 workload preparation and campaign regeneration/orchestration records for both workstations.",
+      "required_for": [
+        "historical campaign provenance audit",
+        "complete historical evidence verification"
+      ],
+      "regeneration": {
+        "possible": true,
+        "creates_new_measurements": false,
+        "guide_anchor": "campaign-provenance",
+        "note": "A new campaign creates new source/input receipts and workload comparisons. Historical receipts, dates and original host state cannot be regenerated."
+      }
+    },
+    {
+      "filename": "packet_development_context.zip",
+      "relative_path": "evidence/history/packet_development_context.zip",
+      "bytes": 5830676,
+      "sha256": "37c7cf9c98bc8c9b02c434fe2fff3cf3fc6ec48a21cdc37664641aa37bdd1378",
+      "download_url": "https://drive.google.com/file/d/1mN43KzIFbLNM4H-5SBRoIx3QpG27dUj0/view?usp=drivesdk",
+      "publication_status": "published",
+      "purpose": "Optional historical packet qualification attempts, failure evidence and repair context, separated from completed comparative episodes.",
+      "required_for": [
+        "historical failure and repair audit",
+        "complete historical evidence verification"
+      ],
+      "regeneration": {
+        "possible": false,
+        "creates_new_measurements": false,
+        "guide_anchor": "development-history",
+        "note": "Past failures and operator actions cannot be recreated as historical evidence. Use final v7 for new experiments; do not deliberately rerun obsolete attempts."
+      }
+    }
+  ]
+}

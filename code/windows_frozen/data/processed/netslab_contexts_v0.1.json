@@ -1,0 +1,401 @@
+{
+  "dataset": {
+    "attribution": "NetsLab, University College Dublin",
+    "database_filename": "Lower_Layer_Data.db",
+    "database_sha256": "d76fe7df11379223948e624d0f19bcd5caf744a2b6ce20d1ee2143644199ab64",
+    "doi": "10.34740/kaggle/ds/7416931",
+    "license": {
+      "spdx": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "name": "NetsLab-5GORAN-IDD",
+    "source_url": "https://netslab.ucd.ie/netslab-datasets/netslab-5goran-idd/",
+    "sqlite_quick_check": "ok",
+    "table": "lower_layer_data",
+    "total_row_count": 45244
+  },
+  "interpretation_limit": "Labels provide incident context only; this adapter does not evaluate detector accuracy or prove mitigation effectiveness.",
+  "legacy_scenario_notes": {
+    "tcp_flood": "No exact TCP-flood subcategory exists in this database; no proxy label is substituted.",
+    "udp_port_scan": "The current label is Probe_PortScan and does not establish the transport protocol; replay uses the broader name port_scan."
+  },
+  "manifest_sha256": "16b9124c810a054d78f7baf00965eda153e95154d0317840e2b4d2651791e75b",
+  "manifest_version": "0.1.0",
+  "privacy_note": "Contains aggregate counts and means only; no raw rows, timestamps, UE identifiers, RNTIs, or cell identifiers are exported.",
+  "selection": {
+    "excluded_labels_are_reported": true,
+    "selected_labels": [
+      "Benign",
+      "DDoS_ACK",
+      "DDoS_ICMP",
+      "DDoS_SYN",
+      "DDoS_UDP",
+      "Probe_PortScan"
+    ],
+    "strategy": "exhaustive_label_strata_no_row_sampling",
+    "unit_of_analysis": "action_proposal_not_telemetry_row"
+  },
+  "strata": [
+    {
+      "attack_category": "Benign",
+      "attack_subcategory": "Benign",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 6,
+      "replay_binding": "benign_negative_control",
+      "row_count": 10664,
+      "selected_for_replay": true,
+      "signal_means": {
+        "cqi": 14.904632408102026,
+        "dlBler": 0.06160867366841711,
+        "rsrp": -95.00046886721681,
+        "rsrq": -10.619608027006752,
+        "rssi": -70.0425918979745,
+        "sinr": 20.538025131282822,
+        "ulBler": 0.07681906376594148
+      },
+      "traffic_type": 0
+    },
+    {
+      "attack_category": "BruteForce",
+      "attack_subcategory": "BruteForce_FTP",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 1391,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.041651800862688715,
+        "rsrp": -100.44284687275342,
+        "rsrq": -10.50647016534867,
+        "rssi": -71.30862688713157,
+        "sinr": 21.33608914450036,
+        "ulBler": 0.05036108339324227
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "BruteForce",
+      "attack_subcategory": "BruteForce_SSH",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 1666,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.07223065606242497,
+        "rsrp": -100.35714285714286,
+        "rsrq": -10.61344537815126,
+        "rssi": -72.25822328931572,
+        "sinr": 20.63625450180072,
+        "ulBler": 0.07589667286914765
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DDoS",
+      "attack_subcategory": "DDoS_ACK",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 5,
+      "replay_binding": "ack_flood",
+      "row_count": 1934,
+      "selected_for_replay": true,
+      "signal_means": {
+        "cqi": 14.615822130299897,
+        "dlBler": 0.20445323836608065,
+        "rsrp": -100.99017580144778,
+        "rsrq": -11.00620475698035,
+        "rssi": -69.01980351602894,
+        "sinr": 14.58738366080662,
+        "ulBler": 0.26604181437435365
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DDoS",
+      "attack_subcategory": "DDoS_ICMP",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 3,
+      "replay_binding": "icmp_flood",
+      "row_count": 3294,
+      "selected_for_replay": true,
+      "signal_means": {
+        "cqi": 14.3224043715847,
+        "dlBler": 0.34017372252580447,
+        "rsrp": -102.75531268973891,
+        "rsrq": -11.077717061323618,
+        "rssi": -65.07197935640559,
+        "sinr": 13.029295689131756,
+        "ulBler": 0.4125335421979356
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DDoS",
+      "attack_subcategory": "DDoS_SYN",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 5,
+      "replay_binding": "syn_flood",
+      "row_count": 3568,
+      "selected_for_replay": true,
+      "signal_means": {
+        "cqi": 14.292600896860986,
+        "dlBler": 0.4173423133408072,
+        "rsrp": -101.71216367713005,
+        "rsrq": -11.16115470852018,
+        "rssi": -63.661771300448436,
+        "sinr": 12.778026905829597,
+        "ulBler": 0.49507181838565023
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DDoS",
+      "attack_subcategory": "DDoS_Slowloris",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 3,
+      "replay_binding": null,
+      "row_count": 1830,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 14.337704918032786,
+        "dlBler": 0.32070786775956284,
+        "rsrp": -102.76448087431694,
+        "rsrq": -10.952459016393442,
+        "rssi": -65.46836065573771,
+        "sinr": 14.756830601092895,
+        "ulBler": 0.3973524928961749
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DDoS",
+      "attack_subcategory": "DDoS_UDP",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 4,
+      "replay_binding": "udp_flood",
+      "row_count": 4458,
+      "selected_for_replay": true,
+      "signal_means": {
+        "cqi": 14.203678779721848,
+        "dlBler": 0.3905942175863616,
+        "rsrp": -101.80574248541947,
+        "rsrq": -11.168797667115298,
+        "rssi": -64.09629878869448,
+        "sinr": 12.370457604306864,
+        "ulBler": 0.4628269122925078
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DoS",
+      "attack_subcategory": "DoS_ACK",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 648,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.05150800154320987,
+        "rsrp": -97.18518518518519,
+        "rsrq": -10.566358024691358,
+        "rssi": -69.10478395061729,
+        "sinr": 20.292438271604937,
+        "ulBler": 0.14925143672839508
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DoS",
+      "attack_subcategory": "DoS_ICMP",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 1037,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.09830298553519769,
+        "rsrp": -101.45515911282546,
+        "rsrq": -10.514464802314368,
+        "rssi": -72.11446480231436,
+        "sinr": 20.16586306653809,
+        "ulBler": 0.09344472420443588
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DoS",
+      "attack_subcategory": "DoS_SYN",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 892,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.04241623094170404,
+        "rsrp": -97.53363228699551,
+        "rsrq": -10.560538116591928,
+        "rssi": -71.03520179372198,
+        "sinr": 20.009529147982065,
+        "ulBler": 0.05825331614349776
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DoS",
+      "attack_subcategory": "DoS_Slowloris",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 2,
+      "replay_binding": null,
+      "row_count": 1104,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 13.99909420289855,
+        "dlBler": 0.45657896376811596,
+        "rsrp": -102.6304347826087,
+        "rsrq": -11.221467391304348,
+        "rssi": -62.26295289855073,
+        "sinr": 11.53125,
+        "ulBler": 0.5538926403985507
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "DoS",
+      "attack_subcategory": "DoS_UDP",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 1040,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.06151126826923077,
+        "rsrp": -100.12692307692308,
+        "rsrq": -10.519711538461538,
+        "rssi": -72.36682692307693,
+        "sinr": 22.248557692307692,
+        "ulBler": 0.09444504615384615
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "Probe",
+      "attack_subcategory": "Probe_OsFingerprinting",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 6036,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 14.999171636845594,
+        "dlBler": 0.01293119913850232,
+        "rsrp": -99.46222664015905,
+        "rsrq": -10.682405566600398,
+        "rssi": -70.93215705765408,
+        "sinr": 18.853131212723657,
+        "ulBler": 0.03391087425447316
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "Probe",
+      "attack_subcategory": "Probe_PortScan",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 2,
+      "replay_binding": "port_scan",
+      "row_count": 2409,
+      "selected_for_replay": true,
+      "signal_means": {
+        "cqi": 14.989207139892072,
+        "dlBler": 0.0669689190535492,
+        "rsrp": -100.79784142797841,
+        "rsrq": -10.996056454960565,
+        "rssi": -71.49572436695725,
+        "sinr": 14.791614777916148,
+        "ulBler": 0.08938941054379411
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "Web Attacks",
+      "attack_subcategory": "Web_Directory_Bruteforce",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 640,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.097164990625,
+        "rsrp": -106.225,
+        "rsrq": -11.81796875,
+        "rssi": -72.853125,
+        "sinr": 7.50546875,
+        "ulBler": 0.095872840625
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "Web Attacks",
+      "attack_subcategory": "Web_HTTP_Bruteforce",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 1098,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 15.0,
+        "dlBler": 0.08883769398907104,
+        "rsrp": -100.04826958105646,
+        "rsrq": -12.005009107468124,
+        "rssi": -72.0332422586521,
+        "sinr": 7.500455373406193,
+        "ulBler": 0.09334105919854281
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "Web Attacks",
+      "attack_subcategory": "Web_SQL_Injection",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 752,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 14.998670212765957,
+        "dlBler": 0.06587612765957447,
+        "rsrp": -102.39228723404256,
+        "rsrq": -12.149601063829786,
+        "rssi": -71.95478723404256,
+        "sinr": 6.1861702127659575,
+        "ulBler": 0.08027569813829788
+      },
+      "traffic_type": 1
+    },
+    {
+      "attack_category": "Web Attacks",
+      "attack_subcategory": "Web_XSS",
+      "distinct_cell_count": 1,
+      "distinct_ue_count": 1,
+      "replay_binding": null,
+      "row_count": 783,
+      "selected_for_replay": false,
+      "signal_means": {
+        "cqi": 14.970625798212005,
+        "dlBler": 0.052825086845466156,
+        "rsrp": -101.34099616858238,
+        "rsrq": -11.807151979565772,
+        "rssi": -70.71826309067688,
+        "sinr": 6.881226053639847,
+        "ulBler": 0.07144808045977011
+      },
+      "traffic_type": 1
+    }
+  ]
+}

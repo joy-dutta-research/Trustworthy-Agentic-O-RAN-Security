@@ -1,0 +1,658 @@
+{
+  "audit_script_sha256": "5b2b1146e006a14089387e230d77b274e581aaa403dc385ca3c2f1aad61417e5",
+  "audit_version": "raw-load-spot-audit/1",
+  "cells": [
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0000",
+      "dataset": "5gnidd",
+      "differences": [],
+      "drain_deadline_ns": 165426094793200,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 60000,
+        "completed_after_drain": 0,
+        "completed_by_drain": 60000,
+        "illustrative_deadline_met_counts": {
+          "1": 58197,
+          "10": 59910,
+          "100": 60000
+        },
+        "maximum_admitted_not_completed_from_trace": 36,
+        "measurement_cohort_completed_inside_offering_window": 60000,
+        "reference_agreement_count": 60000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.00355,
+        "generator_lateness_threshold_ns": 2000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 165396094793200,
+      "measurement_start_ns": 165336094793200,
+      "method": "direct",
+      "partition": "rev1_stage5_load_5gnidd_1000_20260923T124339Z_a99974a1",
+      "rate": 1000,
+      "raw_arrival_rows": 70000,
+      "raw_completion_rows": 70000,
+      "raw_input_sha256": {
+        "arrivals.csv": "8678896a3cfe836cd657cbec07ddf51786fab472b25b4efb02a20212a0da8a87",
+        "completions.csv": "2b25ec71a0dea361f54e6922e576e500849724dde118dd3696a6e398ef260f55",
+        "consumer_summary.json": "dffe7aa52e89c8f38de5200b899c2c4249407bcd277c0e88697173f53bbf683d",
+        "job.json": "f9a7647052b4052982c5cfd0bfa959501e3fc3741d8fcdb9b8dfca0c1b0a3d3f",
+        "summary.json": "6912b29221475701a9a9b0991045a7a2f6748d3fa72cceecd7f0ba466244ce40"
+      },
+      "recomputed": {
+        "admitted_measurement": 60000,
+        "completed_measurement": 60000,
+        "deadline_denominator": 60000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 36,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 60000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0001",
+      "dataset": "5gnidd",
+      "differences": [],
+      "drain_deadline_ns": 165497391714000,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 37135,
+        "completed_after_drain": 0,
+        "completed_by_drain": 37136,
+        "illustrative_deadline_met_counts": {
+          "1": 0,
+          "10": 0,
+          "100": 0
+        },
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "measurement_cohort_completed_inside_offering_window": 36135,
+        "reference_agreement_count": 37136,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0011666666666666668,
+        "generator_lateness_threshold_ns": 2000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 165467391714000,
+      "measurement_start_ns": 165407391714000,
+      "method": "trust_boundary",
+      "partition": "rev1_stage5_load_5gnidd_1000_20260923T124339Z_a99974a1",
+      "rate": 1000,
+      "raw_arrival_rows": 70000,
+      "raw_completion_rows": 43652,
+      "raw_input_sha256": {
+        "arrivals.csv": "14f180fd5590da1100a2efbecfe4a0f0fd2b340aad5dbaa7e4bccc5bd49bc1a2",
+        "completions.csv": "4ae0edd543412fa3575c62b25251191c163bf4f1bf2744fb866048f02b5d9a66",
+        "consumer_summary.json": "a2103836afe1f029bfd60c24d66707b9bba1e21859970f08e09332d6a60229be",
+        "job.json": "20c7e462d7d7d25d3bbccdea88d0bdf30f076f770106411a0fc8b84100fce6fa",
+        "summary.json": "641bd64421f979383aeb1ed648c449ad2e98f03105b877f91cff4b1fc0ba87ef"
+      },
+      "recomputed": {
+        "admitted_measurement": 37136,
+        "completed_measurement": 37136,
+        "deadline_denominator": 60000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "overflow_measurement": 22864,
+        "scheduled_measurement": 60000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0000",
+      "dataset": "5gnidd",
+      "differences": [],
+      "drain_deadline_ns": 164717001920600,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 6000,
+        "completed_after_drain": 0,
+        "completed_by_drain": 6000,
+        "illustrative_deadline_met_counts": {
+          "1": 5906,
+          "10": 5998,
+          "100": 6000
+        },
+        "maximum_admitted_not_completed_from_trace": 2,
+        "measurement_cohort_completed_inside_offering_window": 6000,
+        "reference_agreement_count": 6000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0,
+        "generator_lateness_threshold_ns": 20000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 164687001920600,
+      "measurement_start_ns": 164627001920600,
+      "method": "direct",
+      "partition": "rev1_stage5_load_5gnidd_100_20260923T123151Z_ef5a76d2",
+      "rate": 100,
+      "raw_arrival_rows": 7000,
+      "raw_completion_rows": 7000,
+      "raw_input_sha256": {
+        "arrivals.csv": "120c90d2d22acdd23fd2e61e33f8c4100a5e5954b143b968c0205a03f40b8e86",
+        "completions.csv": "c47a021b9f95e6763ea7a94d6c7b464bb0c657c50e0375e75f26a8ac3f77f862",
+        "consumer_summary.json": "a301e9d0a04c562f41d6e2fd9ad00578ceea775d79d864674b1ea625df63cdcb",
+        "job.json": "2e97194a933379738e51ff793bea69ca26e6d7e3a5857690ff0daf440a1ff38a",
+        "summary.json": "02bb060822408c34ef269ead7c8057c0f967535cfcc62244ef8201913bf6fdaf"
+      },
+      "recomputed": {
+        "admitted_measurement": 6000,
+        "completed_measurement": 6000,
+        "deadline_denominator": 6000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 2,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 6000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0001",
+      "dataset": "5gnidd",
+      "differences": [],
+      "drain_deadline_ns": 164787629727000,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 6000,
+        "completed_after_drain": 0,
+        "completed_by_drain": 6000,
+        "illustrative_deadline_met_counts": {
+          "1": 0,
+          "10": 5998,
+          "100": 6000
+        },
+        "maximum_admitted_not_completed_from_trace": 2,
+        "measurement_cohort_completed_inside_offering_window": 6000,
+        "reference_agreement_count": 6000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0,
+        "generator_lateness_threshold_ns": 20000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 164757629727000,
+      "measurement_start_ns": 164697629727000,
+      "method": "trust_boundary",
+      "partition": "rev1_stage5_load_5gnidd_100_20260923T123151Z_ef5a76d2",
+      "rate": 100,
+      "raw_arrival_rows": 7000,
+      "raw_completion_rows": 7000,
+      "raw_input_sha256": {
+        "arrivals.csv": "189b73d6d01e9cdcb767ab47facbed3df2e81db8a0fd32c83ca87bad8fb6f537",
+        "completions.csv": "a22a71346778b2a647f60dd6cc4cdc0de61b2f2daa75bc0efa36a3de04a5ea57",
+        "consumer_summary.json": "041fc6b0145aa4f62ffdbc637abe1c2145f0b4f07062d75d9101daffd2ad0069",
+        "job.json": "72152b7066e0a028ba57cbc93d1ac91e6cd6c006e1f0dc040b906a8679c276f7",
+        "summary.json": "341a05d125d5a1fdc504c7f35b797c9bed8d38d2aa9cecf285106a9e3d926d46"
+      },
+      "recomputed": {
+        "admitted_measurement": 6000,
+        "completed_measurement": 6000,
+        "deadline_denominator": 6000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 2,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 6000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0000",
+      "dataset": "5gnidd",
+      "differences": [],
+      "drain_deadline_ns": 166146644962800,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 299999,
+        "completed_after_drain": 0,
+        "completed_by_drain": 300000,
+        "illustrative_deadline_met_counts": {
+          "1": 287283,
+          "10": 299903,
+          "100": 300000
+        },
+        "maximum_admitted_not_completed_from_trace": 91,
+        "measurement_cohort_completed_inside_offering_window": 299997,
+        "reference_agreement_count": 300000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0035066666666666666,
+        "generator_lateness_threshold_ns": 1000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 166116644962800,
+      "measurement_start_ns": 166056644962800,
+      "method": "direct",
+      "partition": "rev1_stage5_load_5gnidd_5000_20260923T125540Z_e2be2120",
+      "rate": 5000,
+      "raw_arrival_rows": 350000,
+      "raw_completion_rows": 350000,
+      "raw_input_sha256": {
+        "arrivals.csv": "7092a5d9765512f2dadcd79589fdcb88f4ef669c469d9cc763b6666c3065a563",
+        "completions.csv": "4fdce0c53b9197846be8d5e754a9345fb7e5c44b88f984ac7d4174eed83ea523",
+        "consumer_summary.json": "a3fd9e7edf542d310324cbc5e87a20f0769edd0301e12504c3a79854e869b6d2",
+        "job.json": "d8ded055187f2155cb0a7b4d1d29c39e2285af768ca321c652c37d8ad61ed794",
+        "summary.json": "e633a8679399eb7529bd1734d974785b80eab0b2bdd2d00d0159f0416d82003d"
+      },
+      "recomputed": {
+        "admitted_measurement": 300000,
+        "completed_measurement": 300000,
+        "deadline_denominator": 300000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 91,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 300000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0001",
+      "dataset": "5gnidd",
+      "differences": [],
+      "drain_deadline_ns": 166219684480800,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 48365,
+        "completed_after_drain": 0,
+        "completed_by_drain": 48365,
+        "illustrative_deadline_met_counts": {
+          "1": 0,
+          "10": 0,
+          "100": 0
+        },
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "measurement_cohort_completed_inside_offering_window": 47364,
+        "reference_agreement_count": 48365,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.00309,
+        "generator_lateness_threshold_ns": 1000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 166189684480800,
+      "measurement_start_ns": 166129684480800,
+      "method": "trust_boundary",
+      "partition": "rev1_stage5_load_5gnidd_5000_20260923T125540Z_e2be2120",
+      "rate": 5000,
+      "raw_arrival_rows": 350000,
+      "raw_completion_rows": 56541,
+      "raw_input_sha256": {
+        "arrivals.csv": "4ebe7e7b35ce46d405cfaf5b24d8fd0c17b41951bed05f4686604fd10c0d5353",
+        "completions.csv": "d98dd155557a65499c93d1aebb8dab92f6c62eacf575529676bd83d6f73b3e16",
+        "consumer_summary.json": "4c709655b918f61da4b1609b4adc2d074d64d5b3f53aefe2238204b45c24e941",
+        "job.json": "2f83a8df354ede1d39e4e5f17117e05e6a0cdca862985d58b3138534d3c00f82",
+        "summary.json": "728ca8832289cc816e08347620db7eb84c7882298ce7777feeec983bcc752330"
+      },
+      "recomputed": {
+        "admitted_measurement": 48365,
+        "completed_measurement": 48365,
+        "deadline_denominator": 300000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "overflow_measurement": 251635,
+        "scheduled_measurement": 300000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0000",
+      "dataset": "netslab",
+      "differences": [],
+      "drain_deadline_ns": 163259424375400,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 60000,
+        "completed_after_drain": 0,
+        "completed_by_drain": 60000,
+        "illustrative_deadline_met_counts": {
+          "1": 58243,
+          "10": 60000,
+          "100": 60000
+        },
+        "maximum_admitted_not_completed_from_trace": 7,
+        "measurement_cohort_completed_inside_offering_window": 60000,
+        "reference_agreement_count": 60000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0010833333333333333,
+        "generator_lateness_threshold_ns": 2000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 163229424375400,
+      "measurement_start_ns": 163169424375400,
+      "method": "direct",
+      "partition": "rev1_stage5_load_netslab_1000_20260923T120733Z_d1053e68",
+      "rate": 1000,
+      "raw_arrival_rows": 70000,
+      "raw_completion_rows": 70000,
+      "raw_input_sha256": {
+        "arrivals.csv": "748af640c65cbcf7e0550b332dcf1bfe650affb2acdd06a6b38fe2bb0a410640",
+        "completions.csv": "cce2bd90c698b655eee67892cc09ba48e8f0f3b9466fe89c97401b9c92d14a2b",
+        "consumer_summary.json": "4171f62a4966b8eff7ef5371d6dfbf144e24ab95b0d164ef04e2d0117ac0bdd0",
+        "job.json": "b6d60c89db1c6197e8ed0c56f8dca7d227082fe87e687cca73a3fc4e81f13e40",
+        "summary.json": "eb2aada351835e6172896215d3cfb5572d304870070d01540f4bfe6868e855f9"
+      },
+      "recomputed": {
+        "admitted_measurement": 60000,
+        "completed_measurement": 60000,
+        "deadline_denominator": 60000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 7,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 60000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0001",
+      "dataset": "netslab",
+      "differences": [],
+      "drain_deadline_ns": 163330569582100,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 40286,
+        "completed_after_drain": 0,
+        "completed_by_drain": 40286,
+        "illustrative_deadline_met_counts": {
+          "1": 0,
+          "10": 0,
+          "100": 0
+        },
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "measurement_cohort_completed_inside_offering_window": 39285,
+        "reference_agreement_count": 40286,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0015333333333333334,
+        "generator_lateness_threshold_ns": 2000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 163300569582100,
+      "measurement_start_ns": 163240569582100,
+      "method": "trust_boundary",
+      "partition": "rev1_stage5_load_netslab_1000_20260923T120733Z_d1053e68",
+      "rate": 1000,
+      "raw_arrival_rows": 70000,
+      "raw_completion_rows": 47473,
+      "raw_input_sha256": {
+        "arrivals.csv": "caaef36908970adb815d8b55599c971f8279989fa7e524432564d12427f781d9",
+        "completions.csv": "d41199116d7546ecf382dffe2056680737c288f25fea6892a8335e9971357ab1",
+        "consumer_summary.json": "53337add89dd38fd6f7455fdf5401a193def96b7be84092a9c048b1e8184f208",
+        "job.json": "33562760deb7bc26f41a32d704b9dbd5eca6acd1ce12830029a5ae3a5be1e7b8",
+        "summary.json": "4160c4c3c6e3f84561a8b812e243e35c6ef4d2a976bdb2ccd02583299ff05f75"
+      },
+      "recomputed": {
+        "admitted_measurement": 40286,
+        "completed_measurement": 40286,
+        "deadline_denominator": 60000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "overflow_measurement": 19714,
+        "scheduled_measurement": 60000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0000",
+      "dataset": "netslab",
+      "differences": [],
+      "drain_deadline_ns": 162548762176600,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 6000,
+        "completed_after_drain": 0,
+        "completed_by_drain": 6000,
+        "illustrative_deadline_met_counts": {
+          "1": 5827,
+          "10": 6000,
+          "100": 6000
+        },
+        "maximum_admitted_not_completed_from_trace": 1,
+        "measurement_cohort_completed_inside_offering_window": 6000,
+        "reference_agreement_count": 6000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0,
+        "generator_lateness_threshold_ns": 20000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 162518762176600,
+      "measurement_start_ns": 162458762176600,
+      "method": "direct",
+      "partition": "rev1_stage5_load_netslab_100_20260923T115542Z_69a1e4e4",
+      "rate": 100,
+      "raw_arrival_rows": 7000,
+      "raw_completion_rows": 7000,
+      "raw_input_sha256": {
+        "arrivals.csv": "e6d6d9870c3252bf5d7b317d1fa93cc3a6cf81da82cefb5baaacfde9476c0ef4",
+        "completions.csv": "3d8b240677b76c11b0b2a955f490dadc38df6e489adab00694aacac7c948120e",
+        "consumer_summary.json": "d86f16926c804dfb766caf1fee4e63e5620e170be559a213eae6125cc7b62f79",
+        "job.json": "d911c78c3c8bdde06e165e5d327828cf2ec94bc34552a583f99200dfecedede3",
+        "summary.json": "15e22fe0a7794de8c0e1c4ef89480865357403d72dbff7688103f92f910e218f"
+      },
+      "recomputed": {
+        "admitted_measurement": 6000,
+        "completed_measurement": 6000,
+        "deadline_denominator": 6000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 1,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 6000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0001",
+      "dataset": "netslab",
+      "differences": [],
+      "drain_deadline_ns": 162619420098800,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 6000,
+        "completed_after_drain": 0,
+        "completed_by_drain": 6000,
+        "illustrative_deadline_met_counts": {
+          "1": 0,
+          "10": 6000,
+          "100": 6000
+        },
+        "maximum_admitted_not_completed_from_trace": 1,
+        "measurement_cohort_completed_inside_offering_window": 6000,
+        "reference_agreement_count": 6000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0,
+        "generator_lateness_threshold_ns": 20000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 162589420098800,
+      "measurement_start_ns": 162529420098800,
+      "method": "trust_boundary",
+      "partition": "rev1_stage5_load_netslab_100_20260923T115542Z_69a1e4e4",
+      "rate": 100,
+      "raw_arrival_rows": 7000,
+      "raw_completion_rows": 7000,
+      "raw_input_sha256": {
+        "arrivals.csv": "2c413063268652a102108c66ea78238ed80d3a2905c5988c76db84b4d4679fbc",
+        "completions.csv": "040369c4907eff9a202e54b96c449c0cff0accb3575830d4ba059895264e7288",
+        "consumer_summary.json": "11c13af2413bd819a9e81f0a3882de4ac01b27166ef3656443fdefd1c92a3b4f",
+        "job.json": "da64a5acb51f3e33de36674c3df45c418045a53f0a5901d9ab687018548d39a2",
+        "summary.json": "494c412806127cba41c499ea9a06a1ece72779c114b99c8fd82d5f54e2d4249d"
+      },
+      "recomputed": {
+        "admitted_measurement": 6000,
+        "completed_measurement": 6000,
+        "deadline_denominator": 6000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 1,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 6000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0000",
+      "dataset": "netslab",
+      "differences": [],
+      "drain_deadline_ns": 163980895953500,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 300001,
+        "completed_after_drain": 0,
+        "completed_by_drain": 300000,
+        "illustrative_deadline_met_counts": {
+          "1": 287161,
+          "10": 299979,
+          "100": 300000
+        },
+        "maximum_admitted_not_completed_from_trace": 62,
+        "measurement_cohort_completed_inside_offering_window": 299999,
+        "reference_agreement_count": 300000,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0033166666666666665,
+        "generator_lateness_threshold_ns": 1000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 163950895953500,
+      "measurement_start_ns": 163890895953500,
+      "method": "direct",
+      "partition": "rev1_stage5_load_netslab_5000_20260923T121934Z_c3b6a600",
+      "rate": 5000,
+      "raw_arrival_rows": 350000,
+      "raw_completion_rows": 350000,
+      "raw_input_sha256": {
+        "arrivals.csv": "596932a053c1f9d412677e130aed929074788a842e9aac4127f54b5506921d37",
+        "completions.csv": "6c2632d48ec626f748c2e2338b942f26e68fc6cb1fdbad682a20d885efc8ee60",
+        "consumer_summary.json": "0a10daa52978c062a607047b6fa027bba2178e01d88f1220fb81eb88b41241b2",
+        "job.json": "0a34de3f3be5e3225cc0f15a4636768f82c79727600b1e6f86600c4eb68ef402",
+        "summary.json": "2f06fb7deb39e7ea6fe1cd6625ba379f4af1f0300b05e15df02ecc7a6223ad20"
+      },
+      "recomputed": {
+        "admitted_measurement": 300000,
+        "completed_measurement": 300000,
+        "deadline_denominator": 300000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 62,
+        "overflow_measurement": 0,
+        "scheduled_measurement": 300000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "all_phase_reference_disagreement_request_ids": [],
+      "block": 0,
+      "cell": "cell_0001",
+      "dataset": "netslab",
+      "differences": [],
+      "drain_deadline_ns": 164053891390500,
+      "endpoint_recomputed": {
+        "all_phases_completed_inside_measurement_window": 46012,
+        "completed_after_drain": 0,
+        "completed_by_drain": 46012,
+        "illustrative_deadline_met_counts": {
+          "1": 0,
+          "10": 0,
+          "100": 0
+        },
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "measurement_cohort_completed_inside_offering_window": 45011,
+        "reference_agreement_count": 46012,
+        "unfinished_or_admitted_too_late_at_drain": 0
+      },
+      "generator_recomputed": {
+        "generator_high_lateness_fraction": 0.0029433333333333334,
+        "generator_lateness_threshold_ns": 1000000,
+        "generator_limited": false
+      },
+      "measurement_end_ns": 164023891390500,
+      "measurement_start_ns": 163963891390500,
+      "method": "trust_boundary",
+      "partition": "rev1_stage5_load_netslab_5000_20260923T121934Z_c3b6a600",
+      "rate": 5000,
+      "raw_arrival_rows": 350000,
+      "raw_completion_rows": 53898,
+      "raw_input_sha256": {
+        "arrivals.csv": "e4c030475643df9620a065be901b5d24de7d0e93d167f3f0a7e46fc3f41e6d28",
+        "completions.csv": "6cae70b69a8221ea9dbe298d4bba8d3b72adfeeeaefa1cebcb166f4fd0d74450",
+        "consumer_summary.json": "b1352156eca711713325d8be70476d93c6b0a111089ea30dd14ace0d8df7d951",
+        "job.json": "13aa2bf6c19e56bb76a1d41857294a93955e67a2f75647e953151dbf6d4650f4",
+        "summary.json": "1f44a714cc39abb445c0a0e508c0a9ef1c556a8de2715292eec33b00d1648a3e"
+      },
+      "recomputed": {
+        "admitted_measurement": 46012,
+        "completed_measurement": 46012,
+        "deadline_denominator": 300000,
+        "late_completions_during_cleanup_grace": 0,
+        "maximum_admitted_not_completed_from_trace": 1002,
+        "overflow_measurement": 253988,
+        "scheduled_measurement": 300000,
+        "unfinished_at_drain_bound": 0
+      },
+      "status": "PASS"
+    }
+  ],
+  "checks": [
+    "planned/job/summary equality",
+    "source/baseline completion receipts",
+    "fixed full arrival schedule",
+    "admission/overflow conservation",
+    "producer-consumer request/case/timestamp correspondence",
+    "unique FIFO completions",
+    "drain-bound completion/censoring",
+    "declared compliant-only reference agreement",
+    "scheduled-origin 1/10/100ms deadline counts",
+    "trace outstanding high-water",
+    "producer-lateness diagnostic",
+    "unchanged raw input hashes"
+  ],
+  "created_utc": "2026-09-23T13:11:11.574321+00:00",
+  "independence": "Standalone standard-library raw CSV reconciliation; no production evaluator, experiment runner or trace summarizer imported",
+  "not_checked": [
+    "all other process blocks",
+    "microbenchmark/scaling raw timings",
+    "latency percentile recomputation",
+    "operational validity of the policy or workload"
+  ],
+  "peak_working_set_bytes": 32198656,
+  "scope": "12-cell spot audit: block 0, both methods, both datasets, three rates; not a full 60-cell raw audit",
+  "selected_cells": 12,
+  "selection": "Exact job metadata, not outcome-selected examples",
+  "status": "PASS",
+  "wall_seconds": 9.953000000008615
+}

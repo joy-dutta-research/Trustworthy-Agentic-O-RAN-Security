@@ -1,0 +1,25 @@
+{
+  "changes": "Only instrumented UDP echo logging plus diagnostic runner/tests; gateway, policy, controller, settings, traffic pacing, timeouts and scorers unchanged.",
+  "classification": "DIAGNOSTIC_ONLY_NOT_PILOT_RETRY_OR_FINAL",
+  "created_utc": "2026-09-24T10:54:20.694165+00:00",
+  "diagnostic_budget": {
+    "condition": "ineffective_action",
+    "diagnostic_episodes": 3,
+    "diagnostic_timeout_seconds": 300,
+    "episode_duration_seconds": 20,
+    "maximum_error_detail_records_per_episode": 32,
+    "method": "fixed_rule",
+    "qualification_attempts": 1,
+    "qualification_timeout_seconds": 900,
+    "replicate_identifiers": [
+      0,
+      1,
+      2
+    ],
+    "retry_per_episode": 0
+  },
+  "interpretation": "Diagnostics add measurement overhead. They cannot complete or replace the failed pilot. Do not infer cause if the error does not reproduce. Original error acceptance remains unchanged.",
+  "observed_failure": "Episode index5 ineffective_action/fixed_rule/replicate0; 15 suspect UDP echo errors",
+  "parent_zip_sha256": "fe4b8ae6f1696c205c45eb8f65f0f7159fb207f14f05106c3a98348cdcdb3faa",
+  "source_originals_preserved": true
+}

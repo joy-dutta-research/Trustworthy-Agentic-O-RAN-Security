@@ -1,0 +1,9 @@
+{
+  "archive_filename": "archive.zip",
+  "created_at": "2026-09-22T10:25:34.311947Z",
+  "member": "Lower_Layer_Data.db",
+  "member_crc32": "15d7cdc9",
+  "member_sha256": "d76fe7df11379223948e624d0f19bcd5caf744a2b6ce20d1ee2143644199ab64",
+  "member_size_bytes": 5402624,
+  "receipt_version": "0.1.0"
+}

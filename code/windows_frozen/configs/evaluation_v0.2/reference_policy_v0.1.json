@@ -1,0 +1,57 @@
+{
+  "reference_version": "legacy-policy-reference/0.1.0",
+  "status": "SEPARATELY_AUTHORED_SPECIFICATION_NOT_EXECUTABLE_ORACLE_OR_HUMAN_VALIDATION",
+  "policy_file": "configs/paper_policy.json",
+  "policy_sha256": "bf5915cd92557ca193d692273021342e5bfa495878a0d4500742662497e6921c",
+  "authority": "Frozen policy settings plus original decision rubric; parser-specific behavior is explicitly labelled legacy profile, not an independently justified operational requirement.",
+  "author_table_verification": "pending_before_publication",
+  "decision_precedence": ["DENY", "ESCALATE", "ALLOW"],
+  "risk_order": ["low", "medium", "high", "critical"],
+  "numeric_bounds_inclusive": true,
+  "booleans_are_numeric_parameters": false,
+  "actions": {
+    "rate_limit_ue": {"interface": "E2", "target_type": "ue", "authorized_roles": ["security_responder", "security_orchestrator", "human_operator"], "control_parameter": "traffic_rate_limit", "required_fields": ["control_parameter", "reduction_percent"], "numeric_bounds": {"reduction_percent": [1, 80]}, "minimum_risk": "medium", "disruptive": true, "action_requires_approval": false},
+    "quarantine_ue": {"interface": "E2", "target_type": "ue", "authorized_roles": ["security_responder", "security_orchestrator", "human_operator"], "control_parameter": "ue_admission_state", "required_fields": ["control_parameter", "duration_seconds"], "numeric_bounds": {"duration_seconds": [1, 300]}, "minimum_risk": "medium", "disruptive": true, "action_requires_approval": false},
+    "isolate_xapp": {"interface": "SMO", "target_type": "xapp", "authorized_roles": ["security_orchestrator", "human_operator"], "control_parameter": "xapp_execution_state", "required_fields": ["control_parameter", "duration_seconds"], "numeric_bounds": {"duration_seconds": [1, 600]}, "minimum_risk": "high", "disruptive": true, "action_requires_approval": true},
+    "modify_a1_policy": {"interface": "A1", "target_type": "policy", "authorized_roles": ["security_orchestrator", "human_operator"], "control_parameter": "a1_policy_weight", "required_fields": ["control_parameter", "policy_weight"], "numeric_bounds": {"policy_weight": [0.0, 1.0]}, "minimum_risk": "high", "disruptive": true, "action_requires_approval": true},
+    "rollback_policy": {"interface": "A1", "target_type": "policy", "authorized_roles": ["security_orchestrator", "human_operator"], "control_parameter": "a1_policy_state", "required_fields": ["control_parameter", "snapshot_id"], "numeric_bounds": {}, "minimum_risk": "high", "disruptive": false, "action_requires_approval": true},
+    "notify_operator": {"interface": "SMO", "target_type": "operator", "authorized_roles": ["observer", "detector", "security_responder", "security_orchestrator", "human_operator"], "control_parameter": "operator_notification", "required_fields": ["control_parameter", "message"], "numeric_bounds": {}, "minimum_risk": "low", "disruptive": false, "action_requires_approval": false}
+  },
+  "time_boundaries": {
+    "maximum_proposal_age_seconds": 600,
+    "maximum_future_skew_seconds": 30,
+    "maximum_ttl_seconds": 900,
+    "contract_ttl_range": [1, 86400],
+    "age_equals_maximum_is_valid": true,
+    "future_skew_equals_maximum_is_valid": true,
+    "elapsed_age_equals_ttl_is_valid": true,
+    "approval_expiry_equals_evaluation_is_valid": false
+  },
+  "rules": [
+    {"id": "R01", "name": "structural_contract", "on_violation": "DENY", "predicate": "Input satisfies the frozen Python contract profile and bounded JSON ingress; no implicit schema-only equivalence.", "classification": "legacy_profile", "reason_scope": "parser-specific reason codes; separately specified witnesses"},
+    {"id": "R02", "name": "identity_binding", "on_violation": "DENY", "predicate": "Out-of-band principal exists, equals claimed agent ID, is registered, and registered role equals claimed role.", "classification": "declared_fixture_policy", "reason_scope": "AUTHENTICATED_PRINCIPAL_REQUIRED / AGENT_IDENTITY_MISMATCH / UNKNOWN_PRINCIPAL / AGENT_ROLE_MISMATCH"},
+    {"id": "R03", "name": "role_action_permission", "on_violation": "DENY", "predicate": "Claimed action is permitted to the declared role; identity binding must also pass.", "classification": "illustrative_operator_policy", "reason_scope": "UNAUTHORIZED_AGENT"},
+    {"id": "R04", "name": "interface_action_permission", "on_violation": "DENY", "predicate": "Action uses the interface listed in the action table.", "classification": "illustrative_control_mapping", "reason_scope": "ACTION_INTERFACE_MISMATCH"},
+    {"id": "R05", "name": "target_type", "on_violation": "DENY", "predicate": "Target type equals the declared action target type; this does not authenticate target identity or dependency mapping.", "classification": "illustrative_control_mapping", "reason_scope": "ACTION_TARGET_MISMATCH"},
+    {"id": "R06", "name": "request_freshness", "on_violation": "DENY", "predicate": "-30 <= evaluation_time - requested_at <= 600 seconds.", "classification": "illustrative_operator_policy", "reason_scope": "REQUEST_TIMESTAMP_IN_FUTURE / STALE_ACTION_PROPOSAL"},
+    {"id": "R07", "name": "protected_service", "on_violation": "DENY", "predicate": "A disruptive action must not declare slice-emergency or slice-public-safety. Non-disruptive actions are outside this rule.", "classification": "illustrative_operator_policy_with_known_mapping_gap", "reason_scope": "PROTECTED_SLICE_VIOLATION"},
+    {"id": "R08", "name": "exact_parameter_contract", "on_violation": "DENY", "predicate": "Parameter key set and control_parameter equal the action table exactly; bounded numeric fields satisfy inclusive limits and exclude booleans.", "classification": "illustrative_operator_policy", "reason_scope": "ACTION_PARAMETER_CONTRACT_MISMATCH / CONTROL_PARAMETER_MISMATCH / REQUIRED_NUMERIC_PARAMETER_MISSING / PARAMETER_OUT_OF_RANGE"},
+    {"id": "R09", "name": "minimum_risk", "on_violation": "DENY", "predicate": "Risk rank is at least the action minimum.", "classification": "illustrative_operator_policy", "reason_scope": "RISK_CLASSIFICATION_UNDERSTATED"},
+    {"id": "R10", "name": "bounded_lifetime", "on_violation": "DENY", "predicate": "ttl_seconds <= 900 and elapsed age <= ttl_seconds; structural TTL must first be a true integer in [1,86400].", "classification": "illustrative_operator_policy", "reason_scope": "TTL_EXCEEDS_POLICY / ACTION_TTL_EXPIRED"},
+    {"id": "R11", "name": "rollback_declaration", "on_violation": "DENY", "predicate": "Disruptive actions declare rollback.available=true and non-whitespace procedure; no execution or adequacy of that procedure is verified.", "classification": "declared_fixture_policy", "reason_scope": "ROLLBACK_REQUIRED"},
+    {"id": "R12", "name": "active_state_and_conflict", "on_violation": "ESCALATE", "predicate": "Malformed active input or another structurally valid action matching interface,target_type,target_id,control_parameter requires escalation. Same action_id is exempt. Timestamps and approvals of active actions are not re-evaluated.", "classification": "legacy_fixture_semantics_not_operational_assurance", "reason_scope": "ACTIVE_STATE_UNVERIFIABLE / ACTION_CONFLICT"},
+    {"id": "R13", "name": "trusted_current_approval", "on_violation": "ESCALATE", "predicate": "High/critical risk or an approval-required action has a present approved registry entry bound to exact proposal, principal, role and expiry, with expires_at strictly later than evaluation time.", "classification": "declared_fixture_policy", "reason_scope": "HUMAN_APPROVAL_REQUIRED / HUMAN_APPROVAL_EXPIRED / HUMAN_APPROVAL_UNTRUSTED / HUMAN_APPROVAL_BINDING_MISMATCH"},
+    {"id": "R14", "name": "decision_combination", "on_violation": "NOT_APPLICABLE", "predicate": "Any hard violation gives DENY; otherwise any escalation condition gives ESCALATE; otherwise ALLOW. Final reasons belong to the winning severity; first active-state issue may determine the conflict reason.", "classification": "original_review_rubric", "reason_scope": "POLICY_CHECKS_PASSED only when no violation applies"}
+  ],
+  "known_limitations": [
+    {"id": "L01", "description": "Evidence references do not verify incident truth, necessity or benefit."},
+    {"id": "L02", "description": "Declared slice and target fields are simulated, not authoritative dependency mappings."},
+    {"id": "L03", "description": "rollback_policy is not disruptive; protected-service and rollback-declaration gates do not apply. User chose preservation and disclosure."},
+    {"id": "L04", "description": "Same action_id active entries are ignored even if content differs; no cumulative disruption or indirect-conflict guarantee."},
+    {"id": "L05", "description": "Structurally valid active state is not checked for lifecycle expiry or reauthorized."},
+    {"id": "L06", "description": "snapshot_id and message require named keys but have no additional type, nonempty or existence checks beyond generic JSON constraints."},
+    {"id": "L07", "description": "JSON Schema and Python parser accepted profiles differ; no cross-language contract equivalence claim."},
+    {"id": "L08", "description": "Audit checksum is not a signature or immutable external log; approval/identity services are offline fixtures."},
+    {"id": "L09", "description": "Optional structurally valid approval is not verified when action and risk do not require approval."}
+  ]
+}

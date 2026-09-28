@@ -1,0 +1,184 @@
+[
+  {
+    "decision_mismatch_count": 18,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-identity",
+      "validity-rate_limit_ue-pair-identity-conflict",
+      "validity-rate_limit_ue-pair-identity-approval",
+      "validity-quarantine_ue-pair-identity",
+      "validity-quarantine_ue-pair-identity-conflict"
+    ],
+    "mutation": "disable_identity",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 23,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-authorization",
+      "validity-rate_limit_ue-pair-authorization-conflict",
+      "validity-rate_limit_ue-pair-authorization-approval",
+      "validity-rate_limit_ue-triple-authorization-protected-approval-100",
+      "validity-rate_limit_ue-triple-authorization-protected-approval-101"
+    ],
+    "mutation": "disable_authorization",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 18,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-interface",
+      "validity-rate_limit_ue-pair-interface-conflict",
+      "validity-rate_limit_ue-pair-interface-approval",
+      "validity-quarantine_ue-pair-interface",
+      "validity-quarantine_ue-pair-interface-conflict"
+    ],
+    "mutation": "disable_interface",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 18,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-target",
+      "validity-rate_limit_ue-pair-target-conflict",
+      "validity-rate_limit_ue-pair-target-approval",
+      "validity-quarantine_ue-pair-target",
+      "validity-quarantine_ue-pair-target-conflict"
+    ],
+    "mutation": "disable_target_type",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 42,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-freshness",
+      "validity-rate_limit_ue-pair-freshness-conflict",
+      "validity-rate_limit_ue-pair-freshness-approval",
+      "validity-rate_limit_ue-triple-freshness-ttl-approval-100",
+      "validity-rate_limit_ue-triple-freshness-ttl-approval-101"
+    ],
+    "mutation": "disable_freshness",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 20,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-protected",
+      "validity-rate_limit_ue-pair-protected-conflict",
+      "validity-rate_limit_ue-pair-protected-approval",
+      "validity-rate_limit_ue-triple-authorization-protected-approval-010",
+      "validity-rate_limit_ue-triple-authorization-protected-approval-011"
+    ],
+    "mutation": "disable_protected_target",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 62,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-parameter",
+      "validity-rate_limit_ue-pair-parameter-conflict",
+      "validity-rate_limit_ue-pair-parameter-approval",
+      "validity-rate_limit_ue-triple-conflict-parameter-approval-010",
+      "validity-rate_limit_ue-triple-conflict-parameter-approval-011"
+    ],
+    "mutation": "disable_parameters",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 13,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-risk",
+      "validity-rate_limit_ue-pair-risk-conflict",
+      "validity-quarantine_ue-pair-risk",
+      "validity-quarantine_ue-pair-risk-conflict",
+      "validity-isolate_xapp-pair-risk"
+    ],
+    "mutation": "disable_risk_floor",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 54,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-ttl",
+      "validity-rate_limit_ue-pair-ttl-conflict",
+      "validity-rate_limit_ue-pair-ttl-approval",
+      "validity-rate_limit_ue-triple-freshness-ttl-approval-010",
+      "validity-rate_limit_ue-triple-freshness-ttl-approval-011"
+    ],
+    "mutation": "disable_ttl",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 12,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-rollback",
+      "validity-rate_limit_ue-pair-rollback-conflict",
+      "validity-rate_limit_ue-pair-rollback-approval",
+      "validity-quarantine_ue-pair-rollback",
+      "validity-quarantine_ue-pair-rollback-conflict"
+    ],
+    "mutation": "disable_rollback",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 24,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-conflict",
+      "validity-rate_limit_ue-triple-conflict-parameter-approval-100",
+      "validity-rate_limit_ue-malformed_active",
+      "validity-rate_limit_ue-expired_active",
+      "validity-quarantine_ue-pair-conflict"
+    ],
+    "mutation": "disable_conflicts",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 46,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-approval",
+      "validity-rate_limit_ue-triple-authorization-protected-approval-001",
+      "validity-rate_limit_ue-triple-freshness-ttl-approval-001",
+      "validity-rate_limit_ue-triple-conflict-parameter-approval-001",
+      "validity-rate_limit_ue-time-expiry-0"
+    ],
+    "mutation": "disable_approval",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 12,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-tampered_approval",
+      "validity-rate_limit_ue-revoked_approval",
+      "validity-quarantine_ue-tampered_approval",
+      "validity-quarantine_ue-revoked_approval",
+      "validity-isolate_xapp-tampered_approval"
+    ],
+    "mutation": "ignore_approval_binding",
+    "unhandled_errors": []
+  },
+  {
+    "decision_mismatch_count": 154,
+    "detected": true,
+    "first_witnesses": [
+      "validity-rate_limit_ue-pair-identity-conflict",
+      "validity-rate_limit_ue-pair-identity-approval",
+      "validity-rate_limit_ue-pair-authorization-conflict",
+      "validity-rate_limit_ue-pair-authorization-approval",
+      "validity-rate_limit_ue-pair-interface-conflict"
+    ],
+    "mutation": "escalation_overrides_hard_denial",
+    "unhandled_errors": []
+  }
+]

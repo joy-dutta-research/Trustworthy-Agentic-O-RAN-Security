@@ -1,0 +1,22 @@
+{
+  "version": "closed-loop-pilot-0.1",
+  "capacity_kbit": 1000,
+  "packet_bytes": 512,
+  "duration_seconds": 20,
+  "legitimate_pps": 100,
+  "background_pps": 120,
+  "flood_pps": 400,
+  "event_start": 4,
+  "event_end": 14,
+  "benign_burst_seconds": 0.6,
+  "alert_pps": 250,
+  "minimum_delivery_ratio": 0.85,
+  "maximum_evidence_age_seconds": 2.5,
+  "corroboration_windows": 2,
+  "reduction_percent": 80,
+  "action_ttl_seconds": 6,
+  "monitor_grace_seconds": 1,
+  "monitor_windows": 2,
+  "minimum_delivery_improvement": 0.10,
+  "maximum_delivery_worsening": 0.10
+}

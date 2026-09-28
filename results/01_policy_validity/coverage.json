@@ -1,0 +1,109 @@
+{
+  "case_occurrences": 777,
+  "semantic_configurations": 669,
+  "case_groups": {
+    "adversarial": 58,
+    "boundary": 166,
+    "legacy_limitation": 18,
+    "pairwise": 407,
+    "targeted_three_way": 128
+  },
+  "interaction_coverage": {
+    "coverage_scope": "declared binary factor partitions, not exhaustive engine input space",
+    "pairwise_constraints_excluded": [
+      [
+        "rate_limit_ue",
+        [
+          "risk",
+          "approval"
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        "quarantine_ue",
+        [
+          "risk",
+          "approval"
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "pairwise_covered": 1346,
+    "pairwise_missing": [],
+    "targeted_three_way": {
+      "isolate_xapp:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "isolate_xapp:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "isolate_xapp:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "modify_a1_policy:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "modify_a1_policy:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "modify_a1_policy:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "notify_operator:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "notify_operator:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "quarantine_ue:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "quarantine_ue:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "quarantine_ue:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rate_limit_ue:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rate_limit_ue:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rate_limit_ue:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rollback_policy:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rollback_policy:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      }
+    }
+  },
+  "property_scope": "scoped properties on six valid action witnesses; not universal proofs",
+  "mutation_scope": "14 predeclared test-only targeted mutations; not exhaustive fault coverage",
+  "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity"
+}

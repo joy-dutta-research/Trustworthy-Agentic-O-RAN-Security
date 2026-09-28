@@ -1,0 +1,35 @@
+{
+  "case_count": 120777,
+  "case_file_count": 42,
+  "case_status": "MATCH",
+  "aggregate_comparison": {
+    "comparison": "exact parsed JSON including canonical manifest digest; serialization newline is not a scientific input",
+    "database": {
+      "sha256": "d76fe7df11379223948e624d0f19bcd5caf744a2b6ce20d1ee2143644199ab64",
+      "size_bytes": 5402624
+    },
+    "expected_rows": 45244,
+    "observed_rows": 45244,
+    "original_aggregate_sha256": "1ac8410618644e6b79acecbc1123d926641b39b1934898e1a367a62627c916cb",
+    "regenerated_aggregate_sha256": "3a14ea436318cf38b5d02ae043b1a97c5de5e77de3090df43e24e015db5da09e",
+    "status": "MATCH"
+  },
+  "workload_status": "MATCH",
+  "workload_comparison_scope": "Exact workload JSONL bytes. New preparation timestamps/source paths/receipts are intentionally different.",
+  "packet_source_and_returns": {
+    "source": {
+      "sha256": "c439be5ae5ee5896f01617f0c2ffc4a0a4b20003f187a46542f7bf85a7d19f19",
+      "verified_members": 155
+    },
+    "first": {
+      "sha256": "66ba17dff4b1d3450c53385722f9e423b9f4ede0c9c29837a46748b98bab8a2d",
+      "verified_members": 1394
+    },
+    "repeat": {
+      "sha256": "31133395615c6e434af9e7506d26b8005f9bbb988e8794b5fc3efec8ba6b3c54",
+      "verified_members": 562
+    }
+  },
+  "packet_same_physical_workstation": true,
+  "windows_raw_timing_reanalysis_by_this_exporter": false
+}

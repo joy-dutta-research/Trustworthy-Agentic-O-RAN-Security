@@ -1,0 +1,6962 @@
+[
+  {
+    "population": "sensitivity:netslab:original",
+    "group": "generated_controls",
+    "method": "direct",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 4000,
+      "rate": 0.2
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 16000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original/groups/generated_controls/overall/direct"
+  },
+  {
+    "population": "sensitivity:netslab:original",
+    "group": "generated_controls",
+    "method": "contract",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 4000,
+      "rate": 0.2
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 16000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original/groups/generated_controls/overall/contract"
+  },
+  {
+    "population": "sensitivity:netslab:original",
+    "group": "generated_controls",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 6394,
+      "rate": 0.4375556011770341
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 10394,
+      "rate": 0.5197
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 13606,
+      "DENY": 6394,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 9606,
+      "rate": 0.600375
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 2739,
+      "rate": 0.13695
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original/groups/generated_controls/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:netslab:original",
+    "group": "generated_controls",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 14613,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 1387,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original/groups/generated_controls/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:netslab:reduction60",
+    "group": "generated_controls",
+    "method": "direct",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 3755,
+      "numerator": 3755,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14939,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 1306,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 3755,
+      "rate": 0.18775
+    },
+    "expected_decisions": {
+      "ALLOW": 3755,
+      "DENY": 14939,
+      "ESCALATE": 1306
+    },
+    "incorrect_rejections": {
+      "denominator": 3755,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16245,
+      "numerator": 16245,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60/groups/generated_controls/overall/direct"
+  },
+  {
+    "population": "sensitivity:netslab:reduction60",
+    "group": "generated_controls",
+    "method": "contract",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 3755,
+      "numerator": 3755,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14939,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 1306,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 3755,
+      "rate": 0.18775
+    },
+    "expected_decisions": {
+      "ALLOW": 3755,
+      "DENY": 14939,
+      "ESCALATE": 1306
+    },
+    "incorrect_rejections": {
+      "denominator": 3755,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16245,
+      "numerator": 16245,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60/groups/generated_controls/overall/contract"
+  },
+  {
+    "population": "sensitivity:netslab:reduction60",
+    "group": "generated_controls",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 3755,
+      "numerator": 3755,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14939,
+      "numerator": 6394,
+      "rate": 0.4280072293995582
+    },
+    "correct_escalations": {
+      "denominator": 1306,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 10149,
+      "rate": 0.50745
+    },
+    "expected_decisions": {
+      "ALLOW": 3755,
+      "DENY": 14939,
+      "ESCALATE": 1306
+    },
+    "incorrect_rejections": {
+      "denominator": 3755,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 13606,
+      "DENY": 6394,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16245,
+      "numerator": 9851,
+      "rate": 0.6064019698368729
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 2576,
+      "rate": 0.1288
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60/groups/generated_controls/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:netslab:reduction60",
+    "group": "generated_controls",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 3755,
+      "numerator": 3755,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14939,
+      "numerator": 14939,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 1306,
+      "numerator": 1306,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 3755,
+      "DENY": 14939,
+      "ESCALATE": 1306
+    },
+    "incorrect_rejections": {
+      "denominator": 3755,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 3755,
+      "DENY": 14939,
+      "ESCALATE": 1306
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16245,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60/groups/generated_controls/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:netslab:reduction90",
+    "group": "generated_controls",
+    "method": "direct",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 4000,
+      "rate": 0.2
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 16000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90/groups/generated_controls/overall/direct"
+  },
+  {
+    "population": "sensitivity:netslab:reduction90",
+    "group": "generated_controls",
+    "method": "contract",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 4000,
+      "rate": 0.2
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 16000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90/groups/generated_controls/overall/contract"
+  },
+  {
+    "population": "sensitivity:netslab:reduction90",
+    "group": "generated_controls",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 6394,
+      "rate": 0.4375556011770341
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 10394,
+      "rate": 0.5197
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 13606,
+      "DENY": 6394,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 9606,
+      "rate": 0.600375
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 2739,
+      "rate": 0.13695
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90/groups/generated_controls/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:netslab:reduction90",
+    "group": "generated_controls",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 4000,
+      "numerator": 4000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 14613,
+      "numerator": 14613,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 1387,
+      "numerator": 1387,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "incorrect_rejections": {
+      "denominator": 4000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 4000,
+      "DENY": 14613,
+      "ESCALATE": 1387
+    },
+    "policy_block_required_admissions": {
+      "denominator": 16000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90/groups/generated_controls/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:netslab:ttl300",
+    "group": "generated_controls",
+    "method": "direct",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 964,
+      "numerator": 964,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 18725,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 311,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 964,
+      "rate": 0.0482
+    },
+    "expected_decisions": {
+      "ALLOW": 964,
+      "DENY": 18725,
+      "ESCALATE": 311
+    },
+    "incorrect_rejections": {
+      "denominator": 964,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 19036,
+      "numerator": 19036,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300/groups/generated_controls/overall/direct"
+  },
+  {
+    "population": "sensitivity:netslab:ttl300",
+    "group": "generated_controls",
+    "method": "contract",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 964,
+      "numerator": 964,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 18725,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 311,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 964,
+      "rate": 0.0482
+    },
+    "expected_decisions": {
+      "ALLOW": 964,
+      "DENY": 18725,
+      "ESCALATE": 311
+    },
+    "incorrect_rejections": {
+      "denominator": 964,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 19036,
+      "numerator": 19036,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300/groups/generated_controls/overall/contract"
+  },
+  {
+    "population": "sensitivity:netslab:ttl300",
+    "group": "generated_controls",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 964,
+      "numerator": 964,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 18725,
+      "numerator": 6394,
+      "rate": 0.3414686248331108
+    },
+    "correct_escalations": {
+      "denominator": 311,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 7358,
+      "rate": 0.3679
+    },
+    "expected_decisions": {
+      "ALLOW": 964,
+      "DENY": 18725,
+      "ESCALATE": 311
+    },
+    "incorrect_rejections": {
+      "denominator": 964,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 13606,
+      "DENY": 6394,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 19036,
+      "numerator": 12642,
+      "rate": 0.6641101071653709
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 649,
+      "rate": 0.03245
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300/groups/generated_controls/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:netslab:ttl300",
+    "group": "generated_controls",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 964,
+      "numerator": 964,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 18725,
+      "numerator": 18725,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 311,
+      "numerator": 311,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 964,
+      "DENY": 18725,
+      "ESCALATE": 311
+    },
+    "incorrect_rejections": {
+      "denominator": 964,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 964,
+      "DENY": 18725,
+      "ESCALATE": 311
+    },
+    "policy_block_required_admissions": {
+      "denominator": 19036,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300/groups/generated_controls/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:netslab:ttl600",
+    "group": "generated_controls",
+    "method": "direct",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 2484,
+      "numerator": 2484,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 16668,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 848,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 2484,
+      "rate": 0.1242
+    },
+    "expected_decisions": {
+      "ALLOW": 2484,
+      "DENY": 16668,
+      "ESCALATE": 848
+    },
+    "incorrect_rejections": {
+      "denominator": 2484,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 17516,
+      "numerator": 17516,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600/groups/generated_controls/overall/direct"
+  },
+  {
+    "population": "sensitivity:netslab:ttl600",
+    "group": "generated_controls",
+    "method": "contract",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 2484,
+      "numerator": 2484,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 16668,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 848,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 2484,
+      "rate": 0.1242
+    },
+    "expected_decisions": {
+      "ALLOW": 2484,
+      "DENY": 16668,
+      "ESCALATE": 848
+    },
+    "incorrect_rejections": {
+      "denominator": 2484,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 17516,
+      "numerator": 17516,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600/groups/generated_controls/overall/contract"
+  },
+  {
+    "population": "sensitivity:netslab:ttl600",
+    "group": "generated_controls",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 2484,
+      "numerator": 2484,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 16668,
+      "numerator": 6394,
+      "rate": 0.3836093112550996
+    },
+    "correct_escalations": {
+      "denominator": 848,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 8878,
+      "rate": 0.4439
+    },
+    "expected_decisions": {
+      "ALLOW": 2484,
+      "DENY": 16668,
+      "ESCALATE": 848
+    },
+    "incorrect_rejections": {
+      "denominator": 2484,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 13606,
+      "DENY": 6394,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 17516,
+      "numerator": 11122,
+      "rate": 0.6349623201644211
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 1696,
+      "rate": 0.0848
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600/groups/generated_controls/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:netslab:ttl600",
+    "group": "generated_controls",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 19945,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 2484,
+      "numerator": 2484,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 16668,
+      "numerator": 16668,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 848,
+      "numerator": 848,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 2484,
+      "DENY": 16668,
+      "ESCALATE": 848
+    },
+    "incorrect_rejections": {
+      "denominator": 2484,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 2484,
+      "DENY": 16668,
+      "ESCALATE": 848
+    },
+    "policy_block_required_admissions": {
+      "denominator": 17516,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600/groups/generated_controls/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 7,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 7,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 7,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 7,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 2,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 2,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 2,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:budget2000",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 2,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 172,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 172,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 172,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 172,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 35,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 35,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 35,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:budget500",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 35,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:original",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:reduction60",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:reduction90",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:ttl300",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300/groups/record_proposals/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "conformance",
+    "method": "direct",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/conformance/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "conformance",
+    "method": "contract",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 20000,
+      "rate": 0.21052631578947367
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 95000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 75000,
+      "rate": 1.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/conformance/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "conformance",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 15000,
+      "rate": 0.3333333333333333
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 35000,
+      "rate": 0.3684210526315789
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 80000,
+      "DENY": 15000,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 60000,
+      "rate": 0.8
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 15000,
+      "rate": 0.15789473684210525
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/conformance/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "conformance",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 162,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 95000,
+    "complete_audit_fields": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 45000,
+      "numerator": 45000,
+      "rate": 1.0
+    },
+    "correct_escalations": {
+      "denominator": 30000,
+      "numerator": 30000,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 45000,
+      "ESCALATE": 30000
+    },
+    "policy_block_required_admissions": {
+      "denominator": 75000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "reference_reason_agreement": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 95000,
+      "numerator": 95000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/conformance/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "false_alarm_probes",
+    "method": "direct",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/false_alarm_probes/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "false_alarm_probes",
+    "method": "contract",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/false_alarm_probes/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "false_alarm_probes",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/false_alarm_probes/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "false_alarm_probes",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 1,
+    "benign_disruptive_admission": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "cases": 5000,
+    "complete_audit_fields": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": null,
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 5000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 5000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 5000,
+      "numerator": 5000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/false_alarm_probes/overall/trust_boundary"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "record_proposals",
+    "method": "direct",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/record_proposals/overall/direct"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "record_proposals",
+    "method": "contract",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/record_proposals/overall/contract"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "record_proposals",
+    "method": "contract_rbac",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/record_proposals/overall/contract_rbac"
+  },
+  {
+    "population": "sensitivity:nidd:ttl600",
+    "group": "record_proposals",
+    "method": "trust_boundary",
+    "distinct_configurations_union": 33,
+    "benign_disruptive_admission": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "cases": 20000,
+    "complete_audit_fields": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "compliant_action_acceptance": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "correct_denials": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "correct_escalations": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "decision_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "expected_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "incorrect_rejections": {
+      "denominator": 20000,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "observed_decisions": {
+      "ALLOW": 20000,
+      "DENY": 0,
+      "ESCALATE": 0
+    },
+    "policy_block_required_admissions": {
+      "denominator": 0,
+      "numerator": 0,
+      "rate": null
+    },
+    "reference_reason_agreement": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "valid_audit_checksum": {
+      "denominator": 20000,
+      "numerator": 20000,
+      "rate": 1.0
+    },
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600/groups/record_proposals/overall/trust_boundary"
+  }
+]

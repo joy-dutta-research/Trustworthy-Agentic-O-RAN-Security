@@ -1,0 +1,252 @@
+[
+  {
+    "action": "rate_limit_ue",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "AUTHENTICATED_PRINCIPAL_REQUIRED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "removing_authenticated_authority_never_grants"
+  },
+  {
+    "action": "rate_limit_ue",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "object_key_order_invariant"
+  },
+  {
+    "action": "rate_limit_ue",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "fixed_input_decision_repeatability"
+  },
+  {
+    "action": "rate_limit_ue",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "PROTECTED_SLICE_VIOLATION"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "applicable_protected_service_never_admitted"
+  },
+  {
+    "action": "quarantine_ue",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "AUTHENTICATED_PRINCIPAL_REQUIRED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "removing_authenticated_authority_never_grants"
+  },
+  {
+    "action": "quarantine_ue",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "object_key_order_invariant"
+  },
+  {
+    "action": "quarantine_ue",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "fixed_input_decision_repeatability"
+  },
+  {
+    "action": "quarantine_ue",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "PROTECTED_SLICE_VIOLATION"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "applicable_protected_service_never_admitted"
+  },
+  {
+    "action": "isolate_xapp",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "AUTHENTICATED_PRINCIPAL_REQUIRED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "removing_authenticated_authority_never_grants"
+  },
+  {
+    "action": "isolate_xapp",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "object_key_order_invariant"
+  },
+  {
+    "action": "isolate_xapp",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "fixed_input_decision_repeatability"
+  },
+  {
+    "action": "isolate_xapp",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "PROTECTED_SLICE_VIOLATION"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "applicable_protected_service_never_admitted"
+  },
+  {
+    "action": "isolate_xapp",
+    "actual_decision": "ESCALATE",
+    "actual_reasons": [
+      "HUMAN_APPROVAL_BINDING_MISMATCH"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "changed_proposal_cannot_reuse_approval"
+  },
+  {
+    "action": "modify_a1_policy",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "AUTHENTICATED_PRINCIPAL_REQUIRED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "removing_authenticated_authority_never_grants"
+  },
+  {
+    "action": "modify_a1_policy",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "object_key_order_invariant"
+  },
+  {
+    "action": "modify_a1_policy",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "fixed_input_decision_repeatability"
+  },
+  {
+    "action": "modify_a1_policy",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "PROTECTED_SLICE_VIOLATION"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "applicable_protected_service_never_admitted"
+  },
+  {
+    "action": "modify_a1_policy",
+    "actual_decision": "ESCALATE",
+    "actual_reasons": [
+      "HUMAN_APPROVAL_BINDING_MISMATCH"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "changed_proposal_cannot_reuse_approval"
+  },
+  {
+    "action": "rollback_policy",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "AUTHENTICATED_PRINCIPAL_REQUIRED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "removing_authenticated_authority_never_grants"
+  },
+  {
+    "action": "rollback_policy",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "object_key_order_invariant"
+  },
+  {
+    "action": "rollback_policy",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "fixed_input_decision_repeatability"
+  },
+  {
+    "action": "rollback_policy",
+    "actual_decision": "ESCALATE",
+    "actual_reasons": [
+      "HUMAN_APPROVAL_BINDING_MISMATCH"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "changed_proposal_cannot_reuse_approval"
+  },
+  {
+    "action": "notify_operator",
+    "actual_decision": "DENY",
+    "actual_reasons": [
+      "AUTHENTICATED_PRINCIPAL_REQUIRED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "removing_authenticated_authority_never_grants"
+  },
+  {
+    "action": "notify_operator",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "object_key_order_invariant"
+  },
+  {
+    "action": "notify_operator",
+    "actual_decision": "ALLOW",
+    "actual_reasons": [
+      "POLICY_CHECKS_PASSED"
+    ],
+    "original_decision": "ALLOW",
+    "passed": true,
+    "property": "fixed_input_decision_repeatability"
+  }
+]

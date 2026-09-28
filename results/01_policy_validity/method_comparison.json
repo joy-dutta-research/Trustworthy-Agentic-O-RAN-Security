@@ -1,0 +1,46 @@
+[
+  {
+    "population": "common_validity",
+    "method": "direct",
+    "case_occurrences": 777,
+    "reference_decision_agreement": 130,
+    "block_required_admitted": 647,
+    "block_required_total": 647,
+    "permitted_admitted": 130,
+    "permitted_total": 130,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/direct"
+  },
+  {
+    "population": "common_validity",
+    "method": "contract",
+    "case_occurrences": 777,
+    "reference_decision_agreement": 172,
+    "block_required_admitted": 605,
+    "block_required_total": 647,
+    "permitted_admitted": 130,
+    "permitted_total": 130,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/contract"
+  },
+  {
+    "population": "common_validity",
+    "method": "contract_rbac",
+    "case_occurrences": 777,
+    "reference_decision_agreement": 362,
+    "block_required_admitted": 415,
+    "block_required_total": 647,
+    "permitted_admitted": 130,
+    "permitted_total": 130,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/contract_rbac"
+  },
+  {
+    "population": "common_validity",
+    "method": "trust_boundary",
+    "case_occurrences": 777,
+    "reference_decision_agreement": 777,
+    "block_required_admitted": 0,
+    "block_required_total": 647,
+    "permitted_admitted": 130,
+    "permitted_total": 130,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity/comparators/trust_boundary"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "changes": {
+    "docs/PILOT_COMPAT_V3.md": {
+      "new_sha256": "c2fd5d4f76d3bbe1e104abea0c86068fb64050af84a73b9848cf830a9b6a746f",
+      "old_sha256": null
+    },
+    "reference/PILOT_V2_RECEIVED_MANIFEST.json": {
+      "new_sha256": "ff77bd031008367096d48063a90b058a9f9ced1c1a3d763b4dfc11cb8fa1a845",
+      "old_sha256": null
+    },
+    "results/5gnidd_v0.1_verified/dataset_audit.json": {
+      "new_sha256": "be22d118d83064b4feacef2a11825f334bec6eb2d712f11c06218f01c0753250",
+      "old_sha256": null
+    },
+    "src/oran_trust_boundary/closed_loop_lab.py": {
+      "new_sha256": "127f8335674fc61e9b04d080ee6d73b9301fb7ef3d6755b7f670c10b963b0abf",
+      "old_sha256": "aa1eccce6a92f197d4e3b21bffd8b4348c61b2748128c51446dd8c55b2705501"
+    },
+    "tests/test_tc_compatibility_v3.py": {
+      "new_sha256": "171a3b7865b9edae943c2e9800c539cea2e29411937e6fe7e2cff6ed5c5d75a0",
+      "old_sha256": null
+    }
+  },
+  "classification": "PILOT_ONLY_NOT_FINAL_STUDY",
+  "created_utc": "2026-09-24T03:29:26.020483+00:00",
+  "diagnostic_archive_sha256": "ef915bca4cd5bd6f974c6042a1f9025b24276cf09ac43d173b1d1b552df1860f",
+  "original_gateway_policy_controller_settings_seeds_unchanged": true,
+  "received_v2_archive_sha256": "215003c31050a9ebdb4e3157580aeff8dea07d1cc4ce4b37c19a2a5c8fd075d4",
+  "received_v2_manifest_sha256": "ff77bd031008367096d48063a90b058a9f9ced1c1a3d763b4dfc11cb8fa1a845",
+  "version": "pilot-compat-v3"
+}

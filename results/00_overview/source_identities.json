@@ -1,0 +1,12 @@
+{
+  "windows_comparison.json": {
+    "sha256": "68c5923ac46dfcf83d004e3e338683f01d1e0f94c7f149fd10d81d86abc23671",
+    "size_bytes": 3562297,
+    "repository_source": "evidence/summaries/windows_comparison.json"
+  },
+  "packet_recomputation.json": {
+    "sha256": "6babd0a18a88a8a681fa96c2de0b806d3bf5119ca15820961f66150e4a6904c7",
+    "size_bytes": 414272,
+    "repository_source": "evidence/summaries/packet_recomputation.json"
+  }
+}

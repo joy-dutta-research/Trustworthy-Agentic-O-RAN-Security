@@ -1,0 +1,9 @@
+stage,question,evidence,meaning
+0,Are the inputs and code traceable?,Frozen source/input identities and regeneration records,A stable baseline for repeating the study
+1,Does the Trust Boundary enforce the stated policy?,"777 constructed cases, scoped properties, targeted mutants",Policy conformance under the tested rules
+2,Does the result hold across the defined dataset mappings and seeds?,"NetsLab controls, 5G-NIDD census and seeded panels",Coverage beyond a small illustrative example
+3,How do operator assumptions affect decisions?,12 predefined sensitivity conditions,Explicit dependence on the selected policy and mapping
+4,What does local verification cost?,"Four methods, two timing boundaries, 20 process blocks",Measured local processing overhead
+5,What happens as state and incoming load grow?,All declared state paths and offered-load conditions,A measured operating envelope for the prototype
+6,"Does action, corroboration and feedback improve the tested packet scenarios?",36 exploratory episodes,"Flood benefit, collateral avoidance and ineffective-action recognition"
+7,Can the same protocol be reproduced in another environment?,Second Windows host and 36-episode clean-VM repeat,Cross-host Windows reproducibility and same-host packet repeatability

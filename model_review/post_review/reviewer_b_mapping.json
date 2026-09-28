@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "disclosure": "Released after completion of round 1. Do not include this file in any new answer-masked reviewer input.",
+  "package_id": "model_review_round1-reviewer_b",
+  "review_id_to_case_id": {
+    "review-0294f4b5bad0426e236fbb4a34c1db08": "case-06-conflict",
+    "review-04669f8d68865df44b0c2917fe278cb3": "case-19-approval",
+    "review-078fbf945cdfcf2e9d33d19c7450bbf2": "case-05-allow",
+    "review-0839a576351791af7c0e0884e9afde32": "case-10-conflict",
+    "review-0b8fca916e3edb7bec91a10788a02862": "case-12-range",
+    "review-0c737d5d9a8859031424a6cbba9db358": "case-11-conflict",
+    "review-0d81bd13d243abe9e7eaa1eaa4b6979f": "case-17-approval",
+    "review-0e138b766a090fad981db4f6bc5e0d8a": "case-05-protected",
+    "review-0f2fbae143433b47499f5a76b32ba1be": "case-03-range",
+    "review-1048d11fe8863d5f1b7f250f1604e69c": "case-17-protected",
+    "review-12f08d36435cc30619ac85e028b42c71": "case-16-approval",
+    "review-15dce79cbc22b150a8514a1466cde3e5": "case-12-protected",
+    "review-16fd43f25622511258a19e87d15637fe": "case-10-approval",
+    "review-1b158d6efd2768dc5a63248aa02553ee": "case-18-range",
+    "review-1cf9a594a717100d0229126a3c21ac45": "case-06-unauthorized",
+    "review-22939376b7af42938bbeedc52abb8108": "case-04-conflict",
+    "review-24f66d77ef5c32ab5963e42a7fb1f1b9": "case-01-allow",
+    "review-266c6dcd58a2c6215205d7cd14cfa263": "case-01-protected",
+    "review-286e81fd5e5b90db180be99e6d4e1cfd": "case-02-conflict",
+    "review-2a0bd254b8be1e8142ddc70f79795612": "case-05-unauthorized",
+    "review-2c236899bf52fd0562c2673c9f7da51d": "case-20-conflict",
+    "review-2e333d36b93b4aacd9fdc699281d77c5": "case-19-allow",
+    "review-3352be5705f68aeafd3cc0375c9b3e20": "case-08-range",
+    "review-36e7accb8afca22b94e4d2f2915cedfa": "case-09-conflict",
+    "review-387838cf30359dd33ebeca0345db42a3": "case-11-range",
+    "review-3c85e3b1ed673b8c0fe502e33d6ca2b4": "case-18-conflict",
+    "review-446bfb93c165a3047af628bdc3d32467": "case-14-unauthorized",
+    "review-45846dd1051a68ac7386f20392fb9547": "case-04-allow",
+    "review-4622f6d81e8d13186b1f132954071651": "case-10-allow",
+    "review-468ab60320f18121ea72f311d3def5cb": "case-12-conflict",
+    "review-46d90eb502c785e4da051a235e7557ad": "case-19-conflict",
+    "review-47fb4672dafe9df390952462e0b1d752": "case-20-allow",
+    "review-4ac98afb1acf6bcc3be3d3013eaff489": "case-12-allow",
+    "review-4b7b93a2405684e7d3d264aee9e048d7": "case-01-unauthorized",
+    "review-4b865ed6b885e12702437cd3eeaa2d2f": "case-01-approval",
+    "review-4d0c5cebcc1ff5c555ddc46157422ae9": "case-12-unauthorized",
+    "review-4e0c17c0ccc93a8c802d74992d89d33d": "case-18-unauthorized",
+    "review-4f72c33fce5709c0e8feb13927223ce2": "case-08-unauthorized",
+    "review-53c501aafe154714027a53cf629dd050": "case-18-protected",
+    "review-555f0b58ebd76cbfe98c159dfa54cb97": "case-03-unauthorized",
+    "review-58f116e76a4cec65add6e6f324dd0f0d": "case-10-range",
+    "review-5d7b250c01fb46c2f8846054d779aa74": "case-06-range",
+    "review-5dbbdd78171ab24bdcc01a7be1a4b5cc": "case-07-range",
+    "review-6571a821d8ff744771998c01f1cc6b97": "case-09-unauthorized",
+    "review-65bbfe0ff7ee8c9eef8267ee96ed63e0": "case-03-protected",
+    "review-65dad135918a124663442cf5b558faf8": "case-13-approval",
+    "review-65de70c79a765c69058e39988f49e307": "case-08-protected",
+    "review-694869323adfaef28471cb70ce3b36a3": "case-14-conflict",
+    "review-69a1e371b529fbbdba9b6ffa91fc3696": "case-15-conflict",
+    "review-69fcaaa690a08de5b41a562d7aa4a87d": "case-03-approval",
+    "review-6a695a49130665a639d45e40fc6c86c5": "case-15-allow",
+    "review-6f2c5ab6aa209c916600f0fad0ec84b6": "case-16-range",
+    "review-720aa954cb2be87e7e2628b22da7828b": "case-20-protected",
+    "review-74b6d09950938b70d3bd147d11521e66": "case-12-approval",
+    "review-77e44c43145a47ff17c9b45b9038f9d6": "case-14-range",
+    "review-78ee4525fcefa8475c76abcdac17a5b0": "case-18-approval",
+    "review-7905ada02f6e391879a09a838ab9d482": "case-19-unauthorized",
+    "review-7e762740d69f7f32b82cb2d91a626bbd": "case-11-protected",
+    "review-7f51d5501ac6d3f9a65317a3cc008adf": "case-09-range",
+    "review-81518e4c0d5e096a2b7ee4154dbaaf05": "case-17-allow",
+    "review-837f937dc7f2c8ba1b8013be02163411": "case-19-protected",
+    "review-85ef3eb8658b54fcd8b3257b56fcbebd": "case-09-approval",
+    "review-879ef97c7657edb9890d67a5c2e6e686": "case-16-protected",
+    "review-88bc875e515790952a927e0179821160": "case-11-unauthorized",
+    "review-8b0245b33dc3ec24e04a952e3f096e4e": "case-02-range",
+    "review-8eb39dc1824e6c72f0b5960cdb9ee3df": "case-13-protected",
+    "review-91cba03b48a55db2baaf96015aa7fa5a": "case-20-approval",
+    "review-92e0ad13ed686c98b85a5ee30c02d1be": "case-13-range",
+    "review-94f01a17acac8929605e3af2d785153f": "case-04-range",
+    "review-99d31e244a910689d6412016dd3cb460": "case-16-unauthorized",
+    "review-9ae43663c6d406f8cb83bfe599f702d7": "case-06-protected",
+    "review-9bcdf4b18de389be8c64fc8cb1eb0775": "case-03-conflict",
+    "review-9c43b4b87768644d14847fd18b5a2ff7": "case-01-range",
+    "review-9cdd4125fa3c74fe4814991b0ed7d2cd": "case-02-allow",
+    "review-a227874f87f4ac15c267ce19ab4d0a52": "case-05-approval",
+    "review-a495ef0da40e08a4402a405d89614f3d": "case-07-conflict",
+    "review-a50b305a92c169b11bd926416ca29725": "case-04-protected",
+    "review-a514adc237d7dafa7fe96e4414d20da6": "case-02-protected",
+    "review-a74042dd1bcacfb379dc49602aa9b0c8": "case-14-approval",
+    "review-ac8ef414b6389a04f09a409e50287574": "case-16-conflict",
+    "review-addf5d4d0e43eef1f595b499460c8e91": "case-07-allow",
+    "review-ae556a8a8d1972e84f302dedc0fd05c2": "case-06-allow",
+    "review-af4c5c18a405373be9c0848716e0a617": "case-06-approval",
+    "review-afccfebb9c61639ceb4e335314f00232": "case-11-allow",
+    "review-b01c5db6414a3c4af00becf55d89f437": "case-15-approval",
+    "review-b52dce7a0a5794055c36589b497ded23": "case-07-unauthorized",
+    "review-b567d8608d3069fd0044f640cb488c28": "case-19-range",
+    "review-b81f5780440c5d0e6a3d26e4d925ce70": "case-15-unauthorized",
+    "review-bb2016661b40ecd70a0f97b2e87f4ed3": "case-11-approval",
+    "review-bb935dadd447fc33fdb18267463887bc": "case-02-approval",
+    "review-be6bd86b6dcb2744eefa83ba30feeebd": "case-17-range",
+    "review-bf972910fc087aadea5356eff7182a13": "case-13-allow",
+    "review-c3c804fb2486ea22ee0c1389054f19bb": "case-17-unauthorized",
+    "review-c44b55979be6f5a641d09c8b9538f2de": "case-13-conflict",
+    "review-c59028d3482b112e270599e889706d1f": "case-08-conflict",
+    "review-c5bef79c92a8cfa00463ce817c55123e": "case-10-unauthorized",
+    "review-c87ade50f30458b654e0df448f5fc13e": "case-15-protected",
+    "review-c95c7ba25eb94b5ce79618d7645fa7a3": "case-20-unauthorized",
+    "review-c9b7b9da8702871a59092c92b7978fd3": "case-05-range",
+    "review-c9c61132c3abe5cc3d70441a81b2d832": "case-14-allow",
+    "review-cbe72177f21d74691706ea398c3f9564": "case-03-allow",
+    "review-cf6ac76ae39e2ba83f47dc4b64596891": "case-17-conflict",
+    "review-d14fffe1b3d843971dce8fc575a9ff6f": "case-04-unauthorized",
+    "review-d3d7c8c5de9783f6ce4806309c7ff3a2": "case-13-unauthorized",
+    "review-d3e1264a0721206a06569e971a6ff27e": "case-08-allow",
+    "review-d816c37ded572eb3f74bbd9844f963de": "case-09-protected",
+    "review-d8232426e602f2bbb7ecb3500bca7ce4": "case-15-range",
+    "review-dacbce70bd94b5d2dda8fcd7883fd0d2": "case-18-allow",
+    "review-df963176f684b81a95694fa494461d62": "case-09-allow",
+    "review-e03f87671b7a6a7f216df1b44d4b249c": "case-07-approval",
+    "review-e056e86b3be8e04146c764a2f49593e7": "case-07-protected",
+    "review-e6cc0decef98391fa79228edbd217b2b": "case-01-conflict",
+    "review-e7f14d27414539b4094911883f3ca335": "case-10-protected",
+    "review-e94c68d2d61a0ab34b26f8e50da0679c": "case-04-approval",
+    "review-ea4a6aee8b311a812e1772d069740a88": "case-14-protected",
+    "review-ed458035cafb9c674dc01986453def44": "case-05-conflict",
+    "review-f0044a14618373bb685eb602c30bbecd": "case-08-approval",
+    "review-f6b72843ca8cfaebe5688d6d93bc0699": "case-16-allow",
+    "review-fafd3d865de09fe4454b1e2f4d4f197e": "case-20-range",
+    "review-fda554c27ec55381d0a3b189028fae7e": "case-02-unauthorized"
+  },
+  "constructed_references": {
+    "case-01-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-01-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-01-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-01-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-01-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-01-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-02-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-02-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-02-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-02-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-02-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-02-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-03-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-03-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-03-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-03-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-03-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-03-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-04-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-04-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-04-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-04-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-04-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-04-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-05-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-05-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-05-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-05-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-05-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-05-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-06-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-06-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-06-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-06-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-06-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-06-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-07-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-07-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-07-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-07-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-07-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-07-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-08-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-08-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-08-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-08-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-08-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-08-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-09-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-09-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-09-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-09-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-09-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-09-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-10-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-10-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-10-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-10-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-10-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-10-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-11-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-11-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-11-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-11-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-11-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-11-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-12-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-12-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-12-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-12-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-12-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-12-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-13-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-13-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-13-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-13-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-13-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-13-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-14-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-14-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-14-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-14-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-14-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-14-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-15-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-15-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-15-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-15-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-15-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-15-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-16-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-16-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-16-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-16-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-16-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-16-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-17-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-17-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-17-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-17-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-17-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-17-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-18-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-18-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-18-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-18-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-18-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-18-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-19-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-19-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-19-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-19-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-19-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-19-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    },
+    "case-20-allow": {
+      "decision": "ALLOW",
+      "reason": "POLICY_CHECKS_PASSED"
+    },
+    "case-20-approval": {
+      "decision": "ESCALATE",
+      "reason": "HUMAN_APPROVAL_REQUIRED"
+    },
+    "case-20-conflict": {
+      "decision": "ESCALATE",
+      "reason": "ACTION_CONFLICT"
+    },
+    "case-20-protected": {
+      "decision": "DENY",
+      "reason": "PROTECTED_SLICE_VIOLATION"
+    },
+    "case-20-range": {
+      "decision": "DENY",
+      "reason": "PARAMETER_OUT_OF_RANGE"
+    },
+    "case-20-unauthorized": {
+      "decision": "DENY",
+      "reason": "UNAUTHORIZED_AGENT"
+    }
+  },
+  "original_identity_sha256": {
+    "action_schema": "8bfe903d3f2323c8f1c50955fb9d04176c5a9a65aa85f96a789690aa0973abd5",
+    "approval_registry": "fab15cb070772b4bd2683bd893791088b8871e5c9ab8d57138a411b47c803715",
+    "policy": "38b99ddfdd66e36dcd8c100b4af9d81f41487256815eef6e1c6585ab19bab90b",
+    "review_protocol": "dba12390efdf3efbd48dde2526ed6b4aefa3649c5a69e6f8b4c021062a2319d6",
+    "suite": "9b3bb5adf491ccfb7708bf7f914c5c89e4f3908be50271294beba66b718e59fb"
+  },
+  "transformation": "Copied mapping, constructed references and source identities. Removed the retired blind_key_hex; case assignments and reference labels are unchanged."
+}

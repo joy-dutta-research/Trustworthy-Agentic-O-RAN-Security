@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "scope": "Auxiliary answer-masked 120-case policy-consistency review; not Stage 8 or runtime LLM evaluation.",
+  "source_manifest_file_count": 21,
+  "case_count": 120,
+  "reviewers": {
+    "reviewer_a": {
+      "case_count": 120,
+      "label_counts": {
+        "ALLOW": 20,
+        "DENY": 60,
+        "ESCALATE": 40,
+        "INSUFFICIENT_INFORMATION": 0
+      },
+      "reference_matching_count": 120,
+      "ambiguity_count": 0,
+      "nonempty_rule_reference_count": 120,
+      "empty_rule_reference_count": 0,
+      "empty_rule_refs_by_decision": {
+        "ALLOW": 0,
+        "DENY": 0,
+        "ESCALATE": 0,
+        "INSUFFICIENT_INFORMATION": 0
+      },
+      "policy_critique_count": 10,
+      "run_metadata": {
+        "model_name_as_displayed": "not_available",
+        "mode_as_displayed": "not_available",
+        "run_date_utc": "2026-09-22",
+        "tools_used": [
+          "functions.exec: local JavaScript JSON parsing, review-record formatting, and case-ID coverage checks.",
+          "exec_command: PowerShell local ZIP attachment reading via System.IO.Compression.ZipFile, ConvertFrom-Json/ConvertTo-Json, UTC date formatting, output-file writing, and Test-Json output-schema validation."
+        ],
+        "unavailable_settings": [
+          "model_name_as_displayed",
+          "mode_as_displayed",
+          "reasoning_effort",
+          "seed",
+          "temperature"
+        ]
+      }
+    },
+    "reviewer_b": {
+      "case_count": 120,
+      "label_counts": {
+        "ALLOW": 20,
+        "DENY": 60,
+        "ESCALATE": 40,
+        "INSUFFICIENT_INFORMATION": 0
+      },
+      "reference_matching_count": 120,
+      "ambiguity_count": 0,
+      "nonempty_rule_reference_count": 80,
+      "empty_rule_reference_count": 40,
+      "empty_rule_refs_by_decision": {
+        "ALLOW": 20,
+        "DENY": 0,
+        "ESCALATE": 20,
+        "INSUFFICIENT_INFORMATION": 0
+      },
+      "policy_critique_count": 3,
+      "run_metadata": {
+        "mode_as_displayed": "not_available",
+        "model_name_as_displayed": "not_available",
+        "run_date_utc": "2026-09-22",
+        "tools_used": [],
+        "unavailable_settings": [
+          "mode_as_displayed",
+          "model_name_as_displayed"
+        ]
+      }
+    }
+  },
+  "pairwise_matching_count": 120,
+  "pairwise_agreement_fraction": 1.0,
+  "joint_decided_count": 120,
+  "cohens_kappa_among_joint_decided": 1.0,
+  "confusion_reviewer_a_rows_reviewer_b_columns": {
+    "ALLOW": {
+      "ALLOW": 20,
+      "DENY": 0,
+      "ESCALATE": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "DENY": {
+      "ALLOW": 0,
+      "DENY": 60,
+      "ESCALATE": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "ESCALATE": {
+      "ALLOW": 0,
+      "DENY": 0,
+      "ESCALATE": 40,
+      "INSUFFICIENT_INFORMATION": 0
+    },
+    "INSUFFICIENT_INFORMATION": {
+      "ALLOW": 0,
+      "DENY": 0,
+      "ESCALATE": 0,
+      "INSUFFICIENT_INFORMATION": 0
+    }
+  },
+  "source_reference_counts": {
+    "ETSI-TR-104106:T-xApp-01": 24,
+    "ETSI-TR-104106:T-xApp-02": 6,
+    "ETSI-TR-104106:T-xApp-04": 30,
+    "NetsLab-5GORAN-IDD": 60
+  },
+  "disagreement_case_ids": [],
+  "abstention_or_ambiguity_case_ids": [],
+  "model_identification": {
+    "review_round": "model_review_round1",
+    "review_date_utc": "2026-09-22",
+    "scope": "Auxiliary model-assisted policy consistency review of 120 constructed cases; separate from completed initial PoC Stages 0-7.",
+    "reviewer_a": {
+      "operator_reported_model": "GPT-6 Astra",
+      "operator_reported_mode": "Ultra",
+      "displayed_model_verified_from_returned_artifacts": false,
+      "displayed_mode_verified_from_returned_artifacts": false,
+      "original_response_model_field": "not_available",
+      "original_response_mode_field": "not_available",
+      "accompanying_run_notes_available": true
+    },
+    "reviewer_b": {
+      "operator_reported_model": "Gemini Pro",
+      "operator_reported_mode": "Extended",
+      "planned_model_setting": "Gemini 3.1 Pro Extended",
+      "displayed_model_verified_from_returned_artifacts": false,
+      "displayed_mode_verified_from_returned_artifacts": false,
+      "original_response_model_field": "not_available",
+      "original_response_mode_field": "not_available",
+      "accompanying_run_notes_available": false
+    },
+    "interpretation": "Names and settings are the author's reported identifications, not a verified API model-version record. Original metadata is preserved unchanged. Future reviews can improve provenance with separate operator logs or redacted interface captures."
+  },
+  "interpretation": "Agreement with declared fixture rules supports policy-interpretation consistency. Constructed references are not independent ground truth. Human policy approval, service-enforced isolation and displayed model versions are not established by these records.",
+  "historical_comparison_checked": true
+}

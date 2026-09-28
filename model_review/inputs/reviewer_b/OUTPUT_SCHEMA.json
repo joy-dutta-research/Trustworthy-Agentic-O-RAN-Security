@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "decisions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "ambiguity": {
+            "type": "boolean"
+          },
+          "decision": {
+            "enum": [
+              "ALLOW",
+              "DENY",
+              "ESCALATE",
+              "INSUFFICIENT_INFORMATION"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "rationale": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "review_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "rule_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "ambiguity",
+          "decision",
+          "notes",
+          "rationale",
+          "review_id",
+          "rule_refs"
+        ],
+        "type": "object"
+      },
+      "maxItems": 120,
+      "minItems": 120,
+      "type": "array"
+    },
+    "package_id": {
+      "const": "model_review_round1-reviewer_b"
+    },
+    "policy_critique": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "run_metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "mode_as_displayed": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "model_name_as_displayed": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "run_date_utc": {
+          "format": "date",
+          "type": "string"
+        },
+        "tools_used": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "unavailable_settings": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "mode_as_displayed",
+        "model_name_as_displayed",
+        "run_date_utc",
+        "tools_used",
+        "unavailable_settings"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "package_id",
+    "run_metadata",
+    "decisions",
+    "policy_critique"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,1385 @@
+{
+  "package_id": "model_review_round1-reviewer_a",
+  "run_metadata": {
+    "model_name_as_displayed": "not_available",
+    "mode_as_displayed": "not_available",
+    "run_date_utc": "2026-09-22",
+    "tools_used": [
+      "functions.exec: local JavaScript JSON parsing, review-record formatting, and case-ID coverage checks.",
+      "exec_command: PowerShell local ZIP attachment reading via System.IO.Compression.ZipFile, ConvertFrom-Json/ConvertTo-Json, UTC date formatting, output-file writing, and Test-Json output-schema validation."
+    ],
+    "unavailable_settings": [
+      "model_name_as_displayed",
+      "mode_as_displayed",
+      "reasoning_effort",
+      "seed",
+      "temperature"
+    ]
+  },
+  "decisions": [
+    {
+      "review_id": "review-361f6e7354fcf459297643144c954e84",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches SMO, xapp, xapp-test-14, and xapp_execution_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "interface_actions.SMO",
+        "action_parameter_contracts.isolate_xapp.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-e58326dac00a6999ceb2549167d8b480",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-06, and ue_admission_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "interface_actions.E2",
+        "action_parameter_contracts.quarantine_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-2518cba1221d4a35509b38bb30f62e68",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue is disruptive and targets slice-emergency, a protected slice.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-46b698f622d49c0e072782594c48a8ef",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk isolate_xapp proposal has no approval; both its risk and action require trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-49800904546ded0d2605f6405e71edbe",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to quarantine a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7d363a7dbcaa847d04a6aa0dbb1d30a5",
+      "decision": "DENY",
+      "rationale": "quarantine_ue duration_seconds is 600, above the inclusive maximum of 300.",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-aadb1aaa97f6b69dfefd4340ed8bb65a",
+      "decision": "ALLOW",
+      "rationale": "The authorized isolate_xapp proposal satisfies the hard rules, has no active conflict, and has an unexpired registered approval with attested matching proposal hash. Age equals its 300-second TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.SMO",
+        "parameter_bounds.isolate_xapp.duration_seconds",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-d227786ca03560bcf2f205d6e4a53b4f",
+      "decision": "ESCALATE",
+      "rationale": "The rate_limit_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-a9399d191e66b3f4dfcef79de749933e",
+      "decision": "ALLOW",
+      "rationale": "The authorized isolate_xapp proposal satisfies the hard rules, has no active conflict, and has an unexpired registered approval with attested matching proposal hash. Age equals its 300-second TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.SMO",
+        "parameter_bounds.isolate_xapp.duration_seconds",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-50e1a357124ff198031c3b813f14f4c9",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to rate-limit a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-593750c99e17a38d4c1ebff09b43e649",
+      "decision": "DENY",
+      "rationale": "quarantine_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ab831d91934377bfd87ed361b39457fa",
+      "decision": "DENY",
+      "rationale": "quarantine_ue duration_seconds is 600, above the inclusive maximum of 300.",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-481a47945582f358cf7d02d3bb7e1e3c",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-08, and ue_admission_state; the duration difference does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.quarantine_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-54befc0fed879b9af3e6319a9d60554e",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-03, and traffic_rate_limit; the reduction difference does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.rate_limit_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ff1183c9fdcefdbd936d866758c8101a",
+      "decision": "DENY",
+      "rationale": "isolate_xapp is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-4bc8d907f32aaedf1c4251988a789cb1",
+      "decision": "DENY",
+      "rationale": "quarantine_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-9eab683d1da43c0a2fa305ed93ffbeb5",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to rate-limit a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-abe58efdb79d24f7de6aded69ca510d6",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to rate-limit a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-41a92d29eeab69d9c0d37de08e212947",
+      "decision": "DENY",
+      "rationale": "isolate_xapp is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-b310d6363f8228231d8656b21b4cd450",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-04, and ue_admission_state; the duration difference does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.quarantine_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-e7026d440449056190cb200b692cff5b",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy policy_weight is 1.5, above the inclusive maximum of 1.0.",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-51727c6f53878c73abe7611fc6dd3a54",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk isolate_xapp proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-5f23b93150af540af86dba03e0ec9c17",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk isolate_xapp proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-fcd5c18c1367f9860e99edca7744babc",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk isolate_xapp proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-1b068915e0ac4d0da67fb3c6b43be64b",
+      "decision": "ALLOW",
+      "rationale": "The authorized A1 policy modification has weight 0.5, required rollback, an unexpired registered approval with attested matching hash, and no active conflict. Its 300-second age equals its TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.A1",
+        "parameter_bounds.modify_a1_policy.policy_weight",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-dadde9fa448b48a113f1a947d1ddce60",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may quarantine this unprotected UE for 120 seconds at medium risk. Required rollback is present, age equals the 300-second TTL, and there is no active conflict or approval requirement.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.quarantine_ue.duration_seconds",
+        "minimum_risk_by_action.quarantine_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-073288416217b00cae83a18492bdddf5",
+      "decision": "DENY",
+      "rationale": "isolate_xapp is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-76c5d41a06e0e565585e195e05ca9737",
+      "decision": "ALLOW",
+      "rationale": "The authorized A1 policy modification has weight 0.5, required rollback, an unexpired registered approval with attested matching hash, and no active conflict. Its 300-second age equals its TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.A1",
+        "parameter_bounds.modify_a1_policy.policy_weight",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-3212a48cc9e05e0cc4b5be4991d5d7d4",
+      "decision": "DENY",
+      "rationale": "isolate_xapp duration_seconds is 1200, above the inclusive maximum of 600.",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-5abefc87010a4dfe88faa7f56bf7e0b9",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to isolate an xApp. Trusted approval cannot override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-65579904be787aa88067868183f4f4db",
+      "decision": "ALLOW",
+      "rationale": "The authorized isolate_xapp proposal meets the hard rules, has no active conflict, and has an unexpired registered approval with attested matching hash. Age equals its 300-second TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.SMO",
+        "parameter_bounds.isolate_xapp.duration_seconds",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-3ccb6948d482ca97b35ae866f650253c",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may apply a 30-percent reduction to this unprotected UE at medium risk. Required rollback is present, age equals the 300-second TTL, and no active conflict or approval requirement applies.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.rate_limit_ue.reduction_percent",
+        "minimum_risk_by_action.rate_limit_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-42bb90769704babc6309d43cbf19f0a2",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches A1, policy, policy-test-18, and a1_policy_weight. Its different weight and approval hash do not remove the structural conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.modify_a1_policy.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-211e6a52d66a27ddd7aebe1adb2e8059",
+      "decision": "ALLOW",
+      "rationale": "The authorized isolate_xapp proposal meets the hard rules, has no active conflict, and has an unexpired registered approval with attested matching hash. Age equals its 300-second TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.SMO",
+        "parameter_bounds.isolate_xapp.duration_seconds",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-95ac94a8e84542d321bc46bf30414e18",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-09, and traffic_rate_limit; its different reduction does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.rate_limit_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-4ec6951946809bf261a57c7303714a64",
+      "decision": "ALLOW",
+      "rationale": "The authorized isolate_xapp proposal meets the hard rules, has no active conflict, and has an unexpired registered approval with attested matching hash. Age equals its 300-second TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.SMO",
+        "parameter_bounds.isolate_xapp.duration_seconds",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-087178b122e5e4bfd7c0c4358d3053db",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk modify_a1_policy proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-6f703e57b9bc106052f9e042c775ef5e",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-349e7efab2cf7407a9608846c16168eb",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may apply a 30-percent reduction to this unprotected UE at medium risk. Required rollback is present, age equals the 300-second TTL, and no active conflict or approval requirement applies.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.rate_limit_ue.reduction_percent",
+        "minimum_risk_by_action.rate_limit_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-9e7f9fa384a0182e83d10e6caa39e2b3",
+      "decision": "DENY",
+      "rationale": "The authenticated observer cannot modify an A1 policy. Trusted approval does not override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7442123846fb80b6b8df89c035d95844",
+      "decision": "DENY",
+      "rationale": "The authenticated observer cannot modify an A1 policy. Trusted approval does not override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-3aa82b3ffd279de05e67c2738f04acf6",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to rate-limit a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ed6b0361819fc40e4cc7980f0bd10322",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches A1, policy, policy-test-19, and a1_policy_weight; its different weight does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.modify_a1_policy.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-e3aff2a07923e6d6ae42da0dcb18dec4",
+      "decision": "DENY",
+      "rationale": "isolate_xapp is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-5843e76d42db3992a3c1fd082c5d4e02",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches SMO, xapp, xapp-test-13, and xapp_execution_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.isolate_xapp.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-37da14fe65e5c892525446581a8b62cd",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-10, and ue_admission_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.quarantine_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-398d8216921d7bbccd2491511ffc230c",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue reduction_percent is 95, above the inclusive maximum of 80.",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-e6c81556c5d762b437d8c641cffff30f",
+      "decision": "DENY",
+      "rationale": "isolate_xapp is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-2dd70f091cbc9391e0cd24922836b7ea",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy policy_weight is 1.5, above the inclusive maximum of 1.0.",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-b37f55c7a4b9622688f83f9444d2453d",
+      "decision": "ESCALATE",
+      "rationale": "The rate_limit_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-046063648b94e6f43e8e991a6c42f3e7",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue reduction_percent is 95, above the inclusive maximum of 80.",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7a99ba27923080c5b8e3531e1bb7c6d3",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may quarantine this unprotected UE for 120 seconds at medium risk. Required rollback is present, age equals the 300-second TTL, and there is no active conflict or approval requirement.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.quarantine_ue.duration_seconds",
+        "minimum_risk_by_action.quarantine_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-3d4902f01bf67936af3c74df549f2552",
+      "decision": "DENY",
+      "rationale": "quarantine_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-a342c9ec960d53978ed1ae384efba5fa",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may apply a 30-percent reduction to this unprotected UE at medium risk. Required rollback is present, age equals the 300-second TTL, and no active conflict or approval requirement applies.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.rate_limit_ue.reduction_percent",
+        "minimum_risk_by_action.rate_limit_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-8739896e7cb7614bbb9040df19fe6bf8",
+      "decision": "ALLOW",
+      "rationale": "The authorized A1 policy modification has weight 0.5, required rollback, an unexpired registered approval with attested matching hash, and no active conflict. Its 300-second age equals its TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.A1",
+        "parameter_bounds.modify_a1_policy.policy_weight",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7a6a0b26ef04ce581755b2239182ef64",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-32339261891429c35824bafe0f790b61",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue reduction_percent is 95, above the inclusive maximum of 80.",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-19a94043941a8abda30fc6e3d7445a73",
+      "decision": "ESCALATE",
+      "rationale": "The quarantine_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-22efceafd3e658e571bee935bd786420",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to isolate an xApp. Trusted approval cannot override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-724be4e08ba785a4cac0112eb3567fef",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches SMO, xapp, xapp-test-11, and xapp_execution_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.isolate_xapp.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-8f0f18daf319867ec8c34cd12ff8650a",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to isolate an xApp. Trusted approval cannot override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-8af98a24047e46fdfcf1cd3fc1d03618",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-db27c2c4ae921a786721a2c11a816d86",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may apply a 30-percent reduction to this unprotected UE at medium risk. Required rollback is present, age equals the 300-second TTL, and no active conflict or approval requirement applies.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.rate_limit_ue.reduction_percent",
+        "minimum_risk_by_action.rate_limit_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-68a00b90e64d8ea45b28b96ba6c0bcfc",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk isolate_xapp proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-4fb3e4ca1975bcdefd2737941af99513",
+      "decision": "ESCALATE",
+      "rationale": "The rate_limit_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-eb1488ff2fb8597dc326a572f5c2bdee",
+      "decision": "DENY",
+      "rationale": "isolate_xapp duration_seconds is 1200, above the inclusive maximum of 600.",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-616053b3454be2396cc2540082e049aa",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches A1, policy, policy-test-17, and a1_policy_weight; its different weight does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.modify_a1_policy.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7c3d3680aae2dfb613f55dfa6be5e0cd",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may quarantine this unprotected UE for 120 seconds at medium risk. Required rollback is present, age equals the 300-second TTL, and there is no active conflict or approval requirement.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.quarantine_ue.duration_seconds",
+        "minimum_risk_by_action.quarantine_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-48174c359f782e3ede4d66912bd54e06",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-48aeb9d231cd2a327199dc4807d466d0",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to quarantine a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-35bf6eb258e1385828ebfc1255a76920",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may quarantine this unprotected UE for 120 seconds at medium risk. Required rollback is present, age equals the 300-second TTL, and there is no active conflict or approval requirement.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.quarantine_ue.duration_seconds",
+        "minimum_risk_by_action.quarantine_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-274c49c28b77bc862eb49174a2f72390",
+      "decision": "DENY",
+      "rationale": "The authenticated observer cannot modify an A1 policy. Trusted approval does not override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-d800612de9763d78a45755d04024e09e",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may quarantine this unprotected UE for 120 seconds at medium risk. Required rollback is present, age equals the 300-second TTL, and there is no active conflict or approval requirement.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.quarantine_ue.duration_seconds",
+        "minimum_risk_by_action.quarantine_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-eb8fd320cf33ec8f8d24a3c41f6d384f",
+      "decision": "ALLOW",
+      "rationale": "The authorized A1 policy modification has weight 0.5, required rollback, an unexpired registered approval with attested matching hash, and no active conflict. Its 300-second age equals its TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.A1",
+        "parameter_bounds.modify_a1_policy.policy_weight",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": "The incident label conflicting_a1_policy does not establish an active-action conflict; active_actions is empty."
+    },
+    {
+      "review_id": "review-3792171b10c5a1ca4e03f5fda7fed152",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue reduction_percent is 95, above the inclusive maximum of 80.",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-2f06a681ef20f3bf5de040a6d567d376",
+      "decision": "DENY",
+      "rationale": "quarantine_ue duration_seconds is 600, above the inclusive maximum of 300.",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-5f1ef33e228c9274e8acd8578c344064",
+      "decision": "DENY",
+      "rationale": "quarantine_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ed32c3d7d6dbc7d42a5181c389eceb32",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk modify_a1_policy proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-627ac4f32a59a9edd4f830f845b22db7",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to quarantine a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ef76ee9a374a87f1310c969806eb15a1",
+      "decision": "DENY",
+      "rationale": "isolate_xapp duration_seconds is 1200, above the inclusive maximum of 600.",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-d6fef622f5193e89636626a980621287",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches SMO, xapp, xapp-test-12, and xapp_execution_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.isolate_xapp.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-793c48157251536fee81b66d709a8867",
+      "decision": "DENY",
+      "rationale": "quarantine_ue duration_seconds is 600, above the inclusive maximum of 300.",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-e9e93a81b2edc952c2dd9dadb2d37d1a",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-c97fa8dc9605c8e8a81ea4f1bcd74236",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-05, and traffic_rate_limit; its different reduction does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.rate_limit_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-5e5e614ee83bb0a6ce7ad06ad147aa3b",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches A1, policy, policy-test-20, and a1_policy_weight; its different weight does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.modify_a1_policy.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-bdee654430fa29672f67cfef675d6632",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-02, and ue_admission_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.quarantine_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-eee7c5606d90f70ef577966d477a9f75",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-07, and traffic_rate_limit; its different reduction does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.rate_limit_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7377c0f0b889bb7864c14a9edd162003",
+      "decision": "ESCALATE",
+      "rationale": "The rate_limit_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-1a56af86d371e99bdca9f8c30703e6c7",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-0916739682500ab1a6a85460c8454170",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-334c3bdbbcad654f27b88bac93005a94",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to quarantine a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-95aa3e32d0764308a4496cc0d3bf441b",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy is disruptive and targets protected slice-emergency. Trusted approval does not override this hard restriction.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-b814d7a0049862dbe7f085f719aad77c",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to quarantine a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-08f3c9f0482c1ad8c866c84b93b073de",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to isolate an xApp. Trusted approval cannot override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-01254565b07f804ed5ecccf6eef396a2",
+      "decision": "ALLOW",
+      "rationale": "The authenticated responder may apply a 30-percent reduction to this unprotected UE at medium risk. Required rollback is present, age equals the 300-second TTL, and no active conflict or approval requirement applies.",
+      "rule_refs": [
+        "roles.security_responder",
+        "interface_actions.E2",
+        "parameter_bounds.rate_limit_ue.reduction_percent",
+        "minimum_risk_by_action.rate_limit_ue",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-92aaa1e63d434c624080fd296df059c9",
+      "decision": "ALLOW",
+      "rationale": "The authorized A1 policy modification has weight 0.5, required rollback, an unexpired registered approval with attested matching hash, and no active conflict. Its 300-second age equals its TTL.",
+      "rule_refs": [
+        "roles.security_orchestrator",
+        "interface_actions.A1",
+        "parameter_bounds.modify_a1_policy.policy_weight",
+        "approval_required_actions",
+        "max_ttl_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-bb488b59a8062f3c74357a4d81dc2efb",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy policy_weight is 1.5, above the inclusive maximum of 1.0.",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-15d8308f02253d4fbb278964377bf2aa",
+      "decision": "ESCALATE",
+      "rationale": "The quarantine_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-bc6b16a61f3756f01b323bcb3d7bf125",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk modify_a1_policy proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-0994af362e4ac8b86ffa5ea94bf2ac24",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue reduction_percent is 95, above the inclusive maximum of 80.",
+      "rule_refs": [
+        "parameter_bounds.rate_limit_ue.reduction_percent"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-b5f92ce3552b7c7e5bb2a26e0516bfdb",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk modify_a1_policy proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-b7c34cadd24872e29c9c33548eb7d00c",
+      "decision": "ESCALATE",
+      "rationale": "The high-risk modify_a1_policy proposal lacks required trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk",
+        "approval_required_actions"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ec190f3dee68657245854dcccbcce762",
+      "decision": "DENY",
+      "rationale": "The authenticated observer cannot modify an A1 policy. Trusted approval does not override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-bacd5fc63249af5d60b2cb8af9bb280e",
+      "decision": "ESCALATE",
+      "rationale": "The quarantine_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-134ef15c44eb42af0839731474b3232b",
+      "decision": "DENY",
+      "rationale": "The authenticated observer cannot modify an A1 policy. Trusted approval does not override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7d10d27a567deb9c7331c2c20a24050c",
+      "decision": "ESCALATE",
+      "rationale": "The quarantine_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-d7b063c257465724f704013377349aaa",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches A1, policy, policy-test-16, and a1_policy_weight; its different weight does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.modify_a1_policy.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-39da79538715710fb6af5ae72d11c023",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches SMO, xapp, xapp-test-15, and xapp_execution_state; its different duration does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.isolate_xapp.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-83bb24e36dd148d53491095822df82bb",
+      "decision": "ESCALATE",
+      "rationale": "The quarantine_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-8d63301a593a89efc311d72d5c8cec8e",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy policy_weight is 1.5, above the inclusive maximum of 1.0.",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-3e544840d3cdcf31f4de949c0e1e8aee",
+      "decision": "DENY",
+      "rationale": "isolate_xapp duration_seconds is 1200, above the inclusive maximum of 600.",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-38cb2841fafb0ac13ba0127497aca1c4",
+      "decision": "DENY",
+      "rationale": "rate_limit_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-7e8ab9073fad3f21a841de793a7d03f8",
+      "decision": "ESCALATE",
+      "rationale": "The rate_limit_ue proposal declares high risk but has no trusted approval.",
+      "rule_refs": [
+        "approval_required_for_risk"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-15d2faf096f809534d623e5079aa4f42",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to rate-limit a UE.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-497651bc1ebf4def1a141dde96007b6c",
+      "decision": "DENY",
+      "rationale": "quarantine_ue is disruptive and targets protected slice-emergency.",
+      "rule_refs": [
+        "disruptive_actions",
+        "protected_slices"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-ff2f0b8c373f92f1a5ccf43a09eb935a",
+      "decision": "DENY",
+      "rationale": "modify_a1_policy policy_weight is 1.5, above the inclusive maximum of 1.0.",
+      "rule_refs": [
+        "parameter_bounds.modify_a1_policy.policy_weight"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-2638524fcbfa5380847c0c16d2fc9d10",
+      "decision": "ESCALATE",
+      "rationale": "A different active action matches E2, ue, ue-test-01, and traffic_rate_limit; its different reduction does not remove the conflict.",
+      "rule_refs": [
+        "action_parameter_contracts.rate_limit_ue.control_parameter",
+        "INSTRUCTIONS.md rubric 5"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-a3b52b7b4308972398af9ef422f1203e",
+      "decision": "DENY",
+      "rationale": "The authenticated observer is not permitted to isolate an xApp. Trusted approval cannot override role permissions.",
+      "rule_refs": [
+        "principals.agent-observer-01",
+        "roles.observer"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-f8468087d2a432f838c3ad3789ea7c4b",
+      "decision": "DENY",
+      "rationale": "quarantine_ue duration_seconds is 600, above the inclusive maximum of 300.",
+      "rule_refs": [
+        "parameter_bounds.quarantine_ue.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    },
+    {
+      "review_id": "review-3a97371950856f717e96816575cb9962",
+      "decision": "DENY",
+      "rationale": "isolate_xapp duration_seconds is 1200, above the inclusive maximum of 600.",
+      "rule_refs": [
+        "parameter_bounds.isolate_xapp.duration_seconds"
+      ],
+      "ambiguity": false,
+      "notes": ""
+    }
+  ],
+  "policy_critique": [
+    "The supplied rubric determines every case decision; no case requires INSUFFICIENT_INFORMATION. Missing required approval is explicitly an ESCALATE condition. These decisions establish compliance with the written fixture rules, not whether the proposed action is necessary, effective, or operationally safe.",
+    "POLICY.json is not a complete standalone specification: INSTRUCTIONS.md supplies denial precedence, exact parameter-field semantics, identity matching, active-action conflict handling, approval binding, and time-boundary interpretation. Version these normative semantics together to reduce divergence between implementations. The rubric resolves them for this review.",
+    "ACTION_SCHEMA.json leaves parameters as a generic object, while action_parameter_contracts names fields and parameter_bounds supplies numeric limits. Explicit per-action value schemas would clarify numeric types, fractional durations, and the admissible content of message and snapshot_id. The rollback procedure also permits an empty string at the schema level; required rollback should define what constitutes an adequate procedure.",
+    "protected_slices relies on a declared slice_id, which ACTION_SCHEMA.json permits to be null. The package does not specify trusted target-to-slice resolution or the effects of an xApp or policy on multiple slices. A proposal naming an unprotected slice could affect a protected slice outside that declared scope. This is a policy-adequacy gap, not grounds to invent missing facts in the supplied simulated cases.",
+    "The conflict rule compares only interface, target type, target ID, and control_parameter, ignores active timestamps and values, and exempts the same action_id. Define the target-ID namespace, authenticated active-state lifecycle, atomic check-and-commit behavior, and immutable binding of action_id to proposal content for operational use. Reusing an action_id with changed content could otherwise evade this conflict test; different control parameters may also have interacting effects.",
+    "Trusted approval binding is explicit and usable in this offline fixture. Active actions whose approval hashes do not match still participate in conflict checking because the rubric requires structural validity, not reauthorization of those actions. Operational policy should separately specify registry authentication, approver identity, revocation freshness, and whether approval remains valid when policy or execution context changes.",
+    "roles and minimum_risk_by_action constrain individual requests, but there is no cumulative disruption budget, action-frequency limit, or trusted assessment of declared risk above the minimum. Repeated individually permissible actions could cause sustained disruption. expected_kpi and rollback text do not establish measurable success, a valid recoverable snapshot, or verified recovery.",
+    "rollback_policy requires approval and high risk but is absent from disruptive_actions, so the protected-slice and disruptive-action rollback restrictions do not apply to it under this rubric. Restoring an unsafe snapshot on a protected slice is an adequacy counterexample worth human adjudication. Conversely, the absolute protected_slices restriction can block containment even with human approval; any emergency exception would need an explicit policy change.",
+    "The 120 cases cover rate_limit_ue, quarantine_ue, isolate_xapp, and modify_a1_policy, but not notify_operator or rollback_policy. The package lacks tests for malformed proposals and active records, missing or mismatched principals, interface or target-type violations, exact numeric endpoints, stale or future proposals, TTL overflow or expiry, risk below minimum, missing rollback, and revoked, expired, or mismatched proposal approvals. All proposals use the same evaluation time and a 300-second age equal to their TTL. Results therefore do not validate the full rule surface or precedence among simultaneous failures.",
+    "Dataset labels and ETSI references provide provenance pointers only. They do not establish incident truth, a correct target mapping, or causal benefit from the action; the numeric thresholds are illustrative operator choices. Human adjudication is required before research or deployment claims, and model reviews may share correlated errors."
+  ]
+}

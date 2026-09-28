@@ -1,0 +1,116 @@
+[
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "census",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/census"
+  },
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "dataset_audit",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/dataset_audit"
+  },
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "natural_panel_analysis",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/natural_panel_analysis"
+  },
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "netslab",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/netslab"
+  },
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "panels",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/panels"
+  },
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "sampling_protocol",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/sampling_protocol"
+  },
+  {
+    "kind": "policy_and_dataset_summary",
+    "item": "validity",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/policy_and_datasets/validity"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:netslab:original",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:original"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:netslab:reduction60",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction60"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:netslab:reduction90",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:reduction90"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:netslab:ttl300",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl300"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:netslab:ttl600",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:netslab:ttl600"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:budget2000",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget2000"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:budget500",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:budget500"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:original",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:original"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:reduction60",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction60"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:reduction90",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:reduction90"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:ttl300",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl300"
+  },
+  {
+    "kind": "sensitivity_summary",
+    "item": "sensitivity:nidd:ttl600",
+    "equal_across_windows_hosts": true,
+    "source": "evidence/summaries/windows_comparison.json#/full_campaign/sensitivity/sensitivity:nidd:ttl600"
+  }
+]

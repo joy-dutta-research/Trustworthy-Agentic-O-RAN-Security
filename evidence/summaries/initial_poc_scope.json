@@ -1,0 +1,105 @@
+{
+  "recorded_utc": "2026-09-24T12:38:42.687804+00:00",
+  "classification": "INITIAL_PROOF_OF_CONCEPT_SCOPE_NOT_ORIGINAL_FULL_FINAL_STUDY",
+  "owner_direction": "Owner explicitly prioritized initial proof-of-concept results across Orders 0–7, finishing present bounded test ASAP and avoiding unnecessary expansion.",
+  "orders_0_5": {
+    "mode": "FULL_FROZEN_WINDOWS_REGENERATION_AND_ONE_PERFORMANCE_CAMPAIGN",
+    "regenerated_cases": 120777,
+    "eligible_census": 733693,
+    "comparator_evaluations": 2934772,
+    "full_partitions": 19,
+    "final_performance_cells": 1820,
+    "excluded_performance_pilots": 84,
+    "policy_code_settings_seeds": "UNCHANGED",
+    "optional_extra_frozen_replay": "OMITTED_IF_FULL_REGENERATION_VALIDATES"
+  },
+  "order_6": {
+    "mode": "EXPLORATORY_TECHNICAL_PACKET_PILOT",
+    "source_sha256": "c439be5ae5ee5896f01617f0c2ffc4a0a4b20003f187a46542f7bf85a7d19f19",
+    "methods": [
+      "no_action",
+      "fixed_rule",
+      "current_gate",
+      "evidence_feedback"
+    ],
+    "scenarios": [
+      "persistent_flood",
+      "benign_burst",
+      "ineffective_action"
+    ],
+    "repetitions_per_cell": 3,
+    "total_episodes": 36,
+    "order_seed": 220926,
+    "attempts": "One corrected pilot, gated by the existing fixed qualification/24 paired diagnostics/4 stress episodes. Preserve all preceding failed attempts separately.",
+    "source_labels": "Retain PILOT_NOT_CONFIRMATORY and all original status labels. Never rename pilot as final."
+  },
+  "order_7": {
+    "mode": "SAME_HARDWARE_CLEAN_ENVIRONMENT_POC_REPEAT_AND_WINDOWS_CROSS_HOST_COMPARISON",
+    "guest": "ORAN-Security-CleanRepeat",
+    "source": "Exact same verified v7 source and settings",
+    "repetitions_per_cell": 3,
+    "total_episodes": 36,
+    "order_seed": 220926,
+    "qualification": "Fresh qualification in the clean VM; readback and isolation guards retained",
+    "report_all_disagreements": true,
+    "pool_host_timings": false
+  },
+  "analysis": {
+    "type": "Descriptive feasibility and reproducibility",
+    "all_methods_scenarios_replicates_included": true,
+    "report_delivery_rtt_actions_escalations_rollbacks_and_failures": true,
+    "no_optional_stopping": true,
+    "no_outcome_based_parameter_tuning": true,
+    "no_significance_or_robustness_claim_from_three_replicates": true,
+    "failed_attempts_retained": true,
+    "missing_or_invalid_outcomes_never_imputed_as_success": true
+  },
+  "deferred_from_original_full_study": [
+    "Separately implemented final-study harness",
+    "Factorial varied workload robustness campaign",
+    "Harmful wrong-target actuation and independent service recovery experiment",
+    "Larger fixed final-study replication budget and corresponding full final-protocol repeat"
+  ],
+  "claim_limits": [
+    "No actual O-RAN equipment or E2/radio integration",
+    "No evaluated LLM",
+    "Constructed gateway-case agreement is not detector accuracy",
+    "Pilot feasibility is not proof of framework safety or confirmatory network benefit",
+    "Clean repeat uses the same physical host"
+  ],
+  "time_estimate": {
+    "current_guest_after_launch_minutes": "35–45 expected, with predeclared hard timeout",
+    "clean_repeat_after_launch_minutes": "20–25 expected; to be checked against actual first-pilot duration",
+    "windows": "Several hours; at least 70 minutes of scheduled load offering alone. Not a completion guarantee."
+  },
+  "execution": "Serial only. No Windows measurements alongside either VM. No automatic failed-condition retries.",
+  "completion_labels": "Report completion separately for this scoped initial PoC and the original full-study requirements, which remain deferred.",
+  "privacy": "Private local results; owner review required before shareable return ZIP.",
+  "frozen_config": {
+    "version": "closed-loop-pilot-0.1",
+    "capacity_kbit": 1000,
+    "packet_bytes": 512,
+    "duration_seconds": 20,
+    "legitimate_pps": 100,
+    "background_pps": 120,
+    "flood_pps": 400,
+    "event_start": 4,
+    "event_end": 14,
+    "benign_burst_seconds": 0.6,
+    "alert_pps": 250,
+    "minimum_delivery_ratio": 0.85,
+    "maximum_evidence_age_seconds": 2.5,
+    "corroboration_windows": 2,
+    "reduction_percent": 80,
+    "action_ttl_seconds": 6,
+    "monitor_grace_seconds": 1,
+    "monitor_windows": 2,
+    "minimum_delivery_improvement": 0.1,
+    "maximum_delivery_worsening": 0.1
+  },
+  "editorial_revision": {
+    "utc": "2026-09-24T12:44:20.495679+00:00",
+    "previous_sha256": "8942098669e8d01321822b0370a3a8e7461906a93dbbb69ed40b58da39bd9697",
+    "reason": "Use actual source scenario name persistent_flood instead of descriptive persistent_overload; workload and scientific settings unchanged."
+  }
+}

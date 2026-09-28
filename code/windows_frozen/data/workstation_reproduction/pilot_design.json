@@ -1,0 +1,223 @@
+{
+  "design_version": "evaluation-design/0.2.0-instrumentation-pilot",
+  "status": "PILOT_INSTRUMENTATION_ONLY_NOT_CONFIRMATORY",
+  "policy_version": "0.1.0",
+  "policy_change_authorized": false,
+  "policy_choice": {
+    "source": "user_confirmation_2026-09-23",
+    "decision": "Keep the original policy for this evaluation and report the rollback limitation.",
+    "does_not_imply": "Independent author verification of every reference-table entry or operational policy adequacy."
+  },
+  "comparators": [
+    "direct",
+    "contract",
+    "contract_rbac",
+    "trust_boundary"
+  ],
+  "seeds": {
+    "source_selection": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "control_generation": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019
+    ],
+    "timing_order": [
+      2000
+    ],
+    "state_scaling_order": [
+      3000
+    ],
+    "arrival_schedule_order": [
+      4000
+    ]
+  },
+  "netslab": {
+    "source_mode": "exhaustive_aggregate_context_not_row_sampling",
+    "expected_lower_layer_rows": 45244,
+    "dataset_context_bases": 10,
+    "standards_context_bases": 10,
+    "variants_per_base_per_seed": {
+      "compliant": 10,
+      "single_rule_violation": 20,
+      "two_or_three_rule_violation": 20
+    },
+    "generated_proposals_total": 20000,
+    "deduplicate_semantic_coverage": true
+  },
+  "5gnidd": {
+    "expected_source_rows": 1215890,
+    "expected_eligible_unique_counts": {
+      "Benign": 477716,
+      "ICMPFlood": 1154,
+      "SYNFlood": 8394,
+      "UDPFlood": 246429
+    },
+    "primary": "one_natural_unclipped_proposal_per_eligible_unique_record",
+    "census_timing_repetitions": 1,
+    "sample_sizes_per_label": [
+      25,
+      100,
+      250
+    ],
+    "selection": "nested_seeded_sha256_ranks_of_canonical_records",
+    "full_sampling_encoding_status": "MUST_BE_SPECIFIED_AND_HASHED_BEFORE_STAGE2",
+    "controlled_conformance_proposals_per_seed": 4750,
+    "false_alarm_proposals_per_seed": 250,
+    "natural_sample_metrics": "derive_from_census_not_additional_independent_trials"
+  },
+  "sensitivity": {
+    "change_one_factor_at_a_time": true,
+    "maximum_reduction_percent": [
+      60,
+      80,
+      90
+    ],
+    "maximum_ttl_seconds": [
+      300,
+      600,
+      900
+    ],
+    "upstream_packet_budget_per_second": [
+      500,
+      1000,
+      2000
+    ],
+    "threshold_provenance": "illustrative_not_standard_mandated"
+  },
+  "performance": {
+    "boundaries": [
+      "evaluator_component",
+      "matched_local_processing_with_buffered_event_logging"
+    ],
+    "process_blocks": 1,
+    "warmup_requests_per_method_block": 10,
+    "measured_requests_per_method_block": 100,
+    "percentiles": [
+      50,
+      95,
+      99
+    ],
+    "logical_clock": "fixed_per_case_identically_across_methods",
+    "inference_unit": "paired_process_block_not_repeated_call",
+    "workload_mix_status": "MUST_BE_SPECIFIED_AND_HASHED_BEFORE_MEASUREMENT"
+  },
+  "state_scaling": {
+    "active_action_counts": [
+      0,
+      1,
+      10,
+      100,
+      1000
+    ],
+    "paths": [
+      "no_conflict",
+      "conflict_first",
+      "conflict_last",
+      "malformed_last"
+    ],
+    "process_runs_per_cell": 1,
+    "warmup_requests": 2,
+    "measured_requests": 10,
+    "zero_state_inapplicable_paths": [
+      "conflict_first",
+      "conflict_last",
+      "malformed_last"
+    ]
+  },
+  "offered_load": {
+    "comparators": [
+      "direct",
+      "trust_boundary"
+    ],
+    "worker_count": 1,
+    "active_nonconflicting_actions": 100,
+    "proposals_per_second": [
+      100,
+      1000,
+      5000
+    ],
+    "process_runs_per_cell": 1,
+    "warmup_seconds": 0.25,
+    "measurement_seconds": 0.5,
+    "maximum_drain_seconds": 2,
+    "queue_capacity": 1000,
+    "latency_origin": "scheduled_arrival",
+    "drop_or_timeout_denominator": "all_scheduled_requests",
+    "generator_limited_results": "retain_and_label_not_gateway_capacity",
+    "illustrative_deadlines_ms": [
+      1,
+      10,
+      100
+    ]
+  },
+  "technical_resource_limits": {
+    "instrumentation_only_pilot_required": true,
+    "minimum_free_disk_bytes_before_large_runs": 10737418240,
+    "maximum_new_output_bytes_per_run": 5368709120,
+    "maximum_worker_rss_bytes": 2147483648,
+    "maximum_wall_seconds_per_offline_runner": 3600,
+    "on_limit": "stop_own_worker_retain_partial_artifacts_mark_incomplete_never_pass",
+    "unsupported_monitoring": "fail_preflight_for_large_runs_do_not_assume_limit_is_enforced",
+    "changes": "versioned_before_comparative_measurement_never_silently_relax"
+  },
+  "vm": {
+    "status": "NOT_RUN",
+    "pilot_episodes": 36,
+    "confirmatory_design": "requires_qualified_pilot_then_separate_freeze",
+    "existing_seed_semantics": "execution_order_only_not_traffic_randomness"
+  },
+  "required_before_each_measurement_stage": [
+    "separate_versioned_generator_and_expected_outcome_implementation",
+    "fixture_and_workload_hashes",
+    "frozen_exclusions_and_analysis",
+    "verified_legacy_artifacts_unchanged",
+    "finite_runtime_memory_and_disk_guards",
+    "new_output_directory_with_no_overwrite"
+  ],
+  "claim_limits": [
+    "constructed_cases_and_overlapping_samples_not_independent_safety_trials",
+    "policy_conformance_not_incident_truth_or_mitigation_necessity",
+    "schema_and_python_parser_profiles_not_equivalent",
+    "no_learned_detector_accuracy_or_llm_planner_validation",
+    "no_live_oran_interoperability_or_production_safety_claim"
+  ],
+  "pilot_scope": "Qualify both workloads and boundaries, 1000-entry scaling paths, and the bounded 1000/s producer/consumer. No pilot statistics enter final estimates."
+}

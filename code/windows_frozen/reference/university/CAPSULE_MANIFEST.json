@@ -1,0 +1,132 @@
+{
+  "case_count": 120777,
+  "case_files": 42,
+  "files": [
+    {
+      "bytes": 13425,
+      "original_path": "results/evaluation_v0.2/final_verified_20260923/REPORT.md",
+      "path": "final_verified/REPORT.md",
+      "sha256": "51745678104257b417355c714150762b43cbc26e8fa682a61c4a247f5a79e391"
+    },
+    {
+      "bytes": 886641,
+      "original_path": "results/evaluation_v0.2/final_verified_20260923/analysis.json",
+      "path": "final_verified/analysis.json",
+      "sha256": "f202830c98140a4b0d89b5c3d1a43e09baaaed73785cce12f2549acb246072b0"
+    },
+    {
+      "bytes": 353700,
+      "original_path": "results/evaluation_v0.2/final_verified_20260923/manifest.json",
+      "path": "final_verified/manifest.json",
+      "sha256": "0cb24a16c5186219da1e87c08819523196dc31b66a1e7acdf2e26043d7d0ac1e"
+    },
+    {
+      "bytes": 1842,
+      "original_path": "results/evaluation_v0.2/raw_spot_audit/REPORT.md",
+      "path": "raw_spot_audit/REPORT.md",
+      "sha256": "2af65095fd908947883ea575fc4af934ba13735120fb73dcfccf865322ffc21f"
+    },
+    {
+      "bytes": 27340,
+      "original_path": "results/evaluation_v0.2/raw_spot_audit/audit.json",
+      "path": "raw_spot_audit/audit.json",
+      "sha256": "9438050b4212b550f5c4fb7ce870930d3fc50ca444faf4554df0a7b24fb33e34"
+    },
+    {
+      "bytes": 153081,
+      "original_path": "results/evaluation_v0.2/stage1_validity_20260923T101717Z_f62545ac/work/summary.json",
+      "path": "common_validity/summary.json",
+      "sha256": "cf3c44282f897c11c836193e81766b17f557deb2d715a9099df098e9465eb5b5"
+    },
+    {
+      "bytes": 673,
+      "original_path": "results/evaluation_v0.2/stage1_validity_20260923T101717Z_f62545ac/work/COMPLETE.json",
+      "path": "common_validity/COMPLETE.json",
+      "sha256": "1a7e6170d1aa696b4b5db8e99a4970fd02d4770a8f1805208ca41dd567f14c20"
+    },
+    {
+      "bytes": 34322,
+      "original_path": "results/evaluation_v0.2/stage2_netslab_20260923T101734Z_08a19383/work/summary.json",
+      "path": "netslab/summary.json",
+      "sha256": "e01af7a2b5c52c5edfe43d333a0fcd9134c000b48094e2e184fabd1b797ebaca"
+    },
+    {
+      "bytes": 674,
+      "original_path": "results/evaluation_v0.2/stage2_netslab_20260923T101734Z_08a19383/work/COMPLETE.json",
+      "path": "netslab/COMPLETE.json",
+      "sha256": "9023d706072a8260e2c1260f0e2db4b4645155beb443844fb2211e4662160290"
+    },
+    {
+      "bytes": 530552,
+      "original_path": "results/evaluation_v0.2/stage2_nidd_panels_20260923T102414Z_8f176b45/work/summary.json",
+      "path": "5gnidd_panels/summary.json",
+      "sha256": "048c751d4820d02576f238de70737fe1f53f60c361e8aa8005da3c9310dd8620"
+    },
+    {
+      "bytes": 27476,
+      "original_path": "results/evaluation_v0.2/stage2_nidd_panels_20260923T102414Z_8f176b45/work/RUN.json",
+      "path": "5gnidd_panels/RUN.json",
+      "sha256": "d2a5dfcc23a2cbb43e33c13e24199d05214fe2e48a17ca504891bc8c5ab4c2ba"
+    },
+    {
+      "bytes": 31905,
+      "original_path": "results/evaluation_v0.2/stage0_20260923T101641448206Z_0c66c46b4df9/manifest.json",
+      "path": "original_baseline/manifest.json",
+      "sha256": "5ab99f9fcf5fb5e3b4e4b1e9b4b4ad8a126d261caeab3195e0900f2e14cabed0"
+    },
+    {
+      "bytes": 183,
+      "original_path": "results/evaluation_v0.2/stage0_20260923T101641448206Z_0c66c46b4df9/COMPLETE.json",
+      "path": "original_baseline/COMPLETE.json",
+      "sha256": "545b18aecf5af0451eecab443d0073423f74abdb75b780b7a6c4501f85ac4240"
+    },
+    {
+      "bytes": 1114,
+      "original_path": "results/evaluation_v0.2/performance_pilot_protocol/host_context.json",
+      "path": "host_context.json",
+      "sha256": "3ee2ab5df11d95aa293f137b26f75941987adb781dcd4013393111ff6702d490"
+    },
+    {
+      "bytes": 13606,
+      "original_path": "results/evaluation_v0.2/rev1_stage4_micro_5gnidd_20260923T112058Z_56580e67/SOURCE_BEFORE.json",
+      "path": "final_performance_source.json",
+      "sha256": "2f7bb5d1ab6ef96e7072713ff686b21bea344adaf935960f7d5ca8f268a56b88"
+    }
+  ],
+  "original_campaign": "Orders 0-5, final selection 2026-09-23",
+  "protected_original_hashes": {
+    "configs/evaluation_v0.2/reference_policy_v0.1.json": "4d5eda4ab8d28ccb1dcfd00f487b9943b556aadfaf32ec6e7d482fda4d959685",
+    "configs/evaluation_v0.2/study_design.json": "e4a29854882a55e5730da325dbb024aae1824870f867c6f4ce6e2606621c2027",
+    "configs/paper_policy.json": "bf5915cd92557ca193d692273021342e5bfa495878a0d4500742662497e6921c",
+    "schemas/action.schema.json": "aace5f0b5a387881df062fadcb4604fb87c9a2346127ddacbceb419d77fda04c",
+    "scripts/freeze_evaluation_baseline.py": "136b88652fcb0ae4f448ff290f335846393fe625c9373d18a1a3f25c4a5d8806",
+    "src/oran_trust_boundary/__init__.py": "0062a59bba7a552550fc3bf79edd67b624f3154b65bfff22ae6e3b863bc6137b",
+    "src/oran_trust_boundary/approval.py": "218f3c7927994dcd0cc8ac053e07897cd6e26d6f94e01ae4fe5b316e3b1b1d21",
+    "src/oran_trust_boundary/audit.py": "d5bad2c1f1b5770da974a41914997bb4dd1fb4cea9fafe4dcc70381f08bf428c",
+    "src/oran_trust_boundary/baselines.py": "6cd02ac76aab4d1d8551eab6c4a78d7ac1d4ab2fd54b6502f53c3e59fc0568f4",
+    "src/oran_trust_boundary/benchmark.py": "f56046488c36e0f7dd03ca02f9d7c2118b703fc02c7bf279d682d2b4e1cfd335",
+    "src/oran_trust_boundary/cli.py": "f5ab07b4d48e051d21d2912f24950b87cc358b5628d6809e3e2f2bc736183307",
+    "src/oran_trust_boundary/closed_loop.py": "603abfaa225d1e678aa673efe19ef57107654e3d144d621225761467bc602d24",
+    "src/oran_trust_boundary/closed_loop_lab.py": "aa1eccce6a92f197d4e3b21bffd8b4348c61b2748128c51446dd8c55b2705501",
+    "src/oran_trust_boundary/closed_loop_results.py": "580d224090a73a905a5f3cf704f79e6b5786153a28b92b4b1c3257f7bf8dd079",
+    "src/oran_trust_boundary/conformance.py": "0a5fb6521b50468e3ed415125765a5c702c3234ae736afd44d28b6c861a35ec0",
+    "src/oran_trust_boundary/contract.py": "afb39c882eace8ae2f382cf908073fa03f9037f08deadbf81c8e9170c3127030",
+    "src/oran_trust_boundary/engine.py": "8876b45a8188d1d33eaeead12178c09ca431a064cdc481b7d0072b7a865f57cd",
+    "src/oran_trust_boundary/inventory.py": "60e4a370a4877fcf8bafc7c1d3532673d60bed5ba9719a64894c72423f0eb7d3",
+    "src/oran_trust_boundary/jsonio.py": "2fc6a9c73258f3140868d7debce0252dbaf92cafa4a64051d7942f5ce90a4d2d",
+    "src/oran_trust_boundary/mock_executor.py": "1b5a5abb75f4cf7eb0953abb2888ff2d3eb413449ab6bcc84a4df33fd5bd3f60",
+    "src/oran_trust_boundary/model_review.py": "aa2ffee327a9191bc4be8cb2f7b916ea616433d8e7bf4d77d7f9f9d420017fb7",
+    "src/oran_trust_boundary/models.py": "354b745c0b4d4f36f0a2609682e5821475b70d2dc86ddec991f7d1269089c915",
+    "src/oran_trust_boundary/netslab_adapter.py": "784a2e974604ec9086da10e1e805e82c29984ba4714d9c1c36733ade1179a88b",
+    "src/oran_trust_boundary/nidd_adapter.py": "fc19c3f48f83d8f5b53406492fffbc02a1954095ef779e55d24cfea1f98f7e58",
+    "src/oran_trust_boundary/nidd_cases.py": "ed63b61a42452e495ecaa01b8cddf8c3d2fb13a8b7631f0680e36b9f66e26865",
+    "src/oran_trust_boundary/policy.py": "8aeaf472a11ec5d3a7348da142e0241b91730e110e3607740701e20a10ef9401",
+    "src/oran_trust_boundary/provenance.py": "142f2c605e6fff11c97e76d98bf86079fd646dc7e4cadd858d3ca773cb6fc5ff",
+    "src/oran_trust_boundary/review.py": "ba70f1548fcd9c57a576672f407067ab1f62d4f772857596cd1d6aa6e311db8e",
+    "src/oran_trust_boundary/sqlite_profile.py": "989319d9f00fc55f667a31922734e7ccffeee3b98d24df3782f3376778ec2062"
+  },
+  "raw_dataset_census_reexecuted": false,
+  "raw_datasets_included": false,
+  "schema_version": "university-comparison-capsule/v1",
+  "scope": "Preserved compact reports, receipts and source inventory; NOT all original raw outputs."
+}

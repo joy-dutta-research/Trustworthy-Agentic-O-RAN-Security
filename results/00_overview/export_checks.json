@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "meaning": "Saved-evidence structure and export arithmetic checks; not a new experiment",
+  "output_row_counts": {
+    "00_overview/stage_map": 8,
+    "01_policy_validity/method_comparison": 4,
+    "01_policy_validity/scoped_properties": 25,
+    "01_policy_validity/targeted_mutations": 14,
+    "01_policy_validity/stratified_results": 48,
+    "02_dataset_robustness/netslab_method_comparison": 4,
+    "02_dataset_robustness/netslab_stratified_results": 100,
+    "02_dataset_robustness/nidd_group_results": 12,
+    "03_sensitivity/assumption_changes": 12,
+    "03_sensitivity/all_method_results": 104,
+    "04_processing_cost/microbenchmarks": 32,
+    "04_processing_cost/micro_paired_block_comparisons": 48,
+    "05_scaling_and_load/state_and_input_scaling": 576,
+    "05_scaling_and_load/load_by_seed": 120,
+    "05_scaling_and_load/scaling_paired_block_comparisons": 432,
+    "05_scaling_and_load/load_summary": 24,
+    "06_packet_feedback/episode_outcomes": 72,
+    "06_packet_feedback/condition_means": 24,
+    "06_packet_feedback/paired_contrasts": 18,
+    "06_packet_feedback/paired_episode_contrasts": 54,
+    "07_reproducibility/cross_host_fixed_output_checks": 19,
+    "07_reproducibility/regenerated_case_identity": 42
+  },
+  "checks": [
+    "both Windows fixed policy/dataset summaries equal",
+    "all 12 sensitivity summaries equal",
+    "narrative conformance and false-alarm headline counts match saved evidence",
+    "32 micro and 576 scaling cells retained",
+    "120 load cells and 480 bootstrap summaries retained",
+    "low-rate completion and high-rate overflow/deadline findings match saved evidence",
+    "72 episode rows, 24 condition means, 18 paired comparisons retained",
+    "packet timely/goodput means and paired contrasts agree with episode rows",
+    "three paired replicate identities per method/scenario/VM",
+    "benign abstention and ineffective-action feedback claims match episode records"
+  ],
+  "source_identities": {
+    "windows_comparison.json": {
+      "sha256": "68c5923ac46dfcf83d004e3e338683f01d1e0f94c7f149fd10d81d86abc23671",
+      "size_bytes": 3562297,
+      "repository_source": "evidence/summaries/windows_comparison.json"
+    },
+    "packet_recomputation.json": {
+      "sha256": "6babd0a18a88a8a681fa96c2de0b806d3bf5119ca15820961f66150e4a6904c7",
+      "size_bytes": 414272,
+      "repository_source": "evidence/summaries/packet_recomputation.json"
+    }
+  }
+}

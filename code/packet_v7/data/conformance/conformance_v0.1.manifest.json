@@ -1,0 +1,31 @@
+{
+  "approval_registry_sha256": "9e571b39fc66cd8c6f4ef35368feae2a1ccdd245dd8f0c55d9b16f0f4b86a680",
+  "case_count": 120,
+  "category_counts": {
+    "compliant": 20,
+    "direct_conflict": 20,
+    "missing_approval": 20,
+    "parameter_range": 20,
+    "protected_service": 20,
+    "unauthorized": 20
+  },
+  "dataset_bindings": {
+    "NetsLab-5GORAN-IDD": {
+      "attack_subcategories": [
+        "DDoS_ACK",
+        "DDoS_ICMP",
+        "DDoS_SYN",
+        "DDoS_UDP",
+        "Probe_PortScan"
+      ],
+      "lower_layer_database_sha256": "d76fe7df11379223948e624d0f19bcd5caf744a2b6ce20d1ee2143644199ab64"
+    }
+  },
+  "expected_decision_counts": {
+    "ALLOW": 20,
+    "DENY": 60,
+    "ESCALATE": 40
+  },
+  "sha256": "2b5c10504ddac3480ab34540a08d7d736ecbb2fd7f4b878b20918a7df6305b3e",
+  "suite_version": "0.1.0"
+}

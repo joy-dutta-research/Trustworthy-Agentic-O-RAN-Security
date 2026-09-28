@@ -1,0 +1,5073 @@
+{
+  "audit_failures": [],
+  "comparators": {
+    "contract": {
+      "decision_ALLOW": 735,
+      "decision_DENY": 42,
+      "decision_agreement": 172,
+      "evaluations": 777,
+      "policy_block_required_admitted": 605,
+      "reference_allow": 130,
+      "reference_allow_admitted": 130,
+      "reference_block_required": 647
+    },
+    "contract_rbac": {
+      "decision_ALLOW": 545,
+      "decision_DENY": 232,
+      "decision_agreement": 362,
+      "evaluations": 777,
+      "policy_block_required_admitted": 415,
+      "reference_allow": 130,
+      "reference_allow_admitted": 130,
+      "reference_block_required": 647
+    },
+    "direct": {
+      "decision_ALLOW": 777,
+      "decision_agreement": 130,
+      "evaluations": 777,
+      "policy_block_required_admitted": 647,
+      "reference_allow": 130,
+      "reference_allow_admitted": 130,
+      "reference_block_required": 647
+    },
+    "trust_boundary": {
+      "decision_ALLOW": 130,
+      "decision_DENY": 565,
+      "decision_ESCALATE": 82,
+      "decision_agreement": 777,
+      "evaluations": 777,
+      "policy_block_required_admitted": 0,
+      "reference_allow": 130,
+      "reference_allow_admitted": 130,
+      "reference_block_required": 647
+    }
+  },
+  "constructed_case_count": 777,
+  "full_gateway_decision_mismatches": [],
+  "full_gateway_reason_mismatches": [],
+  "groups": {
+    "adversarial": 58,
+    "boundary": 166,
+    "legacy_limitation": 18,
+    "pairwise": 407,
+    "targeted_three_way": 128
+  },
+  "interaction_coverage": {
+    "coverage_scope": "declared binary factor partitions, not exhaustive engine input space",
+    "pairwise_constraints_excluded": [
+      [
+        "rate_limit_ue",
+        [
+          "risk",
+          "approval"
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        "quarantine_ue",
+        [
+          "risk",
+          "approval"
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "pairwise_covered": 1346,
+    "pairwise_missing": [],
+    "targeted_three_way": {
+      "isolate_xapp:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "isolate_xapp:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "isolate_xapp:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "modify_a1_policy:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "modify_a1_policy:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "modify_a1_policy:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "notify_operator:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "notify_operator:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "quarantine_ue:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "quarantine_ue:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "quarantine_ue:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rate_limit_ue:authorization,protected,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rate_limit_ue:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rate_limit_ue:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rollback_policy:conflict,parameter,approval": {
+        "covered": 8,
+        "required": 8
+      },
+      "rollback_policy:freshness,ttl,approval": {
+        "covered": 8,
+        "required": 8
+      }
+    }
+  },
+  "interpretation": "Constructed policy-conformance coverage, not independent safety trials or operational assurance.",
+  "legacy_reference_audit": {
+    "approval_registry_sha256": "9e571b39fc66cd8c6f4ef35368feae2a1ccdd245dd8f0c55d9b16f0f4b86a680",
+    "case_count": 120,
+    "cases": [
+      {
+        "case_id": "case-01-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-01-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-01-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-01-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-01-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-01-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-02-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-02-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-02-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-02-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-02-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-02-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-03-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-03-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-03-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-03-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-03-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-03-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-04-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-04-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-04-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-04-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-04-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-04-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-05-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-05-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-05-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-05-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-05-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-05-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-06-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-06-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-06-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-06-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-06-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-06-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-07-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-07-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-07-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-07-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-07-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-07-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-08-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-08-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-08-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-08-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-08-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-08-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-09-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-09-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-09-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-09-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-09-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-09-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-10-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-10-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-10-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-10-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-10-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-10-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-11-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-11-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-11-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-11-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-11-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-11-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-12-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-12-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-12-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-12-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-12-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-12-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-13-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-13-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-13-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-13-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-13-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-13-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-14-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-14-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-14-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-14-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-14-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-14-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-15-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-15-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-15-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-15-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-15-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-15-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-16-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-16-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-16-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-16-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-16-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-16-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-17-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-17-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-17-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-17-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-17-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-17-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-18-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-18-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-18-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-18-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-18-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-18-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-19-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-19-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-19-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-19-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-19-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-19-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      },
+      {
+        "case_id": "case-20-allow",
+        "decision_agreement": true,
+        "legacy_expected": "ALLOW",
+        "legacy_expected_reason": "POLICY_CHECKS_PASSED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ALLOW",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "POLICY_CHECKS_PASSED"
+          ],
+          "violated_rules": []
+        }
+      },
+      {
+        "case_id": "case-20-unauthorized",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "UNAUTHORIZED_AGENT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "UNAUTHORIZED_AGENT"
+          ],
+          "violated_rules": [
+            "R03"
+          ]
+        }
+      },
+      {
+        "case_id": "case-20-protected",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PROTECTED_SLICE_VIOLATION",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PROTECTED_SLICE_VIOLATION"
+          ],
+          "violated_rules": [
+            "R07"
+          ]
+        }
+      },
+      {
+        "case_id": "case-20-range",
+        "decision_agreement": true,
+        "legacy_expected": "DENY",
+        "legacy_expected_reason": "PARAMETER_OUT_OF_RANGE",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "DENY",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "PARAMETER_OUT_OF_RANGE"
+          ],
+          "violated_rules": [
+            "R08"
+          ]
+        }
+      },
+      {
+        "case_id": "case-20-conflict",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "ACTION_CONFLICT",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L05",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "ACTION_CONFLICT"
+          ],
+          "violated_rules": [
+            "R12"
+          ]
+        }
+      },
+      {
+        "case_id": "case-20-approval",
+        "decision_agreement": true,
+        "legacy_expected": "ESCALATE",
+        "legacy_expected_reason": "HUMAN_APPROVAL_REQUIRED",
+        "legacy_reason_present": true,
+        "reference": {
+          "decision": "ESCALATE",
+          "legacy_limitations": [
+            "L01",
+            "L02",
+            "L08"
+          ],
+          "reason_comparison": "exact_set",
+          "reasons": [
+            "HUMAN_APPROVAL_REQUIRED"
+          ],
+          "violated_rules": [
+            "R13"
+          ]
+        }
+      }
+    ],
+    "decision_disagreements": 0,
+    "reason_disagreements": 0,
+    "scope": "Original frozen 120 cases, independently reinterpreted; not new source observations",
+    "suite_sha256": "2b5c10504ddac3480ab34540a08d7d736ecbb2fd7f4b878b20918a7df6305b3e"
+  },
+  "mode": "validity",
+  "reference_author_verification": "pending_before_publication",
+  "rule_violation_coverage": {
+    "R01": 42,
+    "R02": 66,
+    "R03": 74,
+    "R04": 66,
+    "R05": 66,
+    "R06": 102,
+    "R07": 64,
+    "R08": 110,
+    "R09": 56,
+    "R10": 114,
+    "R11": 48,
+    "R12": 102,
+    "R13": 152
+  },
+  "scoped_properties": {
+    "checks": [
+      {
+        "action": "rate_limit_ue",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "AUTHENTICATED_PRINCIPAL_REQUIRED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": null,
+          "case_id": "property-rate_limit_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rate_limit_ue",
+            "action_id": "property-rate_limit_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "traffic_rate_limit",
+              "reduction_percent": 30
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "removing_authenticated_authority_never_grants"
+      },
+      {
+        "action": "rate_limit_ue",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-rate_limit_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rate_limit_ue",
+            "action_id": "property-rate_limit_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "traffic_rate_limit",
+              "reduction_percent": 30
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "object_key_order_invariant"
+      },
+      {
+        "action": "rate_limit_ue",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-rate_limit_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rate_limit_ue",
+            "action_id": "property-rate_limit_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "traffic_rate_limit",
+              "reduction_percent": 30
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "fixed_input_decision_repeatability"
+      },
+      {
+        "action": "rate_limit_ue",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "PROTECTED_SLICE_VIOLATION"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-rate_limit_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rate_limit_ue",
+            "action_id": "property-rate_limit_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "traffic_rate_limit",
+              "reduction_percent": 30
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-emergency",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "applicable_protected_service_never_admitted"
+      },
+      {
+        "action": "quarantine_ue",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "AUTHENTICATED_PRINCIPAL_REQUIRED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": null,
+          "case_id": "property-quarantine_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "quarantine_ue",
+            "action_id": "property-quarantine_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "ue_admission_state",
+              "duration_seconds": 120
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "removing_authenticated_authority_never_grants"
+      },
+      {
+        "action": "quarantine_ue",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-quarantine_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "quarantine_ue",
+            "action_id": "property-quarantine_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "ue_admission_state",
+              "duration_seconds": 120
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "object_key_order_invariant"
+      },
+      {
+        "action": "quarantine_ue",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-quarantine_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "quarantine_ue",
+            "action_id": "property-quarantine_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "ue_admission_state",
+              "duration_seconds": 120
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "fixed_input_decision_repeatability"
+      },
+      {
+        "action": "quarantine_ue",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "PROTECTED_SLICE_VIOLATION"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-quarantine_ue",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "quarantine_ue",
+            "action_id": "property-quarantine_ue",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "E2",
+            "parameters": {
+              "control_parameter": "ue_admission_state",
+              "duration_seconds": 120
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "medium",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-emergency",
+              "target_id": "ue-fixture",
+              "target_type": "ue"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "applicable_protected_service_never_admitted"
+      },
+      {
+        "action": "isolate_xapp",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "AUTHENTICATED_PRINCIPAL_REQUIRED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-isolate_xapp": {
+              "action_id": "property-isolate_xapp",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "bcf8797416ecd0fb9a28f2d06ac5cea42e3081e796bad1d481bc080efb17b45c",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": null,
+          "case_id": "property-isolate_xapp",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "isolate_xapp",
+            "action_id": "property-isolate_xapp",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-isolate_xapp",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "xapp_execution_state",
+              "duration_seconds": 300
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "xapp-fixture",
+              "target_type": "xapp"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "removing_authenticated_authority_never_grants"
+      },
+      {
+        "action": "isolate_xapp",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-isolate_xapp": {
+              "action_id": "property-isolate_xapp",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "bcf8797416ecd0fb9a28f2d06ac5cea42e3081e796bad1d481bc080efb17b45c",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-isolate_xapp",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "isolate_xapp",
+            "action_id": "property-isolate_xapp",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-isolate_xapp",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "xapp_execution_state",
+              "duration_seconds": 300
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "xapp-fixture",
+              "target_type": "xapp"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "object_key_order_invariant"
+      },
+      {
+        "action": "isolate_xapp",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-isolate_xapp": {
+              "action_id": "property-isolate_xapp",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "bcf8797416ecd0fb9a28f2d06ac5cea42e3081e796bad1d481bc080efb17b45c",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-isolate_xapp",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "isolate_xapp",
+            "action_id": "property-isolate_xapp",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-isolate_xapp",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "xapp_execution_state",
+              "duration_seconds": 300
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "xapp-fixture",
+              "target_type": "xapp"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "fixed_input_decision_repeatability"
+      },
+      {
+        "action": "isolate_xapp",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "PROTECTED_SLICE_VIOLATION"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-isolate_xapp": {
+              "action_id": "property-isolate_xapp",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "57921fecf2b17d5021b42d3ae995fcbc051250e875604e5d73103703bff4cbce",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-isolate_xapp",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "isolate_xapp",
+            "action_id": "property-isolate_xapp",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-isolate_xapp",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "xapp_execution_state",
+              "duration_seconds": 300
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-emergency",
+              "target_id": "xapp-fixture",
+              "target_type": "xapp"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "applicable_protected_service_never_admitted"
+      },
+      {
+        "action": "isolate_xapp",
+        "actual_decision": "ESCALATE",
+        "actual_reasons": [
+          "HUMAN_APPROVAL_BINDING_MISMATCH"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-isolate_xapp": {
+              "action_id": "property-isolate_xapp",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "bcf8797416ecd0fb9a28f2d06ac5cea42e3081e796bad1d481bc080efb17b45c",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-isolate_xapp",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "isolate_xapp",
+            "action_id": "property-isolate_xapp",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-isolate_xapp",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture-changed-after-approval",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "xapp_execution_state",
+              "duration_seconds": 300
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "xapp-fixture",
+              "target_type": "xapp"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "changed_proposal_cannot_reuse_approval"
+      },
+      {
+        "action": "modify_a1_policy",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "AUTHENTICATED_PRINCIPAL_REQUIRED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-modify_a1_policy": {
+              "action_id": "property-modify_a1_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "3b7f4f3299a213322c0804bd6825e448b70512235ba127baf8b0ace57bd93116",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": null,
+          "case_id": "property-modify_a1_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "modify_a1_policy",
+            "action_id": "property-modify_a1_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-modify_a1_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_weight",
+              "policy_weight": 0.5
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "removing_authenticated_authority_never_grants"
+      },
+      {
+        "action": "modify_a1_policy",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-modify_a1_policy": {
+              "action_id": "property-modify_a1_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "3b7f4f3299a213322c0804bd6825e448b70512235ba127baf8b0ace57bd93116",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-modify_a1_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "modify_a1_policy",
+            "action_id": "property-modify_a1_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-modify_a1_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_weight",
+              "policy_weight": 0.5
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "object_key_order_invariant"
+      },
+      {
+        "action": "modify_a1_policy",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-modify_a1_policy": {
+              "action_id": "property-modify_a1_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "3b7f4f3299a213322c0804bd6825e448b70512235ba127baf8b0ace57bd93116",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-modify_a1_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "modify_a1_policy",
+            "action_id": "property-modify_a1_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-modify_a1_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_weight",
+              "policy_weight": 0.5
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "fixed_input_decision_repeatability"
+      },
+      {
+        "action": "modify_a1_policy",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "PROTECTED_SLICE_VIOLATION"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-modify_a1_policy": {
+              "action_id": "property-modify_a1_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "f0ced93d30637af26399275e4353b1725033daef78bfa0b101b4653ae7ce6147",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-modify_a1_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "modify_a1_policy",
+            "action_id": "property-modify_a1_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-modify_a1_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_weight",
+              "policy_weight": 0.5
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-emergency",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "applicable_protected_service_never_admitted"
+      },
+      {
+        "action": "modify_a1_policy",
+        "actual_decision": "ESCALATE",
+        "actual_reasons": [
+          "HUMAN_APPROVAL_BINDING_MISMATCH"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-modify_a1_policy": {
+              "action_id": "property-modify_a1_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "3b7f4f3299a213322c0804bd6825e448b70512235ba127baf8b0ace57bd93116",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-modify_a1_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "modify_a1_policy",
+            "action_id": "property-modify_a1_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-modify_a1_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture-changed-after-approval",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_weight",
+              "policy_weight": 0.5
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "changed_proposal_cannot_reuse_approval"
+      },
+      {
+        "action": "rollback_policy",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "AUTHENTICATED_PRINCIPAL_REQUIRED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-rollback_policy": {
+              "action_id": "property-rollback_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "19071d43b069c7971e41e5b58804bb9575a9baddba4db22a8519e3f61246d63e",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": null,
+          "case_id": "property-rollback_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rollback_policy",
+            "action_id": "property-rollback_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-rollback_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_state",
+              "snapshot_id": "snapshot-fixture"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "removing_authenticated_authority_never_grants"
+      },
+      {
+        "action": "rollback_policy",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-rollback_policy": {
+              "action_id": "property-rollback_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "19071d43b069c7971e41e5b58804bb9575a9baddba4db22a8519e3f61246d63e",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-rollback_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rollback_policy",
+            "action_id": "property-rollback_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-rollback_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_state",
+              "snapshot_id": "snapshot-fixture"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "object_key_order_invariant"
+      },
+      {
+        "action": "rollback_policy",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-rollback_policy": {
+              "action_id": "property-rollback_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "19071d43b069c7971e41e5b58804bb9575a9baddba4db22a8519e3f61246d63e",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-rollback_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rollback_policy",
+            "action_id": "property-rollback_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-rollback_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_state",
+              "snapshot_id": "snapshot-fixture"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "fixed_input_decision_repeatability"
+      },
+      {
+        "action": "rollback_policy",
+        "actual_decision": "ESCALATE",
+        "actual_reasons": [
+          "HUMAN_APPROVAL_BINDING_MISMATCH"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {
+            "approval-property-rollback_policy": {
+              "action_id": "property-rollback_policy",
+              "agent_id": "agent-orchestrator-01",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z",
+              "proposal_sha256": "19071d43b069c7971e41e5b58804bb9575a9baddba4db22a8519e3f61246d63e",
+              "status": "approved"
+            }
+          },
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-rollback_policy",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "rollback_policy",
+            "action_id": "property-rollback_policy",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": {
+              "approval_id": "approval-property-rollback_policy",
+              "approved_by_role": "human_operator",
+              "expires_at": "2026-01-15T13:05:00Z"
+            },
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture-changed-after-approval",
+            "interface": "A1",
+            "parameters": {
+              "control_parameter": "a1_policy_state",
+              "snapshot_id": "snapshot-fixture"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "high",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "policy-fixture",
+              "target_type": "policy"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "changed_proposal_cannot_reuse_approval"
+      },
+      {
+        "action": "notify_operator",
+        "actual_decision": "DENY",
+        "actual_reasons": [
+          "AUTHENTICATED_PRINCIPAL_REQUIRED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": null,
+          "case_id": "property-notify_operator",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "notify_operator",
+            "action_id": "property-notify_operator",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "operator_notification",
+              "message": "Offline notification"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "low",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "operator-fixture",
+              "target_type": "operator"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "removing_authenticated_authority_never_grants"
+      },
+      {
+        "action": "notify_operator",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-notify_operator",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "notify_operator",
+            "action_id": "property-notify_operator",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "operator_notification",
+              "message": "Offline notification"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "low",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "operator-fixture",
+              "target_type": "operator"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "object_key_order_invariant"
+      },
+      {
+        "action": "notify_operator",
+        "actual_decision": "ALLOW",
+        "actual_reasons": [
+          "POLICY_CHECKS_PASSED"
+        ],
+        "fixture": {
+          "active_actions": [],
+          "approval_registry": {},
+          "authenticated_principal": "agent-orchestrator-01",
+          "case_id": "property-notify_operator",
+          "category": "compliant",
+          "evaluation_time": "2026-01-15T12:05:00Z",
+          "proposal": {
+            "action": "notify_operator",
+            "action_id": "property-notify_operator",
+            "agent": {
+              "agent_id": "agent-orchestrator-01",
+              "role": "security_orchestrator"
+            },
+            "approval": null,
+            "evidence_refs": [
+              "fixture:unverified-context"
+            ],
+            "expected_kpi": "offline_policy_check",
+            "incident_id": "incident-fixture",
+            "interface": "SMO",
+            "parameters": {
+              "control_parameter": "operator_notification",
+              "message": "Offline notification"
+            },
+            "requested_at": "2026-01-15T12:04:50Z",
+            "risk_level": "low",
+            "rollback": {
+              "available": true,
+              "procedure": "Restore offline fixture."
+            },
+            "target": {
+              "cell_id": "cell-fixture",
+              "slice_id": "slice-best-effort",
+              "target_id": "operator-fixture",
+              "target_type": "operator"
+            },
+            "ttl_seconds": 300
+          },
+          "source_context": {
+            "kind": "constructed_governance_fixture"
+          }
+        },
+        "original_decision": "ALLOW",
+        "passed": true,
+        "property": "fixed_input_decision_repeatability"
+      }
+    ],
+    "failed": 0,
+    "passed": 25,
+    "scope": "scoped properties on six valid action witnesses; not universal proofs"
+  },
+  "status": "COMPLETED",
+  "stratified": [
+    {
+      "actual_ALLOW": 139,
+      "actual_DENY": 7,
+      "agreement": 30,
+      "evaluations": 146,
+      "policy_block_required_admitted": 116,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:isolate_xapp",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 139,
+      "actual_DENY": 7,
+      "agreement": 30,
+      "evaluations": 146,
+      "policy_block_required_admitted": 116,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:modify_a1_policy",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 80,
+      "actual_DENY": 7,
+      "agreement": 25,
+      "evaluations": 87,
+      "policy_block_required_admitted": 62,
+      "reference_ALLOW": 18,
+      "reference_DENY": 56,
+      "reference_ESCALATE": 13,
+      "stratum": "action:notify_operator",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 139,
+      "actual_DENY": 7,
+      "agreement": 31,
+      "evaluations": 146,
+      "policy_block_required_admitted": 115,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:quarantine_ue",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 139,
+      "actual_DENY": 7,
+      "agreement": 31,
+      "evaluations": 146,
+      "policy_block_required_admitted": 115,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:rate_limit_ue",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 99,
+      "actual_DENY": 7,
+      "agreement": 25,
+      "evaluations": 106,
+      "policy_block_required_admitted": 81,
+      "reference_ALLOW": 18,
+      "reference_DENY": 75,
+      "reference_ESCALATE": 13,
+      "stratum": "action:rollback_policy",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 28,
+      "actual_DENY": 30,
+      "agreement": 36,
+      "evaluations": 58,
+      "policy_block_required_admitted": 22,
+      "reference_ALLOW": 6,
+      "reference_DENY": 34,
+      "reference_ESCALATE": 18,
+      "stratum": "group:adversarial",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 154,
+      "actual_DENY": 12,
+      "agreement": 102,
+      "evaluations": 166,
+      "policy_block_required_admitted": 64,
+      "reference_ALLOW": 90,
+      "reference_DENY": 64,
+      "reference_ESCALATE": 12,
+      "stratum": "group:boundary",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 18,
+      "agreement": 12,
+      "evaluations": 18,
+      "policy_block_required_admitted": 6,
+      "reference_ALLOW": 12,
+      "reference_ESCALATE": 6,
+      "stratum": "group:legacy_limitation",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 407,
+      "agreement": 6,
+      "evaluations": 407,
+      "policy_block_required_admitted": 401,
+      "reference_ALLOW": 6,
+      "reference_DENY": 383,
+      "reference_ESCALATE": 18,
+      "stratum": "group:pairwise",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 128,
+      "agreement": 16,
+      "evaluations": 128,
+      "policy_block_required_admitted": 112,
+      "reference_ALLOW": 16,
+      "reference_DENY": 84,
+      "reference_ESCALATE": 28,
+      "stratum": "group:targeted_three_way",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 735,
+      "actual_DENY": 42,
+      "agreement": 172,
+      "evaluations": 777,
+      "policy_block_required_admitted": 605,
+      "reference_ALLOW": 130,
+      "reference_DENY": 565,
+      "reference_ESCALATE": 82,
+      "stratum": "seed:not_applicable",
+      "system": "contract"
+    },
+    {
+      "actual_ALLOW": 102,
+      "actual_DENY": 44,
+      "agreement": 67,
+      "evaluations": 146,
+      "policy_block_required_admitted": 79,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:isolate_xapp",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 102,
+      "actual_DENY": 44,
+      "agreement": 67,
+      "evaluations": 146,
+      "policy_block_required_admitted": 79,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:modify_a1_policy",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 65,
+      "actual_DENY": 22,
+      "agreement": 40,
+      "evaluations": 87,
+      "policy_block_required_admitted": 47,
+      "reference_ALLOW": 18,
+      "reference_DENY": 56,
+      "reference_ESCALATE": 13,
+      "stratum": "action:notify_operator",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 102,
+      "actual_DENY": 44,
+      "agreement": 68,
+      "evaluations": 146,
+      "policy_block_required_admitted": 78,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:quarantine_ue",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 102,
+      "actual_DENY": 44,
+      "agreement": 68,
+      "evaluations": 146,
+      "policy_block_required_admitted": 78,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:rate_limit_ue",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 72,
+      "actual_DENY": 34,
+      "agreement": 52,
+      "evaluations": 106,
+      "policy_block_required_admitted": 54,
+      "reference_ALLOW": 18,
+      "reference_DENY": 75,
+      "reference_ESCALATE": 13,
+      "stratum": "action:rollback_policy",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 28,
+      "actual_DENY": 30,
+      "agreement": 36,
+      "evaluations": 58,
+      "policy_block_required_admitted": 22,
+      "reference_ALLOW": 6,
+      "reference_DENY": 34,
+      "reference_ESCALATE": 18,
+      "stratum": "group:adversarial",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 154,
+      "actual_DENY": 12,
+      "agreement": 102,
+      "evaluations": 166,
+      "policy_block_required_admitted": 64,
+      "reference_ALLOW": 90,
+      "reference_DENY": 64,
+      "reference_ESCALATE": 12,
+      "stratum": "group:boundary",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 18,
+      "agreement": 12,
+      "evaluations": 18,
+      "policy_block_required_admitted": 6,
+      "reference_ALLOW": 12,
+      "reference_ESCALATE": 6,
+      "stratum": "group:legacy_limitation",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 233,
+      "actual_DENY": 174,
+      "agreement": 180,
+      "evaluations": 407,
+      "policy_block_required_admitted": 227,
+      "reference_ALLOW": 6,
+      "reference_DENY": 383,
+      "reference_ESCALATE": 18,
+      "stratum": "group:pairwise",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 112,
+      "actual_DENY": 16,
+      "agreement": 32,
+      "evaluations": 128,
+      "policy_block_required_admitted": 96,
+      "reference_ALLOW": 16,
+      "reference_DENY": 84,
+      "reference_ESCALATE": 28,
+      "stratum": "group:targeted_three_way",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 545,
+      "actual_DENY": 232,
+      "agreement": 362,
+      "evaluations": 777,
+      "policy_block_required_admitted": 415,
+      "reference_ALLOW": 130,
+      "reference_DENY": 565,
+      "reference_ESCALATE": 82,
+      "stratum": "seed:not_applicable",
+      "system": "contract_rbac"
+    },
+    {
+      "actual_ALLOW": 146,
+      "agreement": 23,
+      "evaluations": 146,
+      "policy_block_required_admitted": 123,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:isolate_xapp",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 146,
+      "agreement": 23,
+      "evaluations": 146,
+      "policy_block_required_admitted": 123,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:modify_a1_policy",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 87,
+      "agreement": 18,
+      "evaluations": 87,
+      "policy_block_required_admitted": 69,
+      "reference_ALLOW": 18,
+      "reference_DENY": 56,
+      "reference_ESCALATE": 13,
+      "stratum": "action:notify_operator",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 146,
+      "agreement": 24,
+      "evaluations": 146,
+      "policy_block_required_admitted": 122,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:quarantine_ue",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 146,
+      "agreement": 24,
+      "evaluations": 146,
+      "policy_block_required_admitted": 122,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:rate_limit_ue",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 106,
+      "agreement": 18,
+      "evaluations": 106,
+      "policy_block_required_admitted": 88,
+      "reference_ALLOW": 18,
+      "reference_DENY": 75,
+      "reference_ESCALATE": 13,
+      "stratum": "action:rollback_policy",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 58,
+      "agreement": 6,
+      "evaluations": 58,
+      "policy_block_required_admitted": 52,
+      "reference_ALLOW": 6,
+      "reference_DENY": 34,
+      "reference_ESCALATE": 18,
+      "stratum": "group:adversarial",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 166,
+      "agreement": 90,
+      "evaluations": 166,
+      "policy_block_required_admitted": 76,
+      "reference_ALLOW": 90,
+      "reference_DENY": 64,
+      "reference_ESCALATE": 12,
+      "stratum": "group:boundary",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 18,
+      "agreement": 12,
+      "evaluations": 18,
+      "policy_block_required_admitted": 6,
+      "reference_ALLOW": 12,
+      "reference_ESCALATE": 6,
+      "stratum": "group:legacy_limitation",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 407,
+      "agreement": 6,
+      "evaluations": 407,
+      "policy_block_required_admitted": 401,
+      "reference_ALLOW": 6,
+      "reference_DENY": 383,
+      "reference_ESCALATE": 18,
+      "stratum": "group:pairwise",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 128,
+      "agreement": 16,
+      "evaluations": 128,
+      "policy_block_required_admitted": 112,
+      "reference_ALLOW": 16,
+      "reference_DENY": 84,
+      "reference_ESCALATE": 28,
+      "stratum": "group:targeted_three_way",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 777,
+      "agreement": 130,
+      "evaluations": 777,
+      "policy_block_required_admitted": 647,
+      "reference_ALLOW": 130,
+      "reference_DENY": 565,
+      "reference_ESCALATE": 82,
+      "stratum": "seed:not_applicable",
+      "system": "direct"
+    },
+    {
+      "actual_ALLOW": 23,
+      "actual_DENY": 109,
+      "actual_ESCALATE": 14,
+      "agreement": 146,
+      "evaluations": 146,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:isolate_xapp",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 23,
+      "actual_DENY": 109,
+      "actual_ESCALATE": 14,
+      "agreement": 146,
+      "evaluations": 146,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 23,
+      "reference_DENY": 109,
+      "reference_ESCALATE": 14,
+      "stratum": "action:modify_a1_policy",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 18,
+      "actual_DENY": 56,
+      "actual_ESCALATE": 13,
+      "agreement": 87,
+      "evaluations": 87,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 18,
+      "reference_DENY": 56,
+      "reference_ESCALATE": 13,
+      "stratum": "action:notify_operator",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 24,
+      "actual_DENY": 108,
+      "actual_ESCALATE": 14,
+      "agreement": 146,
+      "evaluations": 146,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:quarantine_ue",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 24,
+      "actual_DENY": 108,
+      "actual_ESCALATE": 14,
+      "agreement": 146,
+      "evaluations": 146,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 24,
+      "reference_DENY": 108,
+      "reference_ESCALATE": 14,
+      "stratum": "action:rate_limit_ue",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 18,
+      "actual_DENY": 75,
+      "actual_ESCALATE": 13,
+      "agreement": 106,
+      "evaluations": 106,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 18,
+      "reference_DENY": 75,
+      "reference_ESCALATE": 13,
+      "stratum": "action:rollback_policy",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 6,
+      "actual_DENY": 34,
+      "actual_ESCALATE": 18,
+      "agreement": 58,
+      "evaluations": 58,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 6,
+      "reference_DENY": 34,
+      "reference_ESCALATE": 18,
+      "stratum": "group:adversarial",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 90,
+      "actual_DENY": 64,
+      "actual_ESCALATE": 12,
+      "agreement": 166,
+      "evaluations": 166,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 90,
+      "reference_DENY": 64,
+      "reference_ESCALATE": 12,
+      "stratum": "group:boundary",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 12,
+      "actual_ESCALATE": 6,
+      "agreement": 18,
+      "evaluations": 18,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 12,
+      "reference_ESCALATE": 6,
+      "stratum": "group:legacy_limitation",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 6,
+      "actual_DENY": 383,
+      "actual_ESCALATE": 18,
+      "agreement": 407,
+      "evaluations": 407,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 6,
+      "reference_DENY": 383,
+      "reference_ESCALATE": 18,
+      "stratum": "group:pairwise",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 16,
+      "actual_DENY": 84,
+      "actual_ESCALATE": 28,
+      "agreement": 128,
+      "evaluations": 128,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 16,
+      "reference_DENY": 84,
+      "reference_ESCALATE": 28,
+      "stratum": "group:targeted_three_way",
+      "system": "trust_boundary"
+    },
+    {
+      "actual_ALLOW": 130,
+      "actual_DENY": 565,
+      "actual_ESCALATE": 82,
+      "agreement": 777,
+      "evaluations": 777,
+      "policy_block_required_admitted": 0,
+      "reference_ALLOW": 130,
+      "reference_DENY": 565,
+      "reference_ESCALATE": 82,
+      "stratum": "seed:not_applicable",
+      "system": "trust_boundary"
+    }
+  ],
+  "test_sensitivity": {
+    "detected": 14,
+    "mutations": [
+      {
+        "decision_mismatch_count": 18,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-identity",
+          "validity-rate_limit_ue-pair-identity-conflict",
+          "validity-rate_limit_ue-pair-identity-approval",
+          "validity-quarantine_ue-pair-identity",
+          "validity-quarantine_ue-pair-identity-conflict"
+        ],
+        "mutation": "disable_identity",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 23,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-authorization",
+          "validity-rate_limit_ue-pair-authorization-conflict",
+          "validity-rate_limit_ue-pair-authorization-approval",
+          "validity-rate_limit_ue-triple-authorization-protected-approval-100",
+          "validity-rate_limit_ue-triple-authorization-protected-approval-101"
+        ],
+        "mutation": "disable_authorization",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 18,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-interface",
+          "validity-rate_limit_ue-pair-interface-conflict",
+          "validity-rate_limit_ue-pair-interface-approval",
+          "validity-quarantine_ue-pair-interface",
+          "validity-quarantine_ue-pair-interface-conflict"
+        ],
+        "mutation": "disable_interface",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 18,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-target",
+          "validity-rate_limit_ue-pair-target-conflict",
+          "validity-rate_limit_ue-pair-target-approval",
+          "validity-quarantine_ue-pair-target",
+          "validity-quarantine_ue-pair-target-conflict"
+        ],
+        "mutation": "disable_target_type",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 42,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-freshness",
+          "validity-rate_limit_ue-pair-freshness-conflict",
+          "validity-rate_limit_ue-pair-freshness-approval",
+          "validity-rate_limit_ue-triple-freshness-ttl-approval-100",
+          "validity-rate_limit_ue-triple-freshness-ttl-approval-101"
+        ],
+        "mutation": "disable_freshness",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 20,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-protected",
+          "validity-rate_limit_ue-pair-protected-conflict",
+          "validity-rate_limit_ue-pair-protected-approval",
+          "validity-rate_limit_ue-triple-authorization-protected-approval-010",
+          "validity-rate_limit_ue-triple-authorization-protected-approval-011"
+        ],
+        "mutation": "disable_protected_target",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 62,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-parameter",
+          "validity-rate_limit_ue-pair-parameter-conflict",
+          "validity-rate_limit_ue-pair-parameter-approval",
+          "validity-rate_limit_ue-triple-conflict-parameter-approval-010",
+          "validity-rate_limit_ue-triple-conflict-parameter-approval-011"
+        ],
+        "mutation": "disable_parameters",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 13,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-risk",
+          "validity-rate_limit_ue-pair-risk-conflict",
+          "validity-quarantine_ue-pair-risk",
+          "validity-quarantine_ue-pair-risk-conflict",
+          "validity-isolate_xapp-pair-risk"
+        ],
+        "mutation": "disable_risk_floor",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 54,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-ttl",
+          "validity-rate_limit_ue-pair-ttl-conflict",
+          "validity-rate_limit_ue-pair-ttl-approval",
+          "validity-rate_limit_ue-triple-freshness-ttl-approval-010",
+          "validity-rate_limit_ue-triple-freshness-ttl-approval-011"
+        ],
+        "mutation": "disable_ttl",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 12,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-rollback",
+          "validity-rate_limit_ue-pair-rollback-conflict",
+          "validity-rate_limit_ue-pair-rollback-approval",
+          "validity-quarantine_ue-pair-rollback",
+          "validity-quarantine_ue-pair-rollback-conflict"
+        ],
+        "mutation": "disable_rollback",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 24,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-conflict",
+          "validity-rate_limit_ue-triple-conflict-parameter-approval-100",
+          "validity-rate_limit_ue-malformed_active",
+          "validity-rate_limit_ue-expired_active",
+          "validity-quarantine_ue-pair-conflict"
+        ],
+        "mutation": "disable_conflicts",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 46,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-approval",
+          "validity-rate_limit_ue-triple-authorization-protected-approval-001",
+          "validity-rate_limit_ue-triple-freshness-ttl-approval-001",
+          "validity-rate_limit_ue-triple-conflict-parameter-approval-001",
+          "validity-rate_limit_ue-time-expiry-0"
+        ],
+        "mutation": "disable_approval",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 12,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-tampered_approval",
+          "validity-rate_limit_ue-revoked_approval",
+          "validity-quarantine_ue-tampered_approval",
+          "validity-quarantine_ue-revoked_approval",
+          "validity-isolate_xapp-tampered_approval"
+        ],
+        "mutation": "ignore_approval_binding",
+        "unhandled_errors": []
+      },
+      {
+        "decision_mismatch_count": 154,
+        "detected": true,
+        "first_witnesses": [
+          "validity-rate_limit_ue-pair-identity-conflict",
+          "validity-rate_limit_ue-pair-identity-approval",
+          "validity-rate_limit_ue-pair-authorization-conflict",
+          "validity-rate_limit_ue-pair-authorization-approval",
+          "validity-rate_limit_ue-pair-interface-conflict"
+        ],
+        "mutation": "escalation_overrides_hard_denial",
+        "unhandled_errors": []
+      }
+    ],
+    "scope": "14 predeclared test-only targeted mutations; not exhaustive fault coverage",
+    "survivors": []
+  },
+  "unhandled_errors": [],
+  "unique_semantic_configurations": 669
+}

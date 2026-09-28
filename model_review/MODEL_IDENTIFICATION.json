@@ -1,0 +1,25 @@
+{
+  "review_round": "model_review_round1",
+  "review_date_utc": "2026-09-22",
+  "scope": "Auxiliary model-assisted policy consistency review of 120 constructed cases; separate from completed initial PoC Stages 0-7.",
+  "reviewer_a": {
+    "operator_reported_model": "GPT-6 Astra",
+    "operator_reported_mode": "Ultra",
+    "displayed_model_verified_from_returned_artifacts": false,
+    "displayed_mode_verified_from_returned_artifacts": false,
+    "original_response_model_field": "not_available",
+    "original_response_mode_field": "not_available",
+    "accompanying_run_notes_available": true
+  },
+  "reviewer_b": {
+    "operator_reported_model": "Gemini Pro",
+    "operator_reported_mode": "Extended",
+    "planned_model_setting": "Gemini 3.1 Pro Extended",
+    "displayed_model_verified_from_returned_artifacts": false,
+    "displayed_mode_verified_from_returned_artifacts": false,
+    "original_response_model_field": "not_available",
+    "original_response_mode_field": "not_available",
+    "accompanying_run_notes_available": false
+  },
+  "interpretation": "Names and settings are the author's reported identifications, not a verified API model-version record. Original metadata is preserved unchanged. Future reviews can improve provenance with separate operator logs or redacted interface captures."
+}

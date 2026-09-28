@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the associated paper and this software release."
+title: "Trustworthy O-RAN Action Gateway"
+type: software
+version: 0.1.0
+authors:
+  - family-names: "Dutta"
+    given-names: "Joy"
+license: Apache-2.0
+abstract: >-
+  A deterministic, dry-run pre-action Trust Boundary for evaluating whether
+  proposed O-RAN security actions are authorized, policy-conformant,
+  conflict-free, reversible, and appropriately approved.
+

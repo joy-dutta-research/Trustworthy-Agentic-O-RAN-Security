@@ -1,0 +1,311 @@
+{
+  "schema_version": "publication-summary-1.0",
+  "status": "LOCAL_RELEASE_CANDIDATE_REQUIRES_AUTHOR_APPROVAL",
+  "artifact_kind": "Derived, curated publication summary; not raw observations and not an independent experiment",
+  "created_date": "2026-09-25",
+  "numeric_precision": "Reported numeric summaries are rounded to three decimals unless they are integer counts. Statistical calculations and plot differences should use underlying raw/aggregate evidence, not treat rounding residuals as disagreements.",
+  "publication_method_aliases": {"full_gate": "trust_boundary in original Windows performance evidence; called the full policy boundary in the manuscript"},
+  "scope": {
+    "completed": "Initial PoC Stages 0-7",
+    "deferred": "Larger confirmatory Stage 6 study",
+    "windows_physical_hosts": 2,
+    "packet_physical_hosts": 1,
+    "packet_separately_installed_vms": 2,
+    "packet_episodes_per_vm": 36,
+    "packet_paired_repetitions_per_condition_per_vm": 3,
+    "host_observations_pooled": false,
+    "experiments_rerun_for_this_summary": false
+  },
+  "source_evidence": {
+    "W0": {
+      "description": "Returned Windows cross-host comparison analysis.json, comparison_20260924T160216Z_136ad8d2",
+      "sha256": "68c5923ac46dfcf83d004e3e338683f01d1e0f94c7f149fd10d81d86abc23671",
+      "contains": "Original-host comparison, workstation performance, validity, dataset panels, sensitivity and regeneration evidence"
+    },
+    "U0": {
+      "description": "Original university final_verified_20260923 analysis.json",
+      "sha256": "f202830c98140a4b0d89b5c3d1a43e09baaaed73785cce12f2549acb246072b0"
+    },
+    "P0": {
+      "description": "Independent read-only packet cohort recomputation, independent_packet_audit_v2.json",
+      "sha256": "6babd0a18a88a8a681fa96c2de0b806d3bf5119ca15820961f66150e4a6904c7",
+      "contains": "Both 36-episode successful runs, 24 condition means and 18 paired method-versus-no-action contrasts"
+    },
+    "P1": {
+      "description": "Original first successful packet return archive",
+      "sha256": "66ba17dff4b1d3450c53385722f9e423b9f4ede0c9c29837a46748b98bab8a2d"
+    },
+    "P2": {
+      "description": "Original clean-VM repeat packet return archive",
+      "sha256": "31133395615c6e434af9e7506d26b8005f9bbb988e8794b5fc3efec8ba6b3c54"
+    },
+    "PS": {
+      "description": "Version 7 packet source archive",
+      "sha256": "c439be5ae5ee5896f01617f0c2ffc4a0a4b20003f187a46542f7bf85a7d19f19"
+    }
+  },
+  "windows_validity": {
+    "source": "W0#/full_campaign/policy_and_datasets/validity",
+    "host_outcomes": "Identical university and workstation summaries",
+    "case_occurrences": 777,
+    "semantic_configurations": 669,
+    "reference_decisions": {"ALLOW": 130, "DENY": 565, "ESCALATE": 82},
+    "block_required_count": 647,
+    "rows": [
+      {"method": "direct", "reference_decision_agreement": 130, "block_required_admitted": 647},
+      {"method": "contract", "reference_decision_agreement": 172, "block_required_admitted": 605},
+      {"method": "contract_rbac", "reference_decision_agreement": 362, "block_required_admitted": 415},
+      {"method": "full_gate", "reference_decision_agreement": 777, "block_required_admitted": 0}
+    ],
+    "full_gate_reference_permitted_admitted": 130,
+    "scoped_property_witnesses_passed": 25,
+    "targeted_mutants_detected": 14,
+    "caveats": [
+      "Constructed reference-policy conformance, not detector accuracy or independent validation that the policy is safe.",
+      "The 130 reference-permitted cases include 12 legacy-limitation probes; permitted must not be renamed safe.",
+      "The original policy does not apply its protected-service restriction to rollback_policy."
+    ]
+  },
+  "dataset_grounded_evaluation": {
+    "source": "W0#/full_campaign/policy_and_datasets",
+    "netslab": {
+      "lower_layer_rows_used_for_exhaustive_aggregate_context": 45244,
+      "context_bases": {"dataset_grounded": 10, "standards_context": 10},
+      "control_generation_seed_count": 20,
+      "constructed_proposal_occurrences": 20000,
+      "semantic_configurations": 19945,
+      "block_required_count": 16000,
+      "block_required_admitted": {"direct": 16000, "contract": 16000, "contract_rbac": 9606, "full_gate": 0},
+      "full_gate_reference_permitted_admitted": 4000,
+      "reference_permitted_count": 4000,
+      "caveat": "Constructed proposals grounded in aggregate context; not 20000 independent observed attacks."
+    },
+    "fiveg_nidd": {
+      "source_rows": 1215890,
+      "eligible_unique_natural_records": 733693,
+      "natural_reference_permitted_records": 733693,
+      "natural_census_meaningful_proposal_configurations": 33,
+      "natural_census_outcome": "Every method admitted every eligible natural proposal; this census does not distinguish blocking performance.",
+      "panel_seed_count": 20,
+      "nested_panel_sizes_per_label": [25, 100, 250],
+      "largest_panels_row_occurrences": 20000,
+      "largest_panels_unique_rows": 14831,
+      "conformance_case_occurrences": 95000,
+      "conformance_normalized_configurations": 162,
+      "block_required_count": 75000,
+      "block_required_admitted": {"direct": 75000, "contract": 75000, "contract_rbac": 60000, "full_gate": 0},
+      "full_gate_reference_permitted_admitted": 20000,
+      "reference_permitted_count": 20000,
+      "additional_forced_policy_compliant_false_alarm_probes": 5000,
+      "false_alarm_probes_admitted_by_each_method": 5000,
+      "caveats": [
+        "Seeded nested panels overlap; case occurrences are not independent security incidents.",
+        "False-alarm probes deliberately propose disruptive actions on benign context. Their admission is not an evaluated detector false-positive rate."
+      ]
+    },
+    "regeneration": {
+      "byte_identical_constructed_case_files": 42,
+      "constructed_case_occurrences": 120777,
+      "byte_identical_performance_workloads": 2,
+      "netslab_aggregate": "Parsed JSON agrees; serialized bytes differ."
+    },
+    "sensitivity": {
+      "frozen_conditions": 12,
+      "cross_host_summaries_equal": true,
+      "netslab_changed_decisions": {"reduction_cap_60": 326, "reduction_cap_90": 0, "ttl_300": 4112, "ttl_600": 2055},
+      "netslab_decision_denominator": 20000,
+      "nidd_conditions": 7,
+      "nidd_changed_decisions_in_each_condition": 0,
+      "nidd_budget_500_changed_proposal_payloads": 29964,
+      "nidd_budget_2000_changed_proposal_payloads": 8100,
+      "caveat": "Operator thresholds are illustrative; this is not proof of invariance to all policies or standards-mandated thresholds."
+    }
+  },
+  "windows_matched_processing": {
+    "source": "W0#/new_host/performance/timing_and_scaling and W0#/original_host",
+    "measurement_boundary": "Matched local processing with buffered event logging; excludes initialization, final flush, raw metric emission, network/actuator delay, LLM inference and durable remote audit storage.",
+    "unit": "microseconds",
+    "statistic": "Mean of 20 process-block p50 or p95 statistics, not a pooled request percentile",
+    "warmup_per_method_per_block": 1000,
+    "measured_requests_per_method_per_block": 10000,
+    "rows": [
+      {"dataset": "NetsLab", "method": "direct", "university_p50": 9.320, "university_p95": 14.530, "workstation_p50": 10.195, "workstation_p95": 14.795},
+      {"dataset": "NetsLab", "method": "full_gate", "university_p50": 72.580, "university_p95": 127.515, "workstation_p50": 76.862, "workstation_p95": 125.237},
+      {"dataset": "5G-NIDD", "method": "direct", "university_p50": 8.960, "university_p95": 13.020, "workstation_p50": 10.150, "workstation_p95": 13.645},
+      {"dataset": "5G-NIDD", "method": "full_gate", "university_p50": 64.167, "university_p95": 106.246, "workstation_p50": 69.975, "workstation_p95": 96.196}
+    ],
+    "selection_note": "Direct/full gate selected for a compact publication comparison. Contract and RBAC timings and other boundaries remain in the full source evidence; this is not an exhaustive performance export."
+  },
+  "windows_scaling": {
+    "source": "W0#/new_host/performance/timing_and_scaling and W0#/original_host",
+    "method": "full_gate",
+    "boundary": "Ordinary-input no-conflict evaluator component; not matched buffered processing",
+    "statistic": "Mean process-block p95 over five blocks",
+    "unit": "milliseconds",
+    "rows": [
+      {"active_actions": 0, "university_netslab": 0.095, "workstation_netslab": 0.091, "university_nidd": 0.096, "workstation_nidd": 0.054},
+      {"active_actions": 100, "university_netslab": 1.935, "workstation_netslab": 1.463, "university_nidd": 2.107, "workstation_nidd": 1.429},
+      {"active_actions": 1000, "university_netslab": 19.367, "workstation_netslab": 14.995, "university_nidd": 19.006, "workstation_nidd": 13.288}
+    ],
+    "selection_note": "Selected state sizes 0, 100 and 1000; original evidence also contains 1 and 10, early/late conflicts, malformed-last state, near-limit input and resource conditions. Early-exit timings are not representative of complete scans."
+  },
+  "windows_load": {
+    "source": "W0#/new_host/performance/load_by_seed_all_conditions_retained and W0#/original_host",
+    "method": "full_gate",
+    "offered_rate_unit": "action proposals per second, not packets per second",
+    "measurement": "Percentage of all scheduled requests completed, including bounded drain; not sustained throughput and not deadline success",
+    "consumer_count": 1,
+    "fixed_nonconflicting_active_actions": 100,
+    "queue_capacity": 1000,
+    "warmup_seconds": 10,
+    "offer_seconds": 60,
+    "maximum_drain_seconds": 30,
+    "seeds": [4000, 4001, 4002, 4003, 4004],
+    "rows": [
+      {"offered_rate": 100, "university_netslab": 100.000, "workstation_netslab": 100.000, "university_nidd": 100.000, "workstation_nidd": 100.000},
+      {"offered_rate": 1000, "university_netslab": 66.993, "workstation_netslab": 76.118, "university_nidd": 67.098, "workstation_nidd": 68.850},
+      {"offered_rate": 5000, "university_netslab": 14.382, "workstation_netslab": 14.986, "university_nidd": 14.927, "workstation_nidd": 12.902}
+    ],
+    "direct_completion_percent_every_rate_and_host": 100,
+    "noncompletion_cause": "Queue overflow",
+    "admitted_requests_right_censored_at_drain_bound": 0,
+    "all_offered_10ms_deadline_success_percent_every_full_gate_1000_and_5000_cell": 0,
+    "deadline_note": "10 ms is an illustrative reporting deadline, not a claimed O-RAN requirement.",
+    "completed_only_scheduled_arrival_to_completion_p95_ms": [
+      {"offered_rate": 100, "university_netslab": 3.118, "workstation_netslab": 3.285, "university_nidd": 3.006, "workstation_nidd": 4.136},
+      {"offered_rate": 1000, "university_netslab": 1908, "workstation_netslab": 1345, "university_nidd": 1917, "workstation_nidd": 1884},
+      {"offered_rate": 5000, "university_netslab": 1700, "workstation_netslab": 1386, "university_nidd": 1662, "workstation_nidd": 2372}
+    ],
+    "consumer_peak_rss_max_mib": {"university": 37.051, "workstation": 36.836},
+    "rss_boundary": "Consumer only; excludes generator, supervisor, operating system and VMs.",
+    "generator_limited_cells_retained": ["university NetsLab full_gate 1000/s seed 4002", "university NetsLab direct 5000/s seed 4002"],
+    "workstation_generator_limited_cells": 0,
+    "caveat": "Completed-only latency hides dropped requests unless completion/overflow is also reported. The workstation is not uniformly faster."
+  },
+  "packet_protocol": {
+    "source": "P0#/runs/first/plan and P0#/runs/repeat/plan",
+    "topology": "Four isolated Linux namespaces: protected UDP client, suspect UDP client, router and echo server",
+    "bottleneck_kbit_s": 1000,
+    "episode_seconds": 20,
+    "event_interval_seconds": [4, 14],
+    "event_interval_right_endpoint_excluded": true,
+    "payload_bytes": 512,
+    "protected_packets_per_second": 100,
+    "suspect_background_packets_per_second": 120,
+    "suspect_flood_packets_per_second": 400,
+    "benign_burst_seconds": 0.6,
+    "reduction_percent": 80,
+    "action_ttl_seconds": 6,
+    "maximum_interventions_per_episode": 1,
+    "job_order_seed": 220926,
+    "seed_interpretation": "Shuffles job order; does not vary the traffic distribution.",
+    "methods": {
+      "no_action": "No intervention baseline",
+      "fixed_rule": "Act on the rule alert without the policy gate",
+      "current_gate": "Apply the frozen pre-action policy gate",
+      "evidence_feedback": "Require two fresh target-bound consecutive excess-traffic/service-impairment observations and evaluate post-action benefit"
+    },
+    "proposal_note": "All packet action proposals are policy-compliant; fixed-rule and current-gate flood similarity is expected.",
+    "protected_timely_delivery": "Percentage of protected requests actually sent during the event interval receiving an echo within 500 ms; denominator includes loss and late responses.",
+    "suspect_goodput": "Echoed suspect application payload for the event cohort in decimal kbit/s; not router-ingress rate. In the benign-burst condition this traffic is legitimate.",
+    "experimental_unit": "Episode, not individual packets",
+    "comparisons": "Mean of three repetition-matched method-minus-no-action differences within each VM; VMs not pooled",
+    "qualification_boundary_note": "Successful technical qualification used 10000 kbit/s; the comparative exploratory pilot used 1000 kbit/s."
+  },
+  "packet_absolute_condition_means": {
+    "source": "P0#/runs/{first,repeat}/aggregate_conditions",
+    "fields": ["scenario", "method", "protected_timely_percent", "suspect_goodput_kbit_s", "interventions_of_3"],
+    "first_vm": [
+      ["persistent_flood", "no_action", 29.649, 815.377, 0],
+      ["persistent_flood", "fixed_rule", 72.599, 528.247, 3],
+      ["persistent_flood", "current_gate", 72.844, 526.609, 3],
+      ["persistent_flood", "evidence_feedback", 72.439, 529.203, 3],
+      ["benign_burst", "no_action", 96.532, 512.546, 0],
+      ["benign_burst", "fixed_rule", 96.392, 413.423, 3],
+      ["benign_burst", "current_gate", 96.394, 413.969, 3],
+      ["benign_burst", "evidence_feedback", 96.361, 513.229, 0],
+      ["ineffective_action", "no_action", 30.030, 813.875, 0],
+      ["ineffective_action", "fixed_rule", 29.805, 814.831, 3],
+      ["ineffective_action", "current_gate", 29.356, 816.469, 3],
+      ["ineffective_action", "evidence_feedback", 29.208, 817.015, 3]
+    ],
+    "repeat_vm": [
+      ["persistent_flood", "no_action", 28.875, 818.244, 0],
+      ["persistent_flood", "fixed_rule", 72.853, 526.746, 3],
+      ["persistent_flood", "current_gate", 72.979, 526.609, 3],
+      ["persistent_flood", "evidence_feedback", 72.920, 527.019, 3],
+      ["benign_burst", "no_action", 96.362, 513.365, 0],
+      ["benign_burst", "fixed_rule", 96.427, 413.559, 3],
+      ["benign_burst", "current_gate", 96.462, 413.150, 3],
+      ["benign_burst", "evidence_feedback", 96.532, 512.546, 0],
+      ["ineffective_action", "no_action", 29.370, 816.469, 0],
+      ["ineffective_action", "fixed_rule", 29.461, 815.923, 3],
+      ["ineffective_action", "current_gate", 29.771, 814.694, 3],
+      ["ineffective_action", "evidence_feedback", 28.972, 817.971, 3]
+    ]
+  },
+  "packet_paired_contrasts": {
+    "source": "P0#/runs/{first,repeat}/comparisons",
+    "fields": ["scenario", "method", "protected_timely_delta_pp", "suspect_goodput_delta_kbit_s"],
+    "first_vm": [
+      ["persistent_flood", "fixed_rule", 42.949, -287.130],
+      ["persistent_flood", "current_gate", 43.195, -288.768],
+      ["persistent_flood", "evidence_feedback", 42.790, -286.174],
+      ["benign_burst", "fixed_rule", -0.140, -99.123],
+      ["benign_burst", "current_gate", -0.138, -98.577],
+      ["benign_burst", "evidence_feedback", -0.171, 0.683],
+      ["ineffective_action", "fixed_rule", -0.226, 0.956],
+      ["ineffective_action", "current_gate", -0.674, 2.594],
+      ["ineffective_action", "evidence_feedback", -0.822, 3.140]
+    ],
+    "repeat_vm": [
+      ["persistent_flood", "fixed_rule", 43.979, -291.499],
+      ["persistent_flood", "current_gate", 44.104, -291.635],
+      ["persistent_flood", "evidence_feedback", 44.046, -291.226],
+      ["benign_burst", "fixed_rule", 0.065, -99.806],
+      ["benign_burst", "current_gate", 0.100, -100.215],
+      ["benign_burst", "evidence_feedback", 0.170, -0.819],
+      ["ineffective_action", "fixed_rule", 0.091, -0.546],
+      ["ineffective_action", "current_gate", 0.401, -1.775],
+      ["ineffective_action", "evidence_feedback", -0.398, 1.502]
+    ],
+    "statistical_scope": "Descriptive paired contrasts only. No significance claim, no packet-level pseudo-replication and no pooling of VMs as independent physical workstations."
+  },
+  "packet_timing_and_feedback": {
+    "source": "P0#/runs/{first,repeat}/aggregate_conditions",
+    "persistent_flood_event_to_recorded_apply_decision_seconds": [
+      {"method": "fixed_rule", "first_vm": 1.512, "repeat_vm": 1.544},
+      {"method": "current_gate", "first_vm": 1.513, "repeat_vm": 1.526},
+      {"method": "evidence_feedback", "first_vm": 2.528, "repeat_vm": 2.511}
+    ],
+    "apply_boundary": "Recorded before dispatch; not actuator acknowledgement, not pure CPU cost. Additional feedback time is approximately one second of corroborating observation.",
+    "benign_feedback_abstentions_of_3": {"first_vm": 3, "repeat_vm": 3},
+    "ineffective_feedback_no_observed_benefit_flags_of_3": {"first_vm": 3, "repeat_vm": 3},
+    "ineffective_feedback_apply_decision_to_restoration_trigger_seconds": {"first_vm": 4.020, "repeat_vm": 3.997},
+    "ineffective_feedback_restoration_call_and_readback_ms": {"first_vm": 3.885, "repeat_vm": 3.987},
+    "ineffective_action_interpretation": "Acknowledged no-op; feedback requested restoration and local operator review but did not improve delivery. These timings are not recovery times from harmed service."
+  },
+  "reproducibility_and_limits": {
+    "frozen_source_input_reference_files_identity_matched": 214,
+    "final_performance_cells_per_host": 1820,
+    "instrumentation_only_cells_excluded_per_host": 84,
+    "independent_audit": {"packet_episodes_recomputed": 72, "packet_paired_contrasts_recomputed": 18, "windows_raw_cells_reaggregated": 24},
+    "seed_design": {"source_panels": "0-19", "control_generation": "1000-1019", "timing": "2000-2019", "scaling": "3000-3004", "arrival": "4000-4004"},
+    "limitations": [
+      "No evaluated LLM, learned detector accuracy, real radio stack, E2/A1/O1 integration or production O-RAN deployment.",
+      "No independent human-expert validation or regulatory/standards compliance certification.",
+      "Frozen-policy agreement does not independently establish adequacy of the policy, intervention necessity or operational safety.",
+      "Policy-compliant false-alarm probes were admitted and remain an explicit measured limitation.",
+      "Single-worker high-state/high-rate measurements show queue overflow and missed illustrative deadlines; measured microsecond local costs are not an unlimited scalability claim.",
+      "Packet study is exploratory with three paired episode repetitions per condition per VM on one physical workstation.",
+      "Flood mitigation benefits are similar across intervention methods; feedback superiority on flooding is not established and timely delivery remains about 72-73 percent.",
+      "Avoiding one transient benign-burst intervention is not a general benign-versus-malicious classifier; sustained legitimate overload may satisfy the same corroboration rule.",
+      "Ineffective action is an acknowledged no-op. Lack-of-benefit signaling does not establish restoration after actual harm or an exercised human-approval service.",
+      "Earlier partial packet runs and helper/topology repairs preceded the successful exploratory protocol. The historical UDP-send timeout's underlying kernel/socket cause was not conclusively reproduced.",
+      "Technical qualification at 10 Mbit/s and comparative pilot at 1 Mbit/s have different boundaries.",
+      "Full confirmatory study, held-out varied workloads, harmful-action recovery and additional physical-host packet replication remain deferred.",
+      "Checksums and successful execution are provenance/software evidence, not scientific superiority or an authenticity signature.",
+      "This curated file omits private absolute paths and raw dataset content; public redistribution rights and author-approved release scope still need confirmation."
+    ]
+  }
+}

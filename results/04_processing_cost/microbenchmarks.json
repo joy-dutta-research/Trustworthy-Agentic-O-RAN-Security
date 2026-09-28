@@ -1,0 +1,1506 @@
+[
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 12.4,
+        "mean": 11.41,
+        "minimum": 10.7
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 24.3,
+        "mean": 15.935499999999994,
+        "minimum": 14.1
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 59.40400000000009,
+        "mean": 34.096550000000036,
+        "minimum": 24.50600000000013
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.25,
+      "mean": 0.215625,
+      "minimum": 0.1875
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 27144192,
+      "mean": 26811596.8,
+      "minimum": 26529792
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/0"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 12.4,
+        "mean": 12.025,
+        "minimum": 11.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 19.8,
+        "mean": 17.205000000000002,
+        "minimum": 15.8
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 43.6,
+        "mean": 37.30760000000006,
+        "minimum": 30.60100000000002
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.25,
+      "mean": 0.23046875,
+      "minimum": 0.203125
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 27267072,
+      "mean": 26878156.8,
+      "minimum": 26628096
+    },
+    "reference_agreement_count": 100000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/1"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 0.9,
+        "mean": 0.79,
+        "minimum": 0.7
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 1.6,
+        "mean": 1.1099999999999999,
+        "minimum": 1.0
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 2.8,
+        "mean": 2.020150000000003,
+        "minimum": 1.4
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.109375,
+      "mean": 0.10078125,
+      "minimum": 0.078125
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 27045888,
+      "mean": 26837811.2,
+      "minimum": 26644480
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/2"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 49.5,
+        "mean": 47.135000000000005,
+        "minimum": 45.0
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 94.41499999999978,
+        "mean": 77.37549999999992,
+        "minimum": 70.3
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 236.1040000000001,
+        "mean": 177.1638000000002,
+        "minimum": 148.92600000000058
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.703125,
+      "mean": 0.665625,
+      "minimum": 0.625
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28946432,
+      "mean": 28528025.6,
+      "minimum": 28233728
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/3"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 23.7,
+        "mean": 22.52,
+        "minimum": 21.6
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 48.7,
+        "mean": 33.43649999999998,
+        "minimum": 29.2
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 99.90400000000008,
+        "mean": 79.81525000000012,
+        "minimum": 60.80200000000004
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.421875,
+      "mean": 0.3578125,
+      "minimum": 0.3125
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28237824,
+      "mean": 27989811.2,
+      "minimum": 27832320
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/4"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 25.0,
+        "mean": 24.080000000000002,
+        "minimum": 23.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 40.504999999999924,
+        "mean": 35.43724999999996,
+        "minimum": 31.5
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 111.10600000000014,
+        "mean": 85.72250000000017,
+        "minimum": 66.30400000000009
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.421875,
+      "mean": 0.3859375,
+      "minimum": 0.375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28033024,
+      "mean": 27827609.6,
+      "minimum": 27602944
+    },
+    "reference_agreement_count": 100000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/5"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 10.1,
+        "mean": 8.959999999999999,
+        "minimum": 8.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 20.9,
+        "mean": 13.020499999999993,
+        "minimum": 11.5
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 56.40500000000011,
+        "mean": 29.811650000000036,
+        "minimum": 22.5
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.28125,
+      "mean": 0.20703125,
+      "minimum": 0.1875
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28143616,
+      "mean": 27893964.8,
+      "minimum": 27701248
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/6"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 66.8,
+        "mean": 64.16749999999999,
+        "minimum": 61.4
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 126.71499999999978,
+        "mean": 106.2457499999999,
+        "minimum": 92.4
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 272.41500000000036,
+        "mean": 240.28575000000023,
+        "minimum": 198.71300000000028
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.921875,
+      "mean": 0.8734375,
+      "minimum": 0.84375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29990912,
+      "mean": 29563699.2,
+      "minimum": 29188096
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/7"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 13.1,
+        "mean": 12.545,
+        "minimum": 12.0
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 32.0,
+        "mean": 19.225999999999985,
+        "minimum": 16.3
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 72.50200000000004,
+        "mean": 41.171900000000036,
+        "minimum": 26.701000000000022
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.296875,
+      "mean": 0.23828125,
+      "minimum": 0.21875
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28278784,
+      "mean": 27913011.2,
+      "minimum": 27701248
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/8"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 14.3,
+        "mean": 13.444999999999999,
+        "minimum": 12.6
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 30.4,
+        "mean": 20.185499999999994,
+        "minimum": 17.2
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 70.60300000000005,
+        "mean": 42.38715000000005,
+        "minimum": 25.10100000000002
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.28125,
+      "mean": 0.2484375,
+      "minimum": 0.21875
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28233728,
+      "mean": 28037324.8,
+      "minimum": 27774976
+    },
+    "reference_agreement_count": 95002,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/9"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 1.0,
+        "mean": 0.835,
+        "minimum": 0.8
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 2.1,
+        "mean": 1.275,
+        "minimum": 1.0
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 6.4,
+        "mean": 2.315100000000002,
+        "minimum": 1.4
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.140625,
+      "mean": 0.10234375,
+      "minimum": 0.078125
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28143616,
+      "mean": 27918540.8,
+      "minimum": 27770880
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/10"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 58.6,
+        "mean": 54.302499999999995,
+        "minimum": 51.3
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 127.80499999999992,
+        "mean": 101.66749999999996,
+        "minimum": 92.2
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 269.5120000000002,
+        "mean": 208.1100500000001,
+        "minimum": 159.21100000000024
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.890625,
+      "mean": 0.77109375,
+      "minimum": 0.6875
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 31703040,
+      "mean": 31335833.6,
+      "minimum": 30949376
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/11"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 29.2,
+        "mean": 24.585,
+        "minimum": 22.6
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 80.50499999999992,
+        "mean": 39.86099999999998,
+        "minimum": 31.0
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 180.40200000000007,
+        "mean": 88.67350000000008,
+        "minimum": 59.10200000000005
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.59375,
+      "mean": 0.4046875,
+      "minimum": 0.34375
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29147136,
+      "mean": 28886220.8,
+      "minimum": 28622848
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/12"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 26.3,
+        "mean": 25.57,
+        "minimum": 24.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 43.2,
+        "mean": 37.866749999999975,
+        "minimum": 34.9
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 104.50500000000012,
+        "mean": 87.16475000000011,
+        "minimum": 74.80200000000005
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.40625,
+      "mean": 0.39609375,
+      "minimum": 0.375
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29253632,
+      "mean": 28978995.2,
+      "minimum": 28590080
+    },
+    "reference_agreement_count": 95002,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/13"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 10.0,
+        "mean": 9.32,
+        "minimum": 8.8
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 21.0,
+        "mean": 14.530249999999995,
+        "minimum": 11.5
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 59.104000000000084,
+        "mean": 32.43210000000005,
+        "minimum": 22.5
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.25,
+      "mean": 0.215625,
+      "minimum": 0.1875
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29302784,
+      "mean": 28999270.4,
+      "minimum": 28688384
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/14"
+  },
+  {
+    "host": "university",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 75.9,
+        "mean": 72.58,
+        "minimum": 69.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 163.50999999999985,
+        "mean": 127.51474999999994,
+        "minimum": 116.7
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 330.6070000000002,
+        "mean": 262.08185000000026,
+        "minimum": 219.7280000000006
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 1.125,
+      "mean": 0.98125,
+      "minimum": 0.90625
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 32718848,
+      "mean": 32438067.2,
+      "minimum": 32161792
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/original_host/performance/timing_and_scaling/15"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 14.9,
+        "mean": 13.094999999999999,
+        "minimum": 11.8
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 22.404999999999927,
+        "mean": 16.510499999999993,
+        "minimum": 14.6
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 32.402000000000044,
+        "mean": 23.62585000000002,
+        "minimum": 19.5
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.328125,
+      "mean": 0.26875,
+      "minimum": 0.21875
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 26828800,
+      "mean": 26635878.4,
+      "minimum": 26415104
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/0"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 15.1,
+        "mean": 13.995,
+        "minimum": 12.6
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 22.7,
+        "mean": 18.025249999999996,
+        "minimum": 16.4
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 32.6,
+        "mean": 25.22085000000002,
+        "minimum": 21.4
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.328125,
+      "mean": 0.28046875,
+      "minimum": 0.234375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 26910720,
+      "mean": 26770841.6,
+      "minimum": 26603520
+    },
+    "reference_agreement_count": 100000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/1"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 1.1,
+        "mean": 0.8950000000000001,
+        "minimum": 0.8
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 1.5,
+        "mean": 1.125,
+        "minimum": 1.0
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 3.0010000000000217,
+        "mean": 1.985100000000002,
+        "minimum": 1.5
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.1875,
+      "mean": 0.14765625,
+      "minimum": 0.09375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 26890240,
+      "mean": 26686464.0,
+      "minimum": 26304512
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/2"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 61.6,
+        "mean": 51.585,
+        "minimum": 45.0
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 90.00499999999992,
+        "mean": 72.79074999999999,
+        "minimum": 61.3
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 115.11600000000035,
+        "mean": 91.64225000000005,
+        "minimum": 77.00300000000006
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.875,
+      "mean": 0.71953125,
+      "minimum": 0.59375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28667904,
+      "mean": 28426649.6,
+      "minimum": 28164096
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/3"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 29.7,
+        "mean": 25.847500000000004,
+        "minimum": 23.2
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 45.3,
+        "mean": 33.645749999999985,
+        "minimum": 29.4
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 63.1,
+        "mean": 46.85135000000003,
+        "minimum": 38.6
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.546875,
+      "mean": 0.42890625,
+      "minimum": 0.34375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28176384,
+      "mean": 27765760.0,
+      "minimum": 27312128
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/4"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 30.8,
+        "mean": 27.5725,
+        "minimum": 24.1
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 48.3,
+        "mean": 35.50549999999999,
+        "minimum": 30.2
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 66.7,
+        "mean": 48.15105000000002,
+        "minimum": 40.6
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.53125,
+      "mean": 0.44453125,
+      "minimum": 0.375
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28069888,
+      "mean": 27798528.0,
+      "minimum": 27435008
+    },
+    "reference_agreement_count": 100000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/5"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 12.5,
+        "mean": 10.15,
+        "minimum": 9.1
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 23.30499999999993,
+        "mean": 13.645249999999995,
+        "minimum": 11.7
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 37.70200000000004,
+        "mean": 20.680850000000017,
+        "minimum": 16.5
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.359375,
+      "mean": 0.25703125,
+      "minimum": 0.203125
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28139520,
+      "mean": 27794022.4,
+      "minimum": 27492352
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/6"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 83.9,
+        "mean": 69.975,
+        "minimum": 60.3
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 131.3,
+        "mean": 96.19649999999999,
+        "minimum": 79.8
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 225.90200000000007,
+        "mean": 125.80800000000006,
+        "minimum": 103.80300000000005
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 1.171875,
+      "mean": 0.934375,
+      "minimum": 0.796875
+    },
+    "dataset": "5gnidd",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29790208,
+      "mean": 29556736.0,
+      "minimum": 29147136
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/7"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 15.1,
+        "mean": 13.790000000000001,
+        "minimum": 12.3
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 22.6,
+        "mean": 20.130000000000003,
+        "minimum": 16.3
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 38.00500000000011,
+        "mean": 29.490750000000013,
+        "minimum": 21.6
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.328125,
+      "mean": 0.28828125,
+      "minimum": 0.234375
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28082176,
+      "mean": 27776819.2,
+      "minimum": 27586560
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/8"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 19.2,
+        "mean": 15.165000000000001,
+        "minimum": 13.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 33.2,
+        "mean": 22.525,
+        "minimum": 18.1
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 56.4,
+        "mean": 33.14615000000002,
+        "minimum": 23.7
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.4375,
+      "mean": 0.30703125,
+      "minimum": 0.25
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28049408,
+      "mean": 27826995.2,
+      "minimum": 27631616
+    },
+    "reference_agreement_count": 95002,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/9"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 1.0,
+        "mean": 0.8950000000000001,
+        "minimum": 0.8
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 1.4,
+        "mean": 1.2349999999999999,
+        "minimum": 1.0
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 3.801000000000022,
+        "mean": 2.2953500000000076,
+        "minimum": 1.6
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.1875,
+      "mean": 0.1515625,
+      "minimum": 0.125
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 27979776,
+      "mean": 27807744.0,
+      "minimum": 27492352
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/10"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 74.3,
+        "mean": 57.847500000000004,
+        "minimum": 48.5
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 136.7,
+        "mean": 101.48149999999998,
+        "minimum": 84.9
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 186.10100000000003,
+        "mean": 130.67725000000004,
+        "minimum": 102.90800000000017
+      }
+    },
+    "blocks": 20,
+    "boundary": "evaluator_component",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 1.0625,
+      "mean": 0.8296875,
+      "minimum": 0.703125
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 31465472,
+      "mean": 31159500.8,
+      "minimum": 30908416
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/11"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 28.7,
+        "mean": 26.415,
+        "minimum": 24.0
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 48.4,
+        "mean": 37.27524999999999,
+        "minimum": 31.4
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 84.60100000000003,
+        "mean": 50.95610000000003,
+        "minimum": 39.401000000000025
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.484375,
+      "mean": 0.43828125,
+      "minimum": 0.390625
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29097984,
+      "mean": 28762112.0,
+      "minimum": 28430336
+    },
+    "reference_agreement_count": 80000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/12"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 33.5,
+        "mean": 28.185000000000002,
+        "minimum": 24.9
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 50.2,
+        "mean": 40.30099999999999,
+        "minimum": 31.6
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 71.0,
+        "mean": 56.62215000000005,
+        "minimum": 44.3
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.578125,
+      "mean": 0.46484375,
+      "minimum": 0.390625
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "contract_rbac",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 29110272,
+      "mean": 28741836.8,
+      "minimum": 28495872
+    },
+    "reference_agreement_count": 95002,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/13"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 12.3,
+        "mean": 10.195,
+        "minimum": 9.2
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 20.404999999999927,
+        "mean": 14.795249999999996,
+        "minimum": 11.7
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 35.902000000000044,
+        "mean": 23.116100000000024,
+        "minimum": 16.40100000000002
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 0.359375,
+      "mean": 0.26015625,
+      "minimum": 0.21875
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "direct",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 28962816,
+      "mean": 28711526.4,
+      "minimum": 28360704
+    },
+    "reference_agreement_count": 40000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/14"
+  },
+  {
+    "host": "workstation",
+    "block_percentile_statistics_microseconds": {
+      "p50": {
+        "blocks": 20,
+        "maximum": 83.5,
+        "mean": 76.8625,
+        "minimum": 66.0
+      },
+      "p95": {
+        "blocks": 20,
+        "maximum": 139.2,
+        "mean": 125.23749999999998,
+        "minimum": 102.1
+      },
+      "p99": {
+        "blocks": 20,
+        "maximum": 206.1,
+        "mean": 161.29780000000005,
+        "minimum": 124.90100000000002
+      }
+    },
+    "blocks": 20,
+    "boundary": "matched_local_processing_with_buffered_event_logging",
+    "cpu_seconds_including_instrumentation": {
+      "blocks": 20,
+      "maximum": 1.125,
+      "mean": 1.0484375,
+      "minimum": 0.90625
+    },
+    "dataset": "netslab",
+    "large_input": null,
+    "measured_requests": 200000,
+    "method": "trust_boundary",
+    "mode": "micro",
+    "peak_rss_bytes": {
+      "blocks": 20,
+      "maximum": 32792576,
+      "mean": 32292044.8,
+      "minimum": 32043008
+    },
+    "reference_agreement_count": 200000,
+    "resource_only": null,
+    "state_path": null,
+    "state_size": null,
+    "source": "evidence/summaries/windows_comparison.json#/new_host/performance/timing_and_scaling/15"
+  }
+]

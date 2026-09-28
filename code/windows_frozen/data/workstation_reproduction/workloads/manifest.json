@@ -1,0 +1,73 @@
+{
+  "analysis_seed": 9000,
+  "bootstrap_draws": 2500,
+  "created_at_utc": "2026-09-23T10:35:37.828730+00:00",
+  "datasets": {
+    "5gnidd": {
+      "action_counts": {
+        "notify_operator": 16,
+        "rate_limit_ue": 40
+      },
+      "file": "5gnidd_workload.jsonl",
+      "input_case_count": 4750,
+      "input_sha256": "ca3445984296c2a331d6a4dfb530e5058875b60e9e9d8bb170ac37a7c94557b8",
+      "input_source": "results/evaluation_v0.2/stage2_nidd_panels_20260923T102414Z_8f176b45/work/cases_seed_00_conformance.jsonl",
+      "pool_count": 56,
+      "sha256": "ea527ee3d2cd1732afc6664c7bd508694bd127009fbe2cf27b527b439516cefa",
+      "stratum_counts": {
+        "allow": 16,
+        "conflict": 8,
+        "malformed": 16,
+        "other_escalate": 8,
+        "policy_deny": 8
+      },
+      "upstream_completion": {
+        "completion_receipts": {
+          "RUN.json": "d2a5dfcc23a2cbb43e33c13e24199d05214fe2e48a17ca504891bc8c5ab4c2ba",
+          "supervisor/COMPLETE.json": "af000ad838d789e5f402e7e19978932fa55858b9d02ac65ec1d95b7e9a97c81a"
+        },
+        "expected_case_count": 4750
+      }
+    },
+    "netslab": {
+      "action_counts": {
+        "isolate_xapp": 40,
+        "modify_a1_policy": 40,
+        "quarantine_ue": 40,
+        "rate_limit_ue": 40
+      },
+      "file": "netslab_workload.jsonl",
+      "input_case_count": 20000,
+      "input_sha256": "1f187bd22047e67a78dcb72489d6354c689c1347d7916b30a8a2fb530b28bdd9",
+      "input_source": "results/evaluation_v0.2/stage2_netslab_20260923T101734Z_08a19383/work/cases.jsonl",
+      "pool_count": 160,
+      "sha256": "dc42404ab504655c150c896f69862bccd14cc30a4383eae5dc2d52ae67b53aa0",
+      "stratum_counts": {
+        "allow": 32,
+        "conflict": 32,
+        "malformed": 32,
+        "other_escalate": 32,
+        "policy_deny": 32
+      },
+      "upstream_completion": {
+        "completion_receipts": {
+          "COMPLETE.json": "9023d706072a8260e2c1260f0e2db4b4645155beb443844fb2211e4662160290",
+          "supervisor/COMPLETE.json": "f36342fbe0a85cc084f4745ba42ba61e4657679704575120f70a514abc9133be"
+        },
+        "expected_case_count": 20000
+      }
+    }
+  },
+  "logical_clock": "fixed_per_case",
+  "micro_mix": {
+    "allow": 0.2,
+    "conflict": 0.2,
+    "malformed": 0.2,
+    "other_escalate": 0.2,
+    "policy_deny": 0.2
+  },
+  "scaling_load_mix": "compliant-only; available actions balanced; not operational prevalence",
+  "selection": "8 smallest canonical SHA256 cases per action/path; explicit malformed copies of compliant proposals",
+  "status": "PREPARED_NOT_MEASURED",
+  "version": "evaluation-performance/0.2.0"
+}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this software when using our reproducibility package. It supports the paper
+  Trustworthy Agentic O-RAN Security: From Threat Detection to Safe Action,
+  Governance, and Standardization, which is under review. The accepted-paper
+  citation will be added after acceptance. This software citation is separate
+  from the paper's author list and does not imply that the paper is accepted.
+title: "Trustworthy Agentic O-RAN Security: Reproducible Proof of Concept"
+type: software
+version: "0.1.0"
+repository-code: "https://github.com/joy-dutta/Trustworthy-Agentic-O-RAN-Security"
+url: "https://github.com/joy-dutta/Trustworthy-Agentic-O-RAN-Security"
+authors:
+  - family-names: Dutta
+    given-names: Joy
+license: Apache-2.0
+keywords:
+  - O-RAN
+  - policy verification
+  - security automation
+  - reproducibility
+abstract: >-
+  A deterministic reference implementation and evidence package for selected
+  trust-boundary and operational-feedback services, with dataset-grounded
+  policy evaluation, measured processing costs, isolated packet experiments
+  and a separate model-assisted policy-consistency review.

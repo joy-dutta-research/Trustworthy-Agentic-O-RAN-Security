@@ -1,0 +1,33 @@
+# New experiments and local validation are not published results.
+/work/
+/validation_work/
+/dist/
+**/__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.key
+*.pem
+*.vhd
+*.vhdx
+*.iso
+
+# Large evidence files are matching release assets, not ordinary Git history.
+/evidence/raw_archives/*.zip
+/evidence/history/*.zip
+
+# Never add original third-party inputs or unreviewed machine receipts.
+/data/raw/
+*.partial
+
+# Manuscript and publication displays are withheld during review.
+*.tex
+*.pdf
+*.eps
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.docx
+*.pptx

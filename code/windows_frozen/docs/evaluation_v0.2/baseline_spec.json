@@ -1,0 +1,390 @@
+{
+  "schema_version": "evaluation-freeze-spec/v1",
+  "files": [
+    {
+      "path": "DATASET.md"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": "SECURITY.md"
+    },
+    {
+      "path": "THREAT_MODEL.md"
+    },
+    {
+      "path": "configs/paper_policy.json",
+      "expected_sha256": "bf5915cd92557ca193d692273021342e5bfa495878a0d4500742662497e6921c"
+    },
+    {
+      "path": "data/raw/5g-nidd/Combined.zip",
+      "expected_sha256": "07531b251f3f35be70bf1d3dcca2e27274bd1b267c5a057c0fcea18668b9293d"
+    },
+    {
+      "path": "data/raw/5g-nidd/provenance-8f9772c704659a01.json"
+    },
+    {
+      "path": "data/raw/Lower_Layer_Data.db",
+      "expected_sha256": "d76fe7df11379223948e624d0f19bcd5caf744a2b6ce20d1ee2143644199ab64"
+    },
+    {
+      "path": "data/raw/extraction_receipt.json"
+    },
+    {
+      "path": "deliverables/ORAN_HOME_LAB_v1.zip",
+      "expected_sha256": "365aeb86c882a40a086a1cd0672445f64d0a499497f8dc91b63f8812252de5e8"
+    },
+    {
+      "path": "deliverables/ORAN_HOME_LAB_v1.zip.sha256"
+    },
+    {
+      "path": "docs/5gnidd_protocol.md"
+    },
+    {
+      "path": "docs/EVALUATION_PLAN_v0.2_PROPOSED.md"
+    },
+    {
+      "path": "docs/EXPERIMENT_CONTEXT.md"
+    },
+    {
+      "path": "docs/closed_loop_protocol.md"
+    },
+    {
+      "path": "docs/experiment_protocol.md"
+    },
+    {
+      "path": "pyproject.toml"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/REPORT.md",
+      "expected_sha256": "5099f626d69ace961f31d9887d6538fa71fb8f7b1d35a8df3bda4a78a345960d"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/conformance_cases.jsonl",
+      "expected_sha256": "3d274e5da446df8ffa8592b494ba990b92cc787d35db93e5d1c149393534894c"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/conformance_decisions.jsonl",
+      "expected_sha256": "90696b454ae22f73f41e6b56f59563d7c8d15004cafea029d09dbfa9495bccb3"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/dataset_audit.json",
+      "expected_sha256": "be22d118d83064b4feacef2a11825f334bec6eb2d712f11c06218f01c0753250"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/false_alarm_probes_cases.jsonl",
+      "expected_sha256": "6b77097c1045c5efbb47552923a16810958cbfaf8c6e14c8daa5d049f17cd1e0"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/false_alarm_probes_decisions.jsonl",
+      "expected_sha256": "887835d56e95b6486e30d31684ed84c2cb44b2f1f5d97461860629d62a9e5004"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/metrics.json",
+      "expected_sha256": "c00f9c73a1abec9257fecd6ecac5a323fcf9dbc129527b1bc6f310b88dddea00"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/record_proposals_cases.jsonl",
+      "expected_sha256": "1866327321cad5737ea7cb0df590d8d7d0224a42f37ac335dfcc58dbc3991d9e"
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified/record_proposals_decisions.jsonl",
+      "expected_sha256": "79b37311c10eddb3de34cefc9c94709d93b2d77d2807939c3254c22b2fd217bb"
+    },
+    {
+      "path": "schemas/action.schema.json",
+      "expected_sha256": "aace5f0b5a387881df062fadcb4604fb87c9a2346127ddacbceb419d77fda04c"
+    },
+    {
+      "path": "scripts/closed_loop_worker.py"
+    },
+    {
+      "path": "scripts/compare_label_reviews.py"
+    },
+    {
+      "path": "scripts/compare_model_reviews.py"
+    },
+    {
+      "path": "scripts/download_5gnidd.py"
+    },
+    {
+      "path": "scripts/export_label_review.py"
+    },
+    {
+      "path": "scripts/extract_netslab_member.py"
+    },
+    {
+      "path": "scripts/freeze_evaluation_baseline.py"
+    },
+    {
+      "path": "scripts/generate_conformance_suite.py"
+    },
+    {
+      "path": "scripts/home_lab_run.py"
+    },
+    {
+      "path": "scripts/inspect_netslab_db.py"
+    },
+    {
+      "path": "scripts/inventory_netslab.py"
+    },
+    {
+      "path": "scripts/portable_bundle.py"
+    },
+    {
+      "path": "scripts/prepare_model_review.py"
+    },
+    {
+      "path": "scripts/prepare_netslab_contexts.py"
+    },
+    {
+      "path": "scripts/run_5gnidd.py"
+    },
+    {
+      "path": "scripts/run_benchmark.py"
+    },
+    {
+      "path": "scripts/run_closed_loop.py"
+    },
+    {
+      "path": "scripts/vm/download_ubuntu_iso.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/__init__.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/approval.py",
+      "expected_sha256": "218f3c7927994dcd0cc8ac053e07897cd6e26d6f94e01ae4fe5b316e3b1b1d21"
+    },
+    {
+      "path": "src/oran_trust_boundary/audit.py",
+      "expected_sha256": "d5bad2c1f1b5770da974a41914997bb4dd1fb4cea9fafe4dcc70381f08bf428c"
+    },
+    {
+      "path": "src/oran_trust_boundary/baselines.py",
+      "expected_sha256": "6cd02ac76aab4d1d8551eab6c4a78d7ac1d4ab2fd54b6502f53c3e59fc0568f4"
+    },
+    {
+      "path": "src/oran_trust_boundary/benchmark.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/cli.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/closed_loop.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/closed_loop_lab.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/closed_loop_results.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/conformance.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/contract.py",
+      "expected_sha256": "afb39c882eace8ae2f382cf908073fa03f9037f08deadbf81c8e9170c3127030"
+    },
+    {
+      "path": "src/oran_trust_boundary/engine.py",
+      "expected_sha256": "8876b45a8188d1d33eaeead12178c09ca431a064cdc481b7d0072b7a865f57cd"
+    },
+    {
+      "path": "src/oran_trust_boundary/inventory.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/jsonio.py",
+      "expected_sha256": "2fc6a9c73258f3140868d7debce0252dbaf92cafa4a64051d7942f5ce90a4d2d"
+    },
+    {
+      "path": "src/oran_trust_boundary/mock_executor.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/model_review.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/models.py",
+      "expected_sha256": "354b745c0b4d4f36f0a2609682e5821475b70d2dc86ddec991f7d1269089c915"
+    },
+    {
+      "path": "src/oran_trust_boundary/netslab_adapter.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/nidd_adapter.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/nidd_cases.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/policy.py",
+      "expected_sha256": "8aeaf472a11ec5d3a7348da142e0241b91730e110e3607740701e20a10ef9401"
+    },
+    {
+      "path": "src/oran_trust_boundary/provenance.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/review.py"
+    },
+    {
+      "path": "src/oran_trust_boundary/sqlite_profile.py"
+    },
+    {
+      "path": "tests/test_5gnidd_download.py"
+    },
+    {
+      "path": "tests/test_benchmark.py"
+    },
+    {
+      "path": "tests/test_closed_loop.py"
+    },
+    {
+      "path": "tests/test_closed_loop_lab.py"
+    },
+    {
+      "path": "tests/test_closed_loop_results.py"
+    },
+    {
+      "path": "tests/test_conformance.py"
+    },
+    {
+      "path": "tests/test_contract.py"
+    },
+    {
+      "path": "tests/test_engine_edge_cases.py"
+    },
+    {
+      "path": "tests/test_evaluation_freeze.py"
+    },
+    {
+      "path": "tests/test_evaluation_spec.py"
+    },
+    {
+      "path": "tests/test_home_lab_run.py"
+    },
+    {
+      "path": "tests/test_inventory.py"
+    },
+    {
+      "path": "tests/test_jsonio.py"
+    },
+    {
+      "path": "tests/test_model_review.py"
+    },
+    {
+      "path": "tests/test_netslab_adapter.py"
+    },
+    {
+      "path": "tests/test_nidd_adapter.py"
+    },
+    {
+      "path": "tests/test_nidd_cases.py"
+    },
+    {
+      "path": "tests/test_policy_and_adversarial.py"
+    },
+    {
+      "path": "tests/test_portable_bundle.py"
+    },
+    {
+      "path": "tests/test_review.py"
+    },
+    {
+      "path": "tests/test_sqlite_profile.py"
+    },
+    {
+      "path": "tests/test_vm_media.py"
+    },
+    {
+      "path": "tests/test_vm_transfer_plan.py"
+    }
+  ],
+  "trees": [
+    {
+      "path": "configs/evaluation_v0.2",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "docs/evaluation_v0.2",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "data/conformance",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "data/processed",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/local/hardened-pilot",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/local/hardened-pilot-v2",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/local/hardened-pilot-v3",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/local/hardened-pilot-final",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/local/hardened-pilot-current",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/5gnidd_v0.1_verified",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    },
+    {
+      "path": "results/5gnidd_v0.1_preliminary",
+      "suffixes": null,
+      "exclude_dirs": [
+        "__pycache__"
+      ]
+    }
+  ],
+  "provenance_only": [
+    {
+      "artifact_id": "netslab_parent_archive_not_rehashed",
+      "receipt": "data/raw/extraction_receipt.json",
+      "sha256_pointer": null,
+      "size_pointer": null
+    }
+  ]
+}
