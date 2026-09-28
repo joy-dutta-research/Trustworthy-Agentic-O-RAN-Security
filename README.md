@@ -46,7 +46,7 @@ All eight stages are complete for the **initial PoC**. The [study overview](docs
 The findings support three complementary safeguards:
 
 1. **Permission:** the Trust Boundary checks whether a proposed action complies with the operator’s policy.
-2. **Corroboration:** fresh observations linked to the proposed target help establish whether intervention is justified.
+2. **Check before acting:** use up-to-date information about the situation to check whether the problem is still present and action is needed.
 3. **Benefit:** outcome feedback checks whether the action helped and requests restoration or operator review when benefit is not observed.
 
 For the traffic-limiting example, permission alone cannot establish that an alert reflects a genuine service problem. Likewise, an accepted command cannot establish that service improved. The [packet results](results/06_packet_feedback/README.md) make these distinctions observable, alongside the [policy-conformance results](results/01_policy_validity/README.md) and [processing-cost measurements](results/04_processing_cost/README.md).
