@@ -150,11 +150,19 @@ Each packet VM contributes three paired repetitions per condition. The completed
 
 Integrity checks establish file identity. Software tests and reproducible calculations support inspection of the implementation and evidence; they do not independently establish scientific improvement.
 
+## Authors and repository maintenance
+
+Repository maintained by **Joy Dutta**.
+
+**Authors of the accompanying paper**, in manuscript order:
+
+Hossien B. Eldeeb, Samara Mayhoub, Joy Dutta, Ali Ismail Awad, Ezedin Barka, and Hassnaa Moustafa.
+
 ## Citation, licensing and responsible use
 
 This reproducibility package accompanies the collaborative work of the paper’s authors. It brings together the code, experimental evidence and reproduction instructions supporting our shared research. The GitHub account provides the hosting location for this research artifact.
 
-When referring to this work, acknowledge the research team and identify the repository version or commit used. Once the paper is accepted, we will provide its official citation with the **complete author list** and publication link. Repository ownership or software-maintainer metadata should not be interpreted as sole authorship of the research.
+When referring to this work, acknowledge the research team and identify the repository version or commit used. The [citation file](CITATION.cff) includes all six paper authors in its preferred citation and identifies the manuscript as under review. We will add the accepted-paper publication details and link when available. Repository ownership or software-maintainer metadata should not be interpreted as sole authorship of the research.
 
 Software, author-owned guides/results and third-party data have separate terms. Please consult the [licensing and attribution guide](licenses/README.md) before reuse or redistribution.
 

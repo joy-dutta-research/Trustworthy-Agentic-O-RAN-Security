@@ -39,8 +39,8 @@
       "distribution": "git_source"
     },
     "CITATION.cff": {
-      "bytes": 1152,
-      "sha256": "8dd813aa2248b07b88934ce1d706c8b592b15524b2292a6cd02fbbaa843e1174",
+      "bytes": 1716,
+      "sha256": "8997c9482b49164e3c81ab70dc2981f80f1c75d42b5e22cca9242e97f39fab74",
       "distribution": "git_source"
     },
     "LICENSE": {
@@ -49,8 +49,8 @@
       "distribution": "git_source"
     },
     "README.md": {
-      "bytes": 16174,
-      "sha256": "570d749bfa750834077c889508b02389ca4baa29f2ff52610f4d80417794ac32",
+      "bytes": 16507,
+      "sha256": "9bc1c6a8eb81e6a73c33a2f94f6afdeb0553067dc0828abf5bdef91b4a907d79",
       "distribution": "git_source"
     },
     "code/README.md": {
@@ -2389,8 +2389,8 @@
       "distribution": "git_source"
     },
     "licenses/REUSE.md": {
-      "bytes": 3317,
-      "sha256": "4fc4aa558747af17c19ab6a9d556185c96f83dfc3d64d41d27eb9468a8305077",
+      "bytes": 3745,
+      "sha256": "c1c20409bc5c5ddd37e30e145eba97f5dd71d551288c65e07b7231caedcf0983",
       "distribution": "git_source"
     },
     "model_review/MODEL_IDENTIFICATION.json": {
@@ -2544,8 +2544,8 @@
       "distribution": "git_source"
     },
     "paper/PAPER_STATUS.md": {
-      "bytes": 2114,
-      "sha256": "846c71cd4405d9e93bc594a0363ba89492e8ce9bc2045d066f421e01a75460f5",
+      "bytes": 2351,
+      "sha256": "265d8bff24b24dc47ca9cec68e0a27159d2039badd66bc42d0209f6ac1b4d68d",
       "distribution": "git_source"
     },
     "paper/README.md": {

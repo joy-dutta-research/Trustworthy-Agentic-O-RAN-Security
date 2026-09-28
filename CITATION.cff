@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: >-
-  Please cite this software when using our reproducibility package. It supports the paper
-  Trustworthy Agentic O-RAN Security: From Threat Detection to Safe Action,
-  Governance, and Standardization, which is under review. The accepted-paper
-  citation will be added after acceptance. This software citation is separate
-  from the paper's author list and does not imply that the paper is accepted.
+  Please cite the joint manuscript using the preferred citation below when
+  referring to this research, and identify the repository version or commit
+  used. The manuscript is under review; publication details will be added
+  after acceptance. The software metadata is separate from the paper's full
+  author list and does not imply sole authorship of the research.
 title: "Trustworthy Agentic O-RAN Security: Reproducible Proof of Concept"
 type: software
 version: "0.1.0"
@@ -13,6 +13,24 @@ url: "https://github.com/joy-dutta/Trustworthy-Agentic-O-RAN-Security"
 authors:
   - family-names: Dutta
     given-names: Joy
+preferred-citation:
+  type: unpublished
+  title: "Trustworthy Agentic O-RAN Security: From Threat Detection to Safe Action, Governance, and Standardization"
+  authors:
+    - family-names: Eldeeb
+      given-names: "Hossien B."
+    - family-names: Mayhoub
+      given-names: Samara
+    - family-names: Dutta
+      given-names: Joy
+    - family-names: Awad
+      given-names: "Ali Ismail"
+    - family-names: Barka
+      given-names: Ezedin
+    - family-names: Moustafa
+      given-names: Hassnaa
+  notes: >-
+    Manuscript under review. Publication details and DOI will be added after acceptance.
 license: Apache-2.0
 keywords:
   - O-RAN
