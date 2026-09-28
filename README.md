@@ -14,7 +14,7 @@ To turn these questions into a practical evaluation, we organized our experiment
 
 We began with the first decision: **should the proposed action be allowed?** We compared direct execution with progressively stronger checks, ending with the full **Trust Boundary**, the component that verifies an action against the operator’s policy. Each method received the same policy cases, allowing us to examine which checks prevent actions that violate the stated rules.
 
-We then asked whether the findings extended beyond a small collection of examples. We used **NetsLab-5GORAN-IDD for O-RAN-related context** and **5G-NIDD for complementary 5G intrusion context**, together with multiple seeds and variations in operator settings. These datasets provide context for constructed action proposals, while the declared policy determines which actions are permitted. This lets us examine both broader case coverage and the influence of our chosen assumptions.
+We then asked whether the findings extended beyond a small collection of examples. We used **[NetsLab-5GORAN-IDD](https://netslab.ucd.ie/netslab-datasets/netslab-5goran-idd/) for O-RAN-related context** and **[5G-NIDD](https://github.com/yushan1986/5g-nidd) for complementary 5G intrusion context**, together with multiple seeds and variations in operator settings. These datasets provide context for constructed action proposals, while the declared policy determines which actions are permitted. This lets us examine both broader case coverage and the influence of our chosen assumptions.
 
 A useful safeguard must also have a measurable processing cost. We therefore measured the overhead of verification and examined how the prototype behaves as stored state and incoming requests increase.
 
