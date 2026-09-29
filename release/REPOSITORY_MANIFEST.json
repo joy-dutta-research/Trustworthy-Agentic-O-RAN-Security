@@ -2164,8 +2164,8 @@
       "distribution": "git_source"
     },
     "docs/02_methods_and_metrics.md": {
-      "bytes": 5198,
-      "sha256": "bf7a345d13a7ccf00857103ba6378d7a06260b49cbd3be8b28624e8845b53ec7",
+      "bytes": 13210,
+      "sha256": "07e6729be5327247b7a81f464e106567efc1ec6522ea1dbd19ba4771b73ec449",
       "distribution": "git_source"
     },
     "docs/03_reproduce.md": {

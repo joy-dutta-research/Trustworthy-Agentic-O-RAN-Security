@@ -1,5 +1,53 @@
 # Methods and measurement definitions
 
+## Experimental design: why these tests?
+
+The paper presents the essential design and results; this guide explains the choices behind them. The checks address different responsibilities: whether an action is permitted, whether current evidence justifies intervention, whether service improves afterwards, and how much processing the safeguards require. Use the [study overview](01_study_overview.md) for their connection to the proposed architecture.
+
+### Complementary observations and explicit rules
+
+NetsLab-5GORAN-IDD contributes lower-layer observations from the physical O-RAN testbed at University College Dublin. 5G-NIDD contributes flow-level observations from the University of Oulu's 5G test network. Evaluating the two separately broadens the network contexts examined while retaining their different measurement levels. The [dataset guide](../data/README.md) gives acquisition instructions, exact input identities and transformations.
+
+These datasets describe network activity, not the permission to execute a mitigation. We explicitly construct proposed actions, permissions, approval evidence and operating context, and derive expected decisions from the declared operator policy. Every comparator is evaluated against that same reference, while implementing progressively more of its checks. The packet experiments then examine action consequences using separate controlled synthetic traffic, not replays of either dataset.
+
+The policy combines security and governance principles with configurable operator choices. The existing [rule-to-source mapping](../code/windows_frozen/docs/standards_traceability.csv) distinguishes standards-informed principles, threat-derived checks and operator assumptions. For example, authentication, authorization, input validation and oversight have an external conceptual foundation; the particular action permissions, parameter limits and lifetimes are explicit experimental choices. The mapping records the rationale and source locators without presenting those numerical choices as mandatory standards requirements or an operator-certified deployment policy.
+
+The [frozen configuration](../code/windows_frozen/configs/paper_policy.json) records the settings, and the [reference specification](../code/windows_frozen/configs/evaluation_v0.2/reference_policy_v0.1.json) records expected rule behavior. Its documented review status and known policy gap remain visible. Keeping the original policy unchanged preserves the comparison; a correction can be evaluated as a separately versioned study.
+
+### Coverage, variation and practical consequences
+
+| Evaluation | What varies or is checked | Why it is included | Detailed evidence |
+|---|---|---|---|
+| 777 constructed policy cases | Adversarial inputs, values near boundaries, combinations of two or three rule conditions, and known-policy-limitation probes | Check how safeguards behave both individually and together, including when a well-formed command lacks authority or conflicts with another action | [Validity results and coverage](../results/01_policy_validity/README.md) |
+| 20-seed dataset evaluations | NetsLab proposal generation around fixed aggregate observations; 5G-NIDD record selection and associated proposal tests | Broaden coverage beyond one constructed collection or sampled panel | [Dataset coverage, seed records and eligibility](../results/02_dataset_robustness/README.md) |
+| 12 sensitivity conditions | One operator setting changes at a time, including the original settings for each dataset | Make dependence on chosen limits explicit and reproducible | [Settings and decision/proposal changes](../results/03_sensitivity/README.md) |
+| Processing benchmarks | Repeated measurements of the evaluator and matched local processing with buffered logging | Measure the local cost of adding verification | [Timing protocol and results](../results/04_processing_cost/README.md) |
+| State and load tests | More actions already in force and more arriving action proposals | Identify conflict-checking work, queue behavior and priorities for scaling | [State and load results](../results/05_scaling_and_load/README.md) |
+| Isolated packet tests | Sustained flooding, a brief benign burst and an acknowledged action that deliberately has no effect | Observe mitigation benefit, unnecessary-restriction avoidance and the no-benefit review trigger | [Packet protocol and all outcomes](../results/06_packet_feedback/README.md) |
+| Reproduction checks | A second physical Windows workstation and a separately installed packet VM on Workstation 2 | Check fixed-output agreement, regeneration and clean-environment repeatability | [Reproduction evidence](../results/07_reproducibility/README.md) |
+
+The 777-case suite contains 669 distinct semantic configurations. Its 25 selected consistency checks and 14 predefined test-only faults are described with their outcomes in the validity results. This is targeted coverage of declared rules and interactions, not a sample of 777 independently observed incidents.
+
+For NetsLab, all 45,244 selected lower-layer rows contribute to aggregate context. Twenty control-generation seeds vary the constructed responses rather than resampling those raw rows. For 5G-NIDD, source-selection seeds support nested panels of 25, 100 and 250 records per eligible label, alongside the natural census and constructed conformance/false-alarm tests. Repeated variants and overlapping panels retain their identities and are counted as proposal occurrences, not independent attacks. The [sampling record](../results/02_dataset_robustness/sampling_and_eligibility.json) preserves the details.
+
+### What the 12 sensitivity conditions mean
+
+| Operator choice | Original setting | Alternatives | What it controls |
+|---|---|---|---|
+| Maximum traffic reduction | 80% | 60% and 90% | Largest permitted requested reduction |
+| Maximum action lifetime | 900 s | 300 s and 600 s | Longest permitted action lifetime |
+| Upstream packet-rate budget, 5G-NIDD only | 1,000 packets/s | 500 and 2,000 packets/s | Assumed budget used to construct response parameters |
+
+NetsLab has five conditions: its original setting, two alternative reduction limits and two alternative lifetime limits. 5G-NIDD has those five plus two packet-budget alternatives, giving seven. Thus, the reported total is 12 conditions including both baselines, not 12 changed thresholds or all possible combinations. Packet-budget values here are different from the action-proposal arrival rates in the load benchmark.
+
+Tighter NetsLab settings change some expected decisions. The tested 5G-NIDD budget alternatives change response parameters without changing decisions. Both kinds of outcome are retained: sensitivity testing makes the effect of an assumption visible, rather than requiring every setting change to alter the answer. The [design file](../code/windows_frozen/configs/evaluation_v0.2/study_design.json) preserves the initial plan; the linked final results establish what was completed, since historical status fields in that plan were not rewritten.
+
+### Environments and exact reproduction
+
+The [environment table](04_provenance_and_scope.md#experimental-computers-and-environments) already records both workstation specifications, Python versions, VM allocations and CPU-only execution. Windows policy/dataset summaries and all 12 sensitivity summaries agree across the two physical workstations. The [regeneration evidence](../results/07_reproducibility/README.md) records 42 byte-identical constructed-case files containing 120,777 cases, while distinguishing the NetsLab aggregate's parsed-JSON agreement from byte identity.
+
+Both packet VMs ran on Workstation 2. Their separate 36-episode runs establish same-host clean-environment repeatability, with three paired repetitions per condition. They are not two independent physical packet-test hosts. Follow the [reproduction guide](03_reproduce.md) for verification and execution commands, and keep new outputs separate from the saved evidence.
+
 ## Policy comparison
 
 | Method identifier | Meaning |
