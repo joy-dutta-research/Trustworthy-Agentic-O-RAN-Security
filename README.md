@@ -158,7 +158,7 @@ Repository maintained by **Joy Dutta**.
 
 **Authors of the accompanying paper**, in manuscript order:
 
-Hossien B. Eldeeb, Samara Mayhoub, Joy Dutta, Ali Ismail Awad, Ezedin Barka, and Hassnaa Moustafa.
+Hossien B. Eldeeb, Joy Dutta, Samara Mayhoub, Ali Ismail Awad, Shayma Alkobaisi, Ezedin Barka, and Hassnaa Moustafa.
 
 ## Citation, licensing and responsible use
 
